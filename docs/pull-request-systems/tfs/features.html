@@ -258,7 +258,7 @@
                     </ul>
                 </li>
                 <li class="treeview active">
-                    <a href="/Cake.Issues.Website/docs/pull-request-systems/tfs">TFS &amp; VSTS</a> <a href="#" class="expand"></a>
+                    <a href="/Cake.Issues.Website/docs/pull-request-systems/tfs">TFS &amp; Azure DevOps</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/requirements">Requirements</a></li>
                 <li class="selected"><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/features">Features</a></li>
@@ -352,9 +352,11 @@
 	</section>
 	<section class="content">
 		<p>The <a href="https://www.nuget.org/packages/Cake.Issues.PullRequests.Tfs">Cake.Issues.PullRequests.Tfs addin</a> provides the following features.</p>
+<div class="alert alert-info"><p>There's a <a href="https://dev.azure.com/pberger/Cake.Issues-Demo">demo repository</a> available which you can fork and to which you can create pull requests to test the integration functionality.</p>
+</div>
 <h1 id="basic-features">Basic features</h1>
 <ul>
-<li>Writes issues as comments to Team Foundation Server (TFS) or Visual Studio Team Services (VSTS) pull requests.</li>
+<li>Writes issues as comments to Team Foundation Server (TFS) or <a href="https://azure.microsoft.com/en-us/services/devops/">Azure DevOps</a> pull requests.</li>
 <li>Identification of pull requests through source branch or pull request ID.</li>
 <li>Comments written by the addin will be rendered with a specific icon corresponding to the state of the issue.</li>
 <li>Adds rule number and, if provided by the issue provider, link to the rule description to the comment.</li>
@@ -393,7 +395,7 @@
 <thead>
 <tr>
 <th>On-Premise Team Foundation Server</th>
-<th>Visual Studio Team Services</th>
+<th>Azure DevOps</th>
 <th>Authentication method</th>
 <th>Alias</th>
 <th>Remarks</th>
@@ -412,7 +414,7 @@
 <td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
 <td>Basic authentication</td>
 <td><a href="../../../api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/3FA02408">TfsAuthenticationBasic</a> alias.</td>
-<td>See <a href="https://docs.microsoft.com/en-us/vsts/integrate/get-started/auth/tfs-basic-auth?view=vsts#configure-tfs-to-use-basic-authentication">Configure TFS to use Basic Authentication</a></td>
+<td>See <a href="https://docs.microsoft.com/en-us/azure/devops/integrate/get-started/auth/tfs-basic-auth?view=tfs-2018#configure-tfs-to-use-basic-authentication">Configure TFS to use Basic Authentication</a></td>
 </tr>
 <tr>
 <td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
