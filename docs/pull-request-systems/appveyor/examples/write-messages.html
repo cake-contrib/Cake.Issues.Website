@@ -266,6 +266,7 @@
                     <ul class="treeview-menu">
                                         <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/pullrequest-id">Using with pull request id</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/repository-information">Using with repository remote url and source branch name</a></li>
+                <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
 
                     </ul>
                 </li>
@@ -359,6 +360,10 @@ in this example for JetBrains InspectCode:</p>
 #addin &quot;Cake.Issues.PullRequests&quot;
 #addin &quot;Cake.Issues.PullRequests.AppVeyor&quot;
 </code></pre>
+<div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
+won't break due to updates to one of the addins.</p>
+<p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
+</div>
 <p>In the following task we'll first determine the remote repository URL and
 source branch of the pull request and with this information call the <a href="../../../../api/Cake.Issues.PullRequests.AppVeyor/AppVeyorBuildsAliases/">AppVeyorBuilds</a> alias:</p>
 <pre><code class="language-csharp">Task(&quot;ReportIssuesToAppVeyor&quot;).Does(() =&gt;

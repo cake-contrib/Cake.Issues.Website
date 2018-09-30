@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - Usage</title>
+        <title>Cake Issues - Using with Azure Pipelines</title>
         <link href="/Cake.Issues.Website/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
@@ -75,7 +75,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/usage/index.cshtml"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/pull-request-systems/tfs/examples/azure-pipelines.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -113,7 +113,7 @@
 
                     </ul>
                 </li>
-                <li class="treeview active selected">
+                <li class="treeview">
                     <a href="/Cake.Issues.Website/docs/usage">Usage</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -235,7 +235,7 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/Cake.Issues.Website/docs/pull-request-systems">Pull Request Systems</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li class="treeview">
@@ -255,18 +255,18 @@
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/Cake.Issues.Website/docs/pull-request-systems/tfs">TFS &amp; Azure DevOps</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/requirements">Requirements</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/features">Features</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/setup">Setup</a></li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples">Examples</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                                         <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/pullrequest-id">Using with pull request id</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/repository-information">Using with repository remote url and source branch name</a></li>
-                <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
+                <li class="selected"><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
 
                     </ul>
                 </li>
@@ -348,40 +348,74 @@
 
 
 	<section class="content-header">
-		<h1>Usage</h1>
+		<h1>Using with Azure Pipelines</h1>
 	</section>
 	<section class="content">
-		<p>How to obtain, configure, and use Cake.Issues.</p>
+		<p>This example shows how to write issues as comments to a Team Foundation Server (TFS) or
+Azure DevOps pull request from an Azure Pipelines build.</p>
+<p>To write issues as comments to TFS or Azure DevOps pull requests you need to import the core addin,
+the core pull request addin, the TFS/Azure DevOps support including the Cake TFS addin, and one or more issue providers,
+in this example for JetBrains InspectCode:</p>
+<pre><code class="language-csharp">#addin &quot;Cake.Issues&quot;
+#addin &quot;Cake.Issues.InspectCode&quot;
+#addin &quot;Cake.Issues.PullRequests&quot;
+#addin &quot;Cake.Issues.PullRequests.Tfs&quot;
+#addin &quot;Cake.Tfs&quot;
+</code></pre>
+<div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
+won't break due to updates to one of the addins.</p>
+<p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
+</div>
+<p>In the following task we'll first determine if the build is running on Azure DevOps and for a pull request,
+then read the remote repository URL and pull request id from environment variables set by the Azure Pipelines build
+and finally call the <a href="../../../../api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/BC3F9B2C">TfsPullRequests</a> alias using the OAuth token provided by the Azure Pipeline build.</p>
+<div class="alert alert-info"><p>Please note that you'll need to setup your Azure Pipelines build to allow scripts to
+access the OAuth token and need to setup proper permissions.</p>
+<p>See <a href="../setup#oauth-authentication-from-azure-pipelines">OAuth authentication from Azure Pipelines</a> for details.</p>
+</div>
+<pre><code class="language-csharp">Task(&quot;ReportIssuesToPullRequest&quot;).Does(() =&gt;
+{
+    var isRunningOnAzureDevOps =
+        !string.IsNullOrWhiteSpace(context.EnvironmentVariable(&quot;TF_BUILD&quot;)) &amp;&amp;
+        !string.IsNullOrWhiteSpace(context.EnvironmentVariable(&quot;SYSTEM_COLLECTIONURI&quot;)) &amp;&amp;
+        (
+            new Uri(context.EnvironmentVariable(&quot;SYSTEM_COLLECTIONURI&quot;)).Host == &quot;dev.azure.com&quot; ||
+            new Uri(context.EnvironmentVariable(&quot;SYSTEM_COLLECTIONURI&quot;)).Host.EndsWith(&quot;visualstudio.com&quot;)
+        );
 
-			<div class="box">
-				<div class="box-body no-padding">
-					<table class="table table-striped table-hover two-cols-alt table-responsive">
-						
-						<tbody>
-								<tr>
-									<td><strong><a href="/Cake.Issues.Website/docs/usage/creating-issues">Creating Issues</a></strong></td>
-									<td>
-How to create issues using Cake.Issues.									</td>
-								</tr>
-								<tr>
-									<td><strong><a href="/Cake.Issues.Website/docs/usage/reading-issues">Reading Issues</a></strong></td>
-									<td>
-How to read issues using Cake.Issues.									</td>
-								</tr>
-								<tr>
-									<td><strong><a href="/Cake.Issues.Website/docs/usage/creating-reports">Creating Reports</a></strong></td>
-									<td>
-How to create reports using Cake.Issues.Reporting.									</td>
-								</tr>
-								<tr>
-									<td><strong><a href="/Cake.Issues.Website/docs/usage/reporting-issues-to-pull-requests">Reporting Issues To Pull Requests</a></strong></td>
-									<td>
-How to report issues to pull requests using Cake.Issues.PullRequests.									</td>
-								</tr>
-						</tbody>				
-					</table>
-				</div>
-			</div> 
+    var isPullRequestBuild =
+        !string.IsNullOrWhiteSpace(context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;));
+
+    if (isRunningOnAzureDevOps)
+        {
+            var repositoryUrl = new Uri(context.EnvironmentVariable(&quot;BUILD_REPOSITORY_URI&quot;));
+
+            if (isPullRequestBuild)
+            {
+                if (!Int32.TryParse(context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;), out var pullRequestId))
+                {
+                    throw new Exception(
+                        string.Format(
+                            &quot;Invalid pull request ID: {0}&quot;,
+                            context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;)));
+                }
+                else
+                {
+                    var repoRootFolder = MakeAbsolute(Directory(&quot;./&quot;));
+
+                    ReportIssuesToPullRequest(
+                        InspectCodeIssuesFromFilePath(
+                            &#64;&quot;C:\build\inspectcode.log&quot;),
+                        TfsPullRequests(
+                            repositoryUrl,
+                            pullRequestId,
+                            TfsAuthenticationOAuth(EnvironmentVariable(&quot;SYSTEM_ACCESSTOKEN&quot;))),
+                        repoRootFolder);
+                }
+            }
+        }
+});
+</code></pre>
 
 	</section>
                 

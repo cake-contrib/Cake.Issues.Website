@@ -266,6 +266,7 @@
                     <ul class="treeview-menu">
                                         <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/pullrequest-id">Using with pull request id</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/repository-information">Using with repository remote url and source branch name</a></li>
+                <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
 
                     </ul>
                 </li>
@@ -358,6 +359,10 @@
 <pre><code class="language-csharp">#addin &quot;Cake.Issues&quot;
 #addin &quot;Cake.Issues.Markdownlint&quot;
 </code></pre>
+<div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
+won't break due to updates to one of the addins.</p>
+<p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
+</div>
 <p>We need some global variables:</p>
 <pre><code class="language-csharp">var logPath = &#64;&quot;c:\build\markdownlint.log&quot;;
 var repoRootFolder = MakeAbsolute(Directory(&quot;./&quot;));

@@ -266,6 +266,7 @@
                     <ul class="treeview-menu">
                                         <li class="selected"><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/pullrequest-id">Using with pull request id</a></li>
                 <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/repository-information">Using with repository remote url and source branch name</a></li>
+                <li><a href="/Cake.Issues.Website/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
 
                     </ul>
                 </li>
@@ -352,6 +353,9 @@
 	<section class="content">
 		<p>This example shows how to write issues as comments to a Team Foundation Server (TFS) or
 Azure DevOps pull request while using pull request id.</p>
+<p>To determine the remote repository URL you need the [Cake.Git] addin:</p>
+<pre><code class="language-csharp">#addin &quot;Cake.Git&quot;
+</code></pre>
 <p>To write issues as comments to TFS or Azure DevOps pull requests you need to import the core addin,
 the core pull request addin, the TFS/Azure DevOps support including the Cake TFS addin, and one or more issue providers,
 in this example for JetBrains InspectCode:</p>
@@ -361,11 +365,18 @@ in this example for JetBrains InspectCode:</p>
 #addin &quot;Cake.Issues.PullRequests.Tfs&quot;
 #addin &quot;Cake.Tfs&quot;
 </code></pre>
+<div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
+won't break due to updates to one of the addins.</p>
+<p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
+</div>
 <p>In the following task we'll first determine the remote repository URL and
-source branch of the pull request and with this information call the <a href="../../../api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/">TfsPullRequests</a> alias:</p>
+with this information call the <a href="../../../../api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/BC3F9B2C">TfsPullRequests</a> alias,
+which will authenticate through NTLM to a on-premise TFS instance:</p>
 <pre><code class="language-csharp">Task(&quot;ReportIssuesToPullRequest&quot;).Does(() =&gt;
 {
     var repoRootFolder = MakeAbsolute(Directory(&quot;./&quot;));
+    var repoRemoteUrl = new Uri(currentBranch.Remotes.Single(x =&gt; x.Name == &quot;origin&quot;).Url);
+    var pullRequestId = 123;
 
     ReportIssuesToPullRequest(
         InspectCodeIssuesFromFilePath(
