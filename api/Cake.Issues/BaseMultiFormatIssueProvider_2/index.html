@@ -227,10 +227,10 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
 									</ul>
 								</dd>			
 							
@@ -252,14 +252,14 @@
 	click Interface1 "/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1"
 	Type["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]
 class Type type-node
-	Type--&gt;Derived0["MsBuildIssuesProvider"]
-	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Type--&gt;Derived1["MarkdownlintIssuesProvider"]
-	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
+	Type--&gt;Derived0["MarkdownlintIssuesProvider"]
+	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
+	Type--&gt;Derived1["EsLintIssuesProvider"]
+	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider"
 	Type--&gt;Derived2["FakeMultiFormatIssueProvider"]
 	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
-	Type--&gt;Derived3["EsLintIssuesProvider"]
-	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider"
+	Type--&gt;Derived3["MsBuildIssuesProvider"]
+	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
 
 						</div>
 					</div>
