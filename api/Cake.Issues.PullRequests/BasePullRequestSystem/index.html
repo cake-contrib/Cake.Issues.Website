@@ -76,7 +76,6 @@
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Properties">Properties</a></p>
 <p><a href="#Methods">Methods</a></p>
 <p><a href="#ExtensionMethods">Extension Methods</a></p>
 <hr class="infobar-hidden">
@@ -205,7 +204,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -213,7 +212,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
@@ -229,13 +228,11 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph TD
-	Base0["BaseIssueComponent&lt;T&gt;"]--&gt;Type
-	click Base0 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1"
+	Base0["BaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;"]--&gt;Type
 	Base1["Object"]--&gt;Base0
 	Interface0["IPullRequestSystem"]-.-&gt;Type
 	click Interface0 "/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem"
-	Interface1["IBaseIssueComponent&lt;T&gt;"]-.-&gt;Type
-	click Interface1 "/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1"
+	Interface1["IBaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;"]-.-&gt;Type
 	Type["BasePullRequestSystem"]
 class Type type-node
 	Type--&gt;Derived0["AppVeyorPullRequestSystem"]
@@ -280,42 +277,6 @@ class Type type-node
 
 
 
-			<h1 id="Properties">Properties</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/144FE95A">Log</a></td>
-								<td>ICakeLog</td>
-								<td>
-									<div>
-            Gets the Cake log context.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/73197E19">Settings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a></td>
-								<td>
-									<div>
-            Gets the settings.
-            Is set after <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize(T)</a></code> was called from the core addin.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
 			<h1 id="Methods">Methods</h1>
 			<div class="box">
@@ -335,16 +296,6 @@ class Type type-node
 									<div>
             Adds a capability.
             </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/8DB693A2">AssertInitialized<wbr>()<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>
-            Asserts that <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1/0DA4EF42">Initialize(T)</a></code> was called.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
 								</td>
 							</tr>
 							<tr>
@@ -372,16 +323,6 @@ class Type type-node
 									<div>
             Checks if a pull request has a specific capability.
             </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize<wbr>(T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-            Initializes the component.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
 								</td>
 							</tr>
 							<tr>

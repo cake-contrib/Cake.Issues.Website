@@ -210,11 +210,11 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat">Base<wbr>Markdownlint<wbr>Log<wbr>File<wbr>Format</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat">Base<wbr>Es<wbr>Lint<wbr>Log<wbr>File<wbr>Format</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -224,16 +224,16 @@
 							graph TD
 	Type["ILogFileFormat&lt;TIssueProvider, TSettings&gt;"]
 class Type type-node
-	Type-.-&gt;Implementing0["FakeLogFileFormat"]
-	click Implementing0 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat"
+	Type-.-&gt;Implementing0["BaseMsBuildLogFileFormat"]
+	click Implementing0 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
 	Type-.-&gt;Implementing1["BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;"]
 	click Implementing1 "/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2"
 	Type-.-&gt;Implementing2["BaseMarkdownlintLogFileFormat"]
 	click Implementing2 "/Cake.Issues.Website/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat"
 	Type-.-&gt;Implementing3["BaseEsLintLogFileFormat"]
 	click Implementing3 "/Cake.Issues.Website/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat"
-	Type-.-&gt;Implementing4["BaseMsBuildLogFileFormat"]
-	click Implementing4 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
+	Type-.-&gt;Implementing4["FakeLogFileFormat"]
+	click Implementing4 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat"
 
 						</div>
 					</div>
@@ -288,7 +288,7 @@ class Type type-node
 						</thead>
 							<tbody><tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/ILogFileFormat_2/20765D34">ReadIssues<wbr>(TIssueProvider, <wbr>IssueCommentFormat, <wbr>RepositorySettings, <wbr>TSettings)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.

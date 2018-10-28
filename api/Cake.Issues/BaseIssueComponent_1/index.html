@@ -209,7 +209,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -224,9 +224,9 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting/IssueReportFormat">IssueReportFormat</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeIssueComponent">FakeIssueComponent</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
 									</ul>
 								</dd>			
 							
@@ -237,17 +237,16 @@
 							graph TD
 	Base0["Object"]--&gt;Type
 	Interface0["IBaseIssueComponent&lt;T&gt;"]-.-&gt;Type
-	click Interface0 "/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1"
 	Type["BaseIssueComponent&lt;T&gt;"]
 class Type type-node
 	Type--&gt;Derived0["BaseIssueProvider"]
 	click Derived0 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider"
-	Type--&gt;Derived1["BasePullRequestSystem"]
-	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem"
-	Type--&gt;Derived2["IssueReportFormat"]
-	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.Reporting/IssueReportFormat"
-	Type--&gt;Derived3["FakeIssueComponent"]
-	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeIssueComponent"
+	Type--&gt;Derived1["IssueReportFormat"]
+	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.Reporting/IssueReportFormat"
+	Type--&gt;Derived2["FakeIssueComponent"]
+	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeIssueComponent"
+	Type--&gt;Derived3["BasePullRequestSystem"]
+	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem"
 
 						</div>
 					</div>

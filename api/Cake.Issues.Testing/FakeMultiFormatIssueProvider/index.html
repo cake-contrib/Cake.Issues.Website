@@ -195,7 +195,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -203,10 +203,10 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>&lt;TSettings, <wbr>TIssueProvider&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProviderSettings">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Settings</a>&gt;<wbr></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProviderSettings">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Settings</a>, <wbr><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
@@ -216,19 +216,15 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph TD
-	Base0["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]--&gt;Type
-	click Base0 "/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2"
-	Base1["BaseConfigurableIssueProvider&lt;T&gt;"]--&gt;Base0
-	click Base1 "/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1"
+	Base0["BaseMultiFormatIssueProvider&lt;FakeMultiFormatIssueProviderSettings, FakeMultiFormatIssueProvider&gt;"]--&gt;Type
+	Base1["BaseConfigurableIssueProvider&lt;FakeMultiFormatIssueProviderSettings&gt;"]--&gt;Base0
 	Base2["BaseIssueProvider"]--&gt;Base1
 	click Base2 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider"
-	Base3["BaseIssueComponent&lt;T&gt;"]--&gt;Base2
-	click Base3 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1"
+	Base3["BaseIssueComponent&lt;RepositorySettings&gt;"]--&gt;Base2
 	Base4["Object"]--&gt;Base3
 	Interface0["IIssueProvider"]-.-&gt;Type
 	click Interface0 "/Cake.Issues.Website/api/Cake.Issues/IIssueProvider"
-	Interface1["IBaseIssueComponent&lt;T&gt;"]-.-&gt;Type
-	click Interface1 "/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1"
+	Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]-.-&gt;Type
 	Type["FakeMultiFormatIssueProvider"]
 class Type type-node
 
@@ -302,32 +298,12 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1/66581759">Issue<wbr>Provider<wbr>Settings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a></td>
-								<td>
-									<div>
-            Gets the settings for the issue provider.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider/ECE57666">Log</a></td>
 								<td>ICakeLog</td>
 								<td>
 									<div>
             Gets the Cake log instance.
             </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/144FE95A">Log</a></td>
-								<td>ICakeLog</td>
-								<td>
-									<div>
-            Gets the Cake log context.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
 								</td>
 							</tr>
 							<tr>
@@ -348,17 +324,6 @@ class Type type-node
             </div>
 								</td>
 							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/73197E19">Settings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a></td>
-								<td>
-									<div>
-            Gets the settings.
-            Is set after <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize(T)</a></code> was called from the core addin.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
 					</tbody></table>
 				</div>
 			</div>
@@ -376,39 +341,8 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/8DB693A2">AssertInitialized<wbr>()<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>
-            Asserts that <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1/0DA4EF42">Initialize(T)</a></code> was called.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize<wbr>(T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-            Initializes the component.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2/169F147A">InternalReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
-								<td>
-									<div>
-            Gets all issues.
-            Compared to <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues(IssueCommentFormat)</a></code> it is safe to access Settings from this method.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>&lt;TSettings, <wbr>TIssueProvider&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.

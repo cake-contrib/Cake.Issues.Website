@@ -77,7 +77,6 @@
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#TypeParameters">Type Parameters</a></p>
 <p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Properties">Properties</a></p>
 <p><a href="#Methods">Methods</a></p>
 <p><a href="#ExtensionMethods">Extension Methods</a></p>
 <hr class="infobar-hidden">
@@ -197,8 +196,8 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;T&gt;<wbr></a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
@@ -209,9 +208,7 @@
 						<div class="mermaid">
 							graph TD
 	Base0["BaseConfigurableIssueProviderFixture&lt;TIssueProvider, TSettings&gt;"]--&gt;Type
-	click Base0 "/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2"
-	Base1["BaseIssueProviderFixture&lt;T&gt;"]--&gt;Base0
-	click Base1 "/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1"
+	Base1["BaseIssueProviderFixture&lt;TIssueProvider&gt;"]--&gt;Base0
 	Base2["Object"]--&gt;Base1
 	Type["BaseMultiFormatIssueProviderFixture&lt;TIssueProvider, TSettings, TLogFileFormat&gt;"]
 class Type type-node
@@ -281,61 +278,6 @@ class Type type-node
 
 
 
-			<h1 id="Properties">Properties</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2/ECCC0340">File<wbr>Resource<wbr>Namespace</a></td>
-								<td>string</td>
-								<td>
-									<div>
-            Gets the namespace where test file resources will be searched.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1/3E9702CC">Log</a></td>
-								<td>FakeLog</td>
-								<td>
-									<div>
-            Gets or sets the Cake logging instance.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2/C7516BD1">LogFileContent</a></td>
-								<td>byte[]</td>
-								<td>
-									<div>
-            Gets or sets the content of the log file.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1/06919667">RepositorySettings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/RepositorySettings">RepositorySettings</a></td>
-								<td>
-									<div>
-            Gets or sets the repository settings.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
 			<h1 id="Methods">Methods</h1>
 			<div class="box">
@@ -349,32 +291,12 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2/492BC19C">Get<wbr>Create<wbr>Issue<wbr>Provider<wbr>Arguments<wbr>()<wbr></a></td>
-								<td>IList<wbr>&lt;&gt;<wbr></td>
-								<td>
-									<div>
-            Returns arguments for creating a new instance of an issue provider.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3/BD2A2F6D">Get<wbr>Create<wbr>Issue<wbr>Provider<wbr>Settings<wbr>Arguments<wbr>()<wbr></a></td>
-								<td>IList<wbr>&lt;&gt;<wbr></td>
+								<td>IList<wbr>&lt;object&gt;<wbr></td>
 								<td>
 									<div>
             Creates a new instance of the issue provider settings.
             </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1/DDD33E93">ReadIssues<wbr>()<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
-								<td>
-									<div>
-            Calls <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues(IssueCommentFormat)</a></code>.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;T&gt;<wbr></a></em></small></div>
 								</td>
 							</tr>
 					</tbody></table>

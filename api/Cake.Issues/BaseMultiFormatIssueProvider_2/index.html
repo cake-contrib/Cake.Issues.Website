@@ -210,7 +210,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -218,18 +218,18 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
 									</ul>
 								</dd>			
@@ -239,25 +239,22 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph TD
-	Base0["BaseConfigurableIssueProvider&lt;T&gt;"]--&gt;Type
-	click Base0 "/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1"
+	Base0["BaseConfigurableIssueProvider&lt;TSettings&gt;"]--&gt;Type
 	Base1["BaseIssueProvider"]--&gt;Base0
 	click Base1 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider"
-	Base2["BaseIssueComponent&lt;T&gt;"]--&gt;Base1
-	click Base2 "/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1"
+	Base2["BaseIssueComponent&lt;RepositorySettings&gt;"]--&gt;Base1
 	Base3["Object"]--&gt;Base2
 	Interface0["IIssueProvider"]-.-&gt;Type
 	click Interface0 "/Cake.Issues.Website/api/Cake.Issues/IIssueProvider"
-	Interface1["IBaseIssueComponent&lt;T&gt;"]-.-&gt;Type
-	click Interface1 "/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1"
+	Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]-.-&gt;Type
 	Type["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]
 class Type type-node
-	Type--&gt;Derived0["MsBuildIssuesProvider"]
-	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Type--&gt;Derived1["EsLintIssuesProvider"]
-	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Type--&gt;Derived2["FakeMultiFormatIssueProvider"]
-	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Type--&gt;Derived0["FakeMultiFormatIssueProvider"]
+	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Type--&gt;Derived1["MsBuildIssuesProvider"]
+	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
+	Type--&gt;Derived2["EsLintIssuesProvider"]
+	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.EsLint/EsLintIssuesProvider"
 	Type--&gt;Derived3["MarkdownlintIssuesProvider"]
 	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
 
@@ -335,26 +332,6 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1/66581759">Issue<wbr>Provider<wbr>Settings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a></td>
-								<td>
-									<div>
-            Gets the settings for the issue provider.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/144FE95A">Log</a></td>
-								<td>ICakeLog</td>
-								<td>
-									<div>
-            Gets the Cake log context.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider/E3A2D76B">ProviderName</a></td>
 								<td>string</td>
 								<td>
@@ -362,17 +339,6 @@ class Type type-node
             Gets the human friendly name of the issue provider.
             </div>
 											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/73197E19">Settings</a></td>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a></td>
-								<td>
-									<div>
-            Gets the settings.
-            Is set after <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize(T)</a></code> was called from the core addin.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
 								</td>
 							</tr>
 					</tbody></table>
@@ -392,28 +358,8 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/8DB693A2">AssertInitialized<wbr>()<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>
-            Asserts that <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues/IBaseIssueComponent_1/0DA4EF42">Initialize(T)</a></code> was called.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1/25DD28E4">Initialize<wbr>(T)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-            Initializes the component.
-            </div>
-											<div><small><em>Inherited from <a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseMultiFormatIssueProvider_2/169F147A">InternalReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.
@@ -423,7 +369,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.

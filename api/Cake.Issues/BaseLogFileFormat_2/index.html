@@ -209,7 +209,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat</a><wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -223,10 +223,10 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat">Base<wbr>Markdownlint<wbr>Log<wbr>File<wbr>Format</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat">Base<wbr>Es<wbr>Lint<wbr>Log<wbr>File<wbr>Format</a></li>								
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>								
 									</ul>
 								</dd>			
 							
@@ -237,17 +237,16 @@
 							graph TD
 	Base0["Object"]--&gt;Type
 	Interface0["ILogFileFormat&lt;TIssueProvider, TSettings&gt;"]-.-&gt;Type
-	click Interface0 "/Cake.Issues.Website/api/Cake.Issues/ILogFileFormat_2"
 	Type["BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;"]
 class Type type-node
-	Type--&gt;Derived0["FakeLogFileFormat"]
-	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat"
+	Type--&gt;Derived0["BaseMsBuildLogFileFormat"]
+	click Derived0 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
 	Type--&gt;Derived1["BaseMarkdownlintLogFileFormat"]
 	click Derived1 "/Cake.Issues.Website/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat"
 	Type--&gt;Derived2["BaseEsLintLogFileFormat"]
 	click Derived2 "/Cake.Issues.Website/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat"
-	Type--&gt;Derived3["BaseMsBuildLogFileFormat"]
-	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
+	Type--&gt;Derived3["FakeLogFileFormat"]
+	click Derived3 "/Cake.Issues.Website/api/Cake.Issues.Testing/FakeLogFileFormat"
 
 						</div>
 					</div>
@@ -348,7 +347,7 @@ class Type type-node
 						</thead>
 							<tbody><tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues/BaseLogFileFormat_2/FC91296D">ReadIssues<wbr>(TIssueProvider, <wbr>IssueCommentFormat, <wbr>RepositorySettings, <wbr>TSettings)<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;&gt;<wbr></td>
+								<td>IEnumerable<wbr>&lt;<a href="/Cake.Issues.Website/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.
