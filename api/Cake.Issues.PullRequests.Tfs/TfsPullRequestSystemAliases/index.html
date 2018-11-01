@@ -165,7 +165,7 @@
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
             Contains functionality related to writing code analysis issues to Team Foundation Server or
-            Visual Studio Team Services pull requests.
+            Azure DevOps pull requests.
             </div>
 
 		<div class="panel panel-default">
@@ -244,6 +244,28 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/CBF530AD">TfsPullRequests<wbr>(ICakeContext)<wbr></a></td>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></td>
+								<td>
+									<div>
+            Gets an object for writing issues to Team Foundation Server or Azure DevOps pull request
+            where all required data (including authentication token) is taken from the environment variables set by the Azure Pipelines / TFS build.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/7BF1FB50">TfsPullRequests<wbr>(ICakeContext, <wbr>ITfsCredentials)<wbr></a></td>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></td>
+								<td>
+									<div>
+            Gets an object for writing issues to Team Foundation Server or Azure DevOps pull request
+            where all required data is taken from the environment variables set by the Azure Pipelines / TFS build.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests.Tfs/TfsPullRequestSystemAliases/C4E04C61">TfsPullRequests<wbr>(ICakeContext, <wbr>Tfs<wbr>Pull<wbr>Request<wbr>System<wbr>Settings)<wbr></a></td>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></td>
 								<td>
@@ -259,7 +281,7 @@ class Type type-node
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></td>
 								<td>
 									<div>
-            Gets an object for writing issues to Team Foundation Server or Visual Studio Team Services pull request
+            Gets an object for writing issues to Team Foundation Server or Azure DevOps pull request
             in a specific repository and with a specific ID.
             </div>
 											<div><small><em>static</em></small></div>
@@ -270,7 +292,7 @@ class Type type-node
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></td>
 								<td>
 									<div>
-            Gets an object for writing issues to Team Foundation Server or Visual Studio Team Services pull request
+            Gets an object for writing issues to Team Foundation Server or Azure DevOps pull request
             in a specific repository and for a specific source branch.
             </div>
 											<div><small><em>static</em></small></div>
