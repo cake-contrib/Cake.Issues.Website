@@ -211,8 +211,8 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
 											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
+											<li><a href="/Cake.Issues.Website/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -223,10 +223,10 @@
 	Interface0["IBaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;"]-.-&gt;Type
 	Type["IPullRequestSystem"]
 class Type type-node
-	Type-.-&gt;Implementing0["AppVeyorPullRequestSystem"]
-	click Implementing0 "/Cake.Issues.Website/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem"
-	Type-.-&gt;Implementing1["BasePullRequestSystem"]
-	click Implementing1 "/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem"
+	Type-.-&gt;Implementing0["BasePullRequestSystem"]
+	click Implementing0 "/Cake.Issues.Website/api/Cake.Issues.PullRequests/BasePullRequestSystem"
+	Type-.-&gt;Implementing1["AppVeyorPullRequestSystem"]
+	click Implementing1 "/Cake.Issues.Website/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem"
 
 						</div>
 					</div>
@@ -236,6 +236,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public interface IPullRequestSystem : IBaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;</code></pre>
+
 
 
 
