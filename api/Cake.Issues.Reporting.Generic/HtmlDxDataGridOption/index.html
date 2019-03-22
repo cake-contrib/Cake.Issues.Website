@@ -263,6 +263,43 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/336E78DE">DevExtremeLocation</a></td>
+								<td>38</td>
+								<td>
+									<div>
+            Location where the DevExtreme libraries can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code> and
+            inside there subfolders <code class="cs">js</code> and <code class="cs">css</code>.
+            The following files need to be available:
+            <ul>
+            <li>
+            <span class="description"><code class="cs">{DevExtremeLocation}/{DevExtremeVersion}/js/dx.all.js</code></span>
+            </li>
+            <li>
+            <span class="description"><code class="cs">{DevExtremeLocation}/{DevExtremeVersion}/css/dx.common.css</code></span>
+            </li>
+            <li>
+            <span class="description"><code class="cs">{DevExtremeLocation}/{DevExtremeVersion}/css/{Theme}</code></span>
+            </li>
+            </ul>
+            Default value is <code class="cs">https://cdn3.devexpress.com/jslib/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></td>
+								<td>39</td>
+								<td>
+									<div>
+            Version of the DevExtreme libraries which should be used.
+            If setting this the matching <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></code> needs to also be set.
+            Default value is <code class="cs">18.2.7</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/C85CBA32">EnableFiltering</a></td>
 								<td>5</td>
 								<td>
@@ -391,6 +428,35 @@ class Type type-node
             List of <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></code> which should be grouped.
             Grouped columns are always visible.
             Default value is <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ReportColumn/BAD2BADE">ProviderName</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/874CBB4B">JQueryLocation</a></td>
+								<td>36</td>
+								<td>
+									<div>
+            Location where jQuery can be found.
+            The following files need to be available:
+            <ul>
+            <li>
+            <span class="description"><code class="cs">{JQueryLocation}/jquery-{JQueryVersion}.min.js</code></span>
+            </li>
+            </ul>
+            Default value is <code class="cs">https://ajax.aspnetcdn.com/ajax/jquery/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></td>
+								<td>37</td>
+								<td>
+									<div>
+            Version of jQuery which should be used.
+            This version needs to match the version required by the selected <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
+            Default value is <code class="cs">3.1.0</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
