@@ -1,5 +1,5 @@
 ---
-Order: 20
+Order: 30
 Title: HTML Data Table
 Description: Template for a HTML report containing a rich data table view with sorting and search functionality.
 ---
