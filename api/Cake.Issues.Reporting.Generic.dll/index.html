@@ -74,7 +74,6 @@
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#ClassTypes">Class Types</a></p>
-<p><a href="#EnumTypes">Enum Types</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -137,6 +136,7 @@
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></li>
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.DocFx.dll">Cake<wbr>.Issues<wbr>.DocFx<wbr>.dll</a></li>
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.EsLint.dll">Cake<wbr>.Issues<wbr>.EsLint<wbr>.dll</a></li>
+        <li><a href="/Cake.Issues.Website/api/Cake.Issues.GitRepository.dll">Cake<wbr>.Issues<wbr>.GitRepository<wbr>.dll</a></li>
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.InspectCode.dll">Cake<wbr>.Issues<wbr>.InspectCode<wbr>.dll</a></li>
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.Markdownlint.dll">Cake<wbr>.Issues<wbr>.Markdownlint<wbr>.dll</a></li>
         <li><a href="/Cake.Issues.Website/api/Cake.Issues.MsBuild.dll">Cake<wbr>.Issues<wbr>.MsBuild<wbr>.dll</a></li>
@@ -178,9 +178,21 @@
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></td>
+									<td>
+            Possible sort orders for columns.
+            </td>
+							</tr>
+							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrderExtensions">Column<wbr>Sort<wbr>Order<wbr>Extensions</a></td>
 									<td>
             Extension methods for the <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> enumeration.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></td>
+									<td>
+            Available themes for DevExtreme based templates.
             </td>
 							</tr>
 							<tr>
@@ -214,9 +226,21 @@
             </td>
 							</tr>
 							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate">Generic<wbr>Issue<wbr>Report<wbr>Template</a></td>
+									<td>
+            Default templates provided by this addin.
+            </td>
+							</tr>
+							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription">Html<wbr>Dx<wbr>Data<wbr>Grid<wbr>Column<wbr>Description</a></td>
 									<td>
             Description of a column in the <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate/0E9E9D94">HtmlDxDataGrid</a></code> template.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a></td>
+									<td>
+            Options for the <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate/0E9E9D94">HtmlDxDataGrid</a></code> template.
             </td>
 							</tr>
 							<tr>
@@ -232,55 +256,16 @@
             </td>
 							</tr>
 							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ViewBagHelper">ViewBagHelper</a></td>
-									<td>
-            Helper for working with the ViewBag in templates.
-            </td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
-
-			<h1 id="EnumTypes">Enum Types</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover two-cols">
-						<thead>
-							<tr>
-								<th>Enum</th>
-									<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></td>
-									<td>
-            Possible sort orders for columns.
-            </td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></td>
-									<td>
-            Available themes for DevExtreme based templates.
-            </td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate">Generic<wbr>Issue<wbr>Report<wbr>Template</a></td>
-									<td>
-            Default templates provided by this addin.
-            </td>
-							</tr>
-							<tr>
-								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a></td>
-									<td>
-            Options for the <code class="cs"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate/0E9E9D94">HtmlDxDataGrid</a></code> template.
-            </td>
-							</tr>
-							<tr>
 								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></td>
 									<td>
             Name of columns in a report.
             The value can be used for default positions of the columns.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ViewBagHelper">ViewBagHelper</a></td>
+									<td>
+            Helper for working with the ViewBag in templates.
             </td>
 							</tr>
 					</tbody></table>

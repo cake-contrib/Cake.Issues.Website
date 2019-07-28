@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - DevExtremeTheme Enum</title>
+        <title>Cake Issues - API - DevExtremeTheme Class</title>
         <link href="/Cake.Issues.Website/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/highlight.css" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
@@ -140,22 +140,21 @@
 		<li class="header">Namespace</li>
 		<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic">Cake<wbr>.Issues<wbr>.Reporting<wbr>.Generic</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Enum Types</li>
-				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></li>
-				<li class="selected"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></li>
-				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate">Generic<wbr>Issue<wbr>Report<wbr>Template</a></li>
-				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a></li>
-				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></li>
 			<li class="header">Class Types</li>
+				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ColumnSortOrderExtensions">Column<wbr>Sort<wbr>Order<wbr>Extensions</a></li>
+				<li class="selected"><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeThemeExtensions">Dev<wbr>Extreme<wbr>Theme<wbr>Extensions</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatAliases">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Aliases</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettings">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Settings</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettingsExtensions">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Settings<wbr>Extensions</a></li>
+				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate">Generic<wbr>Issue<wbr>Report<wbr>Template</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription">Html<wbr>Dx<wbr>Data<wbr>Grid<wbr>Column<wbr>Description</a></li>
+				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/IdeIntegrationSettings">Ide<wbr>Integration<wbr>Settings</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/IIssueExtensions">IIssueExtensions</a></li>
+				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></li>
 				<li><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/ViewBagHelper">ViewBagHelper</a></li>
 
 
@@ -171,7 +170,7 @@
 
 
 <section class="content-header">
-	<h1>DevExtremeTheme <small>Enum</small></h1>
+	<h1>DevExtremeTheme <small>Class</small></h1>
 </section>
 <section class="content">
 	
@@ -192,20 +191,10 @@
 								<dt>Namespace</dt>
 								<dd><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic">Cake<wbr>.Issues<wbr>.Reporting<wbr>.Generic</a></dd>
 											
-								<dt>Interfaces</dt>
-								<dd>
-									<ul class="list-unstyled">
-											<li>IComparable</li>								
-											<li>IFormattable</li>								
-											<li>IConvertible</li>								
-									</ul>
-								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
 									<ul class="list-unstyled">										
-											<li>object</li>								
-											<li>ValueType</li>								
 											<li>Enum</li>								
 									</ul>
 								</dd>				
@@ -217,11 +206,6 @@
 						<div class="mermaid">
 							graph TD
 	Base0["Enum"]--&gt;Type
-	Base1["ValueType"]--&gt;Base0
-	Base2["object"]--&gt;Base1
-	Interface0["IComparable"]-.-&gt;Type
-	Interface1["IFormattable"]-.-&gt;Type
-	Interface2["IConvertible"]-.-&gt;Type
 	Type["DevExtremeTheme"]
 class Type type-node
 
@@ -232,7 +216,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public enum DevExtremeTheme</code></pre>
+	<pre><code>public sealed class DevExtremeTheme : Enum</code></pre>
 
 
 
@@ -563,6 +547,13 @@ class Type type-node
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeTheme/2CE6F260">value__</a></td>
+								<td></td>
+								<td>
+									<div></div>
+								</td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
@@ -590,6 +581,16 @@ class Type type-node
             Returns the CSS file name for a specific DevExtreme theme.
             </div>
 										<div><small><em>From <a href="/Cake.Issues.Website/api/Cake.Issues.Reporting.Generic/DevExtremeThemeExtensions">Dev<wbr>Extreme<wbr>Theme<wbr>Extensions</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/Cake.Issues.Website/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>Dev<wbr>Extreme<wbr>Theme&gt;<wbr><wbr>(string)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+            Throws an exception if the specified parameter's value is null.
+            </div>
+										<div><small><em>From <a href="/Cake.Issues.Website/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></em></small></div>
 								</td>
 							</tr>
 					</tbody></table>

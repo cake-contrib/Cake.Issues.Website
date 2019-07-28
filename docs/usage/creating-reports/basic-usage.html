@@ -206,6 +206,17 @@
                     </ul>
                 </li>
                 <li class="treeview">
+                    <a href="/Cake.Issues.Website/docs/issue-providers/gitrepository">Git Repository</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/requirements">Requirements</a></li>
+                <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/features">Features</a></li>
+                <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/examples">Examples</a></li>
+                <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/release-notes">Release Notes</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="/Cake.Issues.Website/docs/issue-providers/inspectcode">InspectCode</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
@@ -424,7 +435,7 @@ won't break due to updates to one of the addins.</p>
 <pre><code class="language-csharp">Task(&quot;Create-Report&quot;).Does(() =&gt;
 {
     var repoRootFolder = new DirectoryPath(&#64;&quot;C:\repo&quot;);
-    ReportIssuesToPullRequest(
+    CreateIssueReport(
         MsBuildIssuesFromFilePath(
             &#64;&quot;C:\build\msbuild.log&quot;,
             MsBuildXmlFileLoggerFormat),
