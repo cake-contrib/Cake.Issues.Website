@@ -1,22 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/Cake.Issues.Website/assets/img/favicon.ico" type="image/x-icon">
         <title>Cake Issues - Alias categories</title>
-        <link href="/Cake.Issues.Website/assets/css/mermaid.css" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/highlight.css" rel="stylesheet">
-        <link href="/Cake.Issues.Website/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/Cake.Issues.Website/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/Cake.Issues.Website/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/Cake.Issues.Website/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/Cake.Issues.Website/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/Cake.Issues.Website/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/Cake.Issues.Website/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/Cake.Issues.Website/assets/css/override.css" rel="stylesheet" />
+        <link href="/Cake.Issues.Website/assets/css/override.css" rel="stylesheet">
         <script src="/Cake.Issues.Website/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/Cake.Issues.Website/assets/js/bootstrap.min.js"></script>        
         <script src="/Cake.Issues.Website/assets/js/app.min.js"></script>         
@@ -24,6 +21,7 @@
         <script src="/Cake.Issues.Website/assets/js/jquery.slimscroll.min.js"></script>
         <script src="/Cake.Issues.Website/assets/js/jquery.sticky-kit.min.js"></script>
         <script src="/Cake.Issues.Website/assets/js/mermaid.min.js"></script>
+        <script src="/Cake.Issues.Website/assets/js/svg-pan-zoom.min.js"></script>
         <!--[if lt IE 9]>
         <script src="/Cake.Issues.Website/assets/js/html5shiv.min.js"></script>
         <script src="/Cake.Issues.Website/assets/js/respond.min.js"></script>
@@ -213,6 +211,14 @@
                 <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/features">Features</a></li>
                 <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/examples">Examples</a></li>
                 <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/release-notes">Release Notes</a></li>
+                <li class="treeview">
+                    <a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/rules">Rules</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/Cake.Issues.Website/docs/issue-providers/gitrepository/rules/BinaryFileNotTrackedByLfs">BinaryFileNotTrackedByLfs</a></li>
+
+                    </ul>
+                </li>
 
                     </ul>
                 </li>
@@ -417,7 +423,7 @@
 			<h1>Alias categories</h1>
 		</section>
 	<section class="content">
-		<html><head></head><body><p>Issue provider aliases should use the <a href="../../../api/Cake.Issues/IssuesAliasConstants/41CCADF8">IssuesAliasConstants.MainCakeAliasCategory</a> and
+		<p>Issue provider aliases should use the <a href="../../../api/Cake.Issues/IssuesAliasConstants/41CCADF8">IssuesAliasConstants.MainCakeAliasCategory</a> and
 <a href="../../../api/Cake.Issues/IssuesAliasConstants/D265B28D">IssuesAliasConstants.IssueProviderCakeAliasCategory</a> constants for defining their category:</p>
 <pre><code class="language-csharp">[CakeAliasCategory(IssuesAliasConstants.MainCakeAliasCategory)]
 public static class MyIssueProviderAliases
@@ -430,7 +436,7 @@ public static class MyIssueProviderAliases
     }
 }
 </code></pre>
-</body></html>
+
 	</section>
                 
             </div>           
@@ -443,8 +449,8 @@ public static class MyIssueProviderAliases
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
                 <p class="text-muted">
-    Copyright &copy; <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
-    <br/>
+    Copyright © <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
+    <br>
     Website generated by <a href="http://wyam.io" target="_blank">Wyam</a>
 </p>
 
@@ -452,14 +458,14 @@ public static class MyIssueProviderAliases
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
         <div class="github-button">
-    <a href="https://github.com/search?q=topic%3Acake-issues&type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+    <a href="https://github.com/search?q=topic%3Acake-issues&amp;type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
 </div>
 <script>
     ((window.gitter = {}).chat = {}).options = {
         room: 'cake-contrib/Lobby'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
 <script type="text/javascript" src="/Cake.Issues.Website/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/Cake.Issues.Website/assets/js/clipboard.min.js"></script>
@@ -513,22 +519,53 @@ public static class MyIssueProviderAliases
                 $(document.body).removeClass('sidebar-open');
             });
             
-            $(document).load(function() {
+            $(document).ready(function() {
                 mermaid.initialize(
                 {
                     flowchart:
                     {
-                        htmlLabels: false,
-                        useMaxWidth:false
-                    }
-                });  
-                mermaid.init(undefined, ".mermaid")
-                $('svg').addClass('img-responsive');
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
                 
                 $('pre code').each(function(i, block) {
                     hljs.highlightBlock(block);
                 });  
             });
+
             hljs.initHighlightingOnLoad();
 
             // Back to top
@@ -545,5 +582,5 @@ public static class MyIssueProviderAliases
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>
