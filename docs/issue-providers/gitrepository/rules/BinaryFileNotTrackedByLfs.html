@@ -443,6 +443,9 @@
 <p>By its nature Git repositories cannot handle binary files well and will keep a full copy of that file in the repository every time a change to that file is committed.
 Considering that you always clone the full history of a repository, and not only the latest version, using binary files in a repository considerably slow downs the operation.
 <a href="https://git-lfs.github.com/">Git Large File System</a> replaces large files with small text pointers inside the Git repository, while storing the file contents on a remote server.</p>
+<div class="alert alert-info"><p>The rule assumes that all files, which are not text files are binary files.
+This also includes for example empty files.</p>
+</div>
 <h2 id="how-to-fix-violations">How to fix violations</h2>
 <p>Track the file with <a href="https://git-lfs.github.com/">Git Large File System</a>.</p>
 
