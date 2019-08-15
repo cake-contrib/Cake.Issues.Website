@@ -317,6 +317,35 @@ class Type type-node
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesAliases/051D7B6E">Ms<wbr>Build<wbr>Xml<wbr>File<wbr>Logger<wbr>Format<wbr>(ICakeContext)<wbr></a></td>
+								<td><a href="/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></td>
+								<td>
+									<div>
+            <p>
+            Gets an instance for the MsBuild log format as written by the <code class="cs">XmlFileLogger</code> class
+            from MSBuild Extension Pack.
+            </p>
+            <p>
+            You can add the logger to the MSBuildSettings like this:
+            </p><pre><code class="cs">var settings = new MSBuildSettings()
+    .WithLogger(
+        Context.Tools.Resolve("MSBuild.ExtensionPack.Loggers.dll").FullPath,
+        "XmlFileLogger",
+        string.Format(
+            "logfile=\"{0}\";verbosity=Detailed;encoding=UTF-8",
+            @"c:\build\msbuild.log")
+    );</code></pre>
+            <p></p>
+            <p>
+            In order to use the above logger, include the following in your build.cake file to download and
+            install from NuGet.org:
+            </p><pre><code class="cs">#tool "nuget:?package=MSBuild.Extension.Pack"</code></pre>
+            <p></p>
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
