@@ -425,8 +425,8 @@
 			<h1>Examples</h1>
 		</section>
 	<section class="content">
-		<p>The following example will call <a href="http://dotnet.github.io/docfx/">DocFx</a> to generate the documentation and outputs the number of warnings.</p>
-<p>To call <a href="http://dotnet.github.io/docfx/">DocFx</a> from a Cake script you can use the <a href="https://www.nuget.org/packages/Cake.DocFx/">Cake.DocFx</a> addin.</p>
+		<p>The following example will call <a href="https://dotnet.github.io/docfx/">DocFx</a> to generate the documentation and outputs the number of warnings.</p>
+<p>To call <a href="https://dotnet.github.io/docfx/">DocFx</a> from a Cake script you can use the <a href="https://www.nuget.org/packages/Cake.DocFx/">Cake.DocFx</a> addin.</p>
 <pre><code class="language-csharp">#addin &quot;Cake.DocFx&quot;
 </code></pre>
 <p>To read issues from DocFx log files you need to import the core addin and the DocFx support:</p>
@@ -442,7 +442,7 @@ won't break due to updates to one of the addins.</p>
 var repoRootPath = &#64;&quot;c:\repo&quot;;
 var docRootPath = &#64;&quot;docs&quot;;
 </code></pre>
-<p>The following task will build the <a href="http://dotnet.github.io/docfx/">DocFx</a> project and write a log file:</p>
+<p>The following task will build the <a href="https://dotnet.github.io/docfx/">DocFx</a> project and write a log file:</p>
 <pre><code class="language-csharp">Task(&quot;Build-Documentation&quot;).Does(() =&gt;
 {
     // Run DocFx.
@@ -453,17 +453,18 @@ var docRootPath = &#64;&quot;docs&quot;;
 });
 </code></pre>
 <p>Finally you can define a task where you call the core addin with the desired issue provider.</p>
-<pre><code class="language-csharp">Task(&quot;Analyze-Log&quot;)
-.IsDependentOn(&quot;Build-Documentation&quot;)
-.Does(() =&gt;
-{
-    // Read Issues.
-    var issues = ReadIssues(
-        DocFxIssuesFromFilePath(logPath, docRootPath),
-        repoRootPath);
+<pre><code class="language-csharp">Task(&quot;Read-Issues&quot;)
+    .IsDependentOn(&quot;Build-Documentation&quot;)
+    .Does(() =&gt;
+    {
+        // Read Issues.
+        var issues =
+            ReadIssues(
+                DocFxIssuesFromFilePath(logPath, docRootPath),
+                repoRootPath);
 
-    Information(&quot;{0} issues are found.&quot;, issues.Count());
-});
+        Information(&quot;{0} issues are found.&quot;, issues.Count());
+    });
 </code></pre>
 
 	</section>

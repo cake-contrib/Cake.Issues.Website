@@ -466,12 +466,10 @@ access the OAuth token and need to setup proper permissions.</p>
 
             if (isPullRequestBuild)
             {
-                if (!Int32.TryParse(context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;), out var pullRequestId))
+                var pullRequestIdVariable = context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;);
+                if (!Int32.TryParse(pullRequestIdVariable, out var pullRequestId))
                 {
-                    throw new Exception(
-                        string.Format(
-                            &quot;Invalid pull request ID: {0}&quot;,
-                            context.EnvironmentVariable(&quot;SYSTEM_PULLREQUEST_PULLREQUESTID&quot;)));
+                    throw new Exception($&quot;Invalid pull request ID: {pullRequestIdVariable}&quot;);
                 }
                 else
                 {

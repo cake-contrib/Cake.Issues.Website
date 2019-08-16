@@ -453,20 +453,20 @@ var repoRootFolder = MakeAbsolute(Directory(&quot;./&quot;));
 });
 </code></pre>
 <p>Finally you can define a task where you call the core addin with the desired issue provider.</p>
-<pre><code class="language-csharp">Task(&quot;Analyze-Log&quot;)
-.IsDependentOn(&quot;Lint-Documentation&quot;)
-.Does(() =&gt;
-{
-    // Read Issues.
-    var issues =
-        ReadIssues(
-            MarkdownlintIssuesFromFilePath(
-                logPath,
-                MarkdownlintCliLogFileFormat),
-            repoRootPath);
+<pre><code class="language-csharp">Task(&quot;Read-Issues&quot;)
+    .IsDependentOn(&quot;Lint-Documentation&quot;)
+    .Does(() =&gt;
+    {
+        // Read Issues.
+        var issues =
+            ReadIssues(
+                MarkdownlintIssuesFromFilePath(
+                    logPath,
+                    MarkdownlintCliLogFileFormat),
+                repoRootPath);
 
-    Information(&quot;{0} issues are found.&quot;, issues.Count());
-});
+        Information(&quot;{0} issues are found.&quot;, issues.Count());
+    });
 </code></pre>
 
 	</section>
