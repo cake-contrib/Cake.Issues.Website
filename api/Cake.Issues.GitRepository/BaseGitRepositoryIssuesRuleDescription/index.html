@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - MarkdownlintIssuesProvider.ProviderName Property</title>
+        <title>Cake Issues - API - BaseGitRepositoryIssuesRuleDescription Class</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -75,7 +75,9 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Value">Value</a></p>
+<p><a href="#Constructors">Constructors</a></p>
+<p><a href="#Properties">Properties</a></p>
+<p><a href="#ExtensionMethods">Extension Methods</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -135,19 +137,15 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.Markdownlint.dll">Cake<wbr>.Issues<wbr>.Markdownlint<wbr>.dll</a></li>
+		<li><a href="/api/Cake.Issues.GitRepository.dll">Cake<wbr>.Issues<wbr>.GitRepository<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues.Markdownlint">Cake<wbr>.Issues<wbr>.Markdownlint</a></li>
-		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>
+		<li><a href="/api/Cake.Issues.GitRepository">Cake<wbr>.Issues<wbr>.GitRepository</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/BFA63623">Markdownlint<wbr>Issues<wbr>Provider<wbr>(ICakeLog, <wbr>Markdownlint<wbr>Issues<wbr>Settings)<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li class="selected"><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/2EC8610D">ProviderName</a></li>
-				<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/99061525">ProviderTypeName</a></li>
-			<li class="header">Method Members</li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
+			<li class="header">Class Types</li>
+				<li class="selected"><a href="/api/Cake.Issues.GitRepository/BaseGitRepositoryIssuesRuleDescription">Base<wbr>Git<wbr>Repository<wbr>Issues<wbr>Rule<wbr>Description</a></li>
+				<li><a href="/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription">Binary<wbr>File<wbr>Not<wbr>Tracked<wbr>By<wbr>Lfs<wbr>Rule<wbr>Description</a></li>
+				<li><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesAliases">Git<wbr>Repository<wbr>Issues<wbr>Aliases</a></li>
+				<li><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings">Git<wbr>Repository<wbr>Issues<wbr>Settings</a></li>
 
 
                     </ul>
@@ -162,58 +160,150 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a>.</h3>
-	<h1>ProviderName <small>Property</small></h1>
+	<h1>Base<wbr>Git<wbr>Repository<wbr>Issues<wbr>Rule<wbr>Description <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets the human friendly name of the issue provider.
+            Base class for descriptions of rules checked by <code class="cs"><a href="/">GitRepositoryIssuesProvider</a></code>.
             </div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
-				<dl class="dl-horizontal">	
-						<dt>Assembly</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint.dll">Cake<wbr>.Issues<wbr>.Markdownlint<wbr>.dll</a></dd>
-						
-						<dt>Namespace</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint">Cake<wbr>.Issues<wbr>.Markdownlint</a></dd>
-					
-						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></dd>		
-					
-				</dl>
+				<div class="row">
+					<div class="col-md-6">
+						<dl class="dl-horizontal">		
+								<dt>Assembly</dt>
+								<dd><a href="/api/Cake.Issues.GitRepository.dll">Cake<wbr>.Issues<wbr>.GitRepository<wbr>.dll</a></dd>
+
+								<dt>Namespace</dt>
+								<dd><a href="/api/Cake.Issues.GitRepository">Cake<wbr>.Issues<wbr>.GitRepository</a></dd>
+											
+							
+								<dt>Base Types</dt>
+								<dd>
+									<ul class="list-unstyled">										
+											<li>Object</li>								
+									</ul>
+								</dd>				
+							
+								<dt>Derived Types</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription">Binary<wbr>File<wbr>Not<wbr>Tracked<wbr>By<wbr>Lfs<wbr>Rule<wbr>Description</a></li>								
+									</ul>
+								</dd>			
+							
+						</dl>
+					</div>		
+					<div class="col-md-6">
+						<div class="mermaid">
+							graph BT
+	Type--&gt;Base0["Object"]
+	Type["BaseGitRepositoryIssuesRuleDescription"]
+class Type type-node
+	Derived0["BinaryFileNotTrackedByLfsRuleDescription"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription"
+
+						</div>
+					</div>
+				</div>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public override string ProviderName { get; }</code></pre>
+	<pre><code>public abstract class BaseGitRepositoryIssuesRuleDescription</code></pre>
 
 
 
 
 
-	<h1 id="Value">Value</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover two-cols">
-				<thead>
-					<tr>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-				<tbody><tr>
-					<td>string</td>
-					<td></td>
-				</tr>
-			</tbody></table>
-		</div>
-	</div>	
 
+
+			<h1 id="Constructors">Constructors</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/Cake.Issues.GitRepository/BaseGitRepositoryIssuesRuleDescription/11008137">Base<wbr>Git<wbr>Repository<wbr>Issues<wbr>Rule<wbr>Description<wbr>()<wbr></a></td>
+									<td></td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+
+
+			<h1 id="Properties">Properties</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/Cake.Issues.GitRepository/BaseGitRepositoryIssuesRuleDescription/438B48F0">Priority</a></td>
+								<td><a href="/api/Cake.Issues/IssuePriority">IssuePriority</a></td>
+								<td>
+									<div>
+            Gets the priority of the rule.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.GitRepository/BaseGitRepositoryIssuesRuleDescription/54D85856">RuleName</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets the name of the rule.
+            </div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+
+
+			<h1 id="ExtensionMethods">Extension Methods</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>Base<wbr>Git<wbr>Repository<wbr>Issues<wbr>Rule<wbr>Description&gt;<wbr><wbr>(string)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+            Throws an exception if the specified parameter's value is null.
+            </div>
+										<div><small><em>From <a href="/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></em></small></div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
 
 	
 </section>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - MarkdownlintIssuesProvider.ProviderName Property</title>
+        <title>Cake Issues - API - MsBuildIssuesProvider.ProviderTypeName Property</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -135,17 +135,17 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.Markdownlint.dll">Cake<wbr>.Issues<wbr>.Markdownlint<wbr>.dll</a></li>
+		<li><a href="/api/Cake.Issues.MsBuild.dll">Cake<wbr>.Issues<wbr>.MsBuild<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues.Markdownlint">Cake<wbr>.Issues<wbr>.Markdownlint</a></li>
+		<li><a href="/api/Cake.Issues.MsBuild">Cake<wbr>.Issues<wbr>.MsBuild</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>
+		<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/BFA63623">Markdownlint<wbr>Issues<wbr>Provider<wbr>(ICakeLog, <wbr>Markdownlint<wbr>Issues<wbr>Settings)<wbr></a></li>
+				<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider/DCD36079">Ms<wbr>Build<wbr>Issues<wbr>Provider<wbr>(ICakeLog, <wbr>Ms<wbr>Build<wbr>Issues<wbr>Settings)<wbr></a></li>
 			<li class="header">Property Members</li>
-				<li class="selected"><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/2EC8610D">ProviderName</a></li>
-				<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider/99061525">ProviderTypeName</a></li>
+				<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider/0D049468">ProviderName</a></li>
+				<li class="selected"><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider/42E9345B">ProviderTypeName</a></li>
 			<li class="header">Method Members</li>
 				<li><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
 
@@ -162,35 +162,36 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a>.</h3>
-	<h1>ProviderName <small>Property</small></h1>
+			<h3><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a>.</h3>
+	<h1>ProviderTypeName <small>Property</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets the human friendly name of the issue provider.
+            Gets the name of the MsBuild issue provider.
+            This name can be used to identify issues based on the <code class="cs"><a href="/api/Cake.Issues/IIssue/D5A24C72">ProviderType</a></code> property.
             </div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint.dll">Cake<wbr>.Issues<wbr>.Markdownlint<wbr>.dll</a></dd>
+						<dd><a href="/api/Cake.Issues.MsBuild.dll">Cake<wbr>.Issues<wbr>.MsBuild<wbr>.dll</a></dd>
 						
 						<dt>Namespace</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint">Cake<wbr>.Issues<wbr>.Markdownlint</a></dd>
+						<dd><a href="/api/Cake.Issues.MsBuild">Cake<wbr>.Issues<wbr>.MsBuild</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></dd>		
+						<dd><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public override string ProviderName { get; }</code></pre>
+	<pre><code>public static string ProviderTypeName { get; }</code></pre>
 
 
 
