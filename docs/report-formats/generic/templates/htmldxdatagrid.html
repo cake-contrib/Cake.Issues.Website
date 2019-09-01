@@ -441,6 +441,7 @@
 <li>Data can be filtered by any column by user.</li>
 <li>Paged view.</li>
 <li>Client-side full text search.</li>
+<li>Client-side export to Microsoft Excel.</li>
 <li>Fully customizable through <a href="#options">options</a>.</li>
 </ul>
 <h1 id="requirements">Requirements</h1>
@@ -586,6 +587,22 @@
 (<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/blob/develop/demos/build/create-reports/create-reports-htmldxdatagrid-grouping.cake" target="_blank">Source Code</a>)</li>
 <li><a href="htmldxdatagrid-demo-disablegrouping.html" target="_blank">Disable grouping</a>
 (<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/blob/develop/demos/build/create-reports/create-reports-htmldxdatagrid-disable-grouping.cake" target="_blank">Source Code</a>)</li>
+</ul>
+<h2 id="exporting">Exporting</h2>
+<p>Exporting can be enabled using the [HtmlDxDataGridOption.EnableExporting] option:</p>
+<pre><code class="language-csharp">CreateIssueReport(
+    issues,
+    GenericIssueReportFormatFromEmbeddedTemplate(
+        GenericIssueReportTemplate.HtmlDxDataGrid,
+        settings =&gt; settings.WithOption(HtmlDxDataGridOption.EnableExporting, true)),
+    @"c:\repo",
+    @"c:\report.html");
+</code></pre>
+<ul>
+<li><a href="htmldxdatagrid-demo-enableexporting.html" target="_blank">Enable exporting</a>
+(<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/blob/develop/demos/build/create-reports/create-reports-htmldxdatagrid-enable-exporting.cake" target="_blank">Source Code</a>)</li>
+<li><a href="htmldxdatagrid-demo-customexportfilename.html" target="_blank">Custom export file name</a>
+(<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/blob/develop/demos/build/create-reports/create-reports-htmldxdatagrid-custom-export-filename.cake" target="_blank">Source Code</a>)</li>
 </ul>
 <h2 id="other-features">Other features</h2>
 <ul>
