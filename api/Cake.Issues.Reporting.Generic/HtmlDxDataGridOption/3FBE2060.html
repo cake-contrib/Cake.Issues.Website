@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - HtmlDxDataGridOption.RuleUrlSortOrder Field</title>
+        <title>Cake Issues - API - HtmlDxDataGridOption.ExportFileName Field</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -149,7 +149,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/C85CBA32">EnableFiltering</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/860DF43E">EnableGrouping</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3F8E2884">EnableSearching</a></li>
-				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3FBE2060">ExportFileName</a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3FBE2060">ExportFileName</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/89BABC84">File<wbr>Directory<wbr>Sort<wbr>Order</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7BB9867B">FileDirectoryVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/96221A4C">FileLinkSettings</a></li>
@@ -179,7 +179,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1D0023B3">Provider<wbr>Type<wbr>Sort<wbr>Order</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/952D2D48">ProviderTypeVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D9E761BB">RuleSortOrder</a></li>
-				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/882AB59B">RuleUrlSortOrder</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/882AB59B">RuleUrlSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1C911DBE">RuleUrlVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/A9E7B8FD">RuleVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4CCE5DA2">ShowHeader</a></li>
@@ -202,16 +202,15 @@
 
 <section class="content-header">
 			<h3><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a>.</h3>
-	<h1>RuleUrlSortOrder <small>Field</small></h1>
+	<h1>ExportFileName <small>Field</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/221994DB">RuleUrl</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
-            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            Default name of Microsoft Excel file without file name extension.
+            Default value is <code class="cs">issue-report</code>.
             </div>
 
 		<div class="panel panel-default">
@@ -230,7 +229,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public const HtmlDxDataGridOption RuleUrlSortOrder</code></pre>
+	<pre><code>public const HtmlDxDataGridOption ExportFileName</code></pre>
 
 
 
@@ -247,7 +246,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>29</td>
+					<td>42</td>
 					<td>Int32</td>
 				</tr>
 			</tbody></table>
