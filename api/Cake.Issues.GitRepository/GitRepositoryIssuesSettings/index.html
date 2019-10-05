@@ -144,6 +144,7 @@
 			<li class="header">Class Types</li>
 				<li><a href="/api/Cake.Issues.GitRepository/BaseGitRepositoryIssuesRuleDescription">Base<wbr>Git<wbr>Repository<wbr>Issues<wbr>Rule<wbr>Description</a></li>
 				<li><a href="/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription">Binary<wbr>File<wbr>Not<wbr>Tracked<wbr>By<wbr>Lfs<wbr>Rule<wbr>Description</a></li>
+				<li><a href="/api/Cake.Issues.GitRepository/FilePathTooLongRuleDescription">File<wbr>Path<wbr>Too<wbr>Long<wbr>Rule<wbr>Description</a></li>
 				<li><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesAliases">Git<wbr>Repository<wbr>Issues<wbr>Aliases</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings">Git<wbr>Repository<wbr>Issues<wbr>Settings</a></li>
 
@@ -254,6 +255,26 @@ class Type type-node
             Gets or sets a value indicating whether the repository should be checked for
             binary files not tracked by Git LFS.
             Requires Git and Git-LFS to be available through Cake tool resolution.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings/040A9115">CheckFilesPathLength</a></td>
+								<td>bool</td>
+								<td>
+									<div>
+            Gets or sets a value indicating whether the repository should be checked for
+            files path longer than <code class="cs"><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings/F127611A">MaxFilePathLength</a></code>.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings/F127611A">MaxFilePathLength</a></td>
+								<td>int</td>
+								<td>
+									<div>
+            Gets or sets a value indicating the maximum allowed length of file paths if
+            <code class="cs"><a href="/api/Cake.Issues.GitRepository/GitRepositoryIssuesSettings/040A9115">CheckFilesPathLength</a></code> is enabled.
             </div>
 								</td>
 							</tr>
