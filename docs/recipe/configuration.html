@@ -447,6 +447,11 @@ and behavior of Cake.Issues.Recipe.</p>
 <td><code>BuildArtifacts</code></td>
 <td>Path to the output directory. A relative path will be relative to the current working directory.</td>
 </tr>
+<tr>
+<td><code>IssuesParameters.BuildIdentifier</code></td>
+<td><code>string.Empty</code></td>
+<td>Identifier for the build run. If set this identifier will be used to identify to artifacts provided by the build if building on multiple configurations.</td>
+</tr>
 </tbody>
 </table>
 <h1 id="input-files">Input files</h1>
@@ -503,6 +508,11 @@ and behavior of Cake.Issues.Recipe.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><code>IssuesParameters.PullRequest.ShouldReportIssuesToBuildServer</code></td>
+<td><code>true</code></td>
+<td>Indicates whether issues should be reported to the build server.</td>
+</tr>
 <tr>
 <td><code>IssuesParameters.BuildServer.ShouldPublishFullIssuesReport</code></td>
 <td><code>true</code></td>
