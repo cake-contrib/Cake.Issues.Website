@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - BaseIssueProvider.ReadIssues(IssueCommentFormat) Method</title>
+        <title>Cake Issues - API - BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;.ReadIssues(TIssueProvider, RepositorySettings, TSettings) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -140,15 +140,14 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>
+		<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider/55D2D9BE">BaseIssueProvider<wbr>(ICakeLog)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2/5183CBE9">BaseLogFileFormat<wbr>(ICakeLog)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider/F057F06F">InternalReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
-				<li class="selected"><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/BaseLogFileFormat_2/D8FA2445">ReadIssues<wbr>(TIssueProvider, <wbr>RepositorySettings, <wbr>TSettings)<wbr></a></li>
 			<li class="header">Property Members</li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider/E3A2D76B">ProviderName</a></li>
+				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2/B654A266">Log</a></li>
 
 
                     </ul>
@@ -163,8 +162,8 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a>.</h3>
-	<h1>ReadIssues<wbr>(IssueCommentFormat)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr>.</h3>
+	<h1>ReadIssues<wbr>(TIssueProvider, <wbr>RepositorySettings, <wbr>TSettings)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
@@ -184,14 +183,14 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></dd>		
+						<dd><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public IEnumerable&lt;IIssue&gt; ReadIssues(IssueCommentFormat format)</code></pre>
+	<pre><code>public abstract IEnumerable&lt;IIssue&gt; ReadIssues(TIssueProvider issueProvider, RepositorySettings repositorySettings, TSettings issueProviderSettings)</code></pre>
 
 
 
@@ -209,9 +208,19 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>format</td>
-						<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
-						<td>Preferred format of the comments.</td>
+						<td>issueProvider</td>
+						<td><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a></td>
+						<td>Issue provider instance.</td>
+					</tr>
+					<tr>
+						<td>repositorySettings</td>
+						<td><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></td>
+						<td>Repository settings to use.</td>
+					</tr>
+					<tr>
+						<td>issueProviderSettings</td>
+						<td><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a></td>
+						<td>Settings for issue provider to use.</td>
 					</tr>
 			</tbody></table>
 		</div>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - IIssue.Message Property</title>
+        <title>Cake Issues - API - IIssueComparer.GetHashCode(IIssue) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -73,9 +73,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
-<p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Value">Value</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -139,20 +139,14 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
+		<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Property Members</li>
-				<li><a href="/api/Cake.Issues/IIssue/BF0CD6F1">Affected<wbr>File<wbr>Relative<wbr>Path</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/F2A42E89">Line</a></li>
-				<li class="selected"><a href="/api/Cake.Issues/IIssue/18537A3D">Message</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/05A39052">PriorityName</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/FDE5E663">Project<wbr>File<wbr>Relative<wbr>Path</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/C3B3B033">ProjectName</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/FA8BB1A0">ProviderName</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/D5A24C72">ProviderType</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/C8BCE21E">Rule</a></li>
-				<li><a href="/api/Cake.Issues/IIssue/48A6F355">RuleUrl</a></li>
+			<li class="header">Constructors</li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/2D74F8D9">IIssueComparer<wbr>()<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/AB51F395">IIssueComparer<wbr>(bool)<wbr></a></li>
+			<li class="header">Method Members</li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/80832F7B">Equals<wbr>(IIssue, <wbr>IIssue)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/IIssueComparer/3670FA83">GetHashCode<wbr>(IIssue)<wbr></a></li>
 
 
                     </ul>
@@ -167,19 +161,15 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/IIssue">IIssue</a>.</h3>
-	<h1>Message <small>Property</small></h1>
+			<h3><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a>.</h3>
+	<h1>GetHashCode<wbr>(IIssue)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
-		<h1 id="Summary">Summary</h1>
-	<div class="lead">
-            Gets the message of the issue.
-            </div>
-
+	
 		<div class="panel panel-default">
-  			<div class="panel-body">
+  			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
 						<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
@@ -188,20 +178,40 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/IIssue">IIssue</a></dd>		
+						<dd><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>string Message { get; }</code></pre>
+	<pre><code>public int GetHashCode(IIssue obj)</code></pre>
 
 
 
 
 
-	<h1 id="Value">Value</h1>
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>obj</td>
+						<td><a href="/api/Cake.Issues/IIssue">IIssue</a></td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -212,7 +222,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>string</td>
+					<td>int</td>
 					<td></td>
 				</tr>
 			</tbody></table>

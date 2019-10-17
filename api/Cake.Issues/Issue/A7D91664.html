@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - IssuesReader.ReadIssues(IssueCommentFormat) Method</title>
+        <title>Cake Issues - API - Issue.MessageText Property</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -75,8 +75,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
-<p><a href="#ReturnValue">Return Value</a></p>
+<p><a href="#Value">Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -140,12 +139,24 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/IssuesReader">IssuesReader</a></li>
+		<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues/IssuesReader/1E0E024E">IssuesReader<wbr>(ICakeLog, <wbr>IEnumerable<wbr>&lt;<wbr>I<wbr>Issue<wbr>Provider&gt;<wbr>, <wbr>RepositorySettings)<wbr></a></li>
-			<li class="header">Method Members</li>
-				<li class="selected"><a href="/api/Cake.Issues/IssuesReader/47180DFA">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/Issue/ED398E76">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></li>
+			<li class="header">Property Members</li>
+				<li><a href="/api/Cake.Issues/Issue/47EECE2B">Affected<wbr>File<wbr>Relative<wbr>Path</a></li>
+				<li><a href="/api/Cake.Issues/Issue/A382E571">Line</a></li>
+				<li><a href="/api/Cake.Issues/Issue/8586E447">MessageHtml</a></li>
+				<li><a href="/api/Cake.Issues/Issue/8882CCCC">MessageMarkdown</a></li>
+				<li class="selected"><a href="/api/Cake.Issues/Issue/A7D91664">MessageText</a></li>
+				<li><a href="/api/Cake.Issues/Issue/81C9E265">Priority</a></li>
+				<li><a href="/api/Cake.Issues/Issue/10A91A64">PriorityName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/96CDBC1B">Project<wbr>File<wbr>Relative<wbr>Path</a></li>
+				<li><a href="/api/Cake.Issues/Issue/6950F0BA">ProjectName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/EF813B96">ProviderName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/C0A8C644">ProviderType</a></li>
+				<li><a href="/api/Cake.Issues/Issue/999A29E6">Rule</a></li>
+				<li><a href="/api/Cake.Issues/Issue/2B7AE5F7">RuleUrl</a></li>
 
 
                     </ul>
@@ -160,19 +171,19 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/IssuesReader">IssuesReader</a>.</h3>
-	<h1>ReadIssues<wbr>(IssueCommentFormat)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues/Issue">Issue</a>.</h3>
+	<h1>MessageText <small>Property</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Read issues from issue providers.
+            Gets the message of the issue in text format.
             </div>
 
 		<div class="panel panel-default">
-  			<div class="panel-body">	
+  			<div class="panel-body">
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
 						<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
@@ -181,40 +192,20 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/IssuesReader">IssuesReader</a></dd>		
+						<dd><a href="/api/Cake.Issues/Issue">Issue</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public IEnumerable&lt;IIssue&gt; ReadIssues(IssueCommentFormat format)</code></pre>
+	<pre><code>public string MessageText { get; }</code></pre>
 
 
 
 
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>format</td>
-						<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
-						<td>Preferred format for comments.</td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
-
-	<h1 id="ReturnValue">Return Value</h1>
+	<h1 id="Value">Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -225,8 +216,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
-					<td>List of issues.</td>
+					<td>string</td>
+					<td></td>
 				</tr>
 			</tbody></table>
 		</div>

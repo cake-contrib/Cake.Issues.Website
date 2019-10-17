@@ -154,6 +154,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></li>
@@ -227,10 +228,10 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
 											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
 											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
 									</ul>
 								</dd>			
 							
@@ -249,14 +250,14 @@
 	Type-.-&gt;Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]
 	Type["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]
 class Type type-node
-	Derived0["EsLintIssuesProvider"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Derived1["MarkdownlintIssuesProvider"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
-	Derived2["MsBuildIssuesProvider"]--&gt;Type
-	click Derived2 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Derived3["FakeMultiFormatIssueProvider"]--&gt;Type
-	click Derived3 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived0["FakeMultiFormatIssueProvider"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived1["MsBuildIssuesProvider"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
+	Derived2["EsLintIssuesProvider"]--&gt;Type
+	click Derived2 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
+	Derived3["MarkdownlintIssuesProvider"]--&gt;Type
+	click Derived3 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
 
 						</div>
 					</div>
@@ -359,17 +360,17 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2/169F147A">InternalReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2/F6477737">InternalReadIssues<wbr>()<wbr></a></td>
 								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
             Gets all issues.
-            Compared to <code class="cs"><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues(IssueCommentFormat)</a></code> it is safe to access Settings from this method.
+            Compared to <code class="cs"><a href="/api/Cake.Issues/BaseIssueProvider/EC3191AB">ReadIssues()</a></code> it is safe to access Settings from this method.
             </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/BaseIssueProvider/EC3191AB">ReadIssues<wbr>()<wbr></a></td>
 								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>

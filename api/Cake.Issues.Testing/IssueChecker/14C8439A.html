@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;.ReadIssues(TIssueProvider, IssueCommentFormat, RepositorySettings, TSettings) Method</title>
+        <title>Cake Issues - API - IssueChecker.Check(IIssue, string, string, string, string, string, Nullable&lt;int&gt;, string, string, string, Nullable&lt;int&gt;, string, string, Uri) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -136,18 +136,16 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></li>
+		<li><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
+		<li><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+		<li><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2/5183CBE9">BaseLogFileFormat<wbr>(ICakeLog)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li class="selected"><a href="/api/Cake.Issues/BaseLogFileFormat_2/FC91296D">ReadIssues<wbr>(TIssueProvider, <wbr>IssueCommentFormat, <wbr>RepositorySettings, <wbr>TSettings)<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2/B654A266">Log</a></li>
+				<li><a href="/api/Cake.Issues.Testing/IssueChecker/DF7BF5D7">Check<wbr>(IIssue, <wbr>IssueBuilder)<wbr></a></li>
+				<li><a href="/api/Cake.Issues.Testing/IssueChecker/34BF9060">Check<wbr>(IIssue, <wbr>IIssue)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Testing/IssueChecker/14C8439A">Check<wbr>(IIssue, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri)<wbr></a></li>
 
 
                     </ul>
@@ -162,35 +160,35 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr>.</h3>
-	<h1>ReadIssues<wbr>(TIssueProvider, <wbr>IssueCommentFormat, <wbr>RepositorySettings, <wbr>TSettings)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a>.</h3>
+	<h1>Check<wbr>(IIssue, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets all issues.
+            Checks values of an issue.
             </div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
-						<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
+						<dd><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></dd>
 						
 						<dt>Namespace</dt>
-						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
+						<dd><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></dd>		
+						<dd><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public abstract IEnumerable&lt;IIssue&gt; ReadIssues(TIssueProvider issueProvider, IssueCommentFormat format, RepositorySettings repositorySettings, TSettings issueProviderSettings)</code></pre>
+	<pre><code>public static void Check(IIssue issue, string providerType, string providerName, string projectFileRelativePath, string projectName, string affectedFileRelativePath, Nullable&lt;int&gt; line, string messageText, string messageHtml, string messageMarkdown, Nullable&lt;int&gt; priority, string priorityName, string rule, Uri ruleUrl)</code></pre>
 
 
 
@@ -208,24 +206,82 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>issueProvider</td>
-						<td><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a></td>
-						<td>Issue provider instance.</td>
+						<td>issue</td>
+						<td><a href="/api/Cake.Issues/IIssue">IIssue</a></td>
+						<td>Issue which should be checked.</td>
 					</tr>
 					<tr>
-						<td>format</td>
-						<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
-						<td>Preferred format for comments.</td>
+						<td>providerType</td>
+						<td>string</td>
+						<td>Expected type of the issue provider.</td>
 					</tr>
 					<tr>
-						<td>repositorySettings</td>
-						<td><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></td>
-						<td>Repository settings to use.</td>
+						<td>providerName</td>
+						<td>string</td>
+						<td>Expected human friendly name of the issue provider.</td>
 					</tr>
 					<tr>
-						<td>issueProviderSettings</td>
-						<td><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a></td>
-						<td>Settings for issue provider to use.</td>
+						<td>projectFileRelativePath</td>
+						<td>string</td>
+						<td>Expected relative path of the project file.
+            <code class="cs">null</code> if the issue is not expected to be related to a project.</td>
+					</tr>
+					<tr>
+						<td>projectName</td>
+						<td>string</td>
+						<td>Expected project name.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if the issue is not expected to be related to a project.</td>
+					</tr>
+					<tr>
+						<td>affectedFileRelativePath</td>
+						<td>string</td>
+						<td>Expected relative path of the affected file.
+            <code class="cs">null</code> if the issue is not expected to be related to a change in a file.</td>
+					</tr>
+					<tr>
+						<td>line</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected line number.
+            <code class="cs">null</code> if the issue is not expected to be related to a file or specific line.</td>
+					</tr>
+					<tr>
+						<td>messageText</td>
+						<td>string</td>
+						<td>Expected message in plain text format.</td>
+					</tr>
+					<tr>
+						<td>messageHtml</td>
+						<td>string</td>
+						<td>Expected message in HTML format.</td>
+					</tr>
+					<tr>
+						<td>messageMarkdown</td>
+						<td>string</td>
+						<td>Expected message in Markdown format.</td>
+					</tr>
+					<tr>
+						<td>priority</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected priority.
+            <code class="cs">null</code> if no priority is expected.</td>
+					</tr>
+					<tr>
+						<td>priorityName</td>
+						<td>string</td>
+						<td>Expected priority name.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no priority is expected.</td>
+					</tr>
+					<tr>
+						<td>rule</td>
+						<td>string</td>
+						<td>Expected rule identifier.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no rule identifier is expected.</td>
+					</tr>
+					<tr>
+						<td>ruleUrl</td>
+						<td>Uri</td>
+						<td>Expected URL containing information about the failing rule.
+            <code class="cs">null</code> if no rule Url is expected.</td>
 					</tr>
 			</tbody></table>
 		</div>
@@ -242,8 +298,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
-					<td>List of issues.</td>
+					<td>void</td>
+					<td></td>
 				</tr>
 			</tbody></table>
 		</div>

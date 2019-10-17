@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - Issue.Message Property</title>
+        <title>Cake Issues - API - Issue.Issue(string, string, string, Nullable&lt;int&gt;, string, string, string, Nullable&lt;int&gt;, string, string, Uri, string, string) Constructor</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -75,7 +75,8 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Value">Value</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -142,11 +143,13 @@
 		<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues/Issue/9CA13F27">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/Issue/ED398E76">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></li>
 			<li class="header">Property Members</li>
 				<li><a href="/api/Cake.Issues/Issue/47EECE2B">Affected<wbr>File<wbr>Relative<wbr>Path</a></li>
 				<li><a href="/api/Cake.Issues/Issue/A382E571">Line</a></li>
-				<li class="selected"><a href="/api/Cake.Issues/Issue/7B8F6C9F">Message</a></li>
+				<li><a href="/api/Cake.Issues/Issue/8586E447">MessageHtml</a></li>
+				<li><a href="/api/Cake.Issues/Issue/8882CCCC">MessageMarkdown</a></li>
+				<li><a href="/api/Cake.Issues/Issue/A7D91664">MessageText</a></li>
 				<li><a href="/api/Cake.Issues/Issue/81C9E265">Priority</a></li>
 				<li><a href="/api/Cake.Issues/Issue/10A91A64">PriorityName</a></li>
 				<li><a href="/api/Cake.Issues/Issue/96CDBC1B">Project<wbr>File<wbr>Relative<wbr>Path</a></li>
@@ -170,18 +173,18 @@
 
 <section class="content-header">
 			<h3><a href="/api/Cake.Issues/Issue">Issue</a>.</h3>
-	<h1>Message <small>Property</small></h1>
+	<h1>Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string)<wbr> <small>Constructor</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets the message of the issue.
+            Initializes a new instance of the <code class="cs"><a href="/api/Cake.Issues/Issue">Issue</a></code> class.
             </div>
 
 		<div class="panel panel-default">
-  			<div class="panel-body">
+  			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
 						<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
@@ -197,13 +200,103 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public string Message { get; }</code></pre>
+	<pre><code>public Issue(string projectFileRelativePath, string projectName, string affectedFileRelativePath, Nullable&lt;int&gt; line, string messageText, string messageHtml, string messageMarkdown, Nullable&lt;int&gt; priority, string priorityName, string rule, Uri ruleUrl, string providerType, string providerName)</code></pre>
 
 
 
 
 
-	<h1 id="Value">Value</h1>
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>projectFileRelativePath</td>
+						<td>string</td>
+						<td>The path to the project to which the file affected by the issue belongs.
+            The path needs to be relative to the repository root.
+            Can be <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if issue is not related to a project.</td>
+					</tr>
+					<tr>
+						<td>projectName</td>
+						<td>string</td>
+						<td>The name of the project to which the file affected by the issue belongs.
+            Can be <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if issue is not related to a project.</td>
+					</tr>
+					<tr>
+						<td>affectedFileRelativePath</td>
+						<td>string</td>
+						<td>The path to the file affacted by the issue.
+            The path needs to be relative to the repository root.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if issue is not related to a change in a file.</td>
+					</tr>
+					<tr>
+						<td>line</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>The line in the file where the issues has occurred.
+            <code class="cs">null</code> if the issue affects the whole file or an asssembly.</td>
+					</tr>
+					<tr>
+						<td>messageText</td>
+						<td>string</td>
+						<td>The message of the issue in plain text format.</td>
+					</tr>
+					<tr>
+						<td>messageHtml</td>
+						<td>string</td>
+						<td>The message of the issue in Html format.</td>
+					</tr>
+					<tr>
+						<td>messageMarkdown</td>
+						<td>string</td>
+						<td>The message of the issue in Markdown format.</td>
+					</tr>
+					<tr>
+						<td>priority</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>The priority of the message.
+            <code class="cs">null</code> if no priority was assigned.</td>
+					</tr>
+					<tr>
+						<td>priorityName</td>
+						<td>string</td>
+						<td>The human friendly name of the priority.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no priority was assigned.</td>
+					</tr>
+					<tr>
+						<td>rule</td>
+						<td>string</td>
+						<td>The rule of the issue.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if issue has no specific rule ID.</td>
+					</tr>
+					<tr>
+						<td>ruleUrl</td>
+						<td>Uri</td>
+						<td>The URL containing information about the failing rule.
+            <code class="cs">null</code> if no URL is available.</td>
+					</tr>
+					<tr>
+						<td>providerType</td>
+						<td>string</td>
+						<td>The type of the issue provider.</td>
+					</tr>
+					<tr>
+						<td>providerName</td>
+						<td>string</td>
+						<td>The human friendly name of the issue provider.</td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -214,7 +307,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>string</td>
+					<td>void</td>
 					<td></td>
 				</tr>
 			</tbody></table>

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - ReadIssuesSettings.Format Property</title>
+        <title>Cake Issues - API - Issue.MessageHtml Property</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -139,13 +139,24 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>
+		<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues/ReadIssuesSettings/71AEF1FD">ReadIssuesSettings<wbr>(DirectoryPath)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/Issue/ED398E76">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></li>
 			<li class="header">Property Members</li>
-				<li class="selected"><a href="/api/Cake.Issues/ReadIssuesSettings/A27000F6">Format</a></li>
-				<li><a href="/api/Cake.Issues/RepositorySettings/FD63614D">RepositoryRoot</a></li>
+				<li><a href="/api/Cake.Issues/Issue/47EECE2B">Affected<wbr>File<wbr>Relative<wbr>Path</a></li>
+				<li><a href="/api/Cake.Issues/Issue/A382E571">Line</a></li>
+				<li class="selected"><a href="/api/Cake.Issues/Issue/8586E447">MessageHtml</a></li>
+				<li><a href="/api/Cake.Issues/Issue/8882CCCC">MessageMarkdown</a></li>
+				<li><a href="/api/Cake.Issues/Issue/A7D91664">MessageText</a></li>
+				<li><a href="/api/Cake.Issues/Issue/81C9E265">Priority</a></li>
+				<li><a href="/api/Cake.Issues/Issue/10A91A64">PriorityName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/96CDBC1B">Project<wbr>File<wbr>Relative<wbr>Path</a></li>
+				<li><a href="/api/Cake.Issues/Issue/6950F0BA">ProjectName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/EF813B96">ProviderName</a></li>
+				<li><a href="/api/Cake.Issues/Issue/C0A8C644">ProviderType</a></li>
+				<li><a href="/api/Cake.Issues/Issue/999A29E6">Rule</a></li>
+				<li><a href="/api/Cake.Issues/Issue/2B7AE5F7">RuleUrl</a></li>
 
 
                     </ul>
@@ -160,15 +171,15 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a>.</h3>
-	<h1>Format <small>Property</small></h1>
+			<h3><a href="/api/Cake.Issues/Issue">Issue</a>.</h3>
+	<h1>MessageHtml <small>Property</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets or sets the preferred format in which issue comments should be returned.
+            Gets the message of the issue in HTML format.
             </div>
 
 		<div class="panel panel-default">
@@ -181,14 +192,14 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></dd>		
+						<dd><a href="/api/Cake.Issues/Issue">Issue</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public IssueCommentFormat Format { get; set; }</code></pre>
+	<pre><code>public string MessageHtml { get; }</code></pre>
 
 
 
@@ -205,7 +216,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
+					<td>string</td>
 					<td></td>
 				</tr>
 			</tbody></table>

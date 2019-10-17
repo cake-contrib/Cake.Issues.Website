@@ -468,10 +468,10 @@ class from <a href="http://www.msbuildextensionpack.com/">MSBuild Extension Pack
         // Read Issues.
         var issues =
             ReadIssues(
-            MsBuildIssuesFromFilePath(
-                logPath,
-                MsBuildXmlFileLoggerFormat),
-            repoRootFolder);
+                MsBuildIssuesFromFilePath(
+                    logPath,
+                    MsBuildXmlFileLoggerFormat),
+                repoRootFolder);
 
         Information(&quot;{0} issues are found.&quot;, issues.Count());
     });

@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - IIssueProvider.ReadIssues(IssueCommentFormat) Method</title>
+        <title>Cake Issues - API - BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;.InternalReadIssues() Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -75,7 +75,6 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -140,12 +139,15 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
+		<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>&lt;TSettings, <wbr>TIssueProvider&gt;<wbr></a></li>
 		<li role="separator" class="divider"></li>
+			<li class="header">Constructors</li>
+				<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2/E4AC6DCD">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>(ICakeLog, <wbr>TSettings)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li class="selected"><a href="/api/Cake.Issues/IIssueProvider/7064FE62">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2/F6477737">InternalReadIssues<wbr>()<wbr></a></li>
+				<li><a href="/api/Cake.Issues/BaseIssueProvider/EC3191AB">ReadIssues<wbr>()<wbr></a></li>
 			<li class="header">Property Members</li>
-				<li><a href="/api/Cake.Issues/IIssueProvider/0D605BFF">ProviderName</a></li>
+				<li><a href="/api/Cake.Issues/BaseIssueProvider/E3A2D76B">ProviderName</a></li>
 
 
                     </ul>
@@ -160,8 +162,8 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a>.</h3>
-	<h1>ReadIssues<wbr>(IssueCommentFormat)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>, <wbr><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr>.</h3>
+	<h1>InternalReadIssues<wbr>()<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
@@ -169,6 +171,7 @@
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
             Gets all issues.
+            Compared to <code class="cs"><a href="/api/Cake.Issues/BaseIssueProvider/EC3191AB">ReadIssues()</a></code> it is safe to access Settings from this method.
             </div>
 
 		<div class="panel panel-default">
@@ -181,38 +184,19 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></dd>		
+						<dd><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>, <wbr><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>IEnumerable&lt;IIssue&gt; ReadIssues(IssueCommentFormat format)</code></pre>
+	<pre><code>protected override IEnumerable&lt;IIssue&gt; InternalReadIssues()</code></pre>
 
 
 
 
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>format</td>
-						<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
-						<td>Preferred format of the comments.</td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
 
 	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">

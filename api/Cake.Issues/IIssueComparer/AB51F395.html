@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - FakeIssueProvider.InternalReadIssues(IssueCommentFormat) Method</title>
+        <title>Cake Issues - API - IIssueComparer.IIssueComparer(bool) Constructor</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -75,6 +75,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Remarks">Remarks</a></p>
 <p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
@@ -136,23 +137,18 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></li>
+		<li><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></li>
+		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></li>
+		<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Constructors</li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/FEBA0B66">FakeIssueProvider<wbr>(ICakeLog)<wbr></a></li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/1E870847">FakeIssueProvider<wbr>(ICakeLog, <wbr>IEnumerable<wbr>&lt;IIssue&gt;<wbr>)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/2D74F8D9">IIssueComparer<wbr>()<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/IIssueComparer/AB51F395">IIssueComparer<wbr>(bool)<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li class="selected"><a href="/api/Cake.Issues.Testing/FakeIssueProvider/800286AE">InternalReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues<wbr>(IssueCommentFormat)<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/4944471C">Format</a></li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/60F44029">Log</a></li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/238DDEED">ProviderName</a></li>
-				<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider/3DDAE40D">Settings</a></li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/80832F7B">Equals<wbr>(IIssue, <wbr>IIssue)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IIssueComparer/3670FA83">GetHashCode<wbr>(IIssue)<wbr></a></li>
 
 
                     </ul>
@@ -167,38 +163,53 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a>.</h3>
-	<h1>InternalReadIssues<wbr>(IssueCommentFormat)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a>.</h3>
+	<h1>IIssueComparer<wbr>(bool)<wbr> <small>Constructor</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Gets all issues.
-            Compared to <code class="cs"><a href="/api/Cake.Issues/BaseIssueProvider/DC6CE6AF">ReadIssues(IssueCommentFormat)</a></code> it is safe to access Settings from this method.
+            Initializes a new instance of the <code class="cs"><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></code> class.
             </div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
-						<dd><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></dd>
+						<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
 						
 						<dt>Namespace</dt>
-						<dd><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></dd>
+						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></dd>		
+						<dd><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>protected override IEnumerable&lt;IIssue&gt; InternalReadIssues(IssueCommentFormat format)</code></pre>
+	<pre><code>public IIssueComparer(bool compareOnlyPersistentProperties)</code></pre>
 
 
+	<h1 id="Remarks">Remarks</h1>
+	<div>
+            If <span name="compareOnlyPersistentProperties" class="paramref">compareOnlyPersistentProperties</span> is set to <code class="cs">true</code> the following
+            properties will be ignored while comparing the issue:
+            <ul>
+            <li>
+            <span class="description"><code class="cs"><a href="/api/Cake.Issues/IIssue/FDE5E663">ProjectFileRelativePath</a></code></span>
+            </li>
+            <li>
+            <span class="description"><code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code></span>
+            </li>
+            <li>
+            <span class="description"><code class="cs"><a href="/api/Cake.Issues/IIssue/F2A42E89">Line</a></code></span>
+            </li>
+            </ul>
+            </div>
 
 
 
@@ -214,9 +225,12 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>format</td>
-						<td><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></td>
-						<td>Preferred format of the comments.</td>
+						<td>compareOnlyPersistentProperties</td>
+						<td>bool</td>
+						<td>Flag indicating whether properties which
+            are affected by changes in files should be considered while comparing issues.
+            If set to <code class="cs">true</code>, the comparer can be used to compare issues from different
+            build runs, where files might have been changed or renamed.</td>
 					</tr>
 			</tbody></table>
 		</div>
@@ -233,8 +247,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
-					<td>List of issues.</td>
+					<td>void</td>
+					<td></td>
 				</tr>
 			</tbody></table>
 		</div>

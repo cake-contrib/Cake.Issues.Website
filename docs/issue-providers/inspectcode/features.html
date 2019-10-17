@@ -75,7 +75,6 @@
                     	
         <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/issue-providers/inspectcode/features.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#basic-features">Basic features</a></p>
-<p><a href="#supported-comment-formats">Supported comment formats</a></p>
 <p><a href="#supported-iissue-properties">Supported IIssue properties</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -434,33 +433,6 @@
 <li>Reads warnings from <a href="https://www.jetbrains.com/help/resharper/2017.1/InspectCode.html">JetBrains InsepectCode</a> log files.</li>
 <li>Provides URLs for issues containing a Wiki URL.</li>
 </ul>
-<h1 id="supported-comment-formats">Supported comment formats</h1>
-<table class="table">
-<thead>
-<tr>
-<th></th>
-<th>Comment format</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code>IssueCommentFormat.PlainText</code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code>IssueCommentFormat.Markdown</code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code>IssueCommentFormat.Html</code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <h1 id="supported-iissue-properties">Supported IIssue properties</h1>
 <table class="table">
 <thead>
@@ -503,7 +475,17 @@
 </tr>
 <tr>
 <td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/18537A3D">IIssue.Message</a></code></td>
+<td><code><a href="/api/Cake.Issues/IIssue/0D3A56ED">IIssue.MessageText</a></code></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
+<td><code><a href="/api/Cake.Issues/IIssue/2F65A4CE">IIssue.MessageHtml</a></code></td>
+<td></td>
+</tr>
+<tr>
+<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
+<td><code><a href="/api/Cake.Issues/IIssue/9161A321">IIssue.MessageMarkdown</a></code></td>
 <td></td>
 </tr>
 <tr>
