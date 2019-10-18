@@ -321,23 +321,23 @@
                     </ul>
                 </li>
                 <li class="treeview">
-                    <a href="/docs/pull-request-systems/tfs">TFS &amp; Azure DevOps</a> <a href="#" class="expand"></a>
+                    <a href="/docs/pull-request-systems/azure-devops">Azure DevOps</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/pull-request-systems/tfs/requirements">Requirements</a></li>
-                <li><a href="/docs/pull-request-systems/tfs/features">Features</a></li>
-                <li><a href="/docs/pull-request-systems/tfs/setup">Setup</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/requirements">Requirements</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/features">Features</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/setup">Setup</a></li>
                 <li class="treeview">
-                    <a href="/docs/pull-request-systems/tfs/examples">Examples</a> <a href="#" class="expand"></a>
+                    <a href="/docs/pull-request-systems/azure-devops/examples">Examples</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/pull-request-systems/tfs/examples/pullrequest-id">Using with pull request id</a></li>
-                <li><a href="/docs/pull-request-systems/tfs/examples/repository-information">Using with repository remote url and source branch name</a></li>
-                <li><a href="/docs/pull-request-systems/tfs/examples/azure-pipelines">Using with Azure Pipelines</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/examples/pullrequest-id">Using with pull request id</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/examples/repository-information">Using with repository remote url and source branch name</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/examples/azure-pipelines">Using with Azure Pipelines</a></li>
 
                     </ul>
                 </li>
-                <li><a href="/docs/pull-request-systems/tfs/release-notes">Release Notes</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/release-notes">Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -432,9 +432,9 @@
 </code></pre>
 <p>Also you need to import at least one issue provider and pull request system.
 In the following example the issue provider for reading warnings from MsBuild log files
-and support for Team Foundation Server pull requests is imported:</p>
+and support for Azure DevOps pull requests is imported:</p>
 <pre><code class="language-csharp">#addin &quot;Cake.Issues.MsBuild&quot;
-#addin &quot;Cake.Issues.PullRequests.Tfs&quot;
+#addin &quot;Cake.Issues.PullRequests.AzureDevOps&quot;
 </code></pre>
 <div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
 won't break due to updates to one of the addins.</p>
@@ -448,10 +448,10 @@ won't break due to updates to one of the addins.</p>
         MsBuildIssuesFromFilePath(
             &#64;&quot;C:\build\msbuild.log&quot;,
             MsBuildXmlFileLoggerFormat),
-        TfsPullRequests(
+        AzureDevOpsPullRequests(
             new Uri(&quot;http://myserver:8080/tfs/defaultcollection/myproject/_git/myrepository&quot;),
             &quot;refs/heads/feature/myfeature&quot;,
-            TfsAuthenticationNtlm()),
+            AzureDevOpsAuthenticationNtlm()),
         repoRootFolder);
 });
 </code></pre>
