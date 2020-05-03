@@ -309,7 +309,23 @@ class Type type-node
             are prioritized.
             Set to <code class="cs">null</code> to not set a global limit.
             Default is to not set a global limit.
-            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">MaxIssuesToPostForEachIssueProvider</a></code> to set the limit for each issue provider.
+            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">MaxIssuesToPostForEachIssueProvider</a></code> to set the limit for each issue provider
+            and <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">MaxIssuesToPostAcrossRuns</a></code> to set a limit across multiple runs.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">Max<wbr>Issues<wbr>To<wbr>Post<wbr>Across<wbr>Runs</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets or sets the global number of issues which should be posted at maximum over all
+            <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code> and across multiple runs.
+            Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
+            are prioritized.
+            Set to <code class="cs">null</code> to not set a limit across multiple runs.
+            Default is to not set a limit across multiple runs.
+            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">MaxIssuesToPost</a></code> to set a limit for a single run.
             </div>
 								</td>
 							</tr>
