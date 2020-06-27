@@ -204,13 +204,13 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/ISupportDiscussionThreads">I<wbr>Support<wbr>Discussion<wbr>Threads</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitId">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1">Base<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1">Base<wbr>Checking<wbr>Commit<wbr>Id<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1">Base<wbr>Discussion<wbr>Threads<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles">I<wbr>Support<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ISupportDiscussionThreads">I<wbr>Support<wbr>Discussion<wbr>Threads</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1">Base<wbr>Checking<wbr>Commit<wbr>Id<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1">Base<wbr>Discussion<wbr>Threads<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1">Base<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitId">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -220,20 +220,20 @@
 							graph BT
 	Type["IPullRequestSystemCapability"]
 class Type type-node
-	Implementing0["ISupportDiscussionThreads"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.PullRequests/ISupportDiscussionThreads"
-	Implementing1["ISupportCheckingCommitId"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.PullRequests/ISupportCheckingCommitId"
-	Implementing2["BaseFilteringByModifiedFilesCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1"
-	Implementing3["BaseCheckingCommitIdCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
+	Implementing0["ISupportFilteringByModifiedFiles"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles"
+	Implementing1["ISupportDiscussionThreads"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.PullRequests/ISupportDiscussionThreads"
+	Implementing2["BaseCheckingCommitIdCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
+	Implementing3["BaseDiscussionThreadsCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing3 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
 	Implementing4["BasePullRequestSystemCapability&lt;T&gt;"]-.-&gt;Type
 	click Implementing4 "/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1"
-	Implementing5["BaseDiscussionThreadsCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing5 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
-	Implementing6["ISupportFilteringByModifiedFiles"]-.-&gt;Type
-	click Implementing6 "/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles"
+	Implementing5["BaseFilteringByModifiedFilesCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing5 "/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1"
+	Implementing6["ISupportCheckingCommitId"]-.-&gt;Type
+	click Implementing6 "/api/Cake.Issues.PullRequests/ISupportCheckingCommitId"
 
 						</div>
 					</div>
