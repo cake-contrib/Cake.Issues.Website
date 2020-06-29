@@ -27,7 +27,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -56,7 +56,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/docs">Documentation</a></li>
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+</div>
+
+        <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
         <li class="active"><a href="/api/Cake.Issues">API</a></li>
@@ -211,11 +215,11 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat">Base<wbr>Es<wbr>Lint<wbr>Log<wbr>File<wbr>Format</a></li>								
-											<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat">Base<wbr>Markdownlint<wbr>Log<wbr>File<wbr>Format</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>								
 											<li><a href="/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat">Base<wbr>Ms<wbr>Build<wbr>Log<wbr>File<wbr>Format</a></li>								
-											<li><a href="/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat">Base<wbr>Markdownlint<wbr>Log<wbr>File<wbr>Format</a></li>								
+											<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat</a><wbr>&lt;<a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TIssueProvider">TIssueProvider</a>, <wbr><a href="/api/Cake.Issues/BaseLogFileFormat_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat">Base<wbr>Es<wbr>Lint<wbr>Log<wbr>File<wbr>Format</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -225,16 +229,16 @@
 							graph BT
 	Type["ILogFileFormat&lt;TIssueProvider, TSettings&gt;"]
 class Type type-node
-	Implementing0["BaseEsLintLogFileFormat"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat"
-	Implementing1["BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues/BaseLogFileFormat_2"
-	Implementing2["FakeLogFileFormat"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.Testing/FakeLogFileFormat"
-	Implementing3["BaseMsBuildLogFileFormat"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
-	Implementing4["BaseMarkdownlintLogFileFormat"]-.-&gt;Type
-	click Implementing4 "/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat"
+	Implementing0["BaseMarkdownlintLogFileFormat"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat"
+	Implementing1["FakeLogFileFormat"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.Testing/FakeLogFileFormat"
+	Implementing2["BaseMsBuildLogFileFormat"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat"
+	Implementing3["BaseLogFileFormat&lt;TIssueProvider, TSettings&gt;"]-.-&gt;Type
+	click Implementing3 "/api/Cake.Issues/BaseLogFileFormat_2"
+	Implementing4["BaseEsLintLogFileFormat"]-.-&gt;Type
+	click Implementing4 "/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat"
 
 						</div>
 					</div>
@@ -360,6 +364,16 @@ class Type type-node
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
 <script type="text/javascript" src="/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
@@ -388,7 +402,7 @@ class Type type-node
             e.currentTarget.setAttribute('class', 'btn-copy');
             e.currentTarget.removeAttribute('aria-label');
         });
-    }    
+    }
     function showTooltip(elem, msg) {
         elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
         elem.setAttribute('aria-label', msg);
@@ -404,7 +418,7 @@ class Type type-node
             actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
         }
         return actionMsg;
-    }    
+    }
 </script>
         <script>           
             // Close the sidebar if we select an anchor link

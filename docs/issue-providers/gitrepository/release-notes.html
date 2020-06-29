@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - Release Notes</title>
+        <title>Cake Issues - Git repository linting support Release Notes</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -29,7 +29,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -58,7 +58,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li class="active"><a href="/docs">Documentation</a></li>
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus>
+</div>
+
+        <li class="active"><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
         <li><a href="/api/Cake.Issues">API</a></li>
@@ -96,9 +100,9 @@
                     <a href="/docs/overview/release-notes">Release Notes</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/overview/release-notes/Cake.Issues">Cake.Issues</a></li>
-                <li><a href="/docs/overview/release-notes/Cake.Issues.PullRequests">Cake.Issues.PullRequests</a></li>
-                <li><a href="/docs/overview/release-notes/Cake.Issues.Reporting">Cake.Issues.Reporting</a></li>
+                <li><a href="/docs/overview/release-notes/Cake.Issues">Cake.Issues Release Notes</a></li>
+                <li><a href="/docs/overview/release-notes/Cake.Issues.PullRequests">Cake.Issues.PullRequests Release Notes</a></li>
+                <li><a href="/docs/overview/release-notes/Cake.Issues.Reporting">Cake.Issues.Reporting Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -176,7 +180,7 @@
                 <li><a href="/docs/recipe/demos">Demos</a></li>
                 <li><a href="/docs/recipe/configuration">Configuration</a></li>
                 <li><a href="/docs/recipe/tasks">Tasks</a></li>
-                <li><a href="/docs/recipe/release-notes">Release Notes</a></li>
+                <li><a href="/docs/recipe/release-notes">Cake.Issues.Recipe Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -191,7 +195,7 @@
                 <li><a href="/docs/issue-providers/docfx/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/docfx/features">Features</a></li>
                 <li><a href="/docs/issue-providers/docfx/examples">Examples</a></li>
-                <li><a href="/docs/issue-providers/docfx/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/docfx/release-notes">DocFx Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -202,7 +206,7 @@
                 <li><a href="/docs/issue-providers/dupfinder/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/dupfinder/features">Features</a></li>
                 <li><a href="/docs/issue-providers/dupfinder/examples">Examples</a></li>
-                <li><a href="/docs/issue-providers/dupfinder/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/dupfinder/release-notes">JetBrains dupFinder Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -212,7 +216,7 @@
                         
                 <li><a href="/docs/issue-providers/eslint/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/eslint/features">Features</a></li>
-                <li><a href="/docs/issue-providers/eslint/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/eslint/release-notes">ESLint Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -223,7 +227,7 @@
                 <li><a href="/docs/issue-providers/gitrepository/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/gitrepository/features">Features</a></li>
                 <li><a href="/docs/issue-providers/gitrepository/examples">Examples</a></li>
-                <li class="selected"><a href="/docs/issue-providers/gitrepository/release-notes">Release Notes</a></li>
+                <li class="selected"><a href="/docs/issue-providers/gitrepository/release-notes">Git repository linting support Release Notes</a></li>
                 <li class="treeview">
                     <a href="/docs/issue-providers/gitrepository/rules">Rules</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -243,7 +247,7 @@
                 <li><a href="/docs/issue-providers/inspectcode/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/inspectcode/features">Features</a></li>
                 <li><a href="/docs/issue-providers/inspectcode/examples">Examples</a></li>
-                <li><a href="/docs/issue-providers/inspectcode/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/inspectcode/release-notes">JetBrains Inspect Code Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -254,7 +258,7 @@
                 <li><a href="/docs/issue-providers/markdownlint/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/markdownlint/features">Features</a></li>
                 <li><a href="/docs/issue-providers/markdownlint/examples">Examples</a></li>
-                <li><a href="/docs/issue-providers/markdownlint/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/markdownlint/release-notes">Markdownlint Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -265,7 +269,7 @@
                 <li><a href="/docs/issue-providers/msbuild/requirements">Requirements</a></li>
                 <li><a href="/docs/issue-providers/msbuild/features">Features</a></li>
                 <li><a href="/docs/issue-providers/msbuild/examples">Examples</a></li>
-                <li><a href="/docs/issue-providers/msbuild/release-notes">Release Notes</a></li>
+                <li><a href="/docs/issue-providers/msbuild/release-notes">MsBuild Log Support Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -282,6 +286,7 @@
                         
                 <li><a href="/docs/report-formats/generic/requirements">Requirements</a></li>
                 <li><a href="/docs/report-formats/generic/features">Features</a></li>
+                <li><a href="/docs/report-formats/generic/release-notes">Cake.Issues.Reporting.Generic Release Notes</a></li>
                 <li class="treeview">
                     <a href="/docs/report-formats/generic/examples">Examples</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -291,7 +296,6 @@
 
                     </ul>
                 </li>
-                <li><a href="/docs/report-formats/generic/release-notes">Release Notes</a></li>
                 <li class="treeview">
                     <a href="/docs/report-formats/generic/templates">Template Gallery</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -312,7 +316,7 @@
                 <li><a href="/docs/report-formats/sarif/requirements">Requirements</a></li>
                 <li><a href="/docs/report-formats/sarif/features">Features</a></li>
                 <li><a href="/docs/report-formats/sarif/examples">Examples</a></li>
-                <li><a href="/docs/report-formats/sarif/release-notes">Release Notes</a></li>
+                <li><a href="/docs/report-formats/sarif/release-notes">Cake.Issues.Reporting.Sarif Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -329,6 +333,7 @@
                         
                 <li><a href="/docs/pull-request-systems/appveyor/requirements">Requirements</a></li>
                 <li><a href="/docs/pull-request-systems/appveyor/features">Features</a></li>
+                <li><a href="/docs/pull-request-systems/appveyor/release-notes">AppVeyor Support Release Notes</a></li>
                 <li class="treeview">
                     <a href="/docs/pull-request-systems/appveyor/examples">Examples</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -338,7 +343,6 @@
 
                     </ul>
                 </li>
-                <li><a href="/docs/pull-request-systems/appveyor/release-notes">Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -349,6 +353,7 @@
                 <li><a href="/docs/pull-request-systems/azure-devops/requirements">Requirements</a></li>
                 <li><a href="/docs/pull-request-systems/azure-devops/features">Features</a></li>
                 <li><a href="/docs/pull-request-systems/azure-devops/setup">Setup</a></li>
+                <li><a href="/docs/pull-request-systems/azure-devops/release-notes">Azure DevOps Support Release Notes</a></li>
                 <li class="treeview">
                     <a href="/docs/pull-request-systems/azure-devops/examples">Examples</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -359,7 +364,6 @@
 
                     </ul>
                 </li>
-                <li><a href="/docs/pull-request-systems/azure-devops/release-notes">Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -445,7 +449,7 @@
 
 
 		<section class="content-header">
-			<h1>Release Notes</h1>
+			<h1>Git repository linting support Release Notes</h1>
 		</section>
 	<section class="content">
 		<h2 id="june-18-2020">0.8.2 (June 18, 2020)</h2>
@@ -647,6 +651,16 @@
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
 <script type="text/javascript" src="/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
@@ -675,7 +689,7 @@
             e.currentTarget.setAttribute('class', 'btn-copy');
             e.currentTarget.removeAttribute('aria-label');
         });
-    }    
+    }
     function showTooltip(elem, msg) {
         elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
         elem.setAttribute('aria-label', msg);
@@ -691,7 +705,7 @@
             actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
         }
         return actionMsg;
-    }    
+    }
 </script>
         <script>           
             // Close the sidebar if we select an anchor link

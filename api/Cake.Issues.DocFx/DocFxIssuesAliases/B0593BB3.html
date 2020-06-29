@@ -27,7 +27,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -56,7 +56,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/docs">Documentation</a></li>
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+</div>
+
+        <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
         <li class="active"><a href="/api/Cake.Issues">API</a></li>
@@ -304,6 +308,16 @@
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
 <script type="text/javascript" src="/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
@@ -332,7 +346,7 @@
             e.currentTarget.setAttribute('class', 'btn-copy');
             e.currentTarget.removeAttribute('aria-label');
         });
-    }    
+    }
     function showTooltip(elem, msg) {
         elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
         elem.setAttribute('aria-label', msg);
@@ -348,7 +362,7 @@
             actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
         }
         return actionMsg;
-    }    
+    }
 </script>
         <script>           
             // Close the sidebar if we select an anchor link

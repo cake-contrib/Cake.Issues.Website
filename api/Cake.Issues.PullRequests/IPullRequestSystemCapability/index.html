@@ -27,7 +27,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -56,7 +56,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/docs">Documentation</a></li>
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+</div>
+
+        <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
         <li class="active"><a href="/api/Cake.Issues">API</a></li>
@@ -204,13 +208,13 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles">I<wbr>Support<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1">Base<wbr>Discussion<wbr>Threads<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ISupportDiscussionThreads">I<wbr>Support<wbr>Discussion<wbr>Threads</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitId">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1">Base<wbr>Checking<wbr>Commit<wbr>Id<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1">Base<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitId">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1">Base<wbr>Discussion<wbr>Threads<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles">I<wbr>Support<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ISupportDiscussionThreads">I<wbr>Support<wbr>Discussion<wbr>Threads</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -220,20 +224,20 @@
 							graph BT
 	Type["IPullRequestSystemCapability"]
 class Type type-node
-	Implementing0["BasePullRequestSystemCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1"
-	Implementing1["ISupportFilteringByModifiedFiles"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles"
-	Implementing2["BaseDiscussionThreadsCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
-	Implementing3["ISupportDiscussionThreads"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues.PullRequests/ISupportDiscussionThreads"
-	Implementing4["BaseCheckingCommitIdCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing4 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
-	Implementing5["BaseFilteringByModifiedFilesCapability&lt;T&gt;"]-.-&gt;Type
-	click Implementing5 "/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1"
-	Implementing6["ISupportCheckingCommitId"]-.-&gt;Type
-	click Implementing6 "/api/Cake.Issues.PullRequests/ISupportCheckingCommitId"
+	Implementing0["ISupportCheckingCommitId"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.PullRequests/ISupportCheckingCommitId"
+	Implementing1["BaseCheckingCommitIdCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
+	Implementing2["BaseFilteringByModifiedFilesCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1"
+	Implementing3["BaseDiscussionThreadsCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing3 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
+	Implementing4["ISupportFilteringByModifiedFiles"]-.-&gt;Type
+	click Implementing4 "/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles"
+	Implementing5["ISupportDiscussionThreads"]-.-&gt;Type
+	click Implementing5 "/api/Cake.Issues.PullRequests/ISupportDiscussionThreads"
+	Implementing6["BasePullRequestSystemCapability&lt;T&gt;"]-.-&gt;Type
+	click Implementing6 "/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1"
 
 						</div>
 					</div>
@@ -313,6 +317,16 @@ class Type type-node
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
 <script type="text/javascript" src="/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
@@ -341,7 +355,7 @@ class Type type-node
             e.currentTarget.setAttribute('class', 'btn-copy');
             e.currentTarget.removeAttribute('aria-label');
         });
-    }    
+    }
     function showTooltip(elem, msg) {
         elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
         elem.setAttribute('aria-label', msg);
@@ -357,7 +371,7 @@ class Type type-node
             actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
         }
         return actionMsg;
-    }    
+    }
 </script>
         <script>           
             // Close the sidebar if we select an anchor link

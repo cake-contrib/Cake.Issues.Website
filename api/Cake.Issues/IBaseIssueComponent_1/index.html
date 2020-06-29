@@ -27,7 +27,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -56,7 +56,11 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
-                                    <li><a href="/docs">Documentation</a></li>
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+</div>
+
+        <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
         <li class="active"><a href="/api/Cake.Issues">API</a></li>
@@ -211,23 +215,23 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.Reporting/IssueReportFormat">IssueReportFormat</a></li>								
-											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
-											<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>, <wbr><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues.Reporting/IIssueReportFormat">IIssueReportFormat</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></li>								
-											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.Reporting/IIssueReportFormat">IIssueReportFormat</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/IssueReportFormat">IssueReportFormat</a></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeIssueComponent">FakeIssueComponent</a></li>								
+											<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>, <wbr><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/BaseIssueComponent_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeConfigurableIssueProvider">Fake<wbr>Configurable<wbr>Issue<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
+											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
+											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
+											<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></li>								
+											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -237,40 +241,40 @@
 							graph BT
 	Type["IBaseIssueComponent&lt;T&gt;"]
 class Type type-node
-	Implementing0["IssueReportFormat"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.Reporting/IssueReportFormat"
-	Implementing1["EsLintIssuesProvider"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Implementing2["AppVeyorPullRequestSystem"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem"
-	Implementing3["BasePullRequestSystem"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues.PullRequests/BasePullRequestSystem"
-	Implementing4["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]-.-&gt;Type
-	click Implementing4 "/api/Cake.Issues/BaseMultiFormatIssueProvider_2"
-	Implementing5["BaseIssueProvider"]-.-&gt;Type
-	click Implementing5 "/api/Cake.Issues/BaseIssueProvider"
-	Implementing6["FakeMultiFormatIssueProvider"]-.-&gt;Type
-	click Implementing6 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Implementing0["IPullRequestSystem"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.PullRequests/IPullRequestSystem"
+	Implementing1["IIssueReportFormat"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.Reporting/IIssueReportFormat"
+	Implementing2["IssueReportFormat"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.Reporting/IssueReportFormat"
+	Implementing3["BaseIssueProvider"]-.-&gt;Type
+	click Implementing3 "/api/Cake.Issues/BaseIssueProvider"
+	Implementing4["FakeIssueComponent"]-.-&gt;Type
+	click Implementing4 "/api/Cake.Issues.Testing/FakeIssueComponent"
+	Implementing5["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]-.-&gt;Type
+	click Implementing5 "/api/Cake.Issues/BaseMultiFormatIssueProvider_2"
+	Implementing6["BaseIssueComponent&lt;T&gt;"]-.-&gt;Type
+	click Implementing6 "/api/Cake.Issues/BaseIssueComponent_1"
 	Implementing7["MsBuildIssuesProvider"]-.-&gt;Type
 	click Implementing7 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Implementing8["IIssueProvider"]-.-&gt;Type
-	click Implementing8 "/api/Cake.Issues/IIssueProvider"
+	Implementing8["FakeConfigurableIssueProvider"]-.-&gt;Type
+	click Implementing8 "/api/Cake.Issues.Testing/FakeConfigurableIssueProvider"
 	Implementing9["MarkdownlintIssuesProvider"]-.-&gt;Type
 	click Implementing9 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
-	Implementing10["FakeIssueProvider"]-.-&gt;Type
-	click Implementing10 "/api/Cake.Issues.Testing/FakeIssueProvider"
-	Implementing11["IIssueReportFormat"]-.-&gt;Type
-	click Implementing11 "/api/Cake.Issues.Reporting/IIssueReportFormat"
-	Implementing12["IPullRequestSystem"]-.-&gt;Type
-	click Implementing12 "/api/Cake.Issues.PullRequests/IPullRequestSystem"
-	Implementing13["BaseConfigurableIssueProvider&lt;T&gt;"]-.-&gt;Type
-	click Implementing13 "/api/Cake.Issues/BaseConfigurableIssueProvider_1"
-	Implementing14["BaseIssueComponent&lt;T&gt;"]-.-&gt;Type
-	click Implementing14 "/api/Cake.Issues/BaseIssueComponent_1"
-	Implementing15["FakeIssueComponent"]-.-&gt;Type
-	click Implementing15 "/api/Cake.Issues.Testing/FakeIssueComponent"
-	Implementing16["FakeConfigurableIssueProvider"]-.-&gt;Type
-	click Implementing16 "/api/Cake.Issues.Testing/FakeConfigurableIssueProvider"
+	Implementing10["FakeMultiFormatIssueProvider"]-.-&gt;Type
+	click Implementing10 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Implementing11["AppVeyorPullRequestSystem"]-.-&gt;Type
+	click Implementing11 "/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem"
+	Implementing12["BaseConfigurableIssueProvider&lt;T&gt;"]-.-&gt;Type
+	click Implementing12 "/api/Cake.Issues/BaseConfigurableIssueProvider_1"
+	Implementing13["BasePullRequestSystem"]-.-&gt;Type
+	click Implementing13 "/api/Cake.Issues.PullRequests/BasePullRequestSystem"
+	Implementing14["EsLintIssuesProvider"]-.-&gt;Type
+	click Implementing14 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
+	Implementing15["FakeIssueProvider"]-.-&gt;Type
+	click Implementing15 "/api/Cake.Issues.Testing/FakeIssueProvider"
+	Implementing16["IIssueProvider"]-.-&gt;Type
+	click Implementing16 "/api/Cake.Issues/IIssueProvider"
 
 						</div>
 					</div>
@@ -400,6 +404,16 @@ class Type type-node
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
 <script type="text/javascript" src="/assets/js/anchor.min.js"></script>
 <script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
 <script type="text/javascript">
@@ -428,7 +442,7 @@ class Type type-node
             e.currentTarget.setAttribute('class', 'btn-copy');
             e.currentTarget.removeAttribute('aria-label');
         });
-    }    
+    }
     function showTooltip(elem, msg) {
         elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
         elem.setAttribute('aria-label', msg);
@@ -444,7 +458,7 @@ class Type type-node
             actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
         }
         return actionMsg;
-    }    
+    }
 </script>
         <script>           
             // Close the sidebar if we select an anchor link
