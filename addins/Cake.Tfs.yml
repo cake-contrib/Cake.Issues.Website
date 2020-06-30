@@ -1,0 +1,9 @@
+Name: Cake.Tfs
+NuGet: Cake.Tfs
+Prerelease: false
+RepositoryOwner: cake-contrib
+RepositoryName: Cake.Tfs
+Assemblies:
+- "/**/Cake.Tfs.dll"
+Author: Pascal Berger
+Description: "Addin for working with Azure DevOps."
