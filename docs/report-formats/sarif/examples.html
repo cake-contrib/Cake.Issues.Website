@@ -478,7 +478,7 @@ Task("Create-IssueReport").Does(() =&gt;
         );
     MSBuild(repoRootFolder.CombineWithFilePath("MySolution.sln"), settings);
 
-    // Create HTML report using Diagnostic template.
+    // Create SARIF report.
     CreateIssueReport(
         new List&lt;<a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a>&gt;
         {
