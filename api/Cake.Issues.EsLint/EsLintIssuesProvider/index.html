@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -190,7 +191,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -198,7 +199,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
 											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues.EsLint/EsLintIssuesSettings">EsLintIssuesSettings</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues.EsLint/EsLintIssuesSettings">EsLintIssuesSettings</a>, <wbr><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a>&gt;<wbr></li>								
@@ -215,11 +216,11 @@
 	Base0--&gt;Base1["BaseConfigurableIssueProvider&lt;EsLintIssuesSettings&gt;"]
 	Base1--&gt;Base2["BaseIssueProvider"]
 	click Base2 "/api/Cake.Issues/BaseIssueProvider"
-	Base2--&gt;Base3["BaseIssueComponent&lt;RepositorySettings&gt;"]
+	Base2--&gt;Base3["BaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Base3--&gt;Base4["Object"]
 	Type-.-&gt;Interface0["IIssueProvider"]
 	click Interface0 "/api/Cake.Issues/IIssueProvider"
-	Type-.-&gt;Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]
+	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Type["EsLintIssuesProvider"]
 class Type type-node
 
@@ -232,7 +233,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public class EsLintIssuesProvider : 
     BaseMultiFormatIssueProvider&lt;EsLintIssuesSettings, EsLintIssuesProvider&gt;, IIssueProvider, 
-    IBaseIssueComponent&lt;RepositorySettings&gt;</code></pre>
+    IBaseIssueComponent&lt;IReadIssuesSettings&gt;</code></pre>
 
 
 
@@ -281,6 +282,17 @@ class Type type-node
 									<div>
             Gets the human friendly name of the issue provider.
             </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider/1EAF19E2">ProviderTypeName</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets the name of the ESLint issue provider.
+            This name can be used to identify issues based on the <code class="cs"><a href="/api/Cake.Issues/IIssue/D5A24C72">ProviderType</a></code> property.
+            </div>
+											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 					</tbody></table>

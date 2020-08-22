@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -155,6 +156,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -173,6 +175,8 @@
 				<li class="selected"><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -264,6 +268,56 @@ class Type type-node
             Gets the path to the file affacted by the issue.
             The path is relative to the repository root.
             Can be <code class="cs">null</code> if issue is not related to a change in a file.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/240A8804">Column</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets the column in the file where the issues has occurred.
+            <code class="cs">null</code> if the issue affects the whole file or an asssembly.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/946F5F7F">EndColumn</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets the end of the column range in the file where the issues has occurred.
+            <code class="cs">null</code> if the issue affects the whole file, an asssembly or only a single column.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/28A40BC1">EndLine</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets the end of the line range in the file where the issues has occurred.
+            <code class="cs">null</code> if the issue affects the whole file, an asssembly or only a single line.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/3492EB27">FileLink</a></td>
+								<td>Uri</td>
+								<td>
+									<div>
+            Gets or sets a link to the position in the file where the issue ocurred.
+            <code class="cs">null</code> if <code class="cs"><a href="/api/Cake.Issues/IReadIssuesSettings/3738DF8A">FileLinkSettings</a></code> was not set while reading issue.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/33316671">Identifier</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets the identifier for the message.
+            The identifier can be used to identify the same issue across multiple runs.
             </div>
 								</td>
 							</tr>
@@ -383,6 +437,16 @@ class Type type-node
             </div>
 								</td>
 							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssue/FDB12A02">Run</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets or sets the description of the run.
+            Can be <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no run information is provided.
+            </div>
+								</td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
@@ -432,13 +496,33 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues.Reporting.Generic/IIssueExtensions/713B004C">GetExpandoObject<wbr>(bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>FileLinkSettings, <wbr>IDictionary<wbr>&lt;string, <wbr>Func<wbr>&lt;IIssue, <wbr>object&gt;<wbr>&gt;<wbr>)<wbr></a></td>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/IIssueExtensions/EE0B4921">GetExpandoObject<wbr>(bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>bool, <wbr>IDictionary<wbr>&lt;string, <wbr>Func<wbr>&lt;IIssue, <wbr>object&gt;<wbr>&gt;<wbr>)<wbr></a></td>
 								<td>ExpandoObject</td>
 								<td>
 									<div>
             Returns an dynamic object containing the properties of an issue.
             </div>
 										<div><small><em>From <a href="/api/Cake.Issues.Reporting.Generic/IIssueExtensions">IIssueExtensions</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssueExtensions/348D445C">LineRange<wbr>()<wbr></a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Returns the line and column range in the format <code class="cs">{Line}:{Column}-{EndLine}:{EndColumn}</code>.
+            </div>
+										<div><small><em>From <a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IIssueExtensions/724B9C60">LineRange<wbr>(bool)<wbr></a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Returns the line range in the format <code class="cs">{Line}:{Column}-{EndLine}:{EndColumn}</code>.
+            </div>
+										<div><small><em>From <a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></em></small></div>
 								</td>
 							</tr>
 							<tr>

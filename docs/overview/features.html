@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li class="active"><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -378,6 +379,7 @@
                     <a href="/docs/extending">Extending</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/docs/extending/fundamentals">Fundamentals</a></li>
                 <li class="treeview">
                     <a href="/docs/extending/issue-provider">Issue Provider</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
@@ -469,7 +471,9 @@ report formats and code review systems.</p>
 <li><a href="../../api/Cake.Issues/Aliases/DC3A3FD7">NewIssue</a> alias for creating issues in the build script.</li>
 <li><a href="../../api/Cake.Issues/Aliases/713F15FD">ReadIssues</a> aliases for reading issues from an issue provider.</li>
 <li>Support for reading issues from multiple issue providers.</li>
-<li>Support for reading issues in specific format (Plain text, Markdown, HTML) if supported by issue provider.</li>
+<li>Support for reading issues in multiple formats (Plain text, Markdown, HTML) if supported by issue provider.</li>
+<li>Support for creating links to file &amp; location on source code hosting system (GitHub, Azure Repos, etc).</li>
+<li>Support for passing additional run information to identify specific runs.</li>
 </ul>
 <h2 id="cake.issues.reporting">Cake.Issues.Reporting</h2>
 <p>Addin for creating reports providing the following functionality:</p>
@@ -483,8 +487,9 @@ report formats and code review systems.</p>
 <li><a href="../../api/Cake.Issues.PullRequests/Aliases/5350C413">ReportIssuesToPullRequest</a> aliases for writing issues as comments to pull requests.</li>
 <li>Support for reporting issues from multiple issue providers.</li>
 <li>Support for passing custom issue filter routines in <code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/44C3B105">ReportIssuesToPullRequestSettings.IssueFilters</a></code>.</li>
-<li>Limit number of maximum issues to post globally or per issue provider by setting
-<code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">ReportIssuesToPullRequestSettings.MaxIssuesToPostForEachIssueProvider</a></code> or <code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">ReportIssuesToPullRequestSettings.MaxIssuesToPost</a></code>.</li>
+<li>Advanced support to limit number of maximum issues per run, across multiple runs or per issue provider by setting
+<code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">ReportIssuesToPullRequestSettings.MaxIssuesToPost</a></code>, <code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">ReportIssuesToPullRequestSettings.MaxIssuesToPostAcrossRuns</a></code>,
+<code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">ReportIssuesToPullRequestSettings.MaxIssuesToPostForEachIssueProvider</a></code> and <code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/E4E1EA1E">ReportIssuesToPullRequestSettings.ProviderIssueLimits</a></code>.</li>
 <li>Returns all issues as provided by the issue providers and the issues reported to the pull request.</li>
 </ul>
 <p>Concrete pull request systems can implement optional capabilities which will provide the following functionality:</p>
@@ -503,7 +508,7 @@ report formats and code review systems.</p>
 <ul>
 <li>Automatic resolving of issues fixed in subsequent commits.</li>
 <li>Automatic reopening of still existing issues which are already closed on pull request.</li>
-<li>Comparing issues by content to not rely on line numbers.</li>
+<li>Comparing issues by identifier to not rely on message or line numbers.</li>
 </ul>
 </li>
 </ul>

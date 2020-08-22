@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -152,6 +153,7 @@
 				<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitIdExtensions">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id<wbr>Extensions</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ProviderIssueIssueLimits">Provider<wbr>Issue<wbr>Issue<wbr>Limits</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionComment">Pull<wbr>Request<wbr>Discussion<wbr>Comment</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionResolution">Pull<wbr>Request<wbr>Discussion<wbr>Resolution</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionStatus">Pull<wbr>Request<wbr>Discussion<wbr>Status</a></li>
@@ -159,12 +161,16 @@
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestIssueResult">Pull<wbr>Request<wbr>Issue<wbr>Result</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestIssuesException">Pull<wbr>Request<wbr>Issues<wbr>Exception</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestsAliasConstants">Pull<wbr>Requests<wbr>Alias<wbr>Constants</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/api/Cake.Issues.PullRequests/IProviderIssueLimits">IProviderIssueLimits</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionComment">I<wbr>Pull<wbr>Request<wbr>Discussion<wbr>Comment</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread">I<wbr>Pull<wbr>Request<wbr>Discussion<wbr>Thread</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/IPullRequestSystemCapability">I<wbr>Pull<wbr>Request<wbr>System<wbr>Capability</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitId">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportDiscussionThreads">I<wbr>Support<wbr>Discussion<wbr>Threads</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles">I<wbr>Support<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files</a></li>
@@ -263,6 +269,15 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread/DE555946">CommentIdentifier</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets or sets the value to identify the comment across multiple runs.
+            </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread/0F8616DE">Comments</a></td>
 								<td>IList<wbr>&lt;<a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionComment">I<wbr>Pull<wbr>Request<wbr>Discussion<wbr>Comment</a>&gt;<wbr></td>
 								<td>
@@ -286,6 +301,16 @@ class Type type-node
 								<td>
 									<div>
             Gets or sets the ID of the discussion thread.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread/A9CD75DE">ProviderType</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets or sets a the provider type which reported the issue.
+            This value is used to identify the comment in subsequent runs.
             </div>
 								</td>
 							</tr>

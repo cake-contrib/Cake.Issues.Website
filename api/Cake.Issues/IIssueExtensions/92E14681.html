@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -150,6 +151,8 @@
 				<li><a href="/api/Cake.Issues/IIssueExtensions/9B0FA67A">FileDirectory<wbr>(IIssue)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions/32614F78">FileName<wbr>(IIssue)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions/33F659CA">FilePath<wbr>(IIssue)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IIssueExtensions/348D445C">LineRange<wbr>(IIssue)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IIssueExtensions/724B9C60">LineRange<wbr>(IIssue, <wbr>bool)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions/F6E9D787">Message<wbr>(IIssue, <wbr>IssueCommentFormat)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions/A766D210">ProjectDirectory<wbr>(IIssue)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions/8F814AA8">ProjectPath<wbr>(IIssue)<wbr></a></li>
@@ -217,12 +220,12 @@
 						<td>pattern</td>
 						<td>string</td>
 						<td>Pattern whose values should be replaced.
-            The following patterns are supported:
-            <description>Description</description><description>The value of <see cref="P:Cake.Issues.IIssue.ProviderType">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.ProviderName">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Priority">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.PriorityName">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.ProjectPath(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.ProjectDirectory(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.ProjectName">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FilePath(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FileDirectory(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FileName(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Line">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Rule">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.RuleUrl">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.MessageText">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.MessageHtml"> or <see cref="P:Cake.Issues.IIssue.MessageText">
+            The following tokens are supported:
+            <description>Description</description><description>The value of <see cref="P:Cake.Issues.IIssue.ProviderType">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.ProviderName">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Identifier">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Priority">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.PriorityName">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.ProjectPath(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.ProjectDirectory(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.ProjectName">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FilePath(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FileDirectory(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="M:Cake.Issues.IIssueExtensions.FileName(Cake.Issues.IIssue)">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Line">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.EndLine">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Column">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.EndColumn">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.FileLink">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Rule">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.RuleUrl">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.Run">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.MessageText">.</see></description><description>The value of <see cref="P:Cake.Issues.IIssue.MessageHtml"> or <see cref="P:Cake.Issues.IIssue.MessageText">
                     if message in HTML format is not available.</see></see></description><description>The value of <see cref="P:Cake.Issues.IIssue.MessageMarkdown"> or <see cref="P:Cake.Issues.IIssue.MessageText">
                     if message in Markdown format is not available.</see></see></description><table class="table">
                 <tbody><tr>
-                    <th>Pattern</th>
+                    <th>Token</th>
                     
                 </tr>
                 <tr>
@@ -231,6 +234,10 @@
                 </tr>
                 <tr>
                     <td>{ProviderName}</td>
+                    
+                </tr>
+                <tr>
+                    <td>{Identifier}</td>
                     
                 </tr>
                 <tr>
@@ -270,11 +277,31 @@
                     
                 </tr>
                 <tr>
+                    <td>{EndLine}</td>
+                    
+                </tr>
+                <tr>
+                    <td>{Column}</td>
+                    
+                </tr>
+                <tr>
+                    <td>{EndColumn}</td>
+                    
+                </tr>
+                <tr>
+                    <td>{FileLink}</td>
+                    
+                </tr>
+                <tr>
                     <td>{Rule}</td>
                     
                 </tr>
                 <tr>
                     <td>{RuleUrl}</td>
+                    
+                </tr>
+                <tr>
+                    <td>{Run}</td>
                     
                 </tr>
                 <tr>

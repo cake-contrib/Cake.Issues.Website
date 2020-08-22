@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -157,6 +158,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -175,6 +177,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -214,7 +218,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -222,15 +226,15 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></li>								
+											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a>&gt;<wbr></li>								
 									</ul>
 								</dd>			
 							
@@ -239,17 +243,17 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type--&gt;Base0["BaseIssueComponent&lt;RepositorySettings&gt;"]
+	Type--&gt;Base0["BaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Base0--&gt;Base1["Object"]
 	Type-.-&gt;Interface0["IIssueProvider"]
 	click Interface0 "/api/Cake.Issues/IIssueProvider"
-	Type-.-&gt;Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]
+	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Type["BaseIssueProvider"]
 class Type type-node
-	Derived0["BaseConfigurableIssueProvider&lt;T&gt;"]--&gt;Type
-	click Derived0 "/api/Cake.Issues/BaseConfigurableIssueProvider_1"
-	Derived1["FakeIssueProvider"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.Testing/FakeIssueProvider"
+	Derived0["FakeIssueProvider"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.Testing/FakeIssueProvider"
+	Derived1["BaseConfigurableIssueProvider&lt;T&gt;"]--&gt;Type
+	click Derived1 "/api/Cake.Issues/BaseConfigurableIssueProvider_1"
 
 						</div>
 					</div>
@@ -258,8 +262,8 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public abstract class BaseIssueProvider : BaseIssueComponent&lt;RepositorySettings&gt;, IIssueProvider, 
-    IBaseIssueComponent&lt;RepositorySettings&gt;</code></pre>
+	<pre><code>public abstract class BaseIssueProvider : BaseIssueComponent&lt;IReadIssuesSettings&gt;, IIssueProvider, 
+    IBaseIssueComponent&lt;IReadIssuesSettings&gt;</code></pre>
 
 
 

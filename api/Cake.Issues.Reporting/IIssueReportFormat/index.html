@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -146,10 +147,13 @@
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
 				<li><a href="/api/Cake.Issues.Reporting/Aliases">Aliases</a></li>
+				<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings">Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/IssueReportFormat">IssueReportFormat</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/ReportingAliasConstants">Reporting<wbr>Alias<wbr>Constants</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
+				<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.Reporting/IIssueReportFormat">IIssueReportFormat</a></li>
 
 
@@ -189,7 +193,7 @@
 								<dt>Interfaces</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -206,7 +210,7 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type-.-&gt;Interface0["IBaseIssueComponent&lt;CreateIssueReportSettings&gt;"]
+	Type-.-&gt;Interface0["IBaseIssueComponent&lt;ICreateIssueReportSettings&gt;"]
 	Type["IIssueReportFormat"]
 class Type type-node
 	Implementing0["IssueReportFormat"]-.-&gt;Type
@@ -219,7 +223,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public interface IIssueReportFormat : IBaseIssueComponent&lt;CreateIssueReportSettings&gt;</code></pre>
+	<pre><code>public interface IIssueReportFormat : IBaseIssueComponent&lt;ICreateIssueReportSettings&gt;</code></pre>
 
 
 

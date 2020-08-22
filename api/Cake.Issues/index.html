@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -150,6 +151,7 @@
 						<li><a href="/api/Cake.Issues.DocFx">Cake<wbr>.Issues<wbr>.DocFx</a></li>
 			<li><a href="/api/Cake.Issues.DupFinder">Cake<wbr>.Issues<wbr>.DupFinder</a></li>
 			<li><a href="/api/Cake.Issues.EsLint">Cake<wbr>.Issues<wbr>.EsLint</a></li>
+			<li><a href="/api/Cake.Issues.FileLinking">Cake<wbr>.Issues<wbr>.FileLinking</a></li>
 			<li><a href="/api/Cake.Issues.GitRepository">Cake<wbr>.Issues<wbr>.GitRepository</a></li>
 			<li><a href="/api/Cake.Issues.InspectCode">Cake<wbr>.Issues<wbr>.InspectCode</a></li>
 			<li><a href="/api/Cake.Issues.Markdownlint">Cake<wbr>.Issues<wbr>.Markdownlint</a></li>
@@ -258,6 +260,12 @@
 								<td><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></td>
 									<td>
             Extensions for working with byte arrays.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+									<td>
+            Settings how issues should be linked to files.
             </td>
 							</tr>
 							<tr>
@@ -377,6 +385,18 @@
             Definition of a log file format for <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code> which support different log file formats.
             </td>
 							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></td>
+									<td>
+            Interface for settings for reading issues.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></td>
+									<td>
+            Interface for settings containing a path to a repository.
+            </td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
@@ -402,6 +422,10 @@
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.EsLint">Cake<wbr>.Issues<wbr>.EsLint</a></td>
+									<td></td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.FileLinking">Cake<wbr>.Issues<wbr>.FileLinking</a></td>
 									<td></td>
 							</tr>
 							<tr>

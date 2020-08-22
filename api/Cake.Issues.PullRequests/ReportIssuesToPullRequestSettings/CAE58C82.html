@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -154,6 +155,7 @@
 				<li class="selected"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">MaxIssuesToPost</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">Max<wbr>Issues<wbr>To<wbr>Post<wbr>Across<wbr>Runs</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">Max<wbr>Issues<wbr>To<wbr>Post<wbr>For<wbr>Each<wbr>Issue<wbr>Provider</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/E4E1EA1E">ProviderIssueLimits</a></li>
 				<li><a href="/api/Cake.Issues/RepositorySettings/FD63614D">RepositoryRoot</a></li>
 
 
@@ -181,10 +183,8 @@
             <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code>.
             Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
             are prioritized.
-            Set to <code class="cs">null</code> to not set a global limit.
-            Default is to not set a global limit.
-            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">MaxIssuesToPostForEachIssueProvider</a></code> to set the limit for each issue provider
-            and <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">MaxIssuesToPostAcrossRuns</a></code> to set a limit across multiple runs.
+            Default is <code class="cs">null</code> which won't set a global limit.
+            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings/F02390D1">MaxIssuesToPostAcrossRuns</a></code> to set a limit across multiple runs.
             </div>
 
 		<div class="panel panel-default">

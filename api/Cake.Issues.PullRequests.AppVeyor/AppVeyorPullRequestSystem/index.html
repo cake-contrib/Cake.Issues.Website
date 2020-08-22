@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -189,7 +190,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues.PullRequests/IPullRequestSystem">IPullRequestSystem</a></li>								
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -197,7 +198,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
 									</ul>
 								</dd>				
@@ -210,11 +211,11 @@
 							graph BT
 	Type--&gt;Base0["BasePullRequestSystem"]
 	click Base0 "/api/Cake.Issues.PullRequests/BasePullRequestSystem"
-	Base0--&gt;Base1["BaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;"]
+	Base0--&gt;Base1["BaseIssueComponent&lt;IReportIssuesToPullRequestSettings&gt;"]
 	Base1--&gt;Base2["Object"]
 	Type-.-&gt;Interface0["IPullRequestSystem"]
 	click Interface0 "/api/Cake.Issues.PullRequests/IPullRequestSystem"
-	Type-.-&gt;Interface1["IBaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;"]
+	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReportIssuesToPullRequestSettings&gt;"]
 	Type["AppVeyorPullRequestSystem"]
 class Type type-node
 
@@ -226,7 +227,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public class AppVeyorPullRequestSystem : BasePullRequestSystem, IPullRequestSystem, 
-    IBaseIssueComponent&lt;ReportIssuesToPullRequestSettings&gt;</code></pre>
+    IBaseIssueComponent&lt;IReportIssuesToPullRequestSettings&gt;</code></pre>
 
 
 

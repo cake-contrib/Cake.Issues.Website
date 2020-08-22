@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -156,6 +157,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -174,6 +176,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -209,6 +213,13 @@
 								<dt>Namespace</dt>
 								<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>								
+											<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
@@ -218,6 +229,13 @@
 									</ul>
 								</dd>				
 							
+								<dt>Derived Types</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings">Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
+									</ul>
+								</dd>			
 							
 						</dl>
 					</div>		
@@ -227,8 +245,16 @@
 	Type--&gt;Base0["RepositorySettings"]
 	click Base0 "/api/Cake.Issues/RepositorySettings"
 	Base0--&gt;Base1["Object"]
+	Type-.-&gt;Interface0["IReadIssuesSettings"]
+	click Interface0 "/api/Cake.Issues/IReadIssuesSettings"
+	Type-.-&gt;Interface1["IRepositorySettings"]
+	click Interface1 "/api/Cake.Issues/IRepositorySettings"
 	Type["ReadIssuesSettings"]
 class Type type-node
+	Derived0["ReportIssuesToPullRequestFromIssueProviderSettings"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings"
+	Derived1["CreateIssueReportFromIssueProviderSettings"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings"
 
 						</div>
 					</div>
@@ -237,7 +263,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class ReadIssuesSettings : RepositorySettings</code></pre>
+	<pre><code>public class ReadIssuesSettings : RepositorySettings, IReadIssuesSettings, IRepositorySettings</code></pre>
 
 
 
@@ -280,6 +306,15 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/api/Cake.Issues/ReadIssuesSettings/45750FE7">FileLinkSettings</a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets or sets settings which can be used for resolving links to source files.
+            </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues/RepositorySettings/FD63614D">RepositoryRoot</a></td>
 								<td>DirectoryPath</td>
 								<td>
@@ -287,6 +322,15 @@ class Type type-node
             Gets the Root path of the repository.
             </div>
 											<div><small><em>Inherited from <a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/ReadIssuesSettings/C48A857B">Run</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets or sets the name of the run.
+            </div>
 								</td>
 							</tr>
 					</tbody></table>

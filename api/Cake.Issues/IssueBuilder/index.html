@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -155,6 +156,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -173,6 +175,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -266,6 +270,15 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/8065EEFD">ForRun<wbr>(string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Sets the name of the run where the issue was reported.
+            </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues/IssueBuilder/4F303CAA">InFile<wbr>(string)<wbr></a></td>
 								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
 								<td>
@@ -280,6 +293,24 @@ class Type type-node
 								<td>
 									<div>
             Sets the path to the file affected by the issue and the line in the file where the issues has occurred.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/6BD4FC6F">InFile<wbr>(string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Sets the path to the file affected by the issue and the line and column in the file where the issues has occurred.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/E01CBFB0">InFile<wbr>(string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Sets the path to the file affected by the issue and the line and column in the file where the issues has occurred.
             </div>
 								</td>
 							</tr>
@@ -315,6 +346,26 @@ class Type type-node
 								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
 								<td>
 									<div>
+            Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code> with <span name="message" class="paramref">message</span> as identifier.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/A2786B05">NewIssue<wbr>(string, <wbr>string, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/6FB7FC3A">NewIssue<wbr>&lt;T&gt;<wbr><wbr>(string, <wbr>string, <wbr>T)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
             Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -325,7 +376,8 @@ class Type type-node
 								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
 								<td>
 									<div>
-            Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code>.
+            Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code> with <span name="message" class="paramref">message</span>
+            as identifier.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -345,6 +397,15 @@ class Type type-node
 								<td>
 									<div>
             Sets the rule of the issue.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/IssueBuilder/B968E318">WithFileLink<wbr>(Uri)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Sets the the link to the position in the file where the issue ocurred.
             </div>
 								</td>
 							</tr>

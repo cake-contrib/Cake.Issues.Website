@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -156,6 +157,7 @@
 				<li class="selected"><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -174,6 +176,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -220,9 +224,9 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.MsBuild/MsBuildRuleDescription">Ms<wbr>Build<wbr>Rule<wbr>Description</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeRuleDescription">FakeRuleDescription</a></li>								
 											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription">Markdownlint<wbr>Rule<wbr>Description</a></li>								
+											<li><a href="/api/Cake.Issues.MsBuild/MsBuildRuleDescription">Ms<wbr>Build<wbr>Rule<wbr>Description</a></li>								
 									</ul>
 								</dd>			
 							
@@ -234,12 +238,12 @@
 	Type--&gt;Base0["Object"]
 	Type["BaseRuleDescription"]
 class Type type-node
-	Derived0["MsBuildRuleDescription"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.MsBuild/MsBuildRuleDescription"
-	Derived1["FakeRuleDescription"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.Testing/FakeRuleDescription"
-	Derived2["MarkdownlintRuleDescription"]--&gt;Type
-	click Derived2 "/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription"
+	Derived0["FakeRuleDescription"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.Testing/FakeRuleDescription"
+	Derived1["MarkdownlintRuleDescription"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription"
+	Derived2["MsBuildRuleDescription"]--&gt;Type
+	click Derived2 "/api/Cake.Issues.MsBuild/MsBuildRuleDescription"
 
 						</div>
 					</div>

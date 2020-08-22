@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -156,6 +157,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -174,6 +176,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -209,6 +213,12 @@
 								<dt>Namespace</dt>
 								<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
@@ -220,9 +230,9 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
 									</ul>
 								</dd>			
 							
@@ -232,14 +242,16 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["Object"]
+	Type-.-&gt;Interface0["IRepositorySettings"]
+	click Interface0 "/api/Cake.Issues/IRepositorySettings"
 	Type["RepositorySettings"]
 class Type type-node
-	Derived0["ReportIssuesToPullRequestSettings"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
+	Derived0["ReadIssuesSettings"]--&gt;Type
+	click Derived0 "/api/Cake.Issues/ReadIssuesSettings"
 	Derived1["CreateIssueReportSettings"]--&gt;Type
 	click Derived1 "/api/Cake.Issues.Reporting/CreateIssueReportSettings"
-	Derived2["ReadIssuesSettings"]--&gt;Type
-	click Derived2 "/api/Cake.Issues/ReadIssuesSettings"
+	Derived2["ReportIssuesToPullRequestSettings"]--&gt;Type
+	click Derived2 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
 
 						</div>
 					</div>
@@ -248,7 +260,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class RepositorySettings</code></pre>
+	<pre><code>public class RepositorySettings : IRepositorySettings</code></pre>
 
 
 

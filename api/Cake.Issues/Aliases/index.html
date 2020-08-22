@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -155,6 +156,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -173,6 +175,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -314,7 +318,125 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/9DB86513">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>(ICakeContext, <wbr>Func<wbr>&lt;IIssue, <wbr>Uri&gt;<wbr>)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+             Gets an instance of the file link settings for linking to files
+             based on a custom action.
+             </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/E6A28052">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>(ICakeContext, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking to files
+            based on a custom pattern.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/C14EBF84">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Azure<wbr>Dev<wbr>Ops<wbr>Branch<wbr>(ICakeContext, <wbr>Uri, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking to files hosted in Azure DevOps
+            on a specific branch.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/BB241F5B">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Azure<wbr>Dev<wbr>Ops<wbr>Branch<wbr>(ICakeContext, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking to files hosted in Azure DevOps
+            in a sub-folder on a specific branch.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/590E026D">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Azure<wbr>Dev<wbr>Ops<wbr>Commit<wbr>(ICakeContext, <wbr>Uri, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking to files hosted in Azure DevOps
+            for a specific commit.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/80BD3386">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Azure<wbr>Dev<wbr>Ops<wbr>Commit<wbr>(ICakeContext, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking to files hosted in Azure DevOps
+            in a sub-folder for a specific commit.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/D1649ED2">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Git<wbr>Hub<wbr>Branch<wbr>(ICakeContext, <wbr>Uri, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking files hosted on GitHub on a specific branch.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/F4B513A7">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Git<wbr>Hub<wbr>Branch<wbr>(ICakeContext, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking files hosted on GitHub
+            in a sub-folder on a specific branch.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/4924233B">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Git<wbr>Hub<wbr>Commit<wbr>(ICakeContext, <wbr>Uri, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking files hosted on GitHub fo a specific commit.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/CF2C3F7A">Issue<wbr>File<wbr>Link<wbr>Settings<wbr>For<wbr>Git<wbr>Hub<wbr>Commit<wbr>(ICakeContext, <wbr>Uri, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></td>
+								<td>
+									<div>
+            Gets an instance of the file link settings for linking files hosted on GitHub
+            in a sub-folder for a specific commit.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues/Aliases/DC3A3FD7">NewIssue<wbr>(ICakeContext, <wbr>string, <wbr>string, <wbr>string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
+								<td>
+									<div>
+            Initiates the creation of a new <code class="cs"><a href="/api/Cake.Issues/IIssue">IIssue</a></code> with <span name="message" class="paramref">message</span> as identifier.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Aliases/5BAA8171">NewIssue<wbr>(ICakeContext, <wbr>string, <wbr>string, <wbr>string, <wbr>string)<wbr></a></td>
 								<td><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></td>
 								<td>
 									<div>
@@ -334,7 +456,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues/Aliases/713F15FD">ReadIssues<wbr>(ICakeContext, <wbr>IEnumerable<wbr>&lt;<wbr>I<wbr>Issue<wbr>Provider&gt;<wbr>, <wbr>ReadIssuesSettings)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/Aliases/2C801A33">ReadIssues<wbr>(ICakeContext, <wbr>IEnumerable<wbr>&lt;<wbr>I<wbr>Issue<wbr>Provider&gt;<wbr>, <wbr>IReadIssuesSettings)<wbr></a></td>
 								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>
@@ -354,7 +476,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues/Aliases/A9384EA7">ReadIssues<wbr>(ICakeContext, <wbr>IIssueProvider, <wbr>ReadIssuesSettings)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/Aliases/CD8148BB">ReadIssues<wbr>(ICakeContext, <wbr>IIssueProvider, <wbr>IReadIssuesSettings)<wbr></a></td>
 								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
 									<div>

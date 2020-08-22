@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -147,10 +148,13 @@
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
 				<li><a href="/api/Cake.Issues.Reporting/Aliases">Aliases</a></li>
+				<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings">Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/IssueReportFormat">IssueReportFormat</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/ReportingAliasConstants">Reporting<wbr>Alias<wbr>Constants</a></li>
 			<li class="header">Interface Types</li>
+				<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
+				<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting/IIssueReportFormat">IIssueReportFormat</a></li>
 
 
@@ -173,7 +177,7 @@
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Setting affecting how reports are created.
+            Setting affecting how reports are created which are built passing issues.
             </div>
 
 		<div class="panel panel-default">
@@ -187,6 +191,13 @@
 								<dt>Namespace</dt>
 								<dd><a href="/api/Cake.Issues.Reporting">Cake<wbr>.Issues<wbr>.Reporting</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
@@ -205,6 +216,10 @@
 	Type--&gt;Base0["RepositorySettings"]
 	click Base0 "/api/Cake.Issues/RepositorySettings"
 	Base0--&gt;Base1["Object"]
+	Type-.-&gt;Interface0["ICreateIssueReportSettings"]
+	click Interface0 "/api/Cake.Issues.Reporting/ICreateIssueReportSettings"
+	Type-.-&gt;Interface1["IRepositorySettings"]
+	click Interface1 "/api/Cake.Issues/IRepositorySettings"
 	Type["CreateIssueReportSettings"]
 class Type type-node
 
@@ -215,7 +230,8 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class CreateIssueReportSettings : RepositorySettings</code></pre>
+	<pre><code>public class CreateIssueReportSettings : RepositorySettings, ICreateIssueReportSettings, 
+    IRepositorySettings</code></pre>
 
 
 

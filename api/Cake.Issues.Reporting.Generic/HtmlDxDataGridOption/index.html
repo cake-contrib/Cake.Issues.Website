@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -150,7 +151,6 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/DevExtremeThemeExtensions">Dev<wbr>Extreme<wbr>Theme<wbr>Extensions</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/ExpandoObjectExtensions">Expando<wbr>Object<wbr>Extensions</a></li>
-				<li><a href="/api/Cake.Issues.Reporting.Generic/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatAliases">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Aliases</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettings">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettingsExtensions">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Settings<wbr>Extensions</a></li>
@@ -160,6 +160,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/IdeIntegrationSettings">Ide<wbr>Integration<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/StringExtensions">StringExtensions</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/ViewBagHelper">ViewBagHelper</a></li>
 
 
@@ -244,18 +245,42 @@ class Type type-node
 						</thead>
 							<tbody><tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/F9860912">AdditionalColumns</a></td>
-								<td>34</td>
+								<td>44</td>
 								<td>
 									<div>
-            List of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription">HtmlDxDataGridColumnDescription</a></code> for additional columsn which should be added to the grid.
+            List of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription">HtmlDxDataGridColumnDescription</a></code> for additional columns which should be added to the grid.
             Default value is an empty list.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></td>
+								<td>31</td>
+								<td>
+									<div>
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/B999D8DD">Column</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/C2CCC708">ColumnVisible</a></td>
+								<td>30</td>
+								<td>
+									<div>
+            Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/B999D8DD">Column</a></code> column should be visible or not.
+            Either <code class="cs">true</code> or <code class="cs">false</code>.
+            Default value is <code class="cs">false</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/336E78DE">DevExtremeLocation</a></td>
-								<td>38</td>
+								<td>47</td>
 								<td>
 									<div>
             Location where the DevExtreme libraries can be found.
@@ -280,19 +305,19 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></td>
-								<td>39</td>
+								<td>48</td>
 								<td>
 									<div>
             Version of the DevExtreme libraries which should be used.
             If setting this the matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></code> needs to also be set.
-            Default value is <code class="cs">19.2.5</code>.
+            Default value is <code class="cs">20.1.6</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1441E285">EnableExporting</a></td>
-								<td>41</td>
+								<td>50</td>
 								<td>
 									<div>
             Flag if exporting to Microsoft Excel should be available or not.
@@ -340,8 +365,56 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/FAA96E80">EndColumnSortOrder</a></td>
+								<td>33</td>
+								<td>
+									<div>
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/C3CC93BB">EndColumn</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7714ACF8">EndColumnVisible</a></td>
+								<td>32</td>
+								<td>
+									<div>
+            Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/C3CC93BB">EndColumn</a></code> column should be visible or not.
+            Either <code class="cs">true</code> or <code class="cs">false</code>.
+            Default value is <code class="cs">false</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/BA8C9554">EndLineSortOrder</a></td>
+								<td>29</td>
+								<td>
+									<div>
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/421B6C4F">EndLine</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9D110532">EndLineVisible</a></td>
+								<td>28</td>
+								<td>
+									<div>
+            Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/421B6C4F">EndLine</a></code> column should be visible or not.
+            Either <code class="cs">true</code> or <code class="cs">false</code>.
+            Default value is <code class="cs">false</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3FBE2060">ExportFileName</a></td>
-								<td>42</td>
+								<td>51</td>
 								<td>
 									<div>
             Default name of Microsoft Excel file without file name extension.
@@ -352,11 +425,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/89BABC84">File<wbr>Directory<wbr>Sort<wbr>Order</a></td>
-								<td>21</td>
+								<td>23</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/EC5622E0">FileDirectory</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -364,7 +437,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7BB9867B">FileDirectoryVisible</a></td>
-								<td>20</td>
+								<td>22</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/EC5622E0">FileDirectory</a></code> column should be visible or not.
@@ -375,24 +448,12 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/96221A4C">FileLinkSettings</a></td>
-								<td>35</td>
-								<td>
-									<div>
-            Settings for having issues linked to files.
-            Value needs to be an instance of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/96221A4C">FileLinkSettings</a></code>.
-            Default value is <code class="cs">null</code>.
-            </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3656D22C">FileNameSortOrder</a></td>
-								<td>23</td>
+								<td>25</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/3A9A8DE2">FileName</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -400,7 +461,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/773F20FE">FileNameVisible</a></td>
-								<td>22</td>
+								<td>24</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/3A9A8DE2">FileName</a></code> column should be visible or not.
@@ -412,11 +473,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/A28D7642">FilePathSortOrder</a></td>
-								<td>19</td>
+								<td>21</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/336FFAB7">FilePath</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -424,7 +485,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4131C699">FilePathVisible</a></td>
-								<td>18</td>
+								<td>20</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/336FFAB7">FilePath</a></code> column should be visible or not.
@@ -436,19 +497,19 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0907599C">GroupedColumns</a></td>
-								<td>32</td>
+								<td>42</td>
 								<td>
 									<div>
             List of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></code> which should be grouped.
             Grouped columns are always visible.
-            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/BAD2BADE">ProviderName</a></code>.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/BAD2BADE">ProviderName</a></code> and <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/E91CC34B">Run</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8AE92009">Ide<wbr>Integration<wbr>Settings</a></td>
-								<td>40</td>
+								<td>49</td>
 								<td>
 									<div>
             Settings for having functionality to open files affected by issues in IDEs.
@@ -460,7 +521,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/874CBB4B">JQueryLocation</a></td>
-								<td>36</td>
+								<td>45</td>
 								<td>
 									<div>
             Location where jQuery can be found.
@@ -477,40 +538,53 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></td>
-								<td>37</td>
+								<td>46</td>
 								<td>
 									<div>
             Version of jQuery which should be used.
             This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
-            Default value is <code class="cs">3.4.1</code>.
+            Default value is <code class="cs">3.5.0</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/76707911">JSZipLocation</a></td>
-								<td>43</td>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8EAB4809">JsZipLocation</a></td>
+								<td>52</td>
 								<td>
 									<div>
             Location where JSZip can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></code>.
             The following files need to be available:
             <ul>
             <li>
-            <span class="description"><code class="cs">{JSZipLocation}/jszip.min.js</code></span>
+            <span class="description"><code class="cs">{JsZipLocation}/{JsZipVersion}/jszip.min.js</code></span>
             </li>
             </ul>
-            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jszip/3.2.2/</code>.
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jszip/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></td>
+								<td>53</td>
+								<td>
+									<div>
+            Version of JsZip which should be used.
+            This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
+            Default value is <code class="cs">3.2.2</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0F54FEA4">LineSortOrder</a></td>
-								<td>25</td>
+								<td>27</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/2299BD93">Line</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -518,10 +592,34 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/84415C12">LineVisible</a></td>
-								<td>24</td>
+								<td>26</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/2299BD93">Line</a></code> column should be visible or not.
+            Either <code class="cs">true</code> or <code class="cs">false</code>.
+            Default value is <code class="cs">false</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/CC13ED9B">LocationSortOrder</a></td>
+								<td>35</td>
+								<td>
+									<div>
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/AA552A20">Location</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/218015EF">LocationVisible</a></td>
+								<td>34</td>
+								<td>
+									<div>
+            Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/AA552A20">Location</a></code> column should be visible or not.
             Either <code class="cs">true</code> or <code class="cs">false</code>.
             Default value is <code class="cs">true</code>.
             </div>
@@ -530,11 +628,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/C65345A7">MessageSortOrder</a></td>
-								<td>31</td>
+								<td>41</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/72EC1DB3">Message</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -542,7 +640,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0EFDF39A">MessageVisible</a></td>
-								<td>30</td>
+								<td>40</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/72EC1DB3">Message</a></code> column should be visible or not.
@@ -554,11 +652,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/BD2D4100">Priority<wbr>Name<wbr>Sort<wbr>Order</a></td>
-								<td>13</td>
+								<td>15</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/45FA9B2C">PriorityName</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/AAF34BC0">Descending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -566,7 +664,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/13C085C4">PriorityNameVisible</a></td>
-								<td>12</td>
+								<td>14</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/45FA9B2C">PriorityName</a></code> column should be visible or not.
@@ -578,11 +676,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/72B01DB2">PrioritySortOrder</a></td>
-								<td>11</td>
+								<td>13</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/4600121C">Priority</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/AAF34BC0">Descending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -590,7 +688,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/5861FA5C">PriorityVisible</a></td>
-								<td>10</td>
+								<td>12</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/4600121C">Priority</a></code> column should be visible or not.
@@ -602,11 +700,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/BB78ECC8">ProjectNameSortOrder</a></td>
-								<td>17</td>
+								<td>19</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/CE4E9589">ProjectName</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -614,7 +712,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/985A59AA">ProjectNameVisible</a></td>
-								<td>16</td>
+								<td>18</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/CE4E9589">ProjectName</a></code> column should be visible or not.
@@ -626,11 +724,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/2FA348A6">ProjectPathSortOrder</a></td>
-								<td>15</td>
+								<td>17</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/C7BBE2DC">ProjectPath</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -638,7 +736,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/AE54BFCD">ProjectPathVisible</a></td>
-								<td>14</td>
+								<td>16</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/C7BBE2DC">ProjectPath</a></code> column should be visible or not.
@@ -654,7 +752,7 @@ class Type type-node
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/BAD2BADE">ProviderName</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -678,7 +776,7 @@ class Type type-node
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/95FB470C">ProviderType</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -698,11 +796,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D9E761BB">RuleSortOrder</a></td>
-								<td>27</td>
+								<td>37</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/18817104">Rule</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -710,11 +808,11 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/882AB59B">RuleUrlSortOrder</a></td>
-								<td>29</td>
+								<td>39</td>
 								<td>
 									<div>
             Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/221994DB">RuleUrl</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
-            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder">ColumnSortOrder</a></code> for possible values.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
@@ -722,7 +820,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1C911DBE">RuleUrlVisible</a></td>
-								<td>28</td>
+								<td>38</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/221994DB">RuleUrl</a></code> column should be visible or not.
@@ -734,12 +832,36 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/A9E7B8FD">RuleVisible</a></td>
-								<td>26</td>
+								<td>36</td>
 								<td>
 									<div>
             Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/18817104">Rule</a></code> column should be visible or not.
             Either <code class="cs">true</code> or <code class="cs">false</code>.
             Default value is <code class="cs">true</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0A59F568">RunSortOrder</a></td>
+								<td>11</td>
+								<td>
+									<div>
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/E91CC34B">Run</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/80EC0805">RunVisible</a></td>
+								<td>10</td>
+								<td>
+									<div>
+            Flag if the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/E91CC34B">Run</a></code> column should be visible or not.
+            Either <code class="cs">true</code> or <code class="cs">false</code>.
+            Default value is <code class="cs">true</code> if any issue contains run information, otherwise <code class="cs">false</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -758,7 +880,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></td>
-								<td>33</td>
+								<td>43</td>
 								<td>
 									<div>
             List of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a></code> which should be sorted.

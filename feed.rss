@@ -1,11 +1,200 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 	<channel>
 		<title>Cake Issues</title>
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Fri, 21 Aug 2020 23:02:13 GMT</pubDate>
-		<lastBuildDate>Fri, 21 Aug 2020 23:02:13 GMT</lastBuildDate>
+		<pubDate>Sat, 22 Aug 2020 20:34:13 GMT</pubDate>
+		<lastBuildDate>Sat, 22 Aug 2020 20:34:13 GMT</lastBuildDate>
+		<item>
+			<title>Cake v0.9.0 Released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.0-released</link>
+			<description>&lt;p&gt;Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.0-released</guid>
+			<pubDate>Sat, 22 Aug 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/AdmiringWorm"&gt;AdmiringWorm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/christianbumann"&gt;christianbumann&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/eoehen"&gt;eoehen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/gep13"&gt;gep13&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/janniksam"&gt;janniksam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mholo65"&gt;mholo65&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Speeedy01"&gt;Speeedy01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="full-cross-platform-support"&gt;Full cross-platform support&lt;/h2&gt;
+&lt;p&gt;While in previous versions most parts of Cake Issues was already targeting .NET Standard and with this could be executed on
+.NET Framework, .NET Core and Mono, &lt;code&gt;Cake.Issues.Reporting.Generic&lt;/code&gt; could only run on .NET Framework and Mono, but not on
+.NET Core.
+With this release &lt;code&gt;Cake.Issues.Reporting.Generic&lt;/code&gt; was ported to also run on .NET Core.&lt;/p&gt;
+&lt;p&gt;The migration was done by &lt;a href="https://github.com/gep13"&gt;gep13&lt;/a&gt; on his &lt;a href="https://www.twitch.tv/gep13"&gt;Twitch stream&lt;/a&gt; and you
+can watch work done in &lt;a href="https://www.youtube.com/watch?v=7roa5Q6KcrQ"&gt;Stream 90 - Working on Cake.Issues.Recipe&lt;/a&gt;,
+&lt;a href="https://www.youtube.com/watch?v=ocacOz3CxME"&gt;Stream 91 - Working on Cake.Issues.Reporting.Generic and Gazorator&lt;/a&gt; and
+&lt;a href="https://www.youtube.com/watch?v=P0IpkL9gUAE"&gt;Stream 92 - Working on Cake.Issues.Reporting.Generic and Gazorator - Part 2&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="enhanced-issue-information"&gt;Enhanced issue information&lt;/h2&gt;
+&lt;p&gt;The description for issues has been extended by additional information for column and ranges:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IIssue.EndLine&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IIssue.Column&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IIssue.EndColumn&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Existing issue providers have been updated to provide the additional information where available.
+See feature description for individual issue providers for which information a specific issue provider supports.&lt;/p&gt;
+&lt;h2 id="file-linking"&gt;File linking&lt;/h2&gt;
+&lt;p&gt;In previous versions &lt;code&gt;Cake.Issues.Reporting.Generic&lt;/code&gt; supported entries linking to the file on the source code provider
+(GitHub, Azure Repos, ...).
+With this release file linking infrastructure has been moved to the &lt;code&gt;Cake.Issues&lt;/code&gt; addin and can be used by any addin.&lt;/p&gt;
+&lt;p&gt;File link settings can  be defined while reading issues and are passed through the new &lt;code&gt;IIssue.FileLink&lt;/code&gt; property
+to reporting formats, pull request systems and build server implementations:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var settings =
+    new ReadIssuesSettings(&amp;#64;&amp;quot;c:\repo&amp;quot;)
+    {
+        FileLinkSettings =
+            IssueFileLinkSettingsForGitHubCommit(
+                &amp;quot;https://github.com/cake-contrib/Cake.Issues.Reporting.Generic&amp;quot;,
+                &amp;quot;76a7cacef7ad4295a6766646d45c9b56&amp;quot;)
+    };
+
+    var issues =
+        ReadIssues(
+            InspectCodeIssuesFromFilePath(
+                &amp;#64;&amp;quot;C:\build\inspectcode.log&amp;quot;),
+            settings));
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;Cake.Issues&lt;/code&gt; comes with out-of-the-box support for linking to files hosted on GitHub and Azure Repos, either for a
+specific branch or commit. Additionally there are aliases which can be used to define any custom pattern.&lt;/p&gt;
+&lt;h2 id="support-for-passing-additional-run-information"&gt;Support for passing additional run information&lt;/h2&gt;
+&lt;p&gt;If a build script needed to parse multiple log files from the same tool, e.g. because multiple MsBuild solutions
+were built, this was currently possible by calling the issue provider multiple times.
+If the results were read into the same list and shown on the same report, individual issues could not be
+assigned to any of the calls, since issue provider type and name were identical.
+Starting with Cake.Issues 0.9.0 it is now possible to pass additional run information while reading issues, which
+then will be stored with each issues in the &lt;code&gt;IIssue.Run&lt;/code&gt; property:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;var issues = new List&amp;lt;IIssue&amp;gt;();
+
+// Parse issues from build of solutions 1
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            &amp;#64;&amp;quot;C:\build\solution1-msbuild.log&amp;quot;,
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(&amp;#64;&amp;quot;c:\repo&amp;quot;)
+        {
+            Run = &amp;quot;Solution 1&amp;quot;
+        }
+    )
+);
+
+// Parse issues from build of solutions 2
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            &amp;#64;&amp;quot;C:\build\solution2-msbuild.log&amp;quot;,
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(&amp;#64;&amp;quot;c:\repo&amp;quot;)
+        {
+            Run = &amp;quot;Solution 2&amp;quot;
+        }
+    )
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="improved-pull-request-integration"&gt;Improved pull request integration&lt;/h2&gt;
+&lt;p&gt;In previous versions the text message of an issue was used to detect issues already reported in a previous run.
+This didn't work well for issues which contain information in the message which likely changes between runs,
+like e.g. line information.
+In this version a specific identifier, &lt;code&gt;IIssue.Identifier&lt;/code&gt;, is used which can be set by the issue provider.&lt;/p&gt;
+&lt;p&gt;When working with legacy code bases which contain a lot of existing issues, using something like Cake.Issues
+can be hard, since it will notify about every existing issue if something is changed in a file.
+To work around this issue it is possible to limit issues which will be posted to pull request systems.
+In previous versions it was already possible to limit the total number of issues, the number of issues for
+every issue provider and the total number of issues across multiple run.
+With 0.9.0 it will additionally be possible to limit the number of issues for specific issue providers for either
+a single or across multiple runs.
+This allows advanced scenarios like posting a maximum of 10 MsBuild issues every run, but not more than 20 in total
+across all runs.&lt;/p&gt;
+&lt;h2 id="get-everything-together"&gt;Get everything together&lt;/h2&gt;
+&lt;p&gt;&lt;a href="../docs/recipe/overview"&gt;Cake.Issues.Recipe&lt;/a&gt;, the Cake Recipe script which you can integrate into your build script for easy integration of
+full feature issue management, has been updated to version 0.4.0, bringing all the new features of Cake.Issues 0.9.0.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues 0.9.0 is a breaking release, which means that it probably requires changes to your build script.
+This section documents the most common changes which might be required:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cake.Issues
+&lt;ul&gt;
+&lt;li&gt;Serialization format has been updated to version 3.
+Older version are still supported for deserialization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.Markdownlint
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MarkdownlintLogFileFormat&lt;/code&gt; alias has been renamed to &lt;code&gt;MarkdownlintV1LogFileFormat&lt;/code&gt;
+(&lt;a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/issues/116"&gt;#116&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.PullRequest
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ReportIssuesToPullRequest&lt;/code&gt; alias which accepts an issue provider, or a list of issue providers, and settings requires now settings of type
+&lt;code&gt;IReportIssuesToPullRequestFromIssueProviderSettings&lt;/code&gt; instead of &lt;code&gt;ReportIssuesToPullRequestSettings&lt;/code&gt; to
+provider additional functionality, like support for &lt;a href="#file-linking"&gt;File linking&lt;/a&gt; and &lt;a href="#support-for-passing-additional-run-information"&gt;Support for passing additional run information&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.PullRequests.AzureDevOps
+&lt;ul&gt;
+&lt;li&gt;Cake.Issues.PullRequests.AzureDevOps requires at least Cake.AzureDevOps 0.5.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.Reporting
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;CreateIssueReport&lt;/code&gt; alias which accepts an issue provider, or a list of issue providers, and settings requires now settings of type
+&lt;code&gt;ICreateIssueReportFromIssueProviderSettings&lt;/code&gt; instead of &lt;code&gt;CreateIssueReportSettings&lt;/code&gt; to
+provider additional functionality, like support for &lt;a href="#file-linking"&gt;File linking&lt;/a&gt; and &lt;a href="#support-for-passing-additional-run-information"&gt;Support for passing additional run information&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.Reporting.Generic
+&lt;ul&gt;
+&lt;li&gt;Cake.Issues.Reporting.Generic requires at least Cake 0.38.0&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HtmlDxDataGridOption.FileLinkSettings&lt;/code&gt; has been removed.
+File link settings can now be defined while reading the issues.
+For details see &lt;a href="#file-linking"&gt;File linking&lt;/a&gt;.
+(&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/issues/265"&gt;#265&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;HtmlDxDataGridOption.JSZipLocation&lt;/code&gt; has been split into &lt;code&gt;HtmlDxDataGridOption.JsZipLocation&lt;/code&gt; and
+&lt;code&gt;HtmlDxDataGridOption.JsZipVersion&lt;/code&gt;
+(&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/issues/320"&gt;#320&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Cake.Issues.Recipe
+&lt;ul&gt;
+&lt;li&gt;Cake.Issues.Recipe requires at least Cake 0.38.0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For details see release notes of the individual addins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/0.9.0"&gt;Cake.Issues 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/0.9.0"&gt;Cake.Issues.MsBuild 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/0.9.0"&gt;Cake.Issues.InspectCode 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/0.9.0"&gt;Cake.Issues.DupFinder 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/0.9.0"&gt;Cake.Issues.GitRepository 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/0.9.0"&gt;Cake.Issues.Markdownlint 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/0.9.0"&gt;Cake.Issues.EsLint 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/0.9.0"&gt;Cake.Issues.DocFx 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests/releases/tag/0.9.0"&gt;Cake.Issues.PullRequests 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/0.9.0"&gt;Cake.Issues.PullRequests.AzureDevOps 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/0.9.0"&gt;Cake.Issues.PullRequests.AppVeyor 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting/releases/tag/0.9.0"&gt;Cake.Issues.Reporting 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/0.9.0"&gt;Cake.Issues.Reporting.Generic 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/0.9.0"&gt;Cake.Issues.Reporting.Sarif 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.9.0"&gt;Cake.Issues.Recipe 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content:encoded>
+		</item>
 	</channel>
 </rss>

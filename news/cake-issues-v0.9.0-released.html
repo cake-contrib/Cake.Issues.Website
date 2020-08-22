@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+        <title>Cake Issues - Cake v0.9.0 Released</title>
+        <link href="/assets/css/highlight.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/assets/css/override.css" rel="stylesheet">
+        <script src="/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>        
+        <script src="/assets/js/app.min.js"></script>         
+        <script src="/assets/js/highlight.pack.js"></script>   
+        <script src="/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/assets/js/mermaid.min.js"></script>
+        <script src="/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/assets/js/html5shiv.min.js"></script>
+        <script src="/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/" class="logo">
+                            <span>Cake Issues</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                            <div class="navbar-right navbar-form">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+</div>
+
+        <li class="active"><a href="/news">News</a></li>
+        <li><a href="/docs">Documentation</a></li>
+        <li><a href="/dsl">Reference</a></li>
+        <li><a href="/addins">Addins</a></li>
+        <li><a href="/api/Cake.Issues">API</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2020-08-22-cake-issues-v0.9.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+        <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
+            <li><a href="/news/Release-Notes">Release Notes</a></li>
+    
+    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/news/archive/2020/08">August, 2020</a></li>
+    
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Cake v0.9.0 Released</h1>
+		</section>
+	<section class="content">
+		
+
+
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Saturday, August 22, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+
+
+<p>Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/AdmiringWorm">AdmiringWorm</a></li>
+<li><a href="https://github.com/christianbumann">christianbumann</a></li>
+<li><a href="https://github.com/eoehen">eoehen</a></li>
+<li><a href="https://github.com/gep13">gep13</a></li>
+<li><a href="https://github.com/janniksam">janniksam</a></li>
+<li><a href="https://github.com/mholo65">mholo65</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+<li><a href="https://github.com/Speeedy01">Speeedy01</a></li>
+<li><a href="https://github.com/x-jokay">x-jokay</a></li>
+</ul>
+<h2 id="full-cross-platform-support">Full cross-platform support</h2>
+<p>While in previous versions most parts of Cake Issues was already targeting .NET Standard and with this could be executed on
+.NET Framework, .NET Core and Mono, <code>Cake.Issues.Reporting.Generic</code> could only run on .NET Framework and Mono, but not on
+.NET Core.
+With this release <code>Cake.Issues.Reporting.Generic</code> was ported to also run on .NET Core.</p>
+<p>The migration was done by <a href="https://github.com/gep13">gep13</a> on his <a href="https://www.twitch.tv/gep13">Twitch stream</a> and you
+can watch work done in <a href="https://www.youtube.com/watch?v=7roa5Q6KcrQ">Stream 90 - Working on Cake.Issues.Recipe</a>,
+<a href="https://www.youtube.com/watch?v=ocacOz3CxME">Stream 91 - Working on Cake.Issues.Reporting.Generic and Gazorator</a> and
+<a href="https://www.youtube.com/watch?v=P0IpkL9gUAE">Stream 92 - Working on Cake.Issues.Reporting.Generic and Gazorator - Part 2</a>.</p>
+<h2 id="enhanced-issue-information">Enhanced issue information</h2>
+<p>The description for issues has been extended by additional information for column and ranges:</p>
+<ul>
+<li><code><a href="/api/Cake.Issues/IIssue/28A40BC1">IIssue.EndLine</a></code></li>
+<li><code><a href="/api/Cake.Issues/IIssue/240A8804">IIssue.Column</a></code></li>
+<li><code><a href="/api/Cake.Issues/IIssue/946F5F7F">IIssue.EndColumn</a></code></li>
+</ul>
+<p>Existing issue providers have been updated to provide the additional information where available.
+See feature description for individual issue providers for which information a specific issue provider supports.</p>
+<h2 id="file-linking">File linking</h2>
+<p>In previous versions <code>Cake.Issues.Reporting.Generic</code> supported entries linking to the file on the source code provider
+(GitHub, Azure Repos, ...).
+With this release file linking infrastructure has been moved to the <code>Cake.Issues</code> addin and can be used by any addin.</p>
+<p>File link settings can  be defined while reading issues and are passed through the new <code><a href="/api/Cake.Issues/IIssue/3492EB27">IIssue.FileLink</a></code> property
+to reporting formats, pull request systems and build server implementations:</p>
+<pre><code class="language-csharp">var settings =
+    new ReadIssuesSettings(@"c:\repo")
+    {
+        <a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a> =
+            IssueFileLinkSettingsForGitHubCommit(
+                "https://github.com/cake-contrib/Cake.Issues.Reporting.Generic",
+                "76a7cacef7ad4295a6766646d45c9b56")
+    };
+
+    var issues =
+        ReadIssues(
+            InspectCodeIssuesFromFilePath(
+                @"C:\build\inspectcode.log"),
+            settings));
+</code></pre>
+<p><code>Cake.Issues</code> comes with out-of-the-box support for linking to files hosted on GitHub and Azure Repos, either for a
+specific branch or commit. Additionally there are aliases which can be used to define any custom pattern.</p>
+<h2 id="support-for-passing-additional-run-information">Support for passing additional run information</h2>
+<p>If a build script needed to parse multiple log files from the same tool, e.g. because multiple MsBuild solutions
+were built, this was currently possible by calling the issue provider multiple times.
+If the results were read into the same list and shown on the same report, individual issues could not be
+assigned to any of the calls, since issue provider type and name were identical.
+Starting with Cake.Issues 0.9.0 it is now possible to pass additional run information while reading issues, which
+then will be stored with each issues in the <code><a href="/api/Cake.Issues/IIssue/FDB12A02">IIssue.Run</a></code> property:</p>
+<pre><code class="language-csharp">var issues = new List&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;();
+
+// Parse issues from build of solutions 1
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            @"C:\build\solution1-msbuild.log",
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(@"c:\repo")
+        {
+            Run = "Solution 1"
+        }
+    )
+);
+
+// Parse issues from build of solutions 2
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            @"C:\build\solution2-msbuild.log",
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(@"c:\repo")
+        {
+            Run = "Solution 2"
+        }
+    )
+);
+</code></pre>
+<h2 id="improved-pull-request-integration">Improved pull request integration</h2>
+<p>In previous versions the text message of an issue was used to detect issues already reported in a previous run.
+This didn't work well for issues which contain information in the message which likely changes between runs,
+like e.g. line information.
+In this version a specific identifier, <code><a href="/api/Cake.Issues/IIssue/33316671">IIssue.Identifier</a></code>, is used which can be set by the issue provider.</p>
+<p>When working with legacy code bases which contain a lot of existing issues, using something like Cake.Issues
+can be hard, since it will notify about every existing issue if something is changed in a file.
+To work around this issue it is possible to limit issues which will be posted to pull request systems.
+In previous versions it was already possible to limit the total number of issues, the number of issues for
+every issue provider and the total number of issues across multiple run.
+With 0.9.0 it will additionally be possible to limit the number of issues for specific issue providers for either
+a single or across multiple runs.
+This allows advanced scenarios like posting a maximum of 10 MsBuild issues every run, but not more than 20 in total
+across all runs.</p>
+<h2 id="get-everything-together">Get everything together</h2>
+<p><a href="../docs/recipe/overview">Cake.Issues.Recipe</a>, the Cake Recipe script which you can integrate into your build script for easy integration of
+full feature issue management, has been updated to version 0.4.0, bringing all the new features of Cake.Issues 0.9.0.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues 0.9.0 is a breaking release, which means that it probably requires changes to your build script.
+This section documents the most common changes which might be required:</p>
+<ul>
+<li>Cake.Issues
+<ul>
+<li>Serialization format has been updated to version 3.
+Older version are still supported for deserialization.</li>
+</ul>
+</li>
+<li>Cake.Issues.Markdownlint
+<ul>
+<li><code>MarkdownlintLogFileFormat</code> alias has been renamed to <code>MarkdownlintV1LogFileFormat</code>
+(<a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/issues/116">#116</a>).</li>
+</ul>
+</li>
+<li>Cake.Issues.PullRequest
+<ul>
+<li><code>ReportIssuesToPullRequest</code> alias which accepts an issue provider, or a list of issue providers, and settings requires now settings of type
+<code><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings">IReportIssuesToPullRequestFromIssueProviderSettings</a></code> instead of <code><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">ReportIssuesToPullRequestSettings</a></code> to
+provider additional functionality, like support for <a href="#file-linking">File linking</a> and <a href="#support-for-passing-additional-run-information">Support for passing additional run information</a>.</li>
+</ul>
+</li>
+<li>Cake.Issues.PullRequests.AzureDevOps
+<ul>
+<li>Cake.Issues.PullRequests.AzureDevOps requires at least Cake.AzureDevOps 0.5.0</li>
+</ul>
+</li>
+<li>Cake.Issues.Reporting
+<ul>
+<li><code>CreateIssueReport</code> alias which accepts an issue provider, or a list of issue providers, and settings requires now settings of type
+<code><a href="/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings">ICreateIssueReportFromIssueProviderSettings</a></code> instead of <code><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">CreateIssueReportSettings</a></code> to
+provider additional functionality, like support for <a href="#file-linking">File linking</a> and <a href="#support-for-passing-additional-run-information">Support for passing additional run information</a>.</li>
+</ul>
+</li>
+<li>Cake.Issues.Reporting.Generic
+<ul>
+<li>Cake.Issues.Reporting.Generic requires at least Cake 0.38.0</li>
+<li><code>HtmlDxDataGridOption.FileLinkSettings</code> has been removed.
+File link settings can now be defined while reading the issues.
+For details see <a href="#file-linking">File linking</a>.
+(<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/issues/265">#265</a>).</li>
+<li><code>HtmlDxDataGridOption.JSZipLocation</code> has been split into <code>HtmlDxDataGridOption.JsZipLocation</code> and
+<code>HtmlDxDataGridOption.JsZipVersion</code>
+(<a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/issues/320">#320</a>).</li>
+</ul>
+</li>
+<li>Cake.Issues.Recipe
+<ul>
+<li>Cake.Issues.Recipe requires at least Cake 0.38.0</li>
+</ul>
+</li>
+</ul>
+<p>For details see release notes of the individual addins:</p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/0.9.0">Cake.Issues 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/0.9.0">Cake.Issues.MsBuild 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/0.9.0">Cake.Issues.InspectCode 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/0.9.0">Cake.Issues.DupFinder 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/0.9.0">Cake.Issues.GitRepository 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/0.9.0">Cake.Issues.Markdownlint 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/0.9.0">Cake.Issues.EsLint 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/0.9.0">Cake.Issues.DocFx 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests/releases/tag/0.9.0">Cake.Issues.PullRequests 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/0.9.0">Cake.Issues.PullRequests.AzureDevOps 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/0.9.0">Cake.Issues.PullRequests.AppVeyor 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/releases/tag/0.9.0">Cake.Issues.Reporting 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/0.9.0">Cake.Issues.Reporting.Generic 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/0.9.0">Cake.Issues.Reporting.Sarif 0.9.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.9.0">Cake.Issues.Recipe 0.9.0</a></li>
+</ul>
+
+
+<hr>
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released&amp;t=Cake%20v0.9.0%20Released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released&amp;text=Cake%20v0.9.0%20Released:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released&amp;via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released&amp;title=Cake%20v0.9.0%20Released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released&amp;title=Cake%20v0.9.0%20Released&amp;summary=&amp;source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
+  <li><a href="mailto:?subject=Cake%20v0.9.0%20Released&amp;body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
+</ul>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <p class="text-muted">
+    Copyright © <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
+    <br>
+    Website generated by <a href="http://wyam.io" target="_blank">Wyam</a>
+</p>
+
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div class="github-button">
+    <a href="https://github.com/search?q=topic%3Acake-issues&amp;type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+</div>
+<script>
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'cake-contrib/Lobby'
+    };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script type="text/javascript">
+    docsearch({
+        apiKey: '24e9e5844c59a6c2b72084ed6effc891',
+        indexName: 'cakeissues',
+        inputSelector: '#search-query',
+        debug: false
+    });
+</script>
+
+<script type="text/javascript" src="/assets/js/anchor.min.js"></script>
+<script type="text/javascript" src="/assets/js/clipboard.min.js"></script>
+<script type="text/javascript">
+    anchors.options.placement = 'left';
+    anchors.add('#content h1:not(.no-anchor), #content h2:not(.no-anchor), #content h3:not(.no-anchor), #content h4:not(.no-anchor)');
+
+    var snippets = document.querySelectorAll("pre > code");
+    [].forEach.call(snippets, function(snippet) {
+        snippet.insertAdjacentHTML("beforebegin", "<button class='btn-copy' data-clipboard-snippet><img class='clippy' width=13 src='/assets/images/clippy.svg' alt='Copy to clipboard'></button>");
+    });
+    var clipboardSnippets = new Clipboard('[data-clipboard-snippet]', {
+        target: function(trigger) {
+            return trigger.nextElementSibling;
+        }
+    });
+    clipboardSnippets.on('success', function(e) {
+        e.clearSelection();
+        showTooltip(e.trigger, "Copied!");
+    });
+    clipboardSnippets.on('error', function(e) {
+        showTooltip(e.trigger, fallbackMessage(e.action));
+    });
+    var btns = document.querySelectorAll('.btn-copy');
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener('mouseleave', function(e) {
+            e.currentTarget.setAttribute('class', 'btn-copy');
+            e.currentTarget.removeAttribute('aria-label');
+        });
+    }
+    function showTooltip(elem, msg) {
+        elem.setAttribute('class', 'btn-copy tooltipped tooltipped-s');
+        elem.setAttribute('aria-label', msg);
+    }
+    function fallbackMessage(action) {
+        var actionMsg = '';
+        var actionKey = (action === 'cut' ? 'X' : 'C');
+        if (/iPhone|iPad/i.test(navigator.userAgent)) {
+            actionMsg = 'No support :(';
+        } else if (/Mac/i.test(navigator.userAgent)) {
+            actionMsg = 'Press ⌘-' + actionKey + ' to ' + action;
+        } else {
+            actionMsg = 'Press Ctrl-' + actionKey + ' to ' + action;
+        }
+        return actionMsg;
+    }
+</script>
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

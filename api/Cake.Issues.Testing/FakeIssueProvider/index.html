@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -200,7 +201,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -208,7 +209,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
 									</ul>
 								</dd>				
@@ -221,11 +222,11 @@
 							graph BT
 	Type--&gt;Base0["BaseIssueProvider"]
 	click Base0 "/api/Cake.Issues/BaseIssueProvider"
-	Base0--&gt;Base1["BaseIssueComponent&lt;RepositorySettings&gt;"]
+	Base0--&gt;Base1["BaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Base1--&gt;Base2["Object"]
 	Type-.-&gt;Interface0["IIssueProvider"]
 	click Interface0 "/api/Cake.Issues/IIssueProvider"
-	Type-.-&gt;Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]
+	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Type["FakeIssueProvider"]
 class Type type-node
 
@@ -237,7 +238,7 @@ class Type type-node
 
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public class FakeIssueProvider : BaseIssueProvider, IIssueProvider, 
-    IBaseIssueComponent&lt;RepositorySettings&gt;</code></pre>
+    IBaseIssueComponent&lt;IReadIssuesSettings&gt;</code></pre>
 
 
 
@@ -305,7 +306,7 @@ class Type type-node
 							</tr>
 							<tr>
 								<td><a href="/api/Cake.Issues.Testing/FakeIssueProvider/3DDAE40D">Settings</a></td>
-								<td><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></td>
+								<td><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></td>
 								<td>
 									<div>
             Gets the settings.

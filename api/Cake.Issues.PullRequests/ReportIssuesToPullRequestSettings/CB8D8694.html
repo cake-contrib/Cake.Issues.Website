@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -154,6 +155,7 @@
 				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">MaxIssuesToPost</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/A7CC3E52">Max<wbr>Issues<wbr>To<wbr>Post<wbr>Across<wbr>Runs</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CB8D8694">Max<wbr>Issues<wbr>To<wbr>Post<wbr>For<wbr>Each<wbr>Issue<wbr>Provider</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/E4E1EA1E">ProviderIssueLimits</a></li>
 				<li><a href="/api/Cake.Issues/RepositorySettings/FD63614D">RepositoryRoot</a></li>
 
 
@@ -181,9 +183,9 @@
             <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code>.
             Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
             are prioritized.
-            Set to <code class="cs">null</code> to not limit issues per issue provider.
+            <code class="cs">null</code> won't limit issues per issue provider.
             Default is to filter to 100 issues for each issue provider.
-            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings/CAE58C82">MaxIssuesToPost</a></code> to set the global limit over all issue providers.
+            Use <code class="cs"><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings/F239BC1F">ProviderIssueLimits</a></code> to set limits for individual issue providers.
             </div>
 
 		<div class="panel panel-default">

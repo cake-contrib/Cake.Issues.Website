@@ -60,6 +60,7 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
+        <li><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
@@ -158,6 +159,7 @@
 				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
+				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
 				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
 				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
 				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
@@ -176,6 +178,8 @@
 				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
 				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
 				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
+				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
 
                     </ul>
@@ -215,7 +219,7 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 									</ul>
 								</dd>
 							
@@ -223,7 +227,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
 											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>&gt;<wbr></li>								
 									</ul>
@@ -233,8 +237,8 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
 											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
 									</ul>
 								</dd>			
@@ -247,19 +251,19 @@
 	Type--&gt;Base0["BaseConfigurableIssueProvider&lt;TSettings&gt;"]
 	Base0--&gt;Base1["BaseIssueProvider"]
 	click Base1 "/api/Cake.Issues/BaseIssueProvider"
-	Base1--&gt;Base2["BaseIssueComponent&lt;RepositorySettings&gt;"]
+	Base1--&gt;Base2["BaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Base2--&gt;Base3["Object"]
 	Type-.-&gt;Interface0["IIssueProvider"]
 	click Interface0 "/api/Cake.Issues/IIssueProvider"
-	Type-.-&gt;Interface1["IBaseIssueComponent&lt;RepositorySettings&gt;"]
+	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Type["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]
 class Type type-node
 	Derived0["MsBuildIssuesProvider"]--&gt;Type
 	click Derived0 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Derived1["EsLintIssuesProvider"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Derived2["FakeMultiFormatIssueProvider"]--&gt;Type
-	click Derived2 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived1["FakeMultiFormatIssueProvider"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived2["EsLintIssuesProvider"]--&gt;Type
+	click Derived2 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
 	Derived3["MarkdownlintIssuesProvider"]--&gt;Type
 	click Derived3 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
 
@@ -272,7 +276,7 @@ class Type type-node
 	<h1 id="Syntax">Syntax</h1>
 	<pre><code>public abstract class BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt; : 
     BaseConfigurableIssueProvider&lt;TSettings&gt;, IIssueProvider, 
-    IBaseIssueComponent&lt;RepositorySettings&gt;
+    IBaseIssueComponent&lt;IReadIssuesSettings&gt;
     
     where TSettings : BaseMultiFormatIssueProviderSettings&lt;TIssueProvider, TSettings&gt; where TIssueProvider : BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;</code></pre>
 
