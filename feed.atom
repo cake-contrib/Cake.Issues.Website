@@ -4,7 +4,7 @@
 	<title>Cake Issues</title>
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Issues.Website/" />
 	<rights>2020</rights>
-	<updated>2020-08-22T23:25:44Z</updated>
+	<updated>2020-08-23T08:20:51Z</updated>
 	<entry>
 		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.0-released</id>
 		<title>Cake v0.9.0 Released</title>
@@ -189,7 +189,7 @@ For details see &lt;a href="#file-linking"&gt;File linking&lt;/a&gt;.
 &lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting/releases/tag/0.9.0"&gt;Cake.Issues.Reporting 0.9.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/0.9.0"&gt;Cake.Issues.Reporting.Generic 0.9.0&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/0.9.0"&gt;Cake.Issues.Reporting.Sarif 0.9.0&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.9.0"&gt;Cake.Issues.Recipe 0.9.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.4.0"&gt;Cake.Issues.Recipe 0.4.0&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
 		<summary>&lt;p&gt;Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.&lt;/p&gt;</summary>
