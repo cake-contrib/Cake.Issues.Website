@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - Basic usage</title>
+        <title>Cake Issues - Report issues to pull requests</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -80,7 +80,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/usage/creating-issues/basic-usage.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/usage/reporting-issues-to-pull-requests/report-issues-to-pull-requests.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -131,15 +131,15 @@
                     <a href="/docs/usage/recipe">Recipe</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/recipe/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/recipe/using-cake-issues-recipe">Using Cake.Issues.Recipe</a></li>
 
                     </ul>
                 </li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/docs/usage/creating-issues">Creating Issues</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="selected"><a href="/docs/usage/creating-issues/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/creating-issues/creating-issues">Creating issues</a></li>
 
                     </ul>
                 </li>
@@ -147,7 +147,9 @@
                     <a href="/docs/usage/reading-issues">Reading Issues</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/reading-issues/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/reading-issues/reading-issues">Reading issues</a></li>
+                <li><a href="/docs/usage/reading-issues/run-information">Additional run information</a></li>
+                <li><a href="/docs/usage/reading-issues/file-linking">File linking</a></li>
 
                     </ul>
                 </li>
@@ -155,15 +157,15 @@
                     <a href="/docs/usage/creating-reports">Creating Reports</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/creating-reports/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/creating-reports/creating-reports">Creating reports</a></li>
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/docs/usage/reporting-issues-to-pull-requests">Reporting Issues To Pull Requests</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/reporting-issues-to-pull-requests/basic-usage">Basic usage</a></li>
+                <li class="selected"><a href="/docs/usage/reporting-issues-to-pull-requests/report-issues-to-pull-requests">Report issues to pull requests</a></li>
                 <li><a href="/docs/usage/reporting-issues-to-pull-requests/custom-issue-filter">Custom issue filter</a></li>
 
                     </ul>
@@ -451,33 +453,36 @@
 
 
 		<section class="content-header">
-			<h1>Basic usage</h1>
+			<h1>Report issues to pull requests</h1>
 		</section>
 	<section class="content">
-		<p>The <code>Cake.Issues</code> addin can be used to create issues directly in the build script.
-This issues can for example be used to create reports.</p>
-<p>To create issues you need to import the following core addin:</p>
+		<p>To use report issues to pull requests you need to import the following core addins:</p>
 <pre><code class="language-csharp">#addin &quot;Cake.Issues&quot;
+#addin &quot;Cake.Issues.PullRequests&quot;
+</code></pre>
+<p>Also you need to import at least one issue provider and pull request system.
+In the following example the issue provider for reading warnings from MsBuild log files
+and support for Azure DevOps pull requests is imported:</p>
+<pre><code class="language-csharp">#addin &quot;Cake.Issues.MsBuild&quot;
+#addin &quot;Cake.Issues.PullRequests.AzureDevOps&quot;
 </code></pre>
 <div class="alert alert-warning"><p>Please note that you always should pin addins to a specific version to make sure your builds are deterministic and
 won't break due to updates to one of the addins.</p>
 <p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
 </div>
-<p>In the following task a new warning for the myfile.txt file on line 42 is created:</p>
-<pre><code class="language-csharp">Task(&quot;Create-Issue&quot;).Does(() =&gt;
+<p>Finally you can define a task where you call the core addin with the desired issue provider and pull request system:</p>
+<pre><code class="language-csharp">Task(&quot;ReportIssuesToPullRequest&quot;).Does(() =&gt;
 {
-    var issue =
-        NewIssue(
-            &quot;Something went wrong&quot;,
-            &quot;MyCakeScript&quot;,
-            &quot;My Cake Script&quot;)
-            .WithMessageInHtmlFormat(&quot;Something went &lt;b&gt;wrong&lt;/b&gt;&quot;)
-            .WithMessageInMarkdownFormat(&quot;Something went **wrong**&quot;)
-            .InFile(&quot;myfile.txt&quot;, 42)
-            .WithPriority(IssuePriority.Warning)
-            .Create();
-
-    Information(&quot;Issue created with message: {0}&quot;, issues.MessageText);
+    var repoRootFolder = new DirectoryPath(&#64;&quot;C:\repo&quot;);
+    ReportIssuesToPullRequest(
+        MsBuildIssuesFromFilePath(
+            &#64;&quot;C:\build\msbuild.log&quot;,
+            MsBuildXmlFileLoggerFormat),
+        AzureDevOpsPullRequests(
+            new Uri(&quot;http://myserver:8080/tfs/defaultcollection/myproject/_git/myrepository&quot;),
+            &quot;refs/heads/feature/myfeature&quot;,
+            AzureDevOpsAuthenticationNtlm()),
+        repoRootFolder);
 });
 </code></pre>
 

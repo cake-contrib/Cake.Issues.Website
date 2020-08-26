@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - Basic usage</title>
+        <title>Cake Issues - Additional run information</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -78,12 +78,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/usage/recipe/basic-usage.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#add-cake.issues.recipe-to-your-build-script">Add Cake.Issues.Recipe to your build script</a></p>
-<p><a href="#configuring-cake.issues.recipe">Configuring Cake.Issues.Recipe</a></p>
-<p><a href="#calling-issues-tasks">Calling issues tasks</a></p>
-<hr class="infobar-hidden">
-</div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/usage/reading-issues/run-information.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
@@ -129,11 +125,11 @@
                     <a href="/docs/usage">Usage</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/docs/usage/recipe">Recipe</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="selected"><a href="/docs/usage/recipe/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/recipe/using-cake-issues-recipe">Using Cake.Issues.Recipe</a></li>
 
                     </ul>
                 </li>
@@ -141,15 +137,17 @@
                     <a href="/docs/usage/creating-issues">Creating Issues</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/creating-issues/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/creating-issues/creating-issues">Creating issues</a></li>
 
                     </ul>
                 </li>
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/docs/usage/reading-issues">Reading Issues</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/reading-issues/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/reading-issues/reading-issues">Reading issues</a></li>
+                <li class="selected"><a href="/docs/usage/reading-issues/run-information">Additional run information</a></li>
+                <li><a href="/docs/usage/reading-issues/file-linking">File linking</a></li>
 
                     </ul>
                 </li>
@@ -157,7 +155,7 @@
                     <a href="/docs/usage/creating-reports">Creating Reports</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/creating-reports/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/creating-reports/creating-reports">Creating reports</a></li>
 
                     </ul>
                 </li>
@@ -165,7 +163,7 @@
                     <a href="/docs/usage/reporting-issues-to-pull-requests">Reporting Issues To Pull Requests</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/usage/reporting-issues-to-pull-requests/basic-usage">Basic usage</a></li>
+                <li><a href="/docs/usage/reporting-issues-to-pull-requests/report-issues-to-pull-requests">Report issues to pull requests</a></li>
                 <li><a href="/docs/usage/reporting-issues-to-pull-requests/custom-issue-filter">Custom issue filter</a></li>
 
                     </ul>
@@ -453,46 +451,42 @@
 
 
 		<section class="content-header">
-			<h1>Basic usage</h1>
+			<h1>Additional run information</h1>
 		</section>
 	<section class="content">
-		<p>The <a href="../../recipe/">Cake.Issues.Recipe</a> package can be used to easily add issue management functionality to your build script.</p>
-<h1 id="add-cake.issues.recipe-to-your-build-script">Add Cake.Issues.Recipe to your build script</h1>
-<p>To use Cake.Issues.Recipe in your build script you need to first load the NuGet package:</p>
-<pre><code class="language-csharp">#load nuget:package=Cake.Issues.Recipe
-</code></pre>
-<div class="alert alert-warning"><p>Please note that you always should pin NuGet packages to a specific version to make sure your builds are deterministic and
-won't break due to updates to Cake.Issues.Recipe.</p>
-<p>See <a href="https://cakebuild.net/docs/tutorials/pinning-cake-version#pinning-addin-version">pinning addin versions</a> for details.</p>
-</div>
-<h1 id="configuring-cake.issues.recipe">Configuring Cake.Issues.Recipe</h1>
-<p>To make issues available to Cake.Issues.Recipe you need to set the corresponding configuration parameters.</p>
-<p>In the following example a new task is introduced which depends on existing tasks which build a MsBuild solution and run JetBrains InspectCode.
-It will pass the MsBuild and InspectCode logfile to Cake.Issues.Recipe:</p>
-<pre><code class="language-csharp">// Run issues task by default.
-Task("Configure-CakeIssuesRecipe")
-    .IsDependentOn("Build")
-    .IsDependentOn("Run-InspectCode")
-    .Does(() =&gt;
-{
-    IssuesParameters.InputFiles.MsBuildXmlFileLoggerLogFilePath = msBuildLogFilePath;
-    IssuesParameters.InputFiles.InspectCodeLogFilePath = inspectCodeLogFilePath;
-}
-</code></pre>
-<p>See <a href="../../recipe/configuration">configuration</a> for a full list of available configuration parameters.</p>
-<h1 id="calling-issues-tasks">Calling issues tasks</h1>
-<p>Cake.Issues.Recipe will add a bunch of <a href="../../recipe/tasks">tasks</a> to your build script.</p>
-<p>To add the issues functionality into your existing build pipeline you can make
-the <code>Read-Issues</code> task dependent on the task which configures Cake.Issues.Recipe:</p>
-<pre><code class="language-csharp">// Make sure build and linters run before issues task.
-IssuesBuildTasks.ReadIssuesTask
-    .IsDependentOn("Configure-CakeIssuesRecipe");
-</code></pre>
-<p>At some point you need to call the tasks provided by Cake.Isses.Recipe.
-In the following example the <code>Default</code> task calls the main <code>Issues</code> task:</p>
-<pre><code class="language-csharp">// Run issues task by default.
-Task("Default")
-    .IsDependentOn("Issues");
+		<p>If a build script needs to parse multiple log files from the same tool, e.g. because multiple MsBuild solutions were built,
+this can be done by calling the issue provider multiple times.
+If the results are read into the same list and shown on the same report,
+individual issues could not be assigned to any of the calls, since issue provider type and name are identical.</p>
+<p>Starting with Cake.Issues 0.9.0 it is possible to pass additional run information while reading issues,
+which then will be stored with each issues in the <code><a href="/api/Cake.Issues/IIssue/FDB12A02">IIssue.Run</a></code> property:</p>
+<pre><code class="language-csharp">var issues = new List&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;();
+
+// Parse issues from build of solution 1
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            @"C:\build\solution1-msbuild.log",
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(@"c:\repo")
+        {
+            Run = "Solution 1"
+        }
+    )
+);
+
+// Parse issues from build of solution 2
+issues.AddRange(
+    ReadIssues(
+        MsBuildIssuesFromFilePath(
+            @"C:\build\solution2-msbuild.log",
+            MsBuildXmlFileLoggerFormat),
+        new ReadIssuesSettings(@"c:\repo")
+        {
+            Run = "Solution 2"
+        }
+    )
+);
 </code></pre>
 
 	</section>
