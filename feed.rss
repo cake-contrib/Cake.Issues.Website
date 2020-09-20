@@ -5,10 +5,46 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Sat, 19 Sep 2020 23:02:42 GMT</pubDate>
-		<lastBuildDate>Sat, 19 Sep 2020 23:02:42 GMT</lastBuildDate>
+		<pubDate>Sun, 20 Sep 2020 10:11:47 GMT</pubDate>
+		<lastBuildDate>Sun, 20 Sep 2020 10:11:47 GMT</lastBuildDate>
 		<item>
-			<title>Cake v0.9.0 Released</title>
+			<title>Cake Issues v0.9.1 Released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.1-released</link>
+			<description>&lt;p&gt;Version 0.9.1 of Cake Issues and Cake.Issues.PullRequests.AzureDevOps have been released.
+These are minor releases containing improvements and bug fixes.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.1-released</guid>
+			<pubDate>Sat, 19 Sep 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.9.1 of Cake Issues and Cake.Issues.PullRequests.AzureDevOps have been released.
+These are minor releases containing improvements and bug fixes.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/christianbumann"&gt;christianbumann&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/janniksam"&gt;janniksam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="easier-file-linking-for-manually-created-issues"&gt;Easier file linking for manually created issues&lt;/h2&gt;
+&lt;p&gt;With 0.8.0 file links was implemented in Cake.Issues.Reporting.Generic and worked for any issues passed to the report.
+With 0.9.0 &lt;a href="cake-issues-v0.9.0-released#file-linking"&gt;file link infrastructure was moved to Cake.Issues&lt;/a&gt;.
+File link settings can now be set while reading issues, and are passed through the &lt;code&gt;IIssue.FileLink&lt;/code&gt; property to reports and pull request systems.&lt;/p&gt;
+&lt;p&gt;While this solution works for issues read by an issue provider, where file link settings can be passed to the &lt;code&gt;ReadIssues&lt;/code&gt; alias,
+it become much more complicated for issues created using the &lt;code&gt;NewIssue&lt;/code&gt; alias, where an URL can be set, which needs to be resolved manually before.&lt;/p&gt;
+&lt;p&gt;Cake.Issues 0.9.1 adds an &lt;code&gt;WithFileLinkSettings&lt;/code&gt; method to &lt;code&gt;IIssueBuilder&lt;/code&gt; where a file link setting object can be passed which does resolve the URL.&lt;/p&gt;
+&lt;h2 id="line-range-and-column-support-in-azure-devops-pull-request-integration"&gt;Line range and column support in Azure DevOps pull request integration&lt;/h2&gt;
+&lt;p&gt;Cake Issues 0.9.0 added support for line ranges and column information.
+With 0.9.0 the Azure DevOps pull request integration didn't use this information while posting comments to pull requests.
+Cake.Issues.PullRequests.AzureDevOps 0.9.1 fixes this and will post comments for line and column ranges if they are available on an issue.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues and Cake.Issues.PullRequests.AzureDevOps 0.9.1 are compatible with version 0.9.0 without any breaking changes.
+To update to the new version bump the version of the specific addins.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Cake Issues v0.9.0 Released</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.0-released</link>
 			<description>&lt;p&gt;Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.&lt;/p&gt;</description>
 			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.0-released</guid>

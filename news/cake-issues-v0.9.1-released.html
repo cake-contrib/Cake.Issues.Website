@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - BaseRuleDescription Class</title>
+        <title>Cake Issues - Cake Issues v0.9.1 Released</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -60,11 +60,11 @@
     <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
-        <li><a href="/news">News</a></li>
+        <li class="active"><a href="/news">News</a></li>
         <li><a href="/docs">Documentation</a></li>
         <li><a href="/dsl">Reference</a></li>
         <li><a href="/addins">Addins</a></li>
-        <li class="active"><a href="/api/Cake.Issues">API</a></li>
+        <li><a href="/api/Cake.Issues">API</a></li>
  
                         </ul>       
                     </div>
@@ -78,107 +78,24 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
-<p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Properties">Properties</a></p>
-<p><a href="#ExtensionMethods">Extension Methods</a></p>
-<hr class="infobar-hidden">
-</div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2020-09-19-cake-issues-v0.9.1-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
                                      
-                    	
-	    <script src="/assets/js/lunr.min.js"></script>
-    <script src="/assets/js/searchIndex.js"></script>
-    <div class="sidebar-form">
-        <div class="input-group">
-            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
-            <span class="input-group-btn">
-                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
-    </div>
-    <div id="search-results">
-    </div>
-    <script>
-        function runSearch(query){
-            $("#search-results").empty();			
-            if( query.length < 2 ){
-                return;
-            }			
-            var results = searchModule.search("*" + query + "*");
-            var listHtml = "<ul class='sidebar-menu'>";	
-            listHtml += "<li class='header'>Type Results</li>";	
-            if(results.length == 0 ){
-                listHtml += "<li>No results found</li>";
-            } else {					
-                for(var i = 0; i < results.length; ++i){
-                    var res = results[i];
-                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
-                }				
-            }
-            listHtml += "</ul>";				
-            $("#search-results").append(listHtml);
-        }
-
-        $(document).ready(function(){
-            $("#search").on('input propertychange paste', function() {
-                runSearch($("#search").val());
-            });
-        });
-
-        function htmlEscape(html) {
-            return document.createElement('div')
-                .appendChild(document.createTextNode(html))
-                .parentNode
-                .innerHTML;
-        }
-    </script>
-	
-    <hr>
+                    
 
                     <ul class="sidebar-menu">
                         
-			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></li>
-		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
-		<li role="separator" class="divider"></li>
-			<li class="header">Class Types</li>
-				<li><a href="/api/Cake.Issues/Aliases">Aliases</a></li>
-				<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>
-				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>&lt;TSettings, <wbr>TIssueProvider&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProviderSettings_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Settings<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li class="selected"><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
-				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
-				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
-				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
-				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
-				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
-				<li><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></li>
-				<li><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></li>
-				<li><a href="/api/Cake.Issues/IssuePriority">IssuePriority</a></li>
-				<li><a href="/api/Cake.Issues/IssueProviderSettings">Issue<wbr>Provider<wbr>Settings</a></li>
-				<li><a href="/api/Cake.Issues/IssuesAliasConstants">IssuesAliasConstants</a></li>
-				<li><a href="/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></li>
-				<li><a href="/api/Cake.Issues/IssuesReader">IssuesReader</a></li>
-				<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>
-				<li><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions">StringPathExtensions</a></li>
-			<li class="header">Interface Types</li>
-				<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
-				<li><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
-				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
-				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
 
+        <li class="header"><i class="fa fa-bookmark"></i> Categories</li>    
+            <li><a href="/news/Release-Notes">Release Notes</a></li>
+    
+    <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/news/archive/2020/09">September, 2020</a></li>
+        <li><a href="/news/archive/2020/08">August, 2020</a></li>
+    
 
                     </ul>
                             
@@ -191,151 +108,62 @@
 
 
 
-<section class="content-header">
-	<h1>BaseRuleDescription <small>Class</small></h1>
-</section>
-<section class="content">
-	
-	
-		<h1 id="Summary">Summary</h1>
-	<div class="lead">
-            Base class for all rule descriptions.
-            </div>
-
-		<div class="panel panel-default">
-  			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-6">
-						<dl class="dl-horizontal">		
-								<dt>Assembly</dt>
-								<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
-
-								<dt>Namespace</dt>
-								<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
-											
-							
-								<dt>Base Types</dt>
-								<dd>
-									<ul class="list-unstyled">										
-											<li>Object</li>								
-									</ul>
-								</dd>				
-							
-								<dt>Derived Types</dt>
-								<dd>
-									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription">Markdownlint<wbr>Rule<wbr>Description</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeRuleDescription">FakeRuleDescription</a></li>								
-											<li><a href="/api/Cake.Issues.MsBuild/MsBuildRuleDescription">Ms<wbr>Build<wbr>Rule<wbr>Description</a></li>								
-									</ul>
-								</dd>			
-							
-						</dl>
-					</div>		
-					<div class="col-md-6">
-						<div class="mermaid">
-							graph BT
-	Type--&gt;Base0["Object"]
-	Type["BaseRuleDescription"]
-class Type type-node
-	Derived0["MarkdownlintRuleDescription"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription"
-	Derived1["FakeRuleDescription"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.Testing/FakeRuleDescription"
-	Derived2["MsBuildRuleDescription"]--&gt;Type
-	click Derived2 "/api/Cake.Issues.MsBuild/MsBuildRuleDescription"
-
-						</div>
-					</div>
-				</div>
-  			</div>
-		</div>
-
-	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class BaseRuleDescription</code></pre>
-
-
-
-
-
-
-
-			<h1 id="Constructors">Constructors</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover two-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-									<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/BaseRuleDescription/524723BF">BaseRuleDescription<wbr>()<wbr></a></td>
-									<td></td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
+		<section class="content-header">
+			<h1>Cake Issues v0.9.1 Released</h1>
+		</section>
+	<section class="content">
 		
 
 
 
-			<h1 id="Properties">Properties</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/BaseRuleDescription/49544181">Rule</a></td>
-								<td>string</td>
-								<td>
-									<div>
-            Gets or sets the full identifier of the rule.
-            </div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Saturday, September 19, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
 
 
+<p>Version 0.9.1 of Cake Issues and Cake.Issues.PullRequests.AzureDevOps have been released.
+These are minor releases containing improvements and bug fixes.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/christianbumann">christianbumann</a></li>
+<li><a href="https://github.com/janniksam">janniksam</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+<li><a href="https://github.com/x-jokay">x-jokay</a></li>
+</ul>
+<h2 id="easier-file-linking-for-manually-created-issues">Easier file linking for manually created issues</h2>
+<p>With 0.8.0 file links was implemented in Cake.Issues.Reporting.Generic and worked for any issues passed to the report.
+With 0.9.0 <a href="cake-issues-v0.9.0-released#file-linking">file link infrastructure was moved to Cake.Issues</a>.
+File link settings can now be set while reading issues, and are passed through the <code><a href="/api/Cake.Issues/IIssue/3492EB27">IIssue.FileLink</a></code> property to reports and pull request systems.</p>
+<p>While this solution works for issues read by an issue provider, where file link settings can be passed to the <code>ReadIssues</code> alias,
+it become much more complicated for issues created using the <code>NewIssue</code> alias, where an URL can be set, which needs to be resolved manually before.</p>
+<p>Cake.Issues 0.9.1 adds an <code>WithFileLinkSettings</code> method to <code>IIssueBuilder</code> where a file link setting object can be passed which does resolve the URL.</p>
+<h2 id="line-range-and-column-support-in-azure-devops-pull-request-integration">Line range and column support in Azure DevOps pull request integration</h2>
+<p>Cake Issues 0.9.0 added support for line ranges and column information.
+With 0.9.0 the Azure DevOps pull request integration didn't use this information while posting comments to pull requests.
+Cake.Issues.PullRequests.AzureDevOps 0.9.1 fixes this and will post comments for line and column ranges if they are available on an issue.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues and Cake.Issues.PullRequests.AzureDevOps 0.9.1 are compatible with version 0.9.0 without any breaking changes.
+To update to the new version bump the version of the specific addins.</p>
 
-			<h1 id="ExtensionMethods">Extension Methods</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>Base<wbr>Rule<wbr>Description&gt;<wbr><wbr>(string)<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>
-            Throws an exception if the specified parameter's value is null.
-            </div>
-										<div><small><em>From <a href="/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></em></small></div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
-	
-</section>
+<hr>
+
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released&amp;t=Cake%20Issues%20v0.9.1%20Released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released&amp;text=Cake%20Issues%20v0.9.1%20Released:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released&amp;via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released&amp;title=Cake%20Issues%20v0.9.1%20Released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released&amp;title=Cake%20Issues%20v0.9.1%20Released&amp;summary=&amp;source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
+  <li><a href="mailto:?subject=Cake%20Issues%20v0.9.1%20Released&amp;body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v0.9.1-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
+</ul>
+
+	</section>
                 
             </div>           
             
