@@ -5,8 +5,41 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Wed, 23 Sep 2020 23:02:38 GMT</pubDate>
-		<lastBuildDate>Wed, 23 Sep 2020 23:02:38 GMT</lastBuildDate>
+		<pubDate>Thu, 24 Sep 2020 06:45:43 GMT</pubDate>
+		<lastBuildDate>Thu, 24 Sep 2020 06:45:43 GMT</lastBuildDate>
+		<item>
+			<title>Cake Issues Recipe v0.4.2 released, bringing support for GitHub Actions</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.2-released</link>
+			<description>&lt;p&gt;Version 0.4.2 of Cake Issues Recipe has been released bringing support for GitHub Actions.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.2-released</guid>
+			<pubDate>Thu, 24 Sep 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.4.2 of Cake Issues Recipe has been released bringing support for GitHub Actions.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/admiringworm"&gt;admiringworm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-github-actions"&gt;Support for GitHub Actions&lt;/h2&gt;
+&lt;p&gt;This version of Cake.Issues.Recipe brings support for running under GitHub Actions.
+Currently supported feature is writing of issues to build server which will show up in the build log grouped by issue provider / run:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2020-09-24-log-output.png" class="img-fluid" alt="Log output" title="Log output" /&gt;&lt;/p&gt;
+&lt;p&gt;Additionally the issues show up as annotations:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2020-09-24-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /&gt;&lt;/p&gt;
+&lt;p&gt;Having issues available as annotations also means that they will be shown in pull requests on the related file / position:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2020-09-24-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /&gt;&lt;/p&gt;
+&lt;p&gt;It's planned to support remaining features like providing full issue report as artifact in a future release.&lt;/p&gt;
+&lt;div class="alert alert-info"&gt;&lt;p&gt;Support for GitHub Actions integration is currently only available in Cake.Issues.Recipe, but not as a standalone addin.
+It's planned to additionally provide a standalone addin which can be used outside of Cake.Issues.Recipe in the future.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.Recipe 0.4.2 is compatible with version 0.4.x without any breaking changes.
+To update to the new version bump the version in your build script.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues v0.9.1 Released</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v0.9.1-released</link>

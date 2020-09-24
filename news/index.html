@@ -115,6 +115,43 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-recipe-v0.4.2-released">Cake Issues Recipe v0.4.2 released, bringing support for GitHub Actions</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Thursday, September 24, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 0.4.2 of Cake Issues Recipe has been released bringing support for GitHub Actions.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/admiringworm">admiringworm</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="support-for-github-actions">Support for GitHub Actions</h2>
+<p>This version of Cake.Issues.Recipe brings support for running under GitHub Actions.
+Currently supported feature is writing of issues to build server which will show up in the build log grouped by issue provider / run:</p>
+<p><img src="2020-09-24-log-output.png" class="img-fluid" alt="Log output" title="Log output" /></p>
+<p>Additionally the issues show up as annotations:</p>
+<p><img src="2020-09-24-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /></p>
+<p>Having issues available as annotations also means that they will be shown in pull requests on the related file / position:</p>
+<p><img src="2020-09-24-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /></p>
+<p>It's planned to support remaining features like providing full issue report as artifact in a future release.</p>
+<div class="alert alert-info"><p>Support for GitHub Actions integration is currently only available in Cake.Issues.Recipe, but not as a standalone addin.
+It's planned to additionally provide a standalone addin which can be used outside of Cake.Issues.Recipe in the future.</p>
+</div>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues.Recipe 0.4.2 is compatible with version 0.4.x without any breaking changes.
+To update to the new version bump the version in your build script.</p>
+
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-v0.9.1-released">Cake Issues v0.9.1 Released</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -126,32 +163,7 @@
             <div>
                 <p>Version 0.9.1 of Cake Issues and Cake.Issues.PullRequests.AzureDevOps have been released.
 These are minor releases containing improvements and bug fixes.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/christianbumann">christianbumann</a></li>
-<li><a href="https://github.com/janniksam">janniksam</a></li>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-<li><a href="https://github.com/x-jokay">x-jokay</a></li>
-</ul>
-<h2 id="easier-file-linking-for-manually-created-issues">Easier file linking for manually created issues</h2>
-<p>With 0.8.0 file links was implemented in Cake.Issues.Reporting.Generic and worked for any issues passed to the report.
-With 0.9.0 <a href="cake-issues-v0.9.0-released#file-linking">file link infrastructure was moved to Cake.Issues</a>.
-File link settings can now be set while reading issues, and are passed through the <code>IIssue.FileLink</code> property to reports and pull request systems.</p>
-<p>While this solution works for issues read by an issue provider, where file link settings can be passed to the <code>ReadIssues</code> alias,
-it become much more complicated for issues created using the <code>NewIssue</code> alias, where an URL can be set, which needs to be resolved manually before.</p>
-<p>Cake.Issues 0.9.1 adds an <code>WithFileLinkSettings</code> method to <code>IIssueBuilder</code> where a file link setting object can be passed which does resolve the URL.</p>
-<h2 id="line-range-and-column-support-in-azure-devops-pull-request-integration">Line range and column support in Azure DevOps pull request integration</h2>
-<p>Cake Issues 0.9.0 added support for line ranges and column information.
-With 0.9.0 the Azure DevOps pull request integration didn't use this information while posting comments to pull requests.
-Cake.Issues.PullRequests.AzureDevOps 0.9.1 fixes this and will post comments for line and column ranges if they are available on an issue.</p>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake.Issues and Cake.Issues.PullRequests.AzureDevOps 0.9.1 are compatible with version 0.9.0 without any breaking changes.
-To update to the new version bump the version of the specific addins.</p>
-
+                <a href="/news/cake-issues-v0.9.1-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-v0.9.0-released">Cake Issues v0.9.0 Released</a></h2>
