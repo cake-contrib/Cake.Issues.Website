@@ -115,6 +115,27 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/github-actions-addin">New GitHub Actions addin</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Sunday, September 27, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>A new <a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> has been released which brings integration with GitHub Actions and GitHub pull requests.</p>
+<!--excerpt-->
+<p><a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> creates annotations from issues when running on GitHub Actions:</p>
+<p><img src="../docs/pull-request-systems/github-actions/githubactions-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /></p>
+<p>These annotations will also be shown in pull requests on the related file / position,
+bringing first class integration for GitHub pull requests to Cake.Issues:</p>
+<p><img src="../docs/pull-request-systems/github-actions/githubactions-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /></p>
+<p>This integration was <a href="cake-issues-recipe-v0.4.2-released">first released in Cake.Issues.Recipe 0.4.2</a> and has now been moved to its own addin, which can also be used outside of
+Cake.Issues.Recipe.</p>
+
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-recipe-v0.4.2-released">Cake Issues Recipe v0.4.2 released, bringing support for GitHub Actions</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -125,31 +146,7 @@
     </dl>
             <div>
                 <p>Version 0.4.2 of Cake Issues Recipe has been released bringing support for GitHub Actions.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/admiringworm">admiringworm</a></li>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-</ul>
-<h2 id="support-for-github-actions">Support for GitHub Actions</h2>
-<p>This version of Cake.Issues.Recipe brings support for running under GitHub Actions.
-Currently supported feature is writing of issues to build server which will show up in the build log grouped by issue provider / run:</p>
-<p><img src="2020-09-24-log-output.png" class="img-fluid" alt="Log output" title="Log output" /></p>
-<p>Additionally the issues show up as annotations:</p>
-<p><img src="2020-09-24-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /></p>
-<p>Having issues available as annotations also means that they will be shown in pull requests on the related file / position:</p>
-<p><img src="2020-09-24-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /></p>
-<p>It's planned to support remaining features like providing full issue report as artifact in a future release.</p>
-<div class="alert alert-info"><p>Support for GitHub Actions integration is currently only available in Cake.Issues.Recipe, but not as a standalone addin.
-It's planned to additionally provide a standalone addin which can be used outside of Cake.Issues.Recipe in the future.</p>
-</div>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake.Issues.Recipe 0.4.2 is compatible with version 0.4.x without any breaking changes.
-To update to the new version bump the version in your build script.</p>
-
+                <a href="/news/cake-issues-recipe-v0.4.2-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-v0.9.1-released">Cake Issues v0.9.1 Released</a></h2>

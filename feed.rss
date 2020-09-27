@@ -5,8 +5,25 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Sat, 26 Sep 2020 23:03:07 GMT</pubDate>
-		<lastBuildDate>Sat, 26 Sep 2020 23:03:07 GMT</lastBuildDate>
+		<pubDate>Sun, 27 Sep 2020 06:42:47 GMT</pubDate>
+		<lastBuildDate>Sun, 27 Sep 2020 06:42:47 GMT</lastBuildDate>
+		<item>
+			<title>New GitHub Actions addin</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/github-actions-addin</link>
+			<description>&lt;p&gt;A new &lt;a href="../docs/pull-request-systems/github-actions/"&gt;Cake.Issues.PullRequest.GitHubActions addin&lt;/a&gt; has been released which brings integration with GitHub Actions and GitHub pull requests.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/github-actions-addin</guid>
+			<pubDate>Sun, 27 Sep 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;A new &lt;a href="../docs/pull-request-systems/github-actions/"&gt;Cake.Issues.PullRequest.GitHubActions addin&lt;/a&gt; has been released which brings integration with GitHub Actions and GitHub pull requests.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;&lt;a href="../docs/pull-request-systems/github-actions/"&gt;Cake.Issues.PullRequest.GitHubActions addin&lt;/a&gt; creates annotations from issues when running on GitHub Actions:&lt;/p&gt;
+&lt;p&gt;&lt;img src="../docs/pull-request-systems/github-actions/githubactions-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /&gt;&lt;/p&gt;
+&lt;p&gt;These annotations will also be shown in pull requests on the related file / position,
+bringing first class integration for GitHub pull requests to Cake.Issues:&lt;/p&gt;
+&lt;p&gt;&lt;img src="../docs/pull-request-systems/github-actions/githubactions-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /&gt;&lt;/p&gt;
+&lt;p&gt;This integration was &lt;a href="cake-issues-recipe-v0.4.2-released"&gt;first released in Cake.Issues.Recipe 0.4.2&lt;/a&gt; and has now been moved to its own addin, which can also be used outside of
+Cake.Issues.Recipe.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues Recipe v0.4.2 released, bringing support for GitHub Actions</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.2-released</link>
