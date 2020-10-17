@@ -1,19 +1,21 @@
-﻿<!DOCTYPE html><html><head>
+﻿<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="description">
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="description" />
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - Features</title>
+        <title>Cake Issues - Introduction</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
-        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
-        <link href="/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
+        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/override.css" rel="stylesheet">
+        <link href="/assets/css/override.css" rel="stylesheet" />
         <script src="/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>        
         <script src="/assets/js/app.min.js"></script>         
@@ -27,7 +29,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -57,7 +59,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                             <div class="navbar-right navbar-form">
-    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus>
 </div>
 
         <li><a href="/news">News</a></li>
@@ -78,11 +80,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/issue-providers/docfx/features.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#basic-features">Basic features</a></p>
-<p><a href="#supported-iissue-properties">Supported IIssue properties</a></p>
-<hr class="infobar-hidden">
-</div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/overview/introduction.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+    <div id="infobar-headings"></div>
 
                 </section>
                 <section class="sidebar">    
@@ -92,11 +91,11 @@
                     <ul class="sidebar-menu">
                         
 
-                <li class="treeview">
+                <li class="treeview active">
                     <a href="/docs/overview">Overview</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li><a href="/docs/overview/introduction">Introduction</a></li>
+                <li class="selected"><a href="/docs/overview/introduction">Introduction</a></li>
                 <li><a href="/docs/overview/features">Features</a></li>
                 <li class="treeview">
                     <a href="/docs/overview/release-notes">Release Notes</a> <a href="#" class="expand"></a>
@@ -189,16 +188,16 @@
 
                     </ul>
                 </li>
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/docs/issue-providers">Issue Providers</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
-                <li class="treeview active">
+                <li class="treeview">
                     <a href="/docs/issue-providers/docfx">DocFx</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
                 <li><a href="/docs/issue-providers/docfx/requirements">Requirements</a></li>
-                <li class="selected"><a href="/docs/issue-providers/docfx/features">Features</a></li>
+                <li><a href="/docs/issue-providers/docfx/features">Features</a></li>
                 <li><a href="/docs/issue-providers/docfx/examples">Examples</a></li>
                 <li><a href="/docs/issue-providers/docfx/release-notes">DocFx Support Release Notes</a></li>
 
@@ -474,124 +473,31 @@
 
 
 		<section class="content-header">
-			<h1>Features</h1>
+			<h1>Introduction</h1>
 		</section>
 	<section class="content">
-		<p>The <a href="https://www.nuget.org/packages/Cake.Issues.DocFx">Cake.Issues.DocFx addin</a> provides the following features.</p>
-<h1 id="basic-features">Basic features</h1>
-<ul>
-<li><p>Reads warnings from <a href="https://dotnet.github.io/docfx/">DocFx</a> log files.</p>
-<div class="alert alert-info"><p><a href="https://dotnet.github.io/docfx/">DocFx</a> can be run with <a href="https://www.nuget.org/packages/Cake.DocFx">Cake.DocFx</a> addin.</p>
-</div>
-</li>
-</ul>
-<h1 id="supported-iissue-properties">Supported IIssue properties</h1>
-<table class="table">
-<thead>
-<tr>
-<th></th>
-<th>Property</th>
-<th>Remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/D5A24C72">IIssue.ProviderType</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/FA8BB1A0">IIssue.ProviderName</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/FDB12A02">IIssue.Run</a></code></td>
-<td>Can be set while reading issues</td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/33316671">IIssue.Identifier</a></code></td>
-<td>Set to <code><a href="/api/Cake.Issues/IIssue/0D3A56ED">IIssue.MessageText</a></code></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/C3B3B033">IIssue.ProjectName</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/FDE5E663">IIssue.ProjectFileRelativePath</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/BF0CD6F1">IIssue.AffectedFileRelativePath</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/F2A42E89">IIssue.Line</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/28A40BC1">IIssue.EndLine</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/240A8804">IIssue.Column</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/946F5F7F">IIssue.EndColumn</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/3492EB27">IIssue.FileLink</a></code></td>
-<td>Can be set while reading issues</td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/0D3A56ED">IIssue.MessageText</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/2F65A4CE">IIssue.MessageHtml</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/9161A321">IIssue.MessageMarkdown</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/BFEFFBB1">IIssue.Priority</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/05A39052">IIssue.PriorityName</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/C8BCE21E">IIssue.Rule</a></code></td>
-<td></td>
-</tr>
-<tr>
-<td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
-<td><code><a href="/api/Cake.Issues/IIssue/48A6F355">IIssue.RuleUrl</a></code></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+		<p>Do you want to break your build on JetBrains InspectCode issues?
+Do you want to create nice reports for StyleCop issues in your code?
+Do you want to have ESLint issues reported as comments to pull requests?
+The Cake.Issues addins allows you to do this and much more.
+Read issues from different analyzer or linters, create reports or add them as comments to pull requests.</p>
+<p>While some linting tools provide nice reporting capabilities, others don't.
+Some build systems provide tasks to report issues into pull requests.
+But if you're using another build system your out of luck.
+Maybe you found a new nice linting tool which does exactly what you need,
+but probably it won't integrate well with your existing other linting tools.</p>
+<p>The Cake.Issues addins tries to solve this, by providing a common and extensible infrastructure
+for issue management in Cake build scripts.</p>
+<p>Unlike other Cake addins, the Cake Issues addin consists of over 15 different addins,
+working together and providing over 75 aliases which can be used in Cake build scripts to work with issues.
+The addins are built in a modular architecture and are providing different extension points which allows to easily
+enhance them for supporting additional analyzers, linters, report formats and code review systems.</p>
+<a class="btn btn-primary btn-lg" href="https://gitpitch.com/pascalberger/Cake.Issues-Presentation" target="_blank" role="button">
+    <span class="glyphicon glyphicon-facetime-video"></span> Presentation
+</a>
+<a class="btn btn-primary btn-lg" href="/docs/usage" role="button">
+    <span class="glyphicon glyphicon-book"></span> Tutorials
+</a>
 
 	</section>
                 
@@ -605,8 +511,8 @@
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
                 <p class="text-muted">
-    Copyright © <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
-    <br>
+    Copyright &copy; <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
+    <br/>
     Website generated by <a href="http://wyam.io" target="_blank">Wyam</a>
 </p>
 
@@ -614,14 +520,14 @@
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
         <div class="github-button">
-    <a href="https://github.com/search?q=topic%3Acake-issues&amp;type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+    <a href="https://github.com/search?q=topic%3Acake-issues&type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
 </div>
 <script>
     ((window.gitter = {}).chat = {}).options = {
         room: 'cake-contrib/Lobby'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript">
@@ -748,5 +654,5 @@
                 }, 500);
             });
         </script>
-    
-</body></html>
+    </body>
+</html>
