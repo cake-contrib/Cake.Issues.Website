@@ -5,8 +5,66 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Mon, 19 Oct 2020 23:03:35 GMT</pubDate>
-		<lastBuildDate>Mon, 19 Oct 2020 23:03:35 GMT</lastBuildDate>
+		<pubDate>Tue, 20 Oct 2020 19:41:05 GMT</pubDate>
+		<lastBuildDate>Tue, 20 Oct 2020 19:41:05 GMT</lastBuildDate>
+		<item>
+			<title>Cake Issues MsBuild v0.9.1 Released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-msbuild-v0.9.1-released</link>
+			<description>&lt;p&gt;Version 0.9.1 of MsBuild support for Cake.Issues has been released.
+This is a minor release containing improvements.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-msbuild-v0.9.1-released</guid>
+			<pubDate>Tue, 20 Oct 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.9.1 of MsBuild support for Cake.Issues has been released.
+This is a minor release containing improvements.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cho-trackman"&gt;cho-trackman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/eoehen"&gt;eoehen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-reading-of-errors"&gt;Support for reading of errors&lt;/h2&gt;
+&lt;p&gt;Until now MsBuild support did read warnings from MsBuild log files.
+Starting with version 0.9.1 it will also return errors.
+Reading of errors has been implemented for &lt;code&gt;MsBuildBinaryLogFileFormat&lt;/code&gt; and &lt;code&gt;MsBuildXmlFileLoggerFormat&lt;/code&gt;.
+For errors &lt;code&gt;IIssue.Priority&lt;/code&gt; will be set to &lt;code&gt;IssuePriority.Error&lt;/code&gt;.&lt;/p&gt;
+&lt;div class="alert alert-info"&gt;&lt;p&gt;To keep previous behavior result after reading the issues can be filtered for &lt;code&gt;IIssue.Priority == IIssuePriority.Warning&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.MsBuild 0.9.1 is compatible with version 0.9.0 without any breaking changes.
+To update to the new version bump the version of the addin.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>Cake Issues PullRequests v0.9.1 Released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-pullrequests-v0.9.1-released</link>
+			<description>&lt;p&gt;Version 0.9.1 of Cake.Issues.PullRequests has been released.
+This is a minor releases containing bug fixes.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-pullrequests-v0.9.1-released</guid>
+			<pubDate>Fri, 09 Oct 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.9.1 of Cake.Issues.PullRequests has been released.
+This is a minor releases containing bug fixes.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/janniksam"&gt;janniksam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/phlorian"&gt;phlorian&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="dont-post-issues-if-a-provider-limit-is-set-to-0"&gt;Don't post issues if a provider limit is set to 0&lt;/h2&gt;
+&lt;p&gt;This version fixes a bug where if &lt;code&gt;MaxIssuesToPost&lt;/code&gt; or &lt;code&gt;MaxIssuesToPostAcrossRuns&lt;/code&gt; was set to 0 all issues were posted to the pull request instead of none.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.PullRequests 0.9.1 is compatible with version 0.9.0 without any breaking changes.
+To update to the new version bump the version of the addin.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>New GitHub Actions addin</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/github-actions-addin</link>

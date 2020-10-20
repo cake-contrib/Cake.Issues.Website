@@ -94,6 +94,7 @@
             <li><a href="/news/Release-Notes">Release Notes</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/news/archive/2020/10">October, 2020</a></li>
         <li><a href="/news/archive/2020/09">September, 2020</a></li>
         <li><a href="/news/archive/2020/08">August, 2020</a></li>
     
@@ -115,6 +116,55 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-msbuild-v0.9.1-released">Cake Issues MsBuild v0.9.1 Released</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Tuesday, October 20, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 0.9.1 of MsBuild support for Cake.Issues has been released.
+This is a minor release containing improvements.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/cho-trackman">cho-trackman</a></li>
+<li><a href="https://github.com/eoehen">eoehen</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+<li><a href="https://github.com/x-jokay">x-jokay</a></li>
+</ul>
+<h2 id="support-for-reading-of-errors">Support for reading of errors</h2>
+<p>Until now MsBuild support did read warnings from MsBuild log files.
+Starting with version 0.9.1 it will also return errors.
+Reading of errors has been implemented for <code>MsBuildBinaryLogFileFormat</code> and <code>MsBuildXmlFileLoggerFormat</code>.
+For errors <code>IIssue.Priority</code> will be set to <code>IssuePriority.Error</code>.</p>
+<div class="alert alert-info"><p>To keep previous behavior result after reading the issues can be filtered for <code>IIssue.Priority == IIssuePriority.Warning</code>.</p>
+</div>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues.MsBuild 0.9.1 is compatible with version 0.9.0 without any breaking changes.
+To update to the new version bump the version of the addin.</p>
+
+            </div>
+        <hr />
+        <h2><a href="/news/cake-issues-pullrequests-v0.9.1-released">Cake Issues PullRequests v0.9.1 Released</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Friday, October 9, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 0.9.1 of Cake.Issues.PullRequests has been released.
+This is a minor releases containing bug fixes.</p>
+                <a href="/news/cake-issues-pullrequests-v0.9.1-released">Read more...</a>
+            </div>
+        <hr />
         <h2><a href="/news/github-actions-addin">New GitHub Actions addin</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -125,15 +175,7 @@
     </dl>
             <div>
                 <p>A new <a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> has been released which brings integration with GitHub Actions and GitHub pull requests.</p>
-<!--excerpt-->
-<p><a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> creates annotations from issues when running on GitHub Actions:</p>
-<p><img src="../docs/pull-request-systems/github-actions/githubactions-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /></p>
-<p>These annotations will also be shown in pull requests on the related file / position,
-bringing first class integration for GitHub pull requests to Cake.Issues:</p>
-<p><img src="../docs/pull-request-systems/github-actions/githubactions-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /></p>
-<p>This integration was <a href="cake-issues-recipe-v0.4.2-released">first released in Cake.Issues.Recipe 0.4.2</a> and has now been moved to its own addin, which can also be used outside of
-Cake.Issues.Recipe.</p>
-
+                <a href="/news/github-actions-addin">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-recipe-v0.4.2-released">Cake Issues Recipe v0.4.2 released, bringing support for GitHub Actions</a></h2>
@@ -163,24 +205,12 @@ These are minor releases containing improvements and bug fixes.</p>
                 <a href="/news/cake-issues-v0.9.1-released">Read more...</a>
             </div>
         <hr />
-        <h2><a href="/news/cake-issues-v0.9.0-released">Cake Issues v0.9.0 Released</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Saturday, August 22, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Cake Issues version 0.9.0 has been released. This is a major release bringing a lot of new features across all addins.</p>
-                <a href="/news/cake-issues-v0.9.0-released">Read more...</a>
-            </div>
-        <hr />
     <nav>
         <ul class="pager">
             <li class="previous">                
             </li>
             <li class="next">
+                    <a href="/news/page2">Older <span aria-hidden="true">&rarr;</span></a>
             </li>
         </ul>
     </nav>
