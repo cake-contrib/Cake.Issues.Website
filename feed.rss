@@ -5,8 +5,32 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2020</copyright>
-		<pubDate>Wed, 02 Dec 2020 06:39:51 GMT</pubDate>
-		<lastBuildDate>Wed, 02 Dec 2020 06:39:51 GMT</lastBuildDate>
+		<pubDate>Wed, 02 Dec 2020 07:27:03 GMT</pubDate>
+		<lastBuildDate>Wed, 02 Dec 2020 07:27:04 GMT</lastBuildDate>
+		<item>
+			<title>Cake Issues Recipe v0.4.4 released, bringing support for ESLint</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.4-released</link>
+			<description>&lt;p&gt;Version 0.4.4 of Cake Issues Recipe has been released bringing support for ESLint.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.4-released</guid>
+			<pubDate>Tue, 01 Dec 2020 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 0.4.4 of Cake Issues Recipe has been released bringing support for ESLint.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.
+For details see &lt;a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.4.4"&gt;full release notes&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-eslint"&gt;Support for ESLint&lt;/h2&gt;
+&lt;p&gt;This version of Cake.Issues.Recipe brings support for issues reported by &lt;a href="https://eslint.org/"&gt;ESLint&lt;/a&gt;.
+Currently supported are files generated using the &lt;a href="https://eslint.org/docs/user-guide/formatters/#json"&gt;ESLint json formatter&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.Recipe 0.4.4 is compatible with version 0.4.x without any breaking changes.
+To update to the new version bump the version in your build script.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues MsBuild v0.9.1 Released</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-msbuild-v0.9.1-released</link>

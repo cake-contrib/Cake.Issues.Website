@@ -94,6 +94,7 @@
             <li><a href="/news/Release-Notes">Release Notes</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/news/archive/2020/12">December, 2020</a></li>
         <li><a href="/news/archive/2020/10">October, 2020</a></li>
         <li><a href="/news/archive/2020/09">September, 2020</a></li>
         <li><a href="/news/archive/2020/08">August, 2020</a></li>
@@ -116,6 +117,34 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-recipe-v0.4.4-released">Cake Issues Recipe v0.4.4 released, bringing support for ESLint</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Tuesday, December 1, 2020</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 0.4.4 of Cake Issues Recipe has been released bringing support for ESLint.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.
+For details see <a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/0.4.4">full release notes</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="support-for-eslint">Support for ESLint</h2>
+<p>This version of Cake.Issues.Recipe brings support for issues reported by <a href="https://eslint.org/">ESLint</a>.
+Currently supported are files generated using the <a href="https://eslint.org/docs/user-guide/formatters/#json">ESLint json formatter</a></p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues.Recipe 0.4.4 is compatible with version 0.4.x without any breaking changes.
+To update to the new version bump the version in your build script.</p>
+
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-msbuild-v0.9.1-released">Cake Issues MsBuild v0.9.1 Released</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -127,28 +156,7 @@
             <div>
                 <p>Version 0.9.1 of MsBuild support for Cake.Issues has been released.
 This is a minor release containing improvements.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/cho-trackman">cho-trackman</a></li>
-<li><a href="https://github.com/eoehen">eoehen</a></li>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-<li><a href="https://github.com/x-jokay">x-jokay</a></li>
-</ul>
-<h2 id="support-for-reading-of-errors">Support for reading of errors</h2>
-<p>Until now MsBuild support did read warnings from MsBuild log files.
-Starting with version 0.9.1 it will also return errors.
-Reading of errors has been implemented for <code>MsBuildBinaryLogFileFormat</code> and <code>MsBuildXmlFileLoggerFormat</code>.
-For errors <code>IIssue.Priority</code> will be set to <code>IssuePriority.Error</code>.</p>
-<div class="alert alert-info"><p>To keep previous behavior result after reading the issues can be filtered for <code>IIssue.Priority == IIssuePriority.Warning</code>.</p>
-</div>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake.Issues.MsBuild 0.9.1 is compatible with version 0.9.0 without any breaking changes.
-To update to the new version bump the version of the addin.</p>
-
+                <a href="/news/cake-issues-msbuild-v0.9.1-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-pullrequests-v0.9.1-released">Cake Issues PullRequests v0.9.1 Released</a></h2>
@@ -189,20 +197,6 @@ This is a minor releases containing bug fixes.</p>
             <div>
                 <p>Version 0.4.2 of Cake Issues Recipe has been released bringing support for GitHub Actions.</p>
                 <a href="/news/cake-issues-recipe-v0.4.2-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-v0.9.1-released">Cake Issues v0.9.1 Released</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Saturday, September 19, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 0.9.1 of Cake Issues and Cake.Issues.PullRequests.AzureDevOps have been released.
-These are minor releases containing improvements and bug fixes.</p>
-                <a href="/news/cake-issues-v0.9.1-released">Read more...</a>
             </div>
         <hr />
     <nav>
