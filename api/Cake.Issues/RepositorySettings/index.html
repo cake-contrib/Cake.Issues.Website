@@ -230,8 +230,8 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
 									</ul>
 								</dd>			
@@ -246,10 +246,10 @@
 	click Interface0 "/api/Cake.Issues/IRepositorySettings"
 	Type["RepositorySettings"]
 class Type type-node
-	Derived0["CreateIssueReportSettings"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.Reporting/CreateIssueReportSettings"
-	Derived1["ReadIssuesSettings"]--&gt;Type
-	click Derived1 "/api/Cake.Issues/ReadIssuesSettings"
+	Derived0["ReadIssuesSettings"]--&gt;Type
+	click Derived0 "/api/Cake.Issues/ReadIssuesSettings"
+	Derived1["CreateIssueReportSettings"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.Reporting/CreateIssueReportSettings"
 	Derived2["ReportIssuesToPullRequestSettings"]--&gt;Type
 	click Derived2 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
 
