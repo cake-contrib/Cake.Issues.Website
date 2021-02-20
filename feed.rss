@@ -5,8 +5,8 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Fri, 19 Feb 2021 23:15:09 GMT</pubDate>
-		<lastBuildDate>Fri, 19 Feb 2021 23:15:09 GMT</lastBuildDate>
+		<pubDate>Sat, 20 Feb 2021 08:50:19 GMT</pubDate>
+		<lastBuildDate>Sat, 20 Feb 2021 08:50:19 GMT</lastBuildDate>
 		<item>
 			<title>Cake Issues Recipe v0.4.4 released, bringing support for ESLint</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.4-released</link>
@@ -49,7 +49,7 @@ For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt
 &lt;li&gt;&lt;a href="https://github.com/cho-trackman"&gt;cho-trackman&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/eoehen"&gt;eoehen&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jokay"&gt;jokay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="support-for-reading-of-errors"&gt;Support for reading of errors&lt;/h2&gt;
 &lt;p&gt;Until now MsBuild support did read warnings from MsBuild log files.
@@ -157,7 +157,7 @@ For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt
 &lt;li&gt;&lt;a href="https://github.com/christianbumann"&gt;christianbumann&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/janniksam"&gt;janniksam&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jokay"&gt;jokay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="easier-file-linking-for-manually-created-issues"&gt;Easier file linking for manually created issues&lt;/h2&gt;
 &lt;p&gt;With 0.8.0 file links was implemented in Cake.Issues.Reporting.Generic and worked for any issues passed to the report.
@@ -196,7 +196,7 @@ For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt
 &lt;li&gt;&lt;a href="https://github.com/mholo65"&gt;mholo65&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://github.com/Speeedy01"&gt;Speeedy01&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://github.com/x-jokay"&gt;x-jokay&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jokay"&gt;jokay&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="full-cross-platform-support"&gt;Full cross-platform support&lt;/h2&gt;
 &lt;p&gt;While in previous versions most parts of Cake Issues was already targeting .NET Standard and with this could be executed on
