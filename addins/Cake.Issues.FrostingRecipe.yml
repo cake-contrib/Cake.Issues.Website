@@ -1,0 +1,13 @@
+Name: Cake.Issues.FrostingRecipe
+NuGet: Cake.Issues.FrostingRecipe
+Prerelease: true
+RepositoryOwner: cake-contrib
+RepositoryName: Cake.Issues.FrostingRecipe
+RepositoryDocumentationPath: ./docs
+DocumentationLink: /docs/recipe/
+ReleaseNotesFilePath: "input/docs/recipe/release-notes-frosting.md"
+Assemblies:
+Author: Pascal Berger
+Description: "Re-usable build script for Cake Frosting that can be used for working with linter and code analyzer output."
+Categories:
+- Recipe

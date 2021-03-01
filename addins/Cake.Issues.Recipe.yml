@@ -5,7 +5,7 @@ RepositoryOwner: cake-contrib
 RepositoryName: Cake.Issues.Recipe
 RepositoryDocumentationPath: ./docs
 DocumentationLink: /docs/recipe/
-ReleaseNotesFilePath: "input/docs/recipe/release-notes.md"
+ReleaseNotesFilePath: "input/docs/recipe/release-notes-scripting.md"
 Assemblies:
 Author: Pascal Berger
 Description: "Re-usable build script for Cake that can be used for working with linter and code analyzer output."
