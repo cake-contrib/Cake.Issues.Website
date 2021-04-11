@@ -39,328 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"GenericIssueReportFormatSettingsExtensions",
-            content:"GenericIssueReportFormatSettingsExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettingsExtensions',
-            title:"GenericIssueReportFormatSettingsExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"PullRequestIssuesException",
-            content:"PullRequestIssuesException",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestIssuesException',
-            title:"PullRequestIssuesException",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"IIssueExtensions",
-            content:"IIssueExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.AppVeyor/IIssueExtensions',
-            title:"IIssueExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
-            title:"MarkdownlintIssuesAliases",
-            content:"MarkdownlintIssuesAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases',
-            title:"MarkdownlintIssuesAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
-            title:"BaseLogFileFormat",
-            content:"BaseLogFileFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseLogFileFormat_2',
-            title:"BaseLogFileFormat<TIssueProvider, TSettings>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"MarkdownlintIssuesSettings",
-            content:"MarkdownlintIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesSettings',
-            title:"MarkdownlintIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"BaseRuleUrlResolver",
-            content:"BaseRuleUrlResolver",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseRuleUrlResolver_1',
-            title:"BaseRuleUrlResolver<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
-            title:"IProviderIssueLimits",
-            content:"IProviderIssueLimits",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IProviderIssueLimits',
-            title:"IProviderIssueLimits",
-            description:""
-        }
-    );
-    a(
-        {
-            id:8,
-            title:"MsBuildRuleDescription",
-            content:"MsBuildRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.MsBuild/MsBuildRuleDescription',
-            title:"MsBuildRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:9,
-            title:"IssuesReader",
-            content:"IssuesReader",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IssuesReader',
-            title:"IssuesReader",
-            description:""
-        }
-    );
-    a(
-        {
-            id:10,
-            title:"ColumnSortOrderExtensions",
-            content:"ColumnSortOrderExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/ColumnSortOrderExtensions',
-            title:"ColumnSortOrderExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:11,
-            title:"IssueReportFormat",
-            content:"IssueReportFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/IssueReportFormat',
-            title:"IssueReportFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:12,
-            title:"IssuesArgumentChecks",
-            content:"IssuesArgumentChecks",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IssuesArgumentChecks',
-            title:"IssuesArgumentChecks",
-            description:""
-        }
-    );
-    a(
-        {
-            id:13,
-            title:"FakeRuleUrlResolver",
-            content:"FakeRuleUrlResolver",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/FakeRuleUrlResolver',
-            title:"FakeRuleUrlResolver",
-            description:""
-        }
-    );
-    a(
-        {
-            id:14,
-            title:"ILogFileFormat",
-            content:"ILogFileFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/ILogFileFormat_2',
-            title:"ILogFileFormat<TIssueProvider, TSettings>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:15,
-            title:"CreateIssueReportFromIssueProviderSettings",
-            content:"CreateIssueReportFromIssueProviderSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings',
-            title:"CreateIssueReportFromIssueProviderSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:16,
-            title:"FakeRuleDescription",
-            content:"FakeRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/FakeRuleDescription',
-            title:"FakeRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:17,
-            title:"BaseMarkdownlintLogFileFormat",
-            content:"BaseMarkdownlintLogFileFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat',
-            title:"BaseMarkdownlintLogFileFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:18,
-            title:"FileLinkSettings",
-            content:"FileLinkSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/FileLinkSettings',
-            title:"FileLinkSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:19,
-            title:"DocFxIssuesSettings",
-            content:"DocFxIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.DocFx/DocFxIssuesSettings',
-            title:"DocFxIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:20,
-            title:"AppVeyorBuildsAliases",
-            content:"AppVeyorBuildsAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorBuildsAliases',
-            title:"AppVeyorBuildsAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:21,
-            title:"BaseEsLintLogFileFormat",
-            content:"BaseEsLintLogFileFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat',
-            title:"BaseEsLintLogFileFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:22,
-            title:"IssuesAliasConstants",
-            content:"IssuesAliasConstants",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IssuesAliasConstants',
-            title:"IssuesAliasConstants",
-            description:""
-        }
-    );
-    a(
-        {
-            id:23,
             title:"BaseMultiFormatIssueProviderSettings",
             content:"BaseMultiFormatIssueProviderSettings",
             description:'',
@@ -374,259 +52,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:24,
-            title:"IPullRequestSystem",
-            content:"IPullRequestSystem",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IPullRequestSystem',
-            title:"IPullRequestSystem",
-            description:""
-        }
-    );
-    a(
-        {
-            id:25,
-            title:"IssueDeserializationExtensions",
-            content:"IssueDeserializationExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Serialization/IssueDeserializationExtensions',
-            title:"IssueDeserializationExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:26,
-            title:"BaseConfigurableIssueProviderFixture",
-            content:"BaseConfigurableIssueProviderFixture",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2',
-            title:"BaseConfigurableIssueProviderFixture<TIssueProvider, TSettings>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:27,
-            title:"EsLintIssuesAliases",
-            content:"EsLintIssuesAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.EsLint/EsLintIssuesAliases',
-            title:"EsLintIssuesAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:28,
-            title:"BaseMultiFormatIssueProvider",
-            content:"BaseMultiFormatIssueProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseMultiFormatIssueProvider_2',
-            title:"BaseMultiFormatIssueProvider<TSettings, TIssueProvider>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:29,
-            title:"PullRequestDiscussionStatus",
-            content:"PullRequestDiscussionStatus",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionStatus',
-            title:"PullRequestDiscussionStatus",
-            description:""
-        }
-    );
-    a(
-        {
-            id:30,
-            title:"ExpandoObjectExtensions",
-            content:"ExpandoObjectExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/ExpandoObjectExtensions',
-            title:"ExpandoObjectExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:31,
-            title:"BaseRuleDescription",
-            content:"BaseRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseRuleDescription',
-            title:"BaseRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:32,
-            title:"BaseIssueProviderFixture",
-            content:"BaseIssueProviderFixture",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/BaseIssueProviderFixture_1',
-            title:"BaseIssueProviderFixture<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:33,
-            title:"FilePathTooLongRuleDescription",
-            content:"FilePathTooLongRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.GitRepository/FilePathTooLongRuleDescription',
-            title:"FilePathTooLongRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:34,
-            title:"ISupportDiscussionThreads",
-            content:"ISupportDiscussionThreads",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/ISupportDiscussionThreads',
-            title:"ISupportDiscussionThreads",
-            description:""
-        }
-    );
-    a(
-        {
-            id:35,
-            title:"TerraformIssuesSettings",
-            content:"TerraformIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Terraform/TerraformIssuesSettings',
-            title:"TerraformIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:36,
-            title:"PullRequestDiscussionResolution",
-            content:"PullRequestDiscussionResolution",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionResolution',
-            title:"PullRequestDiscussionResolution",
-            description:""
-        }
-    );
-    a(
-        {
-            id:37,
-            title:"ExceptionAssertExtensions",
-            content:"ExceptionAssertExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/ExceptionAssertExtensions',
-            title:"ExceptionAssertExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:38,
-            title:"StringExtensions",
-            content:"StringExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/StringExtensions',
-            title:"StringExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:39,
-            title:"MsBuildIssuesProvider",
-            content:"MsBuildIssuesProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesProvider',
-            title:"MsBuildIssuesProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:40,
-            title:"MsBuildIssuesSettings",
-            content:"MsBuildIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesSettings',
-            title:"MsBuildIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:41,
-            title:"IReadIssuesSettings",
-            content:"IReadIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IReadIssuesSettings',
-            title:"IReadIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:42,
+            id:1,
             title:"BaseGitRepositoryIssuesRuleDescription",
             content:"BaseGitRepositoryIssuesRuleDescription",
             description:'',
@@ -640,105 +66,147 @@ var searchModule = function() {
     );
     a(
         {
-            id:43,
-            title:"SarifIssueReportFormatSettings",
-            content:"SarifIssueReportFormatSettings",
+            id:2,
+            title:"MsBuildIssuesSettings",
+            content:"MsBuildIssuesSettings",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Sarif/SarifIssueReportFormatSettings',
-            title:"SarifIssueReportFormatSettings",
+            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesSettings',
+            title:"MsBuildIssuesSettings",
             description:""
         }
     );
     a(
         {
-            id:44,
-            title:"ReportColumn",
-            content:"ReportColumn",
+            id:3,
+            title:"FilePathTooLongRuleDescription",
+            content:"FilePathTooLongRuleDescription",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/ReportColumn',
-            title:"ReportColumn",
+            url:'/api/Cake.Issues.GitRepository/FilePathTooLongRuleDescription',
+            title:"FilePathTooLongRuleDescription",
             description:""
         }
     );
     a(
         {
-            id:45,
-            title:"ViewBagHelper",
-            content:"ViewBagHelper",
+            id:4,
+            title:"BaseCheckingCommitIdCapability",
+            content:"BaseCheckingCommitIdCapability",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/ViewBagHelper',
-            title:"ViewBagHelper",
+            url:'/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1',
+            title:"BaseCheckingCommitIdCapability<T>",
             description:""
         }
     );
     a(
         {
-            id:46,
-            title:"Issue",
-            content:"Issue",
+            id:5,
+            title:"FakeMultiFormatIssueProviderSettings",
+            content:"FakeMultiFormatIssueProviderSettings",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/Issue',
-            title:"Issue",
+            url:'/api/Cake.Issues.Testing/FakeMultiFormatIssueProviderSettings',
+            title:"FakeMultiFormatIssueProviderSettings",
             description:""
         }
     );
     a(
         {
-            id:47,
-            title:"IRepositorySettings",
-            content:"IRepositorySettings",
+            id:6,
+            title:"StringExtensions",
+            content:"StringExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/IRepositorySettings',
-            title:"IRepositorySettings",
+            url:'/api/Cake.Issues.Reporting.Generic/StringExtensions',
+            title:"StringExtensions",
             description:""
         }
     );
     a(
         {
-            id:48,
-            title:"DupFinderIssuesAliases",
-            content:"DupFinderIssuesAliases",
+            id:7,
+            title:"ISupportDiscussionThreads",
+            content:"ISupportDiscussionThreads",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.DupFinder/DupFinderIssuesAliases',
-            title:"DupFinderIssuesAliases",
+            url:'/api/Cake.Issues.PullRequests/ISupportDiscussionThreads',
+            title:"ISupportDiscussionThreads",
             description:""
         }
     );
     a(
         {
-            id:49,
-            title:"ISupportCheckingCommitIdExtensions",
-            content:"ISupportCheckingCommitIdExtensions",
+            id:8,
+            title:"BaseDiscussionThreadsCapability",
+            content:"BaseDiscussionThreadsCapability",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/ISupportCheckingCommitIdExtensions',
-            title:"ISupportCheckingCommitIdExtensions",
+            url:'/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1',
+            title:"BaseDiscussionThreadsCapability<T>",
             description:""
         }
     );
     a(
         {
-            id:50,
+            id:9,
+            title:"EsLintIssuesProvider",
+            content:"EsLintIssuesProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.EsLint/EsLintIssuesProvider',
+            title:"EsLintIssuesProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"ProviderIssueIssueLimits",
+            content:"ProviderIssueIssueLimits",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/ProviderIssueIssueLimits',
+            title:"ProviderIssueIssueLimits",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
+            title:"ExceptionAssertExtensions",
+            content:"ExceptionAssertExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/ExceptionAssertExtensions',
+            title:"ExceptionAssertExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:12,
             title:"IdeIntegrationSettings",
             content:"IdeIntegrationSettings",
             description:'',
@@ -752,71 +220,603 @@ var searchModule = function() {
     );
     a(
         {
-            id:51,
-            title:"PullRequestsAliasConstants",
-            content:"PullRequestsAliasConstants",
+            id:13,
+            title:"IssuesArgumentChecks",
+            content:"IssuesArgumentChecks",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/PullRequestsAliasConstants',
-            title:"PullRequestsAliasConstants",
+            url:'/api/Cake.Issues/IssuesArgumentChecks',
+            title:"IssuesArgumentChecks",
+            description:""
+        }
+    );
+    a(
+        {
+            id:14,
+            title:"BaseIssueComponent",
+            content:"BaseIssueComponent",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseIssueComponent_1',
+            title:"BaseIssueComponent<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:15,
+            title:"BaseMsBuildLogFileFormat",
+            content:"BaseMsBuildLogFileFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat',
+            title:"BaseMsBuildLogFileFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:16,
+            title:"BaseIssueProvider",
+            content:"BaseIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseIssueProvider',
+            title:"BaseIssueProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:17,
+            title:"FakeIssueComponent",
+            content:"FakeIssueComponent",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeIssueComponent',
+            title:"FakeIssueComponent",
+            description:""
+        }
+    );
+    a(
+        {
+            id:18,
+            title:"HtmlDxDataGridColumnDescription",
+            content:"HtmlDxDataGridColumnDescription",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription',
+            title:"HtmlDxDataGridColumnDescription",
+            description:""
+        }
+    );
+    a(
+        {
+            id:19,
+            title:"FakeLogFileFormat",
+            content:"FakeLogFileFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeLogFileFormat',
+            title:"FakeLogFileFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:20,
+            title:"SarifIssueReportFormatSettings",
+            content:"SarifIssueReportFormatSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Sarif/SarifIssueReportFormatSettings',
+            title:"SarifIssueReportFormatSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:21,
+            title:"ILogFileFormat",
+            content:"ILogFileFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/ILogFileFormat_2',
+            title:"ILogFileFormat<TIssueProvider, TSettings>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:22,
+            title:"BaseMarkdownlintLogFileFormat",
+            content:"BaseMarkdownlintLogFileFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Markdownlint/BaseMarkdownlintLogFileFormat',
+            title:"BaseMarkdownlintLogFileFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:23,
+            title:"IIssueComparer",
+            content:"IIssueComparer",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IIssueComparer',
+            title:"IIssueComparer",
+            description:""
+        }
+    );
+    a(
+        {
+            id:24,
+            title:"ISupportCheckingCommitIdExtensions",
+            content:"ISupportCheckingCommitIdExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/ISupportCheckingCommitIdExtensions',
+            title:"ISupportCheckingCommitIdExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:25,
+            title:"IIssueExtensions",
+            content:"IIssueExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.AppVeyor/IIssueExtensions',
+            title:"IIssueExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:26,
+            title:"FileLinkOptionalSettingsBuilder",
+            content:"FileLinkOptionalSettingsBuilder",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.FileLinking/FileLinkOptionalSettingsBuilder',
+            title:"FileLinkOptionalSettingsBuilder",
+            description:""
+        }
+    );
+    a(
+        {
+            id:27,
+            title:"GitHubActionsBuildSettings",
+            content:"GitHubActionsBuildSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsBuildSettings',
+            title:"GitHubActionsBuildSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:28,
+            title:"Aliases",
+            content:"Aliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/Aliases',
+            title:"Aliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:29,
+            title:"MsBuildRuleDescription",
+            content:"MsBuildRuleDescription",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.MsBuild/MsBuildRuleDescription',
+            title:"MsBuildRuleDescription",
+            description:""
+        }
+    );
+    a(
+        {
+            id:30,
+            title:"MsBuildIssuesAliases",
+            content:"MsBuildIssuesAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesAliases',
+            title:"MsBuildIssuesAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:31,
+            title:"BaseConfigurableIssueProvider",
+            content:"BaseConfigurableIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseConfigurableIssueProvider_1',
+            title:"BaseConfigurableIssueProvider<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:32,
+            title:"IReportIssuesToPullRequestSettings",
+            content:"IReportIssuesToPullRequestSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings',
+            title:"IReportIssuesToPullRequestSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:33,
+            title:"IPullRequestSystem",
+            content:"IPullRequestSystem",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IPullRequestSystem',
+            title:"IPullRequestSystem",
+            description:""
+        }
+    );
+    a(
+        {
+            id:34,
+            title:"BinaryFileNotTrackedByLfsRuleDescription",
+            content:"BinaryFileNotTrackedByLfsRuleDescription",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription',
+            title:"BinaryFileNotTrackedByLfsRuleDescription",
+            description:""
+        }
+    );
+    a(
+        {
+            id:35,
+            title:"Aliases",
+            content:"Aliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/Aliases',
+            title:"Aliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:36,
+            title:"ReportIssuesToPullRequestSettings",
+            content:"ReportIssuesToPullRequestSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings',
+            title:"ReportIssuesToPullRequestSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:37,
+            title:"ExpandoObjectExtensions",
+            content:"ExpandoObjectExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/ExpandoObjectExtensions',
+            title:"ExpandoObjectExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:38,
+            title:"CreateIssueReportFromIssueProviderSettings",
+            content:"CreateIssueReportFromIssueProviderSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings',
+            title:"CreateIssueReportFromIssueProviderSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:39,
+            title:"BaseRuleUrlResolver",
+            content:"BaseRuleUrlResolver",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseRuleUrlResolver_1',
+            title:"BaseRuleUrlResolver<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:40,
+            title:"PullRequestDiscussionStatus",
+            content:"PullRequestDiscussionStatus",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionStatus',
+            title:"PullRequestDiscussionStatus",
+            description:""
+        }
+    );
+    a(
+        {
+            id:41,
+            title:"DocFxIssuesSettings",
+            content:"DocFxIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.DocFx/DocFxIssuesSettings',
+            title:"DocFxIssuesSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:42,
+            title:"IIssueReportFormat",
+            content:"IIssueReportFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/IIssueReportFormat',
+            title:"IIssueReportFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:43,
+            title:"GenericIssueReportFormatSettings",
+            content:"GenericIssueReportFormatSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettings',
+            title:"GenericIssueReportFormatSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:44,
+            title:"IReportIssuesToPullRequestFromIssueProviderSettings",
+            content:"IReportIssuesToPullRequestFromIssueProviderSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings',
+            title:"IReportIssuesToPullRequestFromIssueProviderSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:45,
+            title:"InspectCodeIssuesSettings",
+            content:"InspectCodeIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.InspectCode/InspectCodeIssuesSettings',
+            title:"InspectCodeIssuesSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:46,
+            title:"IssueReportFormat",
+            content:"IssueReportFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/IssueReportFormat',
+            title:"IssueReportFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:47,
+            title:"ReportColumn",
+            content:"ReportColumn",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/ReportColumn',
+            title:"ReportColumn",
+            description:""
+        }
+    );
+    a(
+        {
+            id:48,
+            title:"PullRequestIssueResult",
+            content:"PullRequestIssueResult",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestIssueResult',
+            title:"PullRequestIssueResult",
+            description:""
+        }
+    );
+    a(
+        {
+            id:49,
+            title:"PullRequestDiscussionResolution",
+            content:"PullRequestDiscussionResolution",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionResolution',
+            title:"PullRequestDiscussionResolution",
+            description:""
+        }
+    );
+    a(
+        {
+            id:50,
+            title:"SarifIssueReportFormatAliases",
+            content:"SarifIssueReportFormatAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Sarif/SarifIssueReportFormatAliases',
+            title:"SarifIssueReportFormatAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:51,
+            title:"IIssue",
+            content:"IIssue",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IIssue',
+            title:"IIssue",
             description:""
         }
     );
     a(
         {
             id:52,
-            title:"InspectCodeIssuesAliases",
-            content:"InspectCodeIssuesAliases",
+            title:"BaseConfigurableIssueProviderFixture",
+            content:"BaseConfigurableIssueProviderFixture",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.InspectCode/InspectCodeIssuesAliases',
-            title:"InspectCodeIssuesAliases",
+            url:'/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2',
+            title:"BaseConfigurableIssueProviderFixture<TIssueProvider, TSettings>",
             description:""
         }
     );
     a(
         {
             id:53,
-            title:"ReadIssuesSettings",
-            content:"ReadIssuesSettings",
+            title:"BaseEsLintLogFileFormat",
+            content:"BaseEsLintLogFileFormat",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/ReadIssuesSettings',
-            title:"ReadIssuesSettings",
+            url:'/api/Cake.Issues.EsLint/BaseEsLintLogFileFormat',
+            title:"BaseEsLintLogFileFormat",
             description:""
         }
     );
     a(
         {
             id:54,
-            title:"HtmlDxDataGridOption",
-            content:"HtmlDxDataGridOption",
+            title:"BaseFilteringByModifiedFilesCapability",
+            content:"BaseFilteringByModifiedFilesCapability",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption',
-            title:"HtmlDxDataGridOption",
+            url:'/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1',
+            title:"BaseFilteringByModifiedFilesCapability<T>",
             description:""
         }
     );
     a(
         {
             id:55,
-            title:"BasePullRequestSystem",
-            content:"BasePullRequestSystem",
+            title:"MarkdownlintIssuesAliases",
+            content:"MarkdownlintIssuesAliases",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/BasePullRequestSystem',
-            title:"BasePullRequestSystem",
+            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases',
+            title:"MarkdownlintIssuesAliases",
             description:""
         }
     );
@@ -837,90 +837,132 @@ var searchModule = function() {
     a(
         {
             id:57,
-            title:"AppVeyorBuildSettings",
-            content:"AppVeyorBuildSettings",
+            title:"AzureDevOpsPullRequestSystemAliases",
+            content:"AzureDevOpsPullRequestSystemAliases",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorBuildSettings',
-            title:"AppVeyorBuildSettings",
+            url:'/api/Cake.Issues.PullRequests.AzureDevOps/AzureDevOpsPullRequestSystemAliases',
+            title:"AzureDevOpsPullRequestSystemAliases",
             description:""
         }
     );
     a(
         {
             id:58,
-            title:"FakeIssueProvider",
-            content:"FakeIssueProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/FakeIssueProvider',
-            title:"FakeIssueProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:59,
-            title:"GitHubFileLinkSettingsBuilder",
-            content:"GitHubFileLinkSettingsBuilder",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.FileLinking/GitHubFileLinkSettingsBuilder',
-            title:"GitHubFileLinkSettingsBuilder",
-            description:""
-        }
-    );
-    a(
-        {
-            id:60,
-            title:"BaseMsBuildLogFileFormat",
-            content:"BaseMsBuildLogFileFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.MsBuild/BaseMsBuildLogFileFormat',
-            title:"BaseMsBuildLogFileFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:61,
-            title:"BinaryFileNotTrackedByLfsRuleDescription",
-            content:"BinaryFileNotTrackedByLfsRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.GitRepository/BinaryFileNotTrackedByLfsRuleDescription',
-            title:"BinaryFileNotTrackedByLfsRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:62,
             title:"IIssueExtensions",
             content:"IIssueExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/IIssueExtensions',
+            url:'/api/Cake.Issues.Reporting.Generic/IIssueExtensions',
             title:"IIssueExtensions",
             description:""
         }
     );
     a(
         {
+            id:59,
+            title:"AppVeyorPullRequestSystem",
+            content:"AppVeyorPullRequestSystem",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem',
+            title:"AppVeyorPullRequestSystem",
+            description:""
+        }
+    );
+    a(
+        {
+            id:60,
+            title:"IPullRequestSystemCapability",
+            content:"IPullRequestSystemCapability",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IPullRequestSystemCapability',
+            title:"IPullRequestSystemCapability",
+            description:""
+        }
+    );
+    a(
+        {
+            id:61,
+            title:"BaseRuleDescription",
+            content:"BaseRuleDescription",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseRuleDescription',
+            title:"BaseRuleDescription",
+            description:""
+        }
+    );
+    a(
+        {
+            id:62,
+            title:"AppVeyorBuildsAliases",
+            content:"AppVeyorBuildsAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorBuildsAliases',
+            title:"AppVeyorBuildsAliases",
+            description:""
+        }
+    );
+    a(
+        {
             id:63,
+            title:"BaseLogFileFormat",
+            content:"BaseLogFileFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseLogFileFormat_2',
+            title:"BaseLogFileFormat<TIssueProvider, TSettings>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:64,
+            title:"BaseIssueProviderFixture",
+            content:"BaseIssueProviderFixture",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/BaseIssueProviderFixture_1',
+            title:"BaseIssueProviderFixture<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:65,
+            title:"PullRequestDiscussionComment",
+            content:"PullRequestDiscussionComment",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionComment',
+            title:"PullRequestDiscussionComment",
+            description:""
+        }
+    );
+    a(
+        {
+            id:66,
             title:"GenericIssueReportTemplate",
             content:"GenericIssueReportTemplate",
             description:'',
@@ -934,141 +976,99 @@ var searchModule = function() {
     );
     a(
         {
-            id:64,
-            title:"GitHubActionsBuildsAliases",
-            content:"GitHubActionsBuildsAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsBuildsAliases',
-            title:"GitHubActionsBuildsAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:65,
-            title:"ICreateIssueReportSettings",
-            content:"ICreateIssueReportSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/ICreateIssueReportSettings',
-            title:"ICreateIssueReportSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:66,
-            title:"DupFinderIssuesSettings",
-            content:"DupFinderIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.DupFinder/DupFinderIssuesSettings',
-            title:"DupFinderIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
             id:67,
-            title:"ISupportFilteringByModifiedFiles",
-            content:"ISupportFilteringByModifiedFiles",
+            title:"ViewBagHelper",
+            content:"ViewBagHelper",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles',
-            title:"ISupportFilteringByModifiedFiles",
+            url:'/api/Cake.Issues.Reporting.Generic/ViewBagHelper',
+            title:"ViewBagHelper",
             description:""
         }
     );
     a(
         {
             id:68,
-            title:"FakeMultiFormatIssueProvider",
-            content:"FakeMultiFormatIssueProvider",
+            title:"GenericIssueReportFormatSettingsExtensions",
+            content:"GenericIssueReportFormatSettingsExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider',
-            title:"FakeMultiFormatIssueProvider",
+            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettingsExtensions',
+            title:"GenericIssueReportFormatSettingsExtensions",
             description:""
         }
     );
     a(
         {
             id:69,
-            title:"IssuePriority",
-            content:"IssuePriority",
+            title:"DocFxIssuesAliases",
+            content:"DocFxIssuesAliases",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/IssuePriority',
-            title:"IssuePriority",
+            url:'/api/Cake.Issues.DocFx/DocFxIssuesAliases',
+            title:"DocFxIssuesAliases",
             description:""
         }
     );
     a(
         {
             id:70,
-            title:"AzureDevOpsFileLinkSettingsBuilder",
-            content:"AzureDevOpsFileLinkSettingsBuilder",
+            title:"ReportingAliasConstants",
+            content:"ReportingAliasConstants",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.FileLinking/AzureDevOpsFileLinkSettingsBuilder',
-            title:"AzureDevOpsFileLinkSettingsBuilder",
+            url:'/api/Cake.Issues.Reporting/ReportingAliasConstants',
+            title:"ReportingAliasConstants",
             description:""
         }
     );
     a(
         {
             id:71,
-            title:"DevExtremeThemeExtensions",
-            content:"DevExtremeThemeExtensions",
+            title:"BasePullRequestSystem",
+            content:"BasePullRequestSystem",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/DevExtremeThemeExtensions',
-            title:"DevExtremeThemeExtensions",
+            url:'/api/Cake.Issues.PullRequests/BasePullRequestSystem',
+            title:"BasePullRequestSystem",
             description:""
         }
     );
     a(
         {
             id:72,
-            title:"ProviderIssueIssueLimits",
-            content:"ProviderIssueIssueLimits",
+            title:"GitHubActionsPullRequestSystem",
+            content:"GitHubActionsPullRequestSystem",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/ProviderIssueIssueLimits',
-            title:"ProviderIssueIssueLimits",
+            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsPullRequestSystem',
+            title:"GitHubActionsPullRequestSystem",
             description:""
         }
     );
     a(
         {
             id:73,
-            title:"EsLintIssuesProvider",
-            content:"EsLintIssuesProvider",
+            title:"ICreateIssueReportFromIssueProviderSettings",
+            content:"ICreateIssueReportFromIssueProviderSettings",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.EsLint/EsLintIssuesProvider',
-            title:"EsLintIssuesProvider",
+            url:'/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings',
+            title:"ICreateIssueReportFromIssueProviderSettings",
             description:""
         }
     );
@@ -1089,398 +1089,6 @@ var searchModule = function() {
     a(
         {
             id:75,
-            title:"IPullRequestDiscussionComment",
-            content:"IPullRequestDiscussionComment",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IPullRequestDiscussionComment',
-            title:"IPullRequestDiscussionComment",
-            description:""
-        }
-    );
-    a(
-        {
-            id:76,
-            title:"BaseFilteringByModifiedFilesCapability",
-            content:"BaseFilteringByModifiedFilesCapability",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1',
-            title:"BaseFilteringByModifiedFilesCapability<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:77,
-            title:"DevExtremeTheme",
-            content:"DevExtremeTheme",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/DevExtremeTheme',
-            title:"DevExtremeTheme",
-            description:""
-        }
-    );
-    a(
-        {
-            id:78,
-            title:"IReportIssuesToPullRequestFromIssueProviderSettings",
-            content:"IReportIssuesToPullRequestFromIssueProviderSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings',
-            title:"IReportIssuesToPullRequestFromIssueProviderSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:79,
-            title:"BaseConfigurableIssueProvider",
-            content:"BaseConfigurableIssueProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseConfigurableIssueProvider_1',
-            title:"BaseConfigurableIssueProvider<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:80,
-            title:"AzureDevOpsPullRequestSystemAliases",
-            content:"AzureDevOpsPullRequestSystemAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.AzureDevOps/AzureDevOpsPullRequestSystemAliases',
-            title:"AzureDevOpsPullRequestSystemAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:81,
-            title:"TerraformIssuesAliases",
-            content:"TerraformIssuesAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Terraform/TerraformIssuesAliases',
-            title:"TerraformIssuesAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:82,
-            title:"ColumnSortOrder",
-            content:"ColumnSortOrder",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/ColumnSortOrder',
-            title:"ColumnSortOrder",
-            description:""
-        }
-    );
-    a(
-        {
-            id:83,
-            title:"AzureDevOpsPullRequestSystemSettings",
-            content:"AzureDevOpsPullRequestSystemSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.AzureDevOps/AzureDevOpsPullRequestSystemSettings',
-            title:"AzureDevOpsPullRequestSystemSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:84,
-            title:"PullRequestDiscussionComment",
-            content:"PullRequestDiscussionComment",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionComment',
-            title:"PullRequestDiscussionComment",
-            description:""
-        }
-    );
-    a(
-        {
-            id:85,
-            title:"MarkdownlintIssuesProvider",
-            content:"MarkdownlintIssuesProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider',
-            title:"MarkdownlintIssuesProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:86,
-            title:"Aliases",
-            content:"Aliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/Aliases',
-            title:"Aliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:87,
-            title:"AppVeyorPullRequestSystem",
-            content:"AppVeyorPullRequestSystem",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem',
-            title:"AppVeyorPullRequestSystem",
-            description:""
-        }
-    );
-    a(
-        {
-            id:88,
-            title:"RepositorySettings",
-            content:"RepositorySettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/RepositorySettings',
-            title:"RepositorySettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:89,
-            title:"FakeMultiFormatIssueProviderSettings",
-            content:"FakeMultiFormatIssueProviderSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/FakeMultiFormatIssueProviderSettings',
-            title:"FakeMultiFormatIssueProviderSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:90,
-            title:"GenericIssueReportFormatSettings",
-            content:"GenericIssueReportFormatSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettings',
-            title:"GenericIssueReportFormatSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:91,
-            title:"MsBuildIssuesAliases",
-            content:"MsBuildIssuesAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesAliases',
-            title:"MsBuildIssuesAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:92,
-            title:"IPullRequestDiscussionThread",
-            content:"IPullRequestDiscussionThread",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread',
-            title:"IPullRequestDiscussionThread",
-            description:""
-        }
-    );
-    a(
-        {
-            id:93,
-            title:"ICreateIssueReportFromIssueProviderSettings",
-            content:"ICreateIssueReportFromIssueProviderSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings',
-            title:"ICreateIssueReportFromIssueProviderSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:94,
-            title:"DocFxIssuesAliases",
-            content:"DocFxIssuesAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.DocFx/DocFxIssuesAliases',
-            title:"DocFxIssuesAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:95,
-            title:"InspectCodeIssuesSettings",
-            content:"InspectCodeIssuesSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.InspectCode/InspectCodeIssuesSettings',
-            title:"InspectCodeIssuesSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:96,
-            title:"BaseMultiFormatIssueProviderFixture",
-            content:"BaseMultiFormatIssueProviderFixture",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3',
-            title:"BaseMultiFormatIssueProviderFixture<TIssueProvider, TSettings, TLogFileFormat>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:97,
-            title:"PullRequestIssueResult",
-            content:"PullRequestIssueResult",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestIssueResult',
-            title:"PullRequestIssueResult",
-            description:""
-        }
-    );
-    a(
-        {
-            id:98,
-            title:"SarifIssueReportFormatAliases",
-            content:"SarifIssueReportFormatAliases",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Sarif/SarifIssueReportFormatAliases',
-            title:"SarifIssueReportFormatAliases",
-            description:""
-        }
-    );
-    a(
-        {
-            id:99,
-            title:"ReportIssuesToPullRequestSettings",
-            content:"ReportIssuesToPullRequestSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings',
-            title:"ReportIssuesToPullRequestSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:100,
-            title:"FakeIssueComponent",
-            content:"FakeIssueComponent",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Testing/FakeIssueComponent',
-            title:"FakeIssueComponent",
-            description:""
-        }
-    );
-    a(
-        {
-            id:101,
-            title:"StringPathExtensions",
-            content:"StringPathExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/StringPathExtensions',
-            title:"StringPathExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:102,
-            title:"CreateIssueReportSettings",
-            content:"CreateIssueReportSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/CreateIssueReportSettings',
-            title:"CreateIssueReportSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:103,
             title:"GitRepositoryIssuesAliases",
             content:"GitRepositoryIssuesAliases",
             description:'',
@@ -1494,7 +1102,231 @@ var searchModule = function() {
     );
     a(
         {
-            id:104,
+            id:76,
+            title:"PullRequestIssuesException",
+            content:"PullRequestIssuesException",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestIssuesException',
+            title:"PullRequestIssuesException",
+            description:""
+        }
+    );
+    a(
+        {
+            id:77,
+            title:"ISupportFilteringByModifiedFiles",
+            content:"ISupportFilteringByModifiedFiles",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/ISupportFilteringByModifiedFiles',
+            title:"ISupportFilteringByModifiedFiles",
+            description:""
+        }
+    );
+    a(
+        {
+            id:78,
+            title:"IProviderIssueLimits",
+            content:"IProviderIssueLimits",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IProviderIssueLimits',
+            title:"IProviderIssueLimits",
+            description:""
+        }
+    );
+    a(
+        {
+            id:79,
+            title:"MarkdownlintIssuesProvider",
+            content:"MarkdownlintIssuesProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider',
+            title:"MarkdownlintIssuesProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:80,
+            title:"EsLintIssuesAliases",
+            content:"EsLintIssuesAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.EsLint/EsLintIssuesAliases',
+            title:"EsLintIssuesAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:81,
+            title:"InspectCodeIssuesAliases",
+            content:"InspectCodeIssuesAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.InspectCode/InspectCodeIssuesAliases',
+            title:"InspectCodeIssuesAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:82,
+            title:"TerraformIssuesSettings",
+            content:"TerraformIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Terraform/TerraformIssuesSettings',
+            title:"TerraformIssuesSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:83,
+            title:"DevExtremeThemeExtensions",
+            content:"DevExtremeThemeExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/DevExtremeThemeExtensions',
+            title:"DevExtremeThemeExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:84,
+            title:"IPullRequestDiscussionThread",
+            content:"IPullRequestDiscussionThread",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/IPullRequestDiscussionThread',
+            title:"IPullRequestDiscussionThread",
+            description:""
+        }
+    );
+    a(
+        {
+            id:85,
+            title:"BaseMultiFormatIssueProviderFixture",
+            content:"BaseMultiFormatIssueProviderFixture",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3',
+            title:"BaseMultiFormatIssueProviderFixture<TIssueProvider, TSettings, TLogFileFormat>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:86,
+            title:"RepositorySettings",
+            content:"RepositorySettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/RepositorySettings',
+            title:"RepositorySettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:87,
+            title:"DupFinderIssuesAliases",
+            content:"DupFinderIssuesAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.DupFinder/DupFinderIssuesAliases',
+            title:"DupFinderIssuesAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:88,
+            title:"Issue",
+            content:"Issue",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/Issue',
+            title:"Issue",
+            description:""
+        }
+    );
+    a(
+        {
+            id:89,
+            title:"ReadIssuesSettings",
+            content:"ReadIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/ReadIssuesSettings',
+            title:"ReadIssuesSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:90,
+            title:"AppVeyorBuildSettings",
+            content:"AppVeyorBuildSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorBuildSettings',
+            title:"AppVeyorBuildSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:91,
+            title:"ByteArrayExtensions",
+            content:"ByteArrayExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/ByteArrayExtensions',
+            title:"ByteArrayExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:92,
             title:"IssueBuilder",
             content:"IssueBuilder",
             description:'',
@@ -1508,77 +1340,231 @@ var searchModule = function() {
     );
     a(
         {
-            id:105,
-            title:"Aliases",
-            content:"Aliases",
+            id:93,
+            title:"AzureDevOpsFileLinkSettingsBuilder",
+            content:"AzureDevOpsFileLinkSettingsBuilder",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/Aliases',
-            title:"Aliases",
+            url:'/api/Cake.Issues.FileLinking/AzureDevOpsFileLinkSettingsBuilder',
+            title:"AzureDevOpsFileLinkSettingsBuilder",
+            description:""
+        }
+    );
+    a(
+        {
+            id:94,
+            title:"IssueProviderSettings",
+            content:"IssueProviderSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IssueProviderSettings',
+            title:"IssueProviderSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:95,
+            title:"GenericIssueReportFormatAliases",
+            content:"GenericIssueReportFormatAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatAliases',
+            title:"GenericIssueReportFormatAliases",
+            description:""
+        }
+    );
+    a(
+        {
+            id:96,
+            title:"FakeRuleDescription",
+            content:"FakeRuleDescription",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeRuleDescription',
+            title:"FakeRuleDescription",
+            description:""
+        }
+    );
+    a(
+        {
+            id:97,
+            title:"IssuesReader",
+            content:"IssuesReader",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IssuesReader',
+            title:"IssuesReader",
+            description:""
+        }
+    );
+    a(
+        {
+            id:98,
+            title:"FakeIssueProvider",
+            content:"FakeIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeIssueProvider',
+            title:"FakeIssueProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:99,
+            title:"DupFinderIssuesSettings",
+            content:"DupFinderIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.DupFinder/DupFinderIssuesSettings',
+            title:"DupFinderIssuesSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:100,
+            title:"FakeRuleUrlResolver",
+            content:"FakeRuleUrlResolver",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeRuleUrlResolver',
+            title:"FakeRuleUrlResolver",
+            description:""
+        }
+    );
+    a(
+        {
+            id:101,
+            title:"IRepositorySettings",
+            content:"IRepositorySettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IRepositorySettings',
+            title:"IRepositorySettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:102,
+            title:"FakeConfigurableIssueProvider",
+            content:"FakeConfigurableIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeConfigurableIssueProvider',
+            title:"FakeConfigurableIssueProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:103,
+            title:"StringPathExtensions",
+            content:"StringPathExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/StringPathExtensions',
+            title:"StringPathExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:104,
+            title:"CreateIssueReportSettings",
+            content:"CreateIssueReportSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/CreateIssueReportSettings',
+            title:"CreateIssueReportSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:105,
+            title:"AzureDevOpsPullRequestSystemSettings",
+            content:"AzureDevOpsPullRequestSystemSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.AzureDevOps/AzureDevOpsPullRequestSystemSettings',
+            title:"AzureDevOpsPullRequestSystemSettings",
             description:""
         }
     );
     a(
         {
             id:106,
-            title:"FakeLogFileFormat",
-            content:"FakeLogFileFormat",
+            title:"ColumnSortOrderExtensions",
+            content:"ColumnSortOrderExtensions",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Testing/FakeLogFileFormat',
-            title:"FakeLogFileFormat",
+            url:'/api/Cake.Issues.Reporting.Generic/ColumnSortOrderExtensions',
+            title:"ColumnSortOrderExtensions",
             description:""
         }
     );
     a(
         {
             id:107,
-            title:"BaseIssueComponent",
-            content:"BaseIssueComponent",
+            title:"MarkdownlintRuleDescription",
+            content:"MarkdownlintRuleDescription",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/BaseIssueComponent_1',
-            title:"BaseIssueComponent<T>",
+            url:'/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription',
+            title:"MarkdownlintRuleDescription",
             description:""
         }
     );
     a(
         {
             id:108,
-            title:"BasePullRequestSystemCapability",
-            content:"BasePullRequestSystemCapability",
+            title:"PullRequestDiscussionThread",
+            content:"PullRequestDiscussionThread",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1',
-            title:"BasePullRequestSystemCapability<T>",
+            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionThread',
+            title:"PullRequestDiscussionThread",
             description:""
         }
     );
     a(
         {
             id:109,
-            title:"HtmlDxDataGridColumnDescription",
-            content:"HtmlDxDataGridColumnDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription',
-            title:"HtmlDxDataGridColumnDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:110,
             title:"ISupportCheckingCommitId",
             content:"ISupportCheckingCommitId",
             description:'',
@@ -1592,29 +1578,43 @@ var searchModule = function() {
     );
     a(
         {
-            id:111,
-            title:"FileLinkOptionalSettingsBuilder",
-            content:"FileLinkOptionalSettingsBuilder",
+            id:110,
+            title:"FileLinkSettings",
+            content:"FileLinkSettings",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.FileLinking/FileLinkOptionalSettingsBuilder',
-            title:"FileLinkOptionalSettingsBuilder",
+            url:'/api/Cake.Issues/FileLinkSettings',
+            title:"FileLinkSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:111,
+            title:"GitHubActionsBuildsAliases",
+            content:"GitHubActionsBuildsAliases",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsBuildsAliases',
+            title:"GitHubActionsBuildsAliases",
             description:""
         }
     );
     a(
         {
             id:112,
-            title:"BaseDiscussionThreadsCapability",
-            content:"BaseDiscussionThreadsCapability",
+            title:"IssuesAliasConstants",
+            content:"IssuesAliasConstants",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1',
-            title:"BaseDiscussionThreadsCapability<T>",
+            url:'/api/Cake.Issues/IssuesAliasConstants',
+            title:"IssuesAliasConstants",
             description:""
         }
     );
@@ -1635,146 +1635,62 @@ var searchModule = function() {
     a(
         {
             id:114,
-            title:"BaseCheckingCommitIdCapability",
-            content:"BaseCheckingCommitIdCapability",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1',
-            title:"BaseCheckingCommitIdCapability<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:115,
-            title:"GitHubActionsBuildSettings",
-            content:"GitHubActionsBuildSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsBuildSettings',
-            title:"GitHubActionsBuildSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:116,
-            title:"MarkdownlintRuleDescription",
-            content:"MarkdownlintRuleDescription",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Markdownlint/MarkdownlintRuleDescription',
-            title:"MarkdownlintRuleDescription",
-            description:""
-        }
-    );
-    a(
-        {
-            id:117,
-            title:"IReportIssuesToPullRequestSettings",
-            content:"IReportIssuesToPullRequestSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings',
-            title:"IReportIssuesToPullRequestSettings",
-            description:""
-        }
-    );
-    a(
-        {
-            id:118,
-            title:"BaseIssueProvider",
-            content:"BaseIssueProvider",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/BaseIssueProvider',
-            title:"BaseIssueProvider",
-            description:""
-        }
-    );
-    a(
-        {
-            id:119,
             title:"Aliases",
             content:"Aliases",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting/Aliases',
+            url:'/api/Cake.Issues/Aliases',
             title:"Aliases",
             description:""
         }
     );
     a(
         {
-            id:120,
-            title:"GenericIssueReportFormatAliases",
-            content:"GenericIssueReportFormatAliases",
+            id:115,
+            title:"TerraformIssuesAliases",
+            content:"TerraformIssuesAliases",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatAliases',
-            title:"GenericIssueReportFormatAliases",
+            url:'/api/Cake.Issues.Terraform/TerraformIssuesAliases',
+            title:"TerraformIssuesAliases",
             description:""
         }
     );
     a(
         {
-            id:121,
-            title:"IIssueExtensions",
-            content:"IIssueExtensions",
+            id:116,
+            title:"IPullRequestDiscussionComment",
+            content:"IPullRequestDiscussionComment",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Reporting.Generic/IIssueExtensions',
-            title:"IIssueExtensions",
+            url:'/api/Cake.Issues.PullRequests/IPullRequestDiscussionComment',
+            title:"IPullRequestDiscussionComment",
             description:""
         }
     );
     a(
         {
-            id:122,
-            title:"IIssue",
-            content:"IIssue",
+            id:117,
+            title:"IssuePriority",
+            content:"IssuePriority",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/IIssue',
-            title:"IIssue",
+            url:'/api/Cake.Issues/IssuePriority',
+            title:"IssuePriority",
             description:""
         }
     );
     a(
         {
-            id:123,
-            title:"GitHubActionsPullRequestSystem",
-            content:"GitHubActionsPullRequestSystem",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsPullRequestSystem',
-            title:"GitHubActionsPullRequestSystem",
-            description:""
-        }
-    );
-    a(
-        {
-            id:124,
+            id:118,
             title:"ReportIssuesToPullRequestFromIssueProviderSettings",
             content:"ReportIssuesToPullRequestFromIssueProviderSettings",
             description:'',
@@ -1788,7 +1704,147 @@ var searchModule = function() {
     );
     a(
         {
+            id:119,
+            title:"IIssueExtensions",
+            content:"IIssueExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IIssueExtensions',
+            title:"IIssueExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:120,
+            title:"FakeMultiFormatIssueProvider",
+            content:"FakeMultiFormatIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider',
+            title:"FakeMultiFormatIssueProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:121,
+            title:"DevExtremeTheme",
+            content:"DevExtremeTheme",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/DevExtremeTheme',
+            title:"DevExtremeTheme",
+            description:""
+        }
+    );
+    a(
+        {
+            id:122,
+            title:"MsBuildIssuesProvider",
+            content:"MsBuildIssuesProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.MsBuild/MsBuildIssuesProvider',
+            title:"MsBuildIssuesProvider",
+            description:""
+        }
+    );
+    a(
+        {
+            id:123,
+            title:"HtmlDxDataGridOption",
+            content:"HtmlDxDataGridOption",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption',
+            title:"HtmlDxDataGridOption",
+            description:""
+        }
+    );
+    a(
+        {
+            id:124,
+            title:"PullRequestsAliasConstants",
+            content:"PullRequestsAliasConstants",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/PullRequestsAliasConstants',
+            title:"PullRequestsAliasConstants",
+            description:""
+        }
+    );
+    a(
+        {
             id:125,
+            title:"BasePullRequestSystemCapability",
+            content:"BasePullRequestSystemCapability",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1',
+            title:"BasePullRequestSystemCapability<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:126,
+            title:"BaseMultiFormatIssueProvider",
+            content:"BaseMultiFormatIssueProvider",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/BaseMultiFormatIssueProvider_2',
+            title:"BaseMultiFormatIssueProvider<TSettings, TIssueProvider>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:127,
+            title:"ICreateIssueReportSettings",
+            content:"ICreateIssueReportSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Reporting/ICreateIssueReportSettings',
+            title:"ICreateIssueReportSettings",
+            description:""
+        }
+    );
+    a(
+        {
+            id:128,
+            title:"IssueCommentFormat",
+            content:"IssueCommentFormat",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues/IssueCommentFormat',
+            title:"IssueCommentFormat",
+            description:""
+        }
+    );
+    a(
+        {
+            id:129,
             title:"IIssueProvider",
             content:"IIssueProvider",
             description:'',
@@ -1802,7 +1858,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:126,
+            id:130,
             title:"GitRepositoryIssuesSettings",
             content:"GitRepositoryIssuesSettings",
             description:'',
@@ -1816,99 +1872,43 @@ var searchModule = function() {
     );
     a(
         {
-            id:127,
-            title:"ByteArrayExtensions",
-            content:"ByteArrayExtensions",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/ByteArrayExtensions',
-            title:"ByteArrayExtensions",
-            description:""
-        }
-    );
-    a(
-        {
-            id:128,
-            title:"IIssueReportFormat",
-            content:"IIssueReportFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/IIssueReportFormat',
-            title:"IIssueReportFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:129,
-            title:"PullRequestDiscussionThread",
-            content:"PullRequestDiscussionThread",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.PullRequests/PullRequestDiscussionThread',
-            title:"PullRequestDiscussionThread",
-            description:""
-        }
-    );
-    a(
-        {
-            id:130,
-            title:"IssueProviderSettings",
-            content:"IssueProviderSettings",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IssueProviderSettings',
-            title:"IssueProviderSettings",
-            description:""
-        }
-    );
-    a(
-        {
             id:131,
-            title:"IPullRequestSystemCapability",
-            content:"IPullRequestSystemCapability",
+            title:"ColumnSortOrder",
+            content:"ColumnSortOrder",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.PullRequests/IPullRequestSystemCapability',
-            title:"IPullRequestSystemCapability",
+            url:'/api/Cake.Issues.Reporting.Generic/ColumnSortOrder',
+            title:"ColumnSortOrder",
             description:""
         }
     );
     a(
         {
             id:132,
-            title:"FakeConfigurableIssueProvider",
-            content:"FakeConfigurableIssueProvider",
+            title:"IReadIssuesSettings",
+            content:"IReadIssuesSettings",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues.Testing/FakeConfigurableIssueProvider',
-            title:"FakeConfigurableIssueProvider",
+            url:'/api/Cake.Issues/IReadIssuesSettings',
+            title:"IReadIssuesSettings",
             description:""
         }
     );
     a(
         {
             id:133,
-            title:"IIssueComparer",
-            content:"IIssueComparer",
+            title:"GitHubFileLinkSettingsBuilder",
+            content:"GitHubFileLinkSettingsBuilder",
             description:'',
             tags:''
         },
         {
-            url:'/api/Cake.Issues/IIssueComparer',
-            title:"IIssueComparer",
+            url:'/api/Cake.Issues.FileLinking/GitHubFileLinkSettingsBuilder',
+            title:"GitHubFileLinkSettingsBuilder",
             description:""
         }
     );
@@ -1929,34 +1929,6 @@ var searchModule = function() {
     a(
         {
             id:135,
-            title:"IssueCommentFormat",
-            content:"IssueCommentFormat",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues/IssueCommentFormat',
-            title:"IssueCommentFormat",
-            description:""
-        }
-    );
-    a(
-        {
-            id:136,
-            title:"ReportingAliasConstants",
-            content:"ReportingAliasConstants",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/api/Cake.Issues.Reporting/ReportingAliasConstants',
-            title:"ReportingAliasConstants",
-            description:""
-        }
-    );
-    a(
-        {
-            id:137,
             title:"ResourceTempFile",
             content:"ResourceTempFile",
             description:'',
@@ -1965,6 +1937,34 @@ var searchModule = function() {
         {
             url:'/api/Cake.Issues.Testing/ResourceTempFile',
             title:"ResourceTempFile",
+            description:""
+        }
+    );
+    a(
+        {
+            id:136,
+            title:"IssueDeserializationExtensions",
+            content:"IssueDeserializationExtensions",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Serialization/IssueDeserializationExtensions',
+            title:"IssueDeserializationExtensions",
+            description:""
+        }
+    );
+    a(
+        {
+            id:137,
+            title:"MarkdownlintIssuesSettings",
+            content:"MarkdownlintIssuesSettings",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/api/Cake.Issues.Markdownlint/MarkdownlintIssuesSettings',
+            title:"MarkdownlintIssuesSettings",
             description:""
         }
     );
