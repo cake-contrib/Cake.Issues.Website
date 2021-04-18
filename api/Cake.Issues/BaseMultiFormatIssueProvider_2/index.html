@@ -236,10 +236,10 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
 											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
 											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
+											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
 									</ul>
 								</dd>			
 							
@@ -258,14 +258,14 @@
 	Type-.-&gt;Interface1["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
 	Type["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]
 class Type type-node
-	Derived0["EsLintIssuesProvider"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Derived1["FakeMultiFormatIssueProvider"]--&gt;Type
-	click Derived1 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived0["FakeMultiFormatIssueProvider"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
+	Derived1["MsBuildIssuesProvider"]--&gt;Type
+	click Derived1 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
 	Derived2["MarkdownlintIssuesProvider"]--&gt;Type
 	click Derived2 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
-	Derived3["MsBuildIssuesProvider"]--&gt;Type
-	click Derived3 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
+	Derived3["EsLintIssuesProvider"]--&gt;Type
+	click Derived3 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
 
 						</div>
 					</div>
