@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - HtmlDxDataGridOption.JsZipLocation Field</title>
+        <title>Cake Issues - API - HtmlDxDataGridOption.JsPdfLocation Field</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -160,19 +160,26 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7714ACF8">EndColumnVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/BA8C9554">EndLineSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9D110532">EndLineVisible</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/639E7F4C">ExcelJsLocation</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9A2BE2E9">ExcelJsVersion</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3FBE2060">ExportFileName</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3F5140A4">ExportFormat</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/89BABC84">File<wbr>Directory<wbr>Sort<wbr>Order</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7BB9867B">FileDirectoryVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3656D22C">FileNameSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/773F20FE">FileNameVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/A28D7642">FilePathSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4131C699">FilePathVisible</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/254B3471">FileSaverJsLocation</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/FFBAA27A">FileSaverJsVersion</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0907599C">GroupedColumns</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8AE92009">Ide<wbr>Integration<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/874CBB4B">JQueryLocation</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></li>
-				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8EAB4809">JsZipLocation</a></li>
-				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4D7732A6">Js<wbr>Pdf<wbr>Autotable<wbr>Location</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1E3C4C71">Js<wbr>Pdf<wbr>Autotable<wbr>Version</a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4143C3C1">JsPdfLocation</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/85FC325D">JsPdfVersion</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0F54FEA4">LineSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/84415C12">LineVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/CC13ED9B">LocationSortOrder</a></li>
@@ -217,22 +224,22 @@
 
 <section class="content-header">
 			<h3><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a>.</h3>
-	<h1>JsZipLocation <small>Field</small></h1>
+	<h1>JsPdfLocation <small>Field</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Location where JSZip can be found.
-            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></code>.
+            Location where <a href="https://github.com/MrRio/jsPDF">jsPDF</a> can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/85FC325D">JsPdfVersion</a></code>.
             The following files need to be available:
             <ul>
             <li>
-            <span class="description"><code class="cs">{JsZipLocation}/{JsZipVersion}/jszip.min.js</code></span>
+            <span class="description"><code class="cs">{JsPdfLocation}/{JsPdfVersion}/jspdf.umd.min.js</code></span>
             </li>
             </ul>
-            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jszip/</code>.
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jspdf/</code>.
             </div>
 
 		<div class="panel panel-default">
@@ -251,7 +258,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public const HtmlDxDataGridOption JsZipLocation</code></pre>
+	<pre><code>public const HtmlDxDataGridOption JsPdfLocation</code></pre>
 
 
 
@@ -268,7 +275,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>52</td>
+					<td>57</td>
 					<td>Int32</td>
 				</tr>
 			</tbody></table>

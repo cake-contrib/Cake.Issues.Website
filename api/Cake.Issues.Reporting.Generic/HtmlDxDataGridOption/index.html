@@ -156,6 +156,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/GenericIssueReportFormatSettingsExtensions">Generic<wbr>Issue<wbr>Report<wbr>Format<wbr>Settings<wbr>Extensions</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/GenericIssueReportTemplate">Generic<wbr>Issue<wbr>Report<wbr>Template</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridColumnDescription">Html<wbr>Dx<wbr>Data<wbr>Grid<wbr>Column<wbr>Description</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridExportFormat">Html<wbr>Dx<wbr>Data<wbr>Grid<wbr>Export<wbr>Format</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/IdeIntegrationSettings">Ide<wbr>Integration<wbr>Settings</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/IIssueExtensions">IIssueExtensions</a></li>
@@ -283,7 +284,7 @@ class Type type-node
 								<td>47</td>
 								<td>
 									<div>
-            Location where the DevExtreme libraries can be found.
+            Location where the <a href="https://js.devexpress.com/">DevExtreme </a> libraries can be found.
             Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code> and
             inside there subfolders <code class="cs">js</code> and <code class="cs">css</code>.
             The following files need to be available:
@@ -308,9 +309,9 @@ class Type type-node
 								<td>48</td>
 								<td>
 									<div>
-            Version of the DevExtreme libraries which should be used.
+            Version of the <a href="https://js.devexpress.com/">DevExtreme </a> libraries which should be used.
             If setting this the matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9ED6F440">JQueryVersion</a></code> needs to also be set.
-            Default value is <code class="cs">20.1.6</code>.
+            Default value is <code class="cs">21.1.4</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -320,7 +321,7 @@ class Type type-node
 								<td>50</td>
 								<td>
 									<div>
-            Flag if exporting to Microsoft Excel should be available or not.
+            Flag if exporting should be available or not.
             Either <code class="cs">true</code> or <code class="cs">false</code>.
             Default value is <code class="cs">false</code>.
             </div>
@@ -413,12 +414,54 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/639E7F4C">ExcelJsLocation</a></td>
+								<td>53</td>
+								<td>
+									<div>
+            Location where <a href="https://github.com/exceljs/exceljs">ExcelJS</a> can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9A2BE2E9">ExcelJsVersion</a></code>.
+            The following files need to be available:
+            <ul>
+            <li>
+            <span class="description"><code class="cs">{ExcelJsLocation}/{ExcelJsVersion}/exceljs.min.js</code></span>
+            </li>
+            </ul>
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/exceljs/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/9A2BE2E9">ExcelJsVersion</a></td>
+								<td>54</td>
+								<td>
+									<div>
+            Version of <a href="https://github.com/exceljs/exceljs">ExcelJS</a> which should be used.
+            This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
+            Default value is <code class="cs">4.2.1</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3FBE2060">ExportFileName</a></td>
 								<td>51</td>
 								<td>
 									<div>
-            Default name of Microsoft Excel file without file name extension.
+            Default name of the export file without file name extension.
             Default value is <code class="cs">issue-report</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3F5140A4">ExportFormat</a></td>
+								<td>52</td>
+								<td>
+									<div>
+            Export format.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridExportFormat">HtmlDxDataGridExportFormat</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridExportFormat/4C62DC39">Excel</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -496,6 +539,36 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/254B3471">FileSaverJsLocation</a></td>
+								<td>55</td>
+								<td>
+									<div>
+            Location where <a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a> can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/FFBAA27A">FileSaverJsVersion</a></code>.
+            The following files need to be available:
+            <ul>
+            <li>
+            <span class="description"><code class="cs">{FileSaverLocation}/{FileSaverVersion}/FileSaver.js</code></span>
+            </li>
+            </ul>
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/FFBAA27A">FileSaverJsVersion</a></td>
+								<td>56</td>
+								<td>
+									<div>
+            Version of <a href="https://github.com/eligrey/FileSaver.js/">FileSaver.js</a> which should be used.
+            This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
+            Default value is <code class="cs">2.0.4</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0907599C">GroupedColumns</a></td>
 								<td>42</td>
 								<td>
@@ -524,7 +597,7 @@ class Type type-node
 								<td>45</td>
 								<td>
 									<div>
-            Location where jQuery can be found.
+            Location where <a href="https://jquery.com">jQuery</a> can be found.
             The following files need to be available:
             <ul>
             <li>
@@ -541,39 +614,69 @@ class Type type-node
 								<td>46</td>
 								<td>
 									<div>
-            Version of jQuery which should be used.
+            Version of <a href="https://jquery.com">jQuery</a> which should be used.
             This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
-            Default value is <code class="cs">3.5.0</code>.
+            Default value is <code class="cs">3.6.0</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8EAB4809">JsZipLocation</a></td>
-								<td>52</td>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4D7732A6">Js<wbr>Pdf<wbr>Autotable<wbr>Location</a></td>
+								<td>59</td>
 								<td>
 									<div>
-            Location where JSZip can be found.
-            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></code>.
+            Location where <a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-AutoTable plugin</a> can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1E3C4C71">JsPdfAutotableVersion</a></code>.
             The following files need to be available:
             <ul>
             <li>
-            <span class="description"><code class="cs">{JsZipLocation}/{JsZipVersion}/jszip.min.js</code></span>
+            <span class="description"><code class="cs">{JsPdfAutotableLocation}/{JsPdfAutotableVersion}/jspdf.plugin.autotable.min.js</code></span>
             </li>
             </ul>
-            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jszip/</code>.
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/B7B38B01">JsZipVersion</a></td>
-								<td>53</td>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1E3C4C71">Js<wbr>Pdf<wbr>Autotable<wbr>Version</a></td>
+								<td>60</td>
 								<td>
 									<div>
-            Version of JsZip which should be used.
+            Version of <a href="https://github.com/simonbengtsson/jsPDF-AutoTable">jsPDF-AutoTable plugin</a> which should be used.
             This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
-            Default value is <code class="cs">3.2.2</code>.
+            Default value is <code class="cs">3.5.15</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/4143C3C1">JsPdfLocation</a></td>
+								<td>57</td>
+								<td>
+									<div>
+            Location where <a href="https://github.com/MrRio/jsPDF">jsPDF</a> can be found.
+            Below the location there needs to be a folder matching <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/85FC325D">JsPdfVersion</a></code>.
+            The following files need to be available:
+            <ul>
+            <li>
+            <span class="description"><code class="cs">{JsPdfLocation}/{JsPdfVersion}/jspdf.umd.min.js</code></span>
+            </li>
+            </ul>
+            Default value is <code class="cs">https://cdnjs.cloudflare.com/ajax/libs/jspdf/</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/85FC325D">JsPdfVersion</a></td>
+								<td>58</td>
+								<td>
+									<div>
+            Version of <a href="https://github.com/MrRio/jsPDF">jsPDF</a> which should be used.
+            This version needs to match the version required by the selected <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></code>.
+            Default value is <code class="cs">2.3.1</code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -895,7 +998,7 @@ class Type type-node
 								<td>1</td>
 								<td>
 									<div>
-            DevExtreme theme to use.
+            <a href="https://js.devexpress.com/">DevExtreme </a> theme to use.
             See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/DevExtremeTheme">DevExtremeTheme</a></code> for possible values.
             Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/DevExtremeTheme/DEE52E08">Light</a></code>.
             </div>
