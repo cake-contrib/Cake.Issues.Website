@@ -2,7 +2,7 @@ Name: Cake.Issues.Reporting
 NuGet: Cake.Issues.Reporting
 Prerelease: false
 RepositoryOwner: cake-contrib
-RepositoryName: Cake.Issues.Reporting
+RepositoryName: Cake.Issues
 DocumentationLink: /docs/usage/creating-reports/
 ReleaseNotesFilePath: "input/docs/overview/release-notes/Cake.Issues.Reporting.md"
 Assemblies:

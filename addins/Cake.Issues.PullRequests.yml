@@ -2,7 +2,7 @@ Name: Cake.Issues.PullRequests
 NuGet: Cake.Issues.PullRequests
 Prerelease: false
 RepositoryOwner: cake-contrib
-RepositoryName: Cake.Issues.PullRequests
+RepositoryName: Cake.Issues
 DocumentationLink: /docs/usage/reporting-issues-to-pull-requests/
 ReleaseNotesFilePath: "input/docs/overview/release-notes/Cake.Issues.PullRequests.md"
 Assemblies:
