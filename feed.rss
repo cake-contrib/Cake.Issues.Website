@@ -5,8 +5,24 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Tue, 27 Jul 2021 23:02:37 GMT</pubDate>
-		<lastBuildDate>Tue, 27 Jul 2021 23:02:37 GMT</lastBuildDate>
+		<pubDate>Wed, 28 Jul 2021 18:47:16 GMT</pubDate>
+		<lastBuildDate>Wed, 28 Jul 2021 18:47:16 GMT</lastBuildDate>
+		<item>
+			<title>New addin for Terraform support</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/terraform-addin</link>
+			<description>&lt;p&gt;A new &lt;a href="../docs/issue-providers/terraform/"&gt;Cake.Issues.Terraform addin&lt;/a&gt; has been released which adds support for reading issues from Terraform &lt;code&gt;validate&lt;/code&gt; command..&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/terraform-addin</guid>
+			<pubDate>Tue, 27 Jul 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;A new &lt;a href="../docs/issue-providers/terraform/"&gt;Cake.Issues.Terraform addin&lt;/a&gt; has been released which adds support for reading issues from Terraform &lt;code&gt;validate&lt;/code&gt; command..&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;&lt;a href="../docs/issue-providers/terraform/"&gt;Cake.Issues.Terraform addin&lt;/a&gt; brings support for Terraform to the Cake.Issues ecosystem.
+It allows to read the output of the Terraform &lt;code&gt;validate&lt;/code&gt; command.
+Together with other Cake.Issues addins it is possible to create powerful infrastructure as code pipelines which
+ensure quality standards by validating Terraform files before merging or deploying the changes.
+When using a pull requests workflow it is also possible to have the issues reported by Terraform validate automatically
+reported as comments to pull request.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues Recipe v0.4.4 released, bringing support for ESLint</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v0.4.4-released</link>
