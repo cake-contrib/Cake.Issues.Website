@@ -11,17 +11,20 @@ public static class RepositoryHelper
     /// </summary>
     /// <param name="context">The Cake context.</param>
     /// <param name="repositoryRemoteUrl">The remote URL to the repository.</param>
+    /// <param name="branchName">The branch which should be checked out.</param>
     /// <param name="sourcePathRelative">Path which should be copied relative to the repository root.</param>
     /// <param name="targetPath">Directory to which the files should be copied to.</param>
     public static void GitCopyFromRepository(
         ICakeContext context,
         Uri repositoryRemoteUrl,
+        string branchName,
         DirectoryPath sourcePathRelative,
         DirectoryPath targetPath)
     {
         GitCopyFromRepository(
             context,
             repositoryRemoteUrl,
+            branchName,
             new DirectoryPathCollection(new List<DirectoryPath> {sourcePathRelative}, PathComparer.Default),
             targetPath);
     }
@@ -31,17 +34,20 @@ public static class RepositoryHelper
     /// </summary>
     /// <param name="context">The Cake context.</param>
     /// <param name="repositoryRemoteUrl">The remote URL to the repository.</param>
+    /// <param name="branchName">The branch which should be checked out.</param>
     /// <param name="sourcePathsRelative">Paths which should be copied relative to the repository root.</param>
     /// <param name="targetPath">Directory to which the files should be copied to.</param>
     public static void GitCopyFromRepository(
         ICakeContext context,
         Uri repositoryRemoteUrl,
+        string branchName,
         IEnumerable<DirectoryPath> sourcePathsRelative,
         DirectoryPath targetPath)
     {
         GitCopyFromRepository(
             context,
             repositoryRemoteUrl,
+            branchName,
             new DirectoryPathCollection(sourcePathsRelative, PathComparer.Default),
             targetPath);
     }
@@ -51,11 +57,13 @@ public static class RepositoryHelper
     /// </summary>
     /// <param name="context">The Cake context.</param>
     /// <param name="repositoryRemoteUrl">The remote URL to the repository.</param>
+    /// <param name="branchName">The branch which should be checked out.</param>
     /// <param name="sourcePathsRelative">Paths which should be copied relative to the repository root.</param>
     /// <param name="targetPath">Directory to which the files should be copied to.</param>
     public static void GitCopyFromRepository(
         ICakeContext context,
         Uri repositoryRemoteUrl,
+        string branchName,
         DirectoryPathCollection sourcePathsRelative,
         DirectoryPath targetPath)
     {
@@ -69,6 +77,12 @@ public static class RepositoryHelper
         {
             // Clone repository into temporary directory.
             GitClone(context, repositoryRemoteUrl, localPath);
+
+            // Checkout the requested branch.
+            if (!string.IsNullOrEmpty(branchName))
+            {
+                context.GitCheckout(localPath, branchName);
+            }
 
             // Clean target directory.
             if (context.DirectoryExists(targetPath))

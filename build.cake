@@ -69,6 +69,7 @@ Task("GetAddinDocumentation")
             RepositoryHelper.GitCopyFromRepository(
                 Context,
                 new Uri("https://github.com/" + addinSpec.RepositoryOwner + "/" + addinSpec.RepositoryName),
+                "origin/master",
                 new List<DirectoryPath> {addinSpec.RepositoryDocumentationPath},
                 "input" + addinSpec.DocumentationLink);
         }
