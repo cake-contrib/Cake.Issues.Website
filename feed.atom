@@ -4,7 +4,123 @@
 	<title>Cake Issues</title>
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Issues.Website/" />
 	<rights>2021</rights>
-	<updated>2021-07-29T23:02:51Z</updated>
+	<updated>2021-07-30T18:57:59Z</updated>
+	<entry>
+		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-eslint-v1.0.1-released</id>
+		<title>Cake Issues ESLint v1.0.1 Released</title>
+		<link href="http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-eslint-v1.0.1-released" />
+		<updated>2021-07-30T00:00:00Z</updated>
+		<content>&lt;p&gt;Version 1.0.1 of ESLint support for Cake.Issues has been released.
+This is a minor release containing bug fixes.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/eoehen"&gt;eoehen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Speeedy01"&gt;Speeedy01&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="bug-fix-for-issues-with-line-column-or-rule"&gt;Bug fix for issues with line, column or rule&lt;/h2&gt;
+&lt;p&gt;When an issue reported by ESLint didn't contain line or column information, or rule was set to &lt;code&gt;null&lt;/code&gt;
+an exception ocurred while parsing the file.
+This release fixes this and can now also correctly parse issues without position or rule information.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.EsLint 1.0.1 is compatible with version 1.0.0 without any breaking changes.
+To update to the new version bump the version of the addin.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Version 1.0.1 of ESLint support for Cake.Issues has been released.
+This is a minor release containing bug fixes.&lt;/p&gt;</summary>
+	</entry>
+	<entry>
+		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v1.0.0-released</id>
+		<title>Cake Issues v1.0.0 Released</title>
+		<link href="http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-v1.0.0-released" />
+		<updated>2021-07-28T00:00:00Z</updated>
+		<content>&lt;p&gt;More than 4 years after the &lt;a href="https://github.com/cake-contrib/Cake.Prca/commit/438b3a1a609e5b9cc9e6f8f489a73988f9ed1f4d"&gt;first commit for Cake.Prca&lt;/a&gt;,
+the predecessor of Cake Issues, we're happy to announce that Cake Issues version 1.0.0 has been released.
+This is a major release bringing a lot of new features across all addins.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/eoehen"&gt;eoehen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/janniksam"&gt;janniksam&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/phlorian"&gt;phlorian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/jokay"&gt;jokay&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-cake-1.0"&gt;Support for Cake 1.0&lt;/h2&gt;
+&lt;p&gt;All addins have been updated to support Cake 1.x.&lt;/p&gt;
+&lt;h2 id="support-for-cake-frosting"&gt;Support for Cake Frosting&lt;/h2&gt;
+&lt;p&gt;All addins can be used with &lt;a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting"&gt;Cake Frosting&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Cake Issues addins have always been self-contained, shipping with all required dependencies, to provide the best user experience.
+While this approach makes sense for Cake script runners, it makes things more complex than required when running under &lt;a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting"&gt;Cake Frosting&lt;/a&gt;.
+This is especially true for the &lt;a href="/docs/report-formats/generic/"&gt;Cake.Issues.Reporting.Generic addin&lt;/a&gt;, which uses Razor engine to generate the reports.&lt;/p&gt;
+&lt;p&gt;It was therefore decided to release separate versions of the Cake.Issues.Reporting.Generic addin for the different script runners:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Cake.Issues.Reporting.Generic/"&gt;Cake.Issues.Reporting.Generic&lt;/a&gt;: The addin packaged in a self-contained NuGet package for use with Cake script runners&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.nuget.org/packages/Cake.Frosting.Issues.Reporting.Generic/"&gt;Cake.Frosting.Issues.Reporting.Generic&lt;/a&gt;: The addin packaged in a NuGet package containing dependencies for use with &lt;a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting"&gt;Cake Frosting&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.nuget.org/packages/Cake.Frosting.Issues.Reporting.Generic/"&gt;Cake.Frosting.Issues.Reporting.Generic&lt;/a&gt; has the additional benefit for the user that it gives the user full control
+of what exact version of dependencies should be used.
+In the future more Cake Issues addins might be released in Frosting specific packages.&lt;/p&gt;
+&lt;h2 id="support-for-arbitrary-values-in-an-issue"&gt;Support for arbitrary values in an issue&lt;/h2&gt;
+&lt;p&gt;Specific issue providers might have additional information for which no equivalent does exist on &lt;code&gt;IIssue&lt;/code&gt;.
+These kind of information can now be stored in the &lt;code&gt;IIssue.AdditionalInformation&lt;/code&gt; property.&lt;/p&gt;
+&lt;h2 id="new-provider-type-property"&gt;New provider type property&lt;/h2&gt;
+&lt;p&gt;While there are aliases to get provider type name (e.g. &lt;a href="/api/Cake.Issues.MsBuild/MsBuildIssuesAliases/0A221402"&gt;MsBuildIssuesProviderTypeName&lt;/a&gt;), this information was in previous versions
+not available through the &lt;code&gt;IIssueProvider&lt;/code&gt; interface.
+There is a new &lt;code&gt;IIssueProvider.ProviderType&lt;/code&gt; property which can be used to retrieve the provider type.&lt;/p&gt;
+&lt;h2 id="pdf-export"&gt;PDF export&lt;/h2&gt;
+&lt;p&gt;A new PDF export has been added to the &lt;code&gt;HtmlDxDataGrid&lt;/code&gt; template of the &lt;code&gt;Cake.Issues.Reporting.Generic&lt;/code&gt; addin.&lt;/p&gt;
+&lt;h2 id="simplified-release-process"&gt;Simplified release process&lt;/h2&gt;
+&lt;p&gt;Starting with Cake Issues 1.0.0 the three core addins &lt;code&gt;Cake.Issues&lt;/code&gt;, &lt;code&gt;Cake.Issues.PullRequests&lt;/code&gt; and
+&lt;code&gt;Cake.Issues.Reporting&lt;/code&gt; will be always released together.
+For that source code for the addin has been merged in the &lt;a href="https://github.com/cake-contrib/Cake.Issues"&gt;Cake.Issues repository&lt;/a&gt;.
+Please open any issues related to any of the core addins in the &lt;a href="https://github.com/cake-contrib/Cake.Issues/issues"&gt;Cake.Issues issue tracker&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues 1.0.0 is a breaking release, which means that it probably requires changes to your build script.
+This section documents the most common changes which might be required:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cake.Issues
+&lt;ul&gt;
+&lt;li&gt;Serialization format has been updated to version 4.
+Older version are still supported for deserialization.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;IIssueProvider&lt;/code&gt; was extended with an additional &lt;code&gt;ProviderType&lt;/code&gt; property.
+For issue providers inheriting from &lt;code&gt;BaseIssueProvider&lt;/code&gt; no action is required to keep the same behavior
+as with previous versions, with the type name used as provider type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="alert alert-info"&gt;&lt;p&gt;Cake.Recipe has not been updated to 1.0 yet.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;For details see release notes of the individual addins:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/1.0.0"&gt;Cake.Issues 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/1.0.0"&gt;Cake.Issues.MsBuild 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/1.0.0"&gt;Cake.Issues.InspectCode 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/1.0.0"&gt;Cake.Issues.DupFinder 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/1.0.0"&gt;Cake.Issues.GitRepository 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/1.0.0"&gt;Cake.Issues.Markdownlint 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/1.0.0"&gt;Cake.Issues.EsLint 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/1.0.0"&gt;Cake.Issues.DocFx 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Terraform/releases/tag/1.0.0"&gt;Cake.Issues.Terraform 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests/releases/tag/1.0.0"&gt;Cake.Issues.PullRequests 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/1.0.0"&gt;Cake.Issues.PullRequests.AzureDevOps 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/1.0.0"&gt;Cake.Issues.PullRequests.AppVeyor 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting/releases/tag/1.0.0"&gt;Cake.Issues.Reporting 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/1.0.0"&gt;Cake.Issues.Reporting.Generic 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/1.0.0"&gt;Cake.Issues.Reporting.Sarif 1.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+		<summary>&lt;p&gt;More than 4 years after the &lt;a href="https://github.com/cake-contrib/Cake.Prca/commit/438b3a1a609e5b9cc9e6f8f489a73988f9ed1f4d"&gt;first commit for Cake.Prca&lt;/a&gt;,
+the predecessor of Cake Issues, we're happy to announce that Cake Issues version 1.0.0 has been released.
+This is a major release bringing a lot of new features across all addins.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/terraform-addin</id>
 		<title>New addin for Terraform support</title>
