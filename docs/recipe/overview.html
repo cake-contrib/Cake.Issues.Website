@@ -184,7 +184,8 @@
                 <li><a href="/docs/recipe/demos">Demos</a></li>
                 <li><a href="/docs/recipe/configuration">Configuration</a></li>
                 <li><a href="/docs/recipe/tasks">Tasks</a></li>
-                <li><a href="/docs/recipe/release-notes">Cake.Issues.Recipe Release Notes</a></li>
+                <li><a href="/docs/recipe/release-notes-frosting">Cake.Frosting.Issues.Recipe Release Notes</a></li>
+                <li><a href="/docs/recipe/release-notes-scripting">Cake.Issues.Recipe Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -486,10 +487,15 @@
 			<h1>Overview</h1>
 		</section>
 	<section class="content">
-		<p><a href="https://www.nuget.org/packages/Cake.Issues.Recipe">Cake.Issues.Recipe</a> provides a build script, delivered as a NuGet package, which can be used inside your projects Cake build script to add issue management.</p>
+		<p>Cake.Issues recipes provide build scripts, delivered as a NuGet package, which can be used inside your projects Cake build to add issue management.</p>
 <p>Integration of code analyzing and linting tools into a build pipeline often looks the similar, and differentiates mainly on the used linters, build and pull request systems.
-Cake.Issues.Recipe contains code to do all the parsing, integration with build and pull request systems for you, using the individual Cake.Issues addins.
-It supports different linters based on the linting log files you pass it and integrates automatically with different build and pull request systems.</p>
+Cake.Issues recipes contain code to do all the parsing, integration with build and pull request systems for you, using the individual Cake.Issues addins.
+They support different linters based on the linting log files you pass it and integrate automatically with different build and pull request systems.</p>
+<p>There are two flavors available:</p>
+<ul>
+<li><a href="https://www.nuget.org/packages/Cake.Issues.Recipe">Cake.Issues.Recipe</a>: For <a href="https://cakebuild.net/docs/running-builds/runners/dotnet-tool">Cake .NET Tool</a>, <a href="https://cakebuild.net/docs/running-builds/runners/cake-runner-for-dotnet-framework">Cake runner for .NET Framework</a> or <a href="https://cakebuild.net/docs/running-builds/runners/cake-runner-for-dotnet-core">Cake runner for .NET Core</a></li>
+<li>[Cake.Frosting.Issues.Recipe]: For <a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting">Cake Frosting</a></li>
+</ul>
 <p>See <a href="supported-tools">supported tools</a> for a list of supported linters, build servers and pull request systems.</p>
 
 	</section>
