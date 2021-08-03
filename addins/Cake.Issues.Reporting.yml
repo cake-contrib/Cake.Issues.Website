@@ -4,7 +4,6 @@ Prerelease: false
 RepositoryOwner: cake-contrib
 RepositoryName: Cake.Issues
 DocumentationLink: /docs/usage/creating-reports/
-ReleaseNotesFilePath: "input/docs/overview/release-notes/Cake.Issues.Reporting.md"
 Assemblies:
 - "/**/Cake.Issues.Reporting.dll"
 Author: BBT Software AG and contributors
