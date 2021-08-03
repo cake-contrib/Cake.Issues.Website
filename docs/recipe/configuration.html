@@ -79,7 +79,8 @@
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
         <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/recipe/configuration.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#general">General</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#git-repository-information">Git repository information</a></p>
+<p><a href="#general">General</a></p>
 <p><a href="#input-files">Input files</a></p>
 <p><a href="#report-creation">Report creation</a></p>
 <p><a href="#build-server-integration">Build server integration</a></p>
@@ -493,6 +494,30 @@
 	<section class="content">
 		<p>This page lists configuration properties which can be used to define the functionality
 and behavior of Cake.Issues recipes.</p>
+<h1 id="git-repository-information">Git repository information</h1>
+<p>Cake.Issues recipes require some information about current Git repository.</p>
+<p>To define the Git provider in <code>Cake.Issues.Recipe</code> set the global variable <code>RepositoryInfoProvider</code>
+To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the value to the constructor of <code>IssueContext</code>.</p>
+<p>The following providers are supported:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Provider</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>RepositoryInfoProviderType.CakeGit</code></td>
+<td>Read repository information using <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a>. Requires system to be compatible with <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a>.</td>
+</tr>
+<tr>
+<td><code>RepositoryInfoProviderType.Cli</code></td>
+<td>Read repository information using Git CLI. Requires Git CLI to be available in path.</td>
+</tr>
+</tbody>
+</table>
+<p>By default <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a> will be used.</p>
 <h1 id="general">General</h1>
 <table class="table">
 <thead>
