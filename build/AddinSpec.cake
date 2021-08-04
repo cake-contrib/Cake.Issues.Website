@@ -9,6 +9,7 @@ public class AddinSpec
     public string RepositoryDocumentationPath { get; set; }
     public string DocumentationLink { get; set; }
     public string ReleaseNotesFilePath { get; set; }
+    public List<string> ReleaseNotesHeader { get; set; }
     public string Author { get; set; }
     public string Description { get; set; }
     public List<string> Categories { get; set; }
