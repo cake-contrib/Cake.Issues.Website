@@ -131,6 +131,7 @@
                     <ul class="treeview-menu">
                         
                 <li><a href="/docs/usage/recipe/using-cake-issues-recipe">Using Cake.Issues.Recipe</a></li>
+                <li><a href="/docs/usage/recipe/using-cake-frosting-issues-recipe">Using Cake.Frosting.Issues.Recipe</a></li>
 
                     </ul>
                 </li>
@@ -182,8 +183,7 @@
                 <li><a href="/docs/recipe/demos">Demos</a></li>
                 <li><a href="/docs/recipe/configuration">Configuration</a></li>
                 <li><a href="/docs/recipe/tasks">Tasks</a></li>
-                <li><a href="/docs/recipe/release-notes-frosting">Cake.Frosting.Issues.Recipe Release Notes</a></li>
-                <li><a href="/docs/recipe/release-notes-scripting">Cake.Issues.Recipe Release Notes</a></li>
+                <li><a href="/docs/recipe/release-notes">Cake.Issues.Recipe Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -485,288 +485,377 @@
 			<h1>Cake.Issues.Reporting Release Notes</h1>
 		</section>
 	<section class="content">
-		<h2 id="july-26-2021">1.0.0 (July 26, 2021)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/16?closed=1">5 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 1.x</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/224"><strong>#224</strong></a> Build against Cake 1.0</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/215"><strong>#215</strong></a> Add possibility to add arbitrary values to an issue</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/213"><strong>#213</strong></a> Add <code><a href="/api/Cake.Issues/IIssueProvider/2249A62D">IIssueProvider.ProviderType</a></code></li>
-</ul>
-<p><strong>Build</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/204"><strong>#204</strong></a> Merge Cake.Issues.Reporting and Cake.Issues.PullRequests into Cake.Issues</li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/249"><strong>#249</strong></a> Add cake-addin tag to Cake.Issues NuGet package</li>
-</ul>
-<h2 id="beta.1-february-16-2021">1.0.0-beta.1 (February 16, 2021)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/16?closed=1">4 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 1.x</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/224"><strong>#224</strong></a> Build against Cake 1.0</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/215"><strong>#215</strong></a> Add possibility to add arbitrary values to an issue</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/213"><strong>#213</strong></a> Add <code><a href="/api/Cake.Issues/IIssueProvider/2249A62D">IIssueProvider.ProviderType</a></code></li>
-</ul>
-<h2 id="september-19-2020">0.9.1 (September 19, 2020)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/17?closed=1">1 issue</a> closed.</p>
+		<p>
+</p><div class="alert alert-warning">
+<p>
+Starting with Cake.Issues 1.0, release notes for Cake.Issues.Reporting will be listed with <a href="/docs/overview/release-notes/Cake.Issues">Cake.Issues Release Notes</a>.
+The release notes on this page are only for versions of Cake.Issues.Reporting prior to 1.0.
+</p>
+</div>
+<p></p>
+<h2 id="august-22-2020">0.9.0 (August 22, 2020)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/milestone/11?closed=1">1 issue</a> closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
 <li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Improvement</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/212"><strong>#212</strong></a> Allow to pass file link settings to <code><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></code> (Thanks <a href="https://github.com/janniksam">janniksam</a>!)</li>
-</ul>
-<h2 id="august-20-2020">0.9.0 (August 20, 2020)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/15?closed=1">6 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/188"><strong>#188</strong></a> Provide file link for issue</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/179"><strong>#179</strong></a> Add run information to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/170"><strong>#170</strong></a> Add identifier to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/168"><strong>#168</strong></a> Add support for ranges</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/165"><strong>#165</strong></a> Add column to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-</ul>
-<p><strong>Feature</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/169"><strong>#169</strong></a> Provide infrastructure for file linking</li>
-</ul>
-<h2 id="beta.5-august-10-2020">0.9.0-beta.5 (August 10, 2020)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/15?closed=1">6 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Improvements</strong></p>
-<ul>
-<li>Support line ranges and columns in file link settings (#198)</li>
-<li>Support for CommitId in FileLinkSettings (#196)</li>
-<li>Refactor file link settings to allow dynamic created file links (#199)</li>
-<li>Add alias for custom file link settings (#200)</li>
-<li>Make WithEnding public since it might be useful in other addins (#203)</li>
-<li>Add LineRange extensions (#202)</li>
-</ul>
-<h2 id="beta.4-august-01-2020">0.9.0-beta.4 (August 01, 2020)</h2>
-<p>As part of this release we had 3 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li>Don't pass <code><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></code> to issue provider</li>
-</ul>
-<h2 id="beta.3-july-31-2020">0.9.0-beta.3 (July 31, 2020)</h2>
-<p>As part of this release we had 3 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/188"><strong>#188</strong></a> Provide file link for issue</li>
-<li>Make <code>FileLinkSettings.FileLinkPattern</code> readonly</li>
-<li>Add <code>GetFileLink</code> extension to resolve file link URL</li>
-</ul>
-<h2 id="beta.2-july-11-2020">0.9.0-beta.2 (July 11, 2020)</h2>
-<p>As part of this release we had 2 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Improvements</strong></p>
-<ul>
-<li>Add interfaces for settings</li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li>Fix examples for <code>ReadIssues</code> alias</li>
-</ul>
-<h2 id="beta.1-july-06-2020">0.9.0-beta.1 (July 06, 2020)</h2>
-<p>As part of this release we had 5 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking changes</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/179"><strong>#179</strong></a> Add run information to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/170"><strong>#170</strong></a> Add identifier to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/165"><strong>#165</strong></a> Add column to <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/168"><strong>#168</strong></a> Add support for ranges</li>
-</ul>
-<p><strong>Feature</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/169"><strong>#169</strong></a> Provide infrastructure for file linking</li>
-</ul>
-<h2 id="january-20-2020">0.8.1 (January 20, 2020)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/14?closed=1">1 issue</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Feature</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/159"><strong>#159</strong></a> Make <code><a href="/api/Cake.Issues.Serialization/IssueSerializationExtensions">IssueSerializationExtensions</a></code> and <code><a href="/api/Cake.Issues.Serialization/IssueDeserializationExtensions">IssueDeserializationExtensions</a></code> public</li>
-</ul>
-<h2 id="october-17-2019">0.8.0 (October 17, 2019)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/12?closed=1">5 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.9.x</li>
 <li>Targeting .NET Standard 2.0</li>
 </ul>
 <p><strong>Breaking change</strong></p>
 <ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/121"><strong>#121</strong></a> Support reading messages in different formats</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/115"><strong>#115</strong></a> Update to Cake.Issues 0.9.0</li>
 </ul>
-<p><strong>Features</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/133"><strong>#133</strong></a> Add versioning to serialization format of issues</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/128"><strong>#128</strong></a> Add <code>IEqualityComparer</code> for <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-</ul>
-<p><strong>Improvement</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/148"><strong>#148</strong></a> Embed NuGet package icon</li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/119"><strong>#119</strong></a> Change website to cakeissues.net</li>
-</ul>
-<h2 id="beta.1-october-10-2019">0.8.0-beta.1 (October 10, 2019)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/12?closed=1">4 issues</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking change</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/121"><strong>#121</strong></a> Support reading messages in different formats</li>
-</ul>
-<p><strong>Features</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/133"><strong>#133</strong></a> Add versioning to serialization format of issues</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/128"><strong>#128</strong></a> Add <code>IEqualityComparer</code> for <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code></li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/119"><strong>#119</strong></a> Change website to <a href="https://cakeissues.net">cakeissues.net</a></li>
-</ul>
-<h2 id="august-16-2019">0.7.1 (August 16, 2019)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/milestone/13?closed=1">1 issue</a> closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Improvement</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/124"><strong>#124</strong></a> Improve exception message for invalid paths</li>
-</ul>
-<h2 id="may-30-2019">0.7.0 (May 30, 2019)</h2>
-<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/compare/0.6.2...0.7.0">61 commits</a> which resulted in <a href="https://github.com/cake-contrib/Cake.Issues/milestone/11?closed=1">7 issues</a> being closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Breaking change</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/92"><strong>#92</strong></a> Build against Cake 0.33.0</li>
-</ul>
-<p><strong>Features</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/106"><strong>#106</strong></a> Add alias for serializing/deserializing issues to/from a string and file</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/41"><strong>#41</strong></a> Add helper for checking issues</li>
-</ul>
-<p><strong>Improvements</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/99"><strong>#99</strong></a> Remove dependency on XUnit.Assert</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/84"><strong>#84</strong></a> <code>IssueBuilder.WithPriority</code> should allow <code>null</code> value</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/65"><strong>#65</strong></a> Add extension to skip BOM in byte array stream</li>
-</ul>
-<p><strong>Documentation</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/97"><strong>#97</strong></a> XML comment for <code><a href="/api/Cake.Issues/IIssue/FDE5E663">IIssue.ProjectFileRelativePath</a></code> mentions <code>string.Empty</code> as valid value</li>
-</ul>
-<h2 id="beta.3-may-27-2019">0.7.0-beta.3 (May 27, 2019)</h2>
+<h2 id="beta.2-august-01-2020">0.9.0-beta.2 (August 01, 2020)</h2>
 <p>As part of this release we had 1 issue closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
 <li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Features</strong></p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/106"><strong>#106</strong></a> Add alias for serializing/deserializing issues to/from a string and file</li>
-</ul>
-<h2 id="beta.2-april-19-2019">0.7.0-beta.2 (April 19, 2019)</h2>
-<p>As part of this release we had 4 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
-<li>Targeting .NET Standard 2.0</li>
-</ul>
-<p><strong>Improvements</strong></p>
-<ul>
-<li>Allow to pass <code><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></code> to <code><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></code></li>
-<li>Improve exception messages for <code><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></code></li>
-<li>Use embedded license</li>
-</ul>
-<p><strong>Bug fixes</strong></p>
-<ul>
-<li>Fix handling of <code>null</code> in <code><a href="/api/Cake.Issues.Testing/ExceptionAssertExtensions">ExceptionAssertExtensions</a></code></li>
-</ul>
-<h2 id="beta.1-april-19-2019">0.7.0-beta.1 (April 19, 2019)</h2>
-<p>As part of this release we had 6 issues closed.</p>
-<p><strong>Requirements</strong></p>
-<ul>
-<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.9.0-beta0004</li>
 <li>Targeting .NET Standard 2.0</li>
 </ul>
 <p><strong>Breaking change</strong></p>
 <ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/92"><strong>#92</strong></a> Build against Cake 0.33.0</li>
+<li>Update to Cake.Issues 0.9.0-beta0004</li>
+</ul>
+<h2 id="beta.1-july-12-2020">0.9.0-beta.1 (July 12, 2020)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.9.0-beta0002</li>
+<li>Targeting .NET Standard 2.0</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/115"><strong>#115</strong></a> Update to Cake.Issues 0.9.0</li>
+</ul>
+<h2 id="october-17-2019">0.8.0 (October 17, 2019)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/milestone/10?closed=1">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.8.0</li>
+<li>Targeting .NET Standard 2.0</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/85"><strong>#85</strong></a> Update to Cake.Issues 0.8.0</li>
+</ul>
+<p><strong>Improvement</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/89"><strong>#89</strong></a> Embed NuGet package icon</li>
+</ul>
+<h2 id="beta.1-october-11-2019">0.8.0-beta.1 (October 11, 2019)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/milestone/10?closed=1">1 issue</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.8.0-beta.1</li>
+<li>Targeting .NET Standard 2.0</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/85"><strong>#85</strong></a> Update to Cake.Issues 0.8.0</li>
+</ul>
+<h2 id="may-30-2019">0.7.0 (May 30, 2019)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/milestone/9?closed=1">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.7.x</li>
+<li>Targeting .NET Standard 2.0</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/53"><strong>#53</strong></a> Update to Cake.Issues 0.7.0</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/52"><strong>#52</strong></a> Build against Cake 0.33.0</li>
+</ul>
+<h2 id="beta.1-april-19-2019">0.7.0-beta.1 (April 19, 2019)</h2>
+<p>As part of this release we had 2 issues closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.33.0 or higher</li>
+<li>Cake.Issues 0.7.x</li>
+<li>Targeting .NET Standard 2.0</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/53"><strong>#53</strong></a> Update to Cake.Issues 0.7.0</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/52"><strong>#52</strong></a> Build against Cake 0.33.0</li>
+</ul>
+<h2 id="december-01-2018">0.6.1 (December 01, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=8&amp;state=closed">1 issue</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.6.x</li>
+<li>Targeting .NET Standard 2.0</li>
 </ul>
 <p><strong>Feature</strong></p>
 <ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/41"><strong>#41</strong></a> Add helper for checking issues</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/5"><strong>#5</strong></a> Migrate to .NET Standard (Thanks <a href="https://github.com/vhatsura">Vadim Hatsura</a>)</li>
 </ul>
-<p><strong>Improvements</strong></p>
+<h2 id="august-24-2018">0.6.0 (August 24, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=7&amp;state=closed">1 issue</a> closed.</p>
+<p><strong>Requirements</strong></p>
 <ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/99"><strong>#99</strong></a> Remove dependency on <code>XUnit.Assert</code></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/84"><strong>#84</strong></a> <code>IssueBuilder.WithPriority</code> should allow <code>null</code> value</li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/65"><strong>#65</strong></a> Add extension to skip BOM in byte array stream</li>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.6.x</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/26"><strong>#26</strong></a> Update to Cake.Issues 0.6.0</li>
+</ul>
+<h2 id="beta.2-august-20-2018">0.6.0-beta.2 (August 20, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.6.0-beta.2</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li>Update to Cake.Issues 0.6.0 Beta 2</li>
+</ul>
+<h2 id="beta.1-august-19-2018">0.6.0-beta.1 (August 19, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.6.0-beta.1</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/26"><strong>#26</strong></a> Update to Cake.Issues 0.6.0</li>
+</ul>
+<h2 id="august-17-2018">0.5.0 (August 17, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=6&amp;state=closed">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.5.x</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/23"><strong>#23</strong></a> Update to Cake.Issues 0.5.0</li>
+</ul>
+<p><strong>Improvement</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/25"><strong>#25</strong></a> Add repository metadata to nuspec</li>
+</ul>
+<h2 id="beta.1-august-07-2018">0.5.0-beta.1 (August 07, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.5.0-beta.2</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/23"><strong>#23</strong></a> Update to Cake.Issues 0.5.0</li>
+</ul>
+<h2 id="july-28-2018">0.4.0 (July 28, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=5&amp;state=closed">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.4.x</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/21"><strong>#21</strong></a> Update to Cake.Issues 0.4.0</li>
+</ul>
+<h2 id="beta.2-july-25-2018">0.4.0-beta.2 (July 25, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.4.0-beta.2</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li>Update Cake.Issues to 0.4.0-beta.2</li>
+</ul>
+<h2 id="beta.1-july-24-2018">0.4.0-beta.1 (July 24, 2018)</h2>
+<p>As part of this release we had 2 issues closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.4.0-beta.1</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/21"><strong>#21</strong></a> Update to Cake.Issues 0.4.0</li>
+</ul>
+<h2 id="june-04-2018">0.3.0 (June 04, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=4&amp;state=closed">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.3.x</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/17"><strong>#17</strong></a> Build against Cake 0.28.0</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/15"><strong>#15</strong></a> Update to Cake.Issues 0.3.0</li>
+</ul>
+<h2 id="beta.2-june-01-2018">0.3.0-beta.2 (June 01, 2018)</h2>
+<p>As part of this release we had 2 issues closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.28.0 or higher</li>
+<li>Cake.Issues 0.3.0-beta.2</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/17"><strong>#17</strong></a> Build against Cake 0.28.0</li>
+<li>Update to Cake.Issues 0.3.0-beta.2</li>
+</ul>
+<h2 id="beta.1-may-31-2018">0.3.0-beta.1 (May 31, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.26.0 or higher</li>
+<li>Cake.Issues 0.3.0-beta.1</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/15"><strong>#15</strong></a> Update to Cake.Issues 0.3.0</li>
+</ul>
+<h2 id="may-25-2018">0.2.1 (May 25, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=3&amp;state=closed">1 issue</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.26.0 or higher</li>
+<li>Cake.Issues 0.2.x</li>
 </ul>
 <p><strong>Documentation</strong></p>
 <ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/97"><strong>#97</strong></a> XML comment for <code><a href="/api/Cake.Issues/IIssue/FDE5E663">IIssue.ProjectFileRelativePath</a></code> mentions <code>string.Empty</code> as valid value</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/13"><strong>#13</strong></a> Update examples to current version of Cake.Issues.Reporting.Generic</li>
 </ul>
+<h2 id="may-23-2018">0.2.0 (May 23, 2018)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=2&amp;state=closed">3 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.26.0 or higher</li>
+<li>Cake.Issues 0.2.x</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/10"><strong>#10</strong></a> Build against Cake 0.26.0</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/9"><strong>#9</strong></a> Update to Cake.Issues 0.2.0</li>
+</ul>
+<h2 id="beta.2-may-23-2018">0.2.0-beta.2 (May 23, 2018)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.26.0 or higher</li>
+<li>Cake.Issues 0.2.x</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li>Target .NET Framework 4.6.1 instead of 4.62</li>
+</ul>
+<h2 id="beta.1-may-23-2018">0.2.0-beta.1 (May 23, 2018)</h2>
+<p>As part of this release we had 3 issues closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.26.0 or higher</li>
+<li>Cake.Issues 0.2.x</li>
+</ul>
+<p><strong>Breaking changes</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/10"><strong>#10</strong></a> Build against Cake 0.26.0</li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/9"><strong>#9</strong></a> Update to Cake.Issues 0.2.0</li>
+</ul>
+<h2 id="october-16-2017">0.1.0 (October 16, 2017)</h2>
+<p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues?milestone=1&amp;state=closed">2 issues</a> closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.22.0 - Cake 0.25.0</li>
+<li>Cake.Issues 0.1.0</li>
+</ul>
+<p><strong>Breaking change</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/3"><strong>#3</strong></a> Update to Cake 0.22</li>
+</ul>
+<p><strong>Feature</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/1"><strong>#1</strong></a> Basic implementation</li>
+</ul>
+<h2 id="beta.6-september-16-2017">0.1.0-beta.6 (September 16, 2017)</h2>
+<p>As part of this release we had 2 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.22.0 - Cake 0.25.0</li>
+<li>Cake.Issues 0.1.0</li>
+</ul>
+<p><strong>Breaking Changes</strong></p>
+<ul>
+<li>Build against Cake.Issues 0.1.0</li>
+</ul>
+<p><strong>Features</strong></p>
+<ul>
+<li>Add alias for single issue provider</li>
+</ul>
+<h2 id="beta.5-september-13-2017">0.1.0-beta.5 (September 13, 2017)</h2>
+<p>As part of this release we had 3 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.22.0  - Cake 0.25.0</li>
+<li>Cake.Issues 0.1.0-beta.4</li>
+</ul>
+<p><strong>Breaking Changes</strong></p>
+<ul>
+<li>Target .NET Framework 4.6</li>
+<li>Build against Cake 0.22.0</li>
+<li>Build against Cake.Issues 0.1.0-beta0004</li>
+</ul>
+<h2 id="beta.4-september-10-2017">0.1.0-beta.4 (September 10, 2017)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.16.2 - Cake 0.21.1</li>
+<li>Cake.Issues 0.1.0-beta.3</li>
+</ul>
+<p><strong>Breaking Changes</strong></p>
+<ul>
+<li>Add <code><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">CreateIssueReportSettings</a></code> and requirement to pass in output file path</li>
+</ul>
+<h2 id="beta.3-september-10-2017">0.1.0-beta.3 (September 10, 2017)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.16.2 - Cake 0.21.1</li>
+<li>Cake.Issues 0.1.0-beta.3</li>
+</ul>
+<p><strong>Breaking Changes</strong></p>
+<ul>
+<li>Update Cake.Issues to 0.1.0-beta0003</li>
+</ul>
+<h2 id="beta.2-september-09-2017">0.1.0-beta.2 (September 09, 2017)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.16.2 - Cake 0.21.1</li>
+<li>Cake.Issues 0.1.0-beta.1</li>
+</ul>
+<p><strong>Feature</strong></p>
+<ul>
+<li>Move everything into single namespace</li>
+</ul>
+<h2 id="beta.1-september-09-2017">0.1.0-beta.1 (September 09, 2017)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.16.2 - Cake 0.21.1</li>
+<li>Cake.Issues 0.1.0-beta.1</li>
+</ul>
+<p><strong>Feature</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting/issues/1"><strong>#1</strong></a> Basic implementation</li>
+</ul>
+<p><a href="https://github.com/cake-contrib/Cake.Issues/issues/97">https://github.com/cake-contrib/Cake.Issues/issues/97</a>) XML comment for <code><a href="/api/Cake.Issues/IIssue/FDE5E663">IIssue.ProjectFileRelativePath</a></code> mentions <code>string.Empty</code> as valid value</p>
 <h2 id="september-05-2018">0.6.2 (September 05, 2018)</h2>
 <p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/issues?milestone=10&amp;state=closed">3 issues</a> closed.</p>
 <p><strong>Requirements</strong></p>
@@ -833,7 +922,7 @@
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/57"><strong>#57</strong></a> Add method for replacing issues tokens in string</li>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/56"><strong>#56</strong></a> Add extensions for <code><a href="/api/Cake.Issues/IIssue">IIssue</a></code> project and file</li>
 </ul>
-<h2 id="august-24-2018">0.6.0 (August 24, 2018)</h2>
+<h2 id="august-24-2018-1">0.6.0 (August 24, 2018)</h2>
 <p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/issues?milestone=8&amp;state=closed">3 issues</a> closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -875,7 +964,7 @@
 <ul>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/53"><strong>#53</strong></a> Typo in comment for BaseMultiFormatIssueProvider</li>
 </ul>
-<h2 id="august-17-2018">0.5.0 (August 17, 2018)</h2>
+<h2 id="august-17-2018-1">0.5.0 (August 17, 2018)</h2>
 <p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/issues?milestone=7&amp;state=closed">4 issues</a> closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -940,7 +1029,7 @@
 <ul>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/39"><strong>#39</strong></a> Provide infrastructure for issue provider with different formats</li>
 </ul>
-<h2 id="july-28-2018">0.4.0 (July 28, 2018)</h2>
+<h2 id="july-28-2018-1">0.4.0 (July 28, 2018)</h2>
 <p>As part of this release we had <a href="https://github.com/cake-contrib/Cake.Issues/issues?milestone=5&amp;state=closed">3 issues</a> closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -966,7 +1055,7 @@
 <ul>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/38"><strong>#38</strong></a> Update XUnit to 2.4.0</li>
 </ul>
-<h2 id="beta.1-july-24-2018">0.4.0-beta.1 (July 24, 2018)</h2>
+<h2 id="beta.1-july-24-2018-1">0.4.0-beta.1 (July 24, 2018)</h2>
 <p>As part of this release we had 2 issues closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -1029,7 +1118,7 @@
 <ul>
 <li>Allow default values in fluent API</li>
 </ul>
-<h2 id="beta.2-june-01-2018">0.3.0-beta.2 (June 01, 2018)</h2>
+<h2 id="beta.2-june-01-2018-1">0.3.0-beta.2 (June 01, 2018)</h2>
 <p>As part of this release we had 4 issues closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -1046,7 +1135,7 @@
 <ul>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/25"><strong>#25</strong></a> Add constants for priority values and names</li>
 </ul>
-<h2 id="beta.1-may-31-2018">0.3.0-beta.1 (May 31, 2018)</h2>
+<h2 id="beta.1-may-31-2018-1">0.3.0-beta.1 (May 31, 2018)</h2>
 <p>As part of this release we had 2 issues closed.</p>
 <p><strong>Requirements</strong></p>
 <ul>
@@ -1182,6 +1271,25 @@
 <li>Targeting .NET Framework 4.5.2</li>
 </ul>
 <p><strong>Feature</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/2"><strong>#2</strong></a> First version based on Cake.Prca</li>
+</ul>
+<p>d <code>Issue&lt;T&gt;.GetProviderTypeName()</code> for returning provider type name</p>
+<ul>
+<li>Put aliases for reading issues in own category</li>
+</ul>
+<h2 id="beta.1-september-01-2017-1">0.1.0-beta.1 (September 01, 2017)</h2>
+<p>As part of this release we had 1 issue closed.</p>
+<p><strong>Requirements</strong></p>
+<ul>
+<li>Cake 0.16.2 - Cake 0.21.1</li>
+<li>Targeting .NET Framework 4.5.2</li>
+</ul>
+<p><strong>Feature</strong></p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues/issues/2"><strong>#2</strong></a> First version based on Cake.Prca</li>
+</ul>
+<p>_</p>
 <ul>
 <li><a href="https://github.com/cake-contrib/Cake.Issues/issues/2"><strong>#2</strong></a> First version based on Cake.Prca</li>
 </ul>

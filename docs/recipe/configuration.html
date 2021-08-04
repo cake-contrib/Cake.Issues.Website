@@ -138,6 +138,7 @@
                     <ul class="treeview-menu">
                         
                 <li><a href="/docs/usage/recipe/using-cake-issues-recipe">Using Cake.Issues.Recipe</a></li>
+                <li><a href="/docs/usage/recipe/using-cake-frosting-issues-recipe">Using Cake.Frosting.Issues.Recipe</a></li>
 
                     </ul>
                 </li>
@@ -189,8 +190,7 @@
                 <li><a href="/docs/recipe/demos">Demos</a></li>
                 <li class="selected"><a href="/docs/recipe/configuration">Configuration</a></li>
                 <li><a href="/docs/recipe/tasks">Tasks</a></li>
-                <li><a href="/docs/recipe/release-notes-frosting">Cake.Frosting.Issues.Recipe Release Notes</a></li>
-                <li><a href="/docs/recipe/release-notes-scripting">Cake.Issues.Recipe Release Notes</a></li>
+                <li><a href="/docs/recipe/release-notes">Cake.Issues.Recipe Release Notes</a></li>
 
                     </ul>
                 </li>
@@ -496,7 +496,7 @@
 and behavior of Cake.Issues recipes.</p>
 <h1 id="git-repository-information">Git repository information</h1>
 <p>Cake.Issues recipes require some information about current Git repository.</p>
-<p>To define the Git provider in <code>Cake.Issues.Recipe</code> set the global variable <code>RepositoryInfoProvider</code>
+<p>To define the Git provider in <code>Cake.Issues.Recipe</code> set the global variable <code>RepositoryInfoProvider</code>.
 To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the value to the constructor of <code>IssueContext</code>.</p>
 <p>The following providers are supported:</p>
 <table class="table">
@@ -530,14 +530,14 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 </thead>
 <tbody>
 <tr>
-<td><code>IssuesParameters.OutputDirectory</code></td>
-<td><code>IssuesContext.Parameters.OutputDirectory</code></td>
+<td><code>IssuesParameters.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>OutputDirectory</code></td>
+<td><code>IssuesContext.Parameters.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>OutputDirectory</code></td>
 <td><code>BuildArtifacts</code></td>
 <td>Path to the output directory. A relative path will be relative to the current working directory.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.BuildIdentifier</code></td>
-<td><code>IssuesContext.Parameters.BuildIdentifier</code></td>
+<td><code>IssuesParameters.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>BuildIdentifier</code></td>
+<td><code>IssuesContext.Parameters.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>BuildIdentifier</code></td>
 <td><code>string.Empty</code></td>
 <td>Identifier for the build run. If set this identifier will be used to identify to artifacts provided by the build if building on multiple configurations.</td>
 </tr>
@@ -554,38 +554,38 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 </thead>
 <tbody>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddMsBuildXmlFileLoggerLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddMsBuildXmlFileLoggerLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildXmlFileLoggerLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildXmlFileLoggerLogFile()</code></td>
 <td>Adds a path to a MSBuild log file created by XmlFileLogger.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddMsBuildBinaryLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddMsBuildBinaryLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildBinaryLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildBinaryLogFile()</code></td>
 <td>Adds a path to a MSBuild binary log file.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddInspectCodeLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddInspectCodeLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddInspectCodeLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddInspectCodeLogFile()</code></td>
 <td>Adds a path to a JetBrains InspectCode log file.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddDupFinderLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddDupFinderLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddDupFinderLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddDupFinderLogFile()</code></td>
 <td>Adds a path to a JetBrains dupFinder log file.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddMarkdownlintCliLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddMarkdownlintCliLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintCliLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintCliLogFile()</code></td>
 <td>Adds a path to a markdownlint-cli log file.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddMarkdownlintV1LogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddMarkdownlintV1LogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintV1LogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintV1LogFile()</code></td>
 <td>Adds a path to a markdownlint log file in version 1.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.InputFiles.AddEsLintJsonLogFile()</code></td>
-<td><code>IssuesContext.Parameters.InputFiles.AddEsLintJsonLogFile()</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddEsLintJsonLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddEsLintJsonLogFile()</code></td>
 <td>Adds a path to a ESLint log file generated by the <a href="https://eslint.org/docs/user-guide/formatters/#json">ESLint json formatter</a>.</td>
 </tr>
 </tbody>
@@ -602,8 +602,8 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 </thead>
 <tbody>
 <tr>
-<td><code>IssuesParameters.Reporting.ShouldCreateFullIssuesReport</code></td>
-<td><code>IssuesContext.Parameters.Reporting.ShouldCreateFullIssuesReport</code></td>
+<td><code>IssuesParameters.Reporting.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldCreateFullIssuesReport</code></td>
+<td><code>IssuesContext.Parameters.Reporting.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldCreateFullIssuesReport</code></td>
 <td><code>true</code></td>
 <td>Indicates whether full issues report should be created.</td>
 </tr>
@@ -621,20 +621,20 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 </thead>
 <tbody>
 <tr>
-<td><code>IssuesParameters.BuildServer.ShouldReportIssuesToBuildServer</code></td>
-<td><code>IssuesContext.Parameters.BuildServer.ShouldReportIssuesToBuildServer</code></td>
+<td><code>IssuesParameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldReportIssuesToBuildServer</code></td>
+<td><code>IssuesContext.Parameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldReportIssuesToBuildServer</code></td>
 <td><code>true</code></td>
 <td>Indicates whether issues should be reported to the build server.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.BuildServer.ShouldPublishFullIssuesReport</code></td>
-<td><code>IssuesContext.Parameters.BuildServer.ShouldPublishFullIssuesReport</code></td>
+<td><code>IssuesParameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldPublishFullIssuesReport</code></td>
+<td><code>IssuesContext.Parameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldPublishFullIssuesReport</code></td>
 <td><code>true</code></td>
 <td>Indicates whether full issues report should be published as artifact to the build system.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.BuildServer.ShouldCreateSummaryIssuesReport</code></td>
-<td><code>IssuesContext.Parameters.BuildServer.ShouldCreateSummaryIssuesReport</code></td>
+<td><code>IssuesParameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldCreateSummaryIssuesReport</code></td>
+<td><code>IssuesContext.Parameters.BuildServer.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldCreateSummaryIssuesReport</code></td>
 <td><code>true</code></td>
 <td>Indicates whether summary issues report should be created.</td>
 </tr>
@@ -652,14 +652,14 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 </thead>
 <tbody>
 <tr>
-<td><code>IssuesParameters.PullRequestSystem.ShouldReportIssuesToPullRequest</code></td>
-<td><code>IssuesContext.Parameters.PullRequestSystem.ShouldReportIssuesToPullRequest</code></td>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldReportIssuesToPullRequest</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldReportIssuesToPullRequest</code></td>
 <td><code>true</code></td>
 <td>Indicates whether issues should be reported to the pull request system.</td>
 </tr>
 <tr>
-<td><code>IssuesParameters.PullRequestSystem.ShouldSetPullRequestStatus</code></td>
-<td><code>IssuesContext.Parameters.PullRequestSystem.ShouldSetPullRequestStatus</code></td>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
 <td><code>true</code></td>
 <td>Indicates whether a status on the pull request should be set.</td>
 </tr>
