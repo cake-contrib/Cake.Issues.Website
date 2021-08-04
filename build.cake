@@ -125,8 +125,14 @@ Task("GetReleaseNotes")
                     "Description: Release notes for " + addinSpec.Name,
                     "---"
                 };
-            fileContent = string.Join("\r\n", frontMatter) + "\r\n" + fileContent;
-            FileWriteText(addinSpec.ReleaseNotesFilePath, fileContent);
+            var releaseNotesContent = string.Join("\r\n", frontMatter) + "\r\n";
+            if (addinSpec.ReleaseNotesHeader != null)
+            {
+                releaseNotesContent += "<p>" + string.Join("\r\n", addinSpec.ReleaseNotesHeader) + "</p>\r\n";
+            }
+            releaseNotesContent += fileContent;
+
+            FileWriteText(addinSpec.ReleaseNotesFilePath, releaseNotesContent);
         }
     }));
 
