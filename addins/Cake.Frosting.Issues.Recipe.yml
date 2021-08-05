@@ -6,6 +6,7 @@ RepositoryName: Cake.Issues.Recipe
 RepositoryDocumentationPath: ./docs
 DocumentationLink: /docs/recipe/
 Assemblies:
+- "/**/Cake.Frosting.Issues.Recipe.dll"
 Author: Pascal Berger
 Description: "Re-usable build script for Cake Frosting that can be used for working with linter and code analyzer output."
 Categories:
