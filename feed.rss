@@ -5,8 +5,8 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Thu, 05 Aug 2021 15:58:04 GMT</pubDate>
-		<lastBuildDate>Thu, 05 Aug 2021 15:58:04 GMT</lastBuildDate>
+		<pubDate>Thu, 05 Aug 2021 16:24:56 GMT</pubDate>
+		<lastBuildDate>Thu, 05 Aug 2021 16:24:56 GMT</lastBuildDate>
 		<item>
 			<title>Cake Issues Recipe v1.0.0 Released, bringing support for Cake Frosting</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.0.0-released</link>
@@ -32,7 +32,7 @@ For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt
 &lt;h2 id="support-for-cake-frosting"&gt;Support for Cake Frosting&lt;/h2&gt;
 &lt;p&gt;Additionally to the existing &lt;a href="https://www.nuget.org/packages/Cake.Issues.Recipe/"&gt;Cake.Issues.Recipe&lt;/a&gt; package, which works fine for Cake script runners, there's a new
 &lt;a href="https://www.nuget.org/packages/Cake.Frosting.Issues.Recipe/"&gt;Cake.Frosting.Issues.Recipe&lt;/a&gt; package suitable for builds using &lt;a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting"&gt;Cake Frosting&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;See &lt;a href="/docs/usage/recipe/using-cake-frosting-issues-recipe"&gt;Using Cake.Frosting.Issues.Recipe&lt;/a&gt; for an example.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="/docs/recipe/usage/using-cake-frosting-issues-recipe"&gt;Using Cake.Frosting.Issues.Recipe&lt;/a&gt; for an example.&lt;/p&gt;
 &lt;h2 id="support-for-environments-not-compatible-with-cake.git-addin"&gt;Support for environments not compatible with Cake.Git addin&lt;/h2&gt;
 &lt;p&gt;In previous versions Cake.Issues recipes had used &lt;a href="https://cakebuild.net/extensions/cake-git/"&gt;Cake.Git addin&lt;/a&gt; to determine state of the Git repository.
 While this works in most cases, there are some environments where &lt;a href="https://cakebuild.net/extensions/cake-git/"&gt;Cake.Git addin&lt;/a&gt; currently does not work.&lt;/p&gt;
