@@ -182,7 +182,15 @@
                     <ul class="treeview-menu">
                         
                 <li><a href="/docs/recipe/overview">Overview</a></li>
-                <li><a href="/docs/recipe/usage">Usage</a></li>
+                <li class="treeview">
+                    <a href="/docs/recipe/usage">Usage</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/docs/recipe/usage/using-cake-issues-recipe">Using Cake.Issues.Recipe</a></li>
+                <li><a href="/docs/recipe/usage/using-cake-frosting-issues-recipe">Using Cake.Frosting.Issues.Recipe</a></li>
+
+                    </ul>
+                </li>
                 <li class="selected"><a href="/docs/recipe/supported-tools">Supported tools</a></li>
                 <li><a href="/docs/recipe/demos">Demos</a></li>
                 <li><a href="/docs/recipe/configuration">Configuration</a></li>
@@ -497,44 +505,52 @@
 <tr>
 <th>Tool</th>
 <th>Format</th>
-<th>Property</th>
+<th>Cake.Issues.Recipe Methods</th>
+<th>Cake.Frosting.Issues.Recipe Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>MsBuild</td>
 <td><a href="http://www.msbuildextensionpack.com/help/4.0.5.0/html/242ab4fd-c2e2-f6aa-325b-7588725aed24.htm">MSBuild Extension Pack XmlFileLogger</a></td>
-<td><code>IssuesParameters.InputFiles.MsBuildXmlFileLoggerLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildXmlFileLoggerLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildXmlFileLoggerLogFile()</code></td>
 </tr>
 <tr>
 <td>MsBuild</td>
 <td>Binary Log File</td>
-<td><code>IssuesParameters.InputFiles.MsBuildBinaryLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildBinaryLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMsBuildBinaryLogFile()</code></td>
 </tr>
 <tr>
 <td>JetBrains InspectCode (ReSharper)</td>
 <td></td>
-<td><code>IssuesParameters.InputFiles.InspectCodeLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddInspectCodeLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddInspectCodeLogFile()</code></td>
 </tr>
 <tr>
 <td><a href="https://www.jetbrains.com/help/resharper/dupFinder.html">JetBrains dupFinder</a></td>
 <td></td>
-<td><code>IssuesParameters.InputFiles.DupFinderLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddDupFinderLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddDupFinderLogFile()</code></td>
 </tr>
 <tr>
 <td>markdownlint</td>
 <td><a href="https://github.com/igorshubovych/markdownlint-cli">markdownlint-cli</a></td>
-<td><code>IssuesParameters.InputFiles.MarkdownlintCliLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintCliLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintCliLogFile()</code></td>
 </tr>
 <tr>
 <td>markdownlint</td>
 <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> version 1</td>
-<td><code>IssuesParameters.InputFiles.MarkdownlintV1LogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintV1LogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddMarkdownlintV1LogFile()</code></td>
 </tr>
 <tr>
 <td><a href="https://eslint.org/">ESLint</a></td>
 <td><a href="https://eslint.org/docs/user-guide/formatters/#json">json formatter</a></td>
-<td><code>IssuesParameters.InputFiles.EsLintJsonLogFilePath</code></td>
+<td><code>IssuesParameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddEsLintJsonLogFile()</code></td>
+<td><code>IssuesContext.Parameters.InputFiles.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>AddEsLintJsonLogFile()</code></td>
 </tr>
 </tbody>
 </table>
