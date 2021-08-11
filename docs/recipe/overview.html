@@ -1,21 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
-    <head>
+﻿<!DOCTYPE html><html><head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-        <meta name="description" />
-        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <title>Cake Issues - Overview</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
-        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
-        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
-        <link href="/assets/css/theme/theme.css" rel="stylesheet" />
+        <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/assets/css/theme/theme.css" rel="stylesheet">
         <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
         <link href="/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/assets/css/override.css" rel="stylesheet" />
+        <link href="/assets/css/override.css" rel="stylesheet">
         <script src="/assets/js/jquery-2.2.3.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>        
         <script src="/assets/js/app.min.js"></script>         
@@ -29,7 +27,7 @@
         <script src="/assets/js/respond.min.js"></script>
         <![endif]-->  
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
     </head>
     <body class="hold-transition wyam layout-boxed  ">    
         <div class="top-banner"></div>
@@ -59,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                             <div class="navbar-right navbar-form">
-    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus>
+    <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off" autofocus="">
 </div>
 
         <li><a href="/news">News</a></li>
@@ -81,7 +79,10 @@
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
         <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/docs/recipe/overview.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
-    <div id="infobar-headings"></div>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#supported-tools">Supported tools</a></p>
+<p><a href="#bundled-addins">Bundled addins</a></p>
+<hr class="infobar-hidden">
+</div>
 
                 </section>
                 <section class="sidebar">    
@@ -496,7 +497,91 @@ They support different linters based on the linting log files you pass it and in
 <li><a href="https://www.nuget.org/packages/Cake.Issues.Recipe">Cake.Issues.Recipe</a>: For <a href="https://cakebuild.net/docs/running-builds/runners/dotnet-tool">Cake .NET Tool</a>, <a href="https://cakebuild.net/docs/running-builds/runners/cake-runner-for-dotnet-framework">Cake runner for .NET Framework</a> or <a href="https://cakebuild.net/docs/running-builds/runners/cake-runner-for-dotnet-core">Cake runner for .NET Core</a></li>
 <li><a href="https://www.nuget.org/packages/Cake.Frosting.Issues.Recipe">Cake.Frosting.Issues.Recipe</a>: For <a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting">Cake Frosting</a></li>
 </ul>
+<h1 id="supported-tools">Supported tools</h1>
 <p>See <a href="supported-tools">supported tools</a> for a list of supported linters, build servers and pull request systems.</p>
+<h1 id="bundled-addins">Bundled addins</h1>
+<p>Cake.Issues recipes will add the following addins to your build:</p>
+<table class="table">
+<thead>
+<tr>
+<th>Addin Cake.Issues.Recipe</th>
+<th>Addin.Frosting.Issues.Recipe</th>
+<th>Remarks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-git/">Cake.Git</a> 1.1.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-git/">Cake.Git</a> 1.1.0</td>
+<td>Only used if <code>RepositoryInfoProvider</code> type is set to <code>RepositoryInfoProviderType.CakeGit</code>. See <a href="/docs/recipe/configuration#git-repository-information">Git repository information configuration</a> for details.</td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues/">Cake.Issues</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues/">Cake.Issues</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-msbuild/">Cake.Issues.MsBuild</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-msbuild/">Cake.Issues.MsBuild</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-inspectcode/">Cake.Issues.InspectCode</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-inspectcode/">Cake.Issues.InspectCode</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-dupfinder/">Cake.Issues.DupFinder</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-dupfinder/">Cake.Issues.DupFinder</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-markdownlint/">Cake.Issues.Markdownlint</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-markdownlint/">Cake.Issues.Markdownlint</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-eslint/">Cake.Issues.EsLint</a> 1.0.1</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-eslint/">Cake.Issues.EsLint</a> 1.0.1</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-reporting/">Cake.Issues.Reporting</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-reporting/">Cake.Issues.Reporting</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-reporting-generic/">Cake.Issues.Reporting.Generic</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-reporting-generic/">Cake.Frosting.Issues.Reporting.Generic</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests/">Cake.Issues.PullRequests</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests/">Cake.Issues.PullRequests</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-appveyor/">Cake.Issues.PullRequests.AppVeyor</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-appveyor/">Cake.Issues.PullRequests.AppVeyor</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-azuredevops/">Cake.Issues.PullRequests.AzureDevOps</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-azuredevops/">Cake.Issues.PullRequests.AzureDevOps</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-githubactions/">Cake.Issues.PullRequests.GitHubActions</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-issues-pullrequests-githubactions/">Cake.Issues.PullRequests.GitHubActions</a> 1.0.0</td>
+<td></td>
+</tr>
+<tr>
+<td><a href="https://cakebuild.net/extensions/cake-azuredevops/">Cake.AzureDevOps</a> 1.0.0</td>
+<td><a href="https://cakebuild.net/extensions/cake-azuredevops/">Cake.AzureDevOps</a> 1.0.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 	</section>
                 
@@ -510,8 +595,8 @@ They support different linters based on the linting log files you pass it and in
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
                 <p class="text-muted">
-    Copyright &copy; <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
-    <br/>
+    Copyright © <a href="http://bbtsoftware.ch" target="_blank">BBT Software AG</a> and <a href="https://github.com/cake-contrib/Cake.Issues/graphs/contributors" target="_blank">contributors</a>.
+    <br>
     Website generated by <a href="http://wyam.io" target="_blank">Wyam</a>
 </p>
 
@@ -519,14 +604,14 @@ They support different linters based on the linting log files you pass it and in
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
         <div class="github-button">
-    <a href="https://github.com/search?q=topic%3Acake-issues&type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+    <a href="https://github.com/search?q=topic%3Acake-issues&amp;type=Repositories" target="_blank"><i class="fa fa-github"></i> GitHub</a>
 </div>
 <script>
     ((window.gitter = {}).chat = {}).options = {
         room: 'cake-contrib/Lobby'
     };
 </script>
-<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async="" defer=""></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
 <script type="text/javascript">
@@ -653,5 +738,5 @@ They support different linters based on the linting log files you pass it and in
                 }, 500);
             });
         </script>
-    </body>
-</html>
+    
+</body></html>
