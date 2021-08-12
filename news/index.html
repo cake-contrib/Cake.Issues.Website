@@ -119,6 +119,45 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-recipe-v1.1.0-released">Cake Issues Recipes v1.1.0 released</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Wednesday, August 11, 2021</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 1.1.0 of Cake Issues recipes have been released adding support to customize report generation.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="report-customization">Report customization</h2>
+<p>This version of Cake Issues recipes adds a new <code>FullIssuesReportSettings</code> configuration parameter which allows
+to customize the generated issue report.
+See <a href="https://cakeissues.net/docs/recipe/configuration#report-creation">Report creation parameters</a> for details.</p>
+<p>The following example enables exporting of the report when using Cake.Issues.Recipe:</p>
+<pre><code class="language-csharp">IssuesParameters.Reporting.FullIssuesReportSettings
+    .WithOption(HtmlDxDataGridOption.EnableExporting, true)
+</code></pre>
+<p>The following example enables exporting of the report when using Cake.Frosting.Issues.Recipe:</p>
+<pre><code class="language-csharp">context.Parameters.Reporting.FullIssuesReportSettings
+    .WithOption(HtmlDxDataGridOption.EnableExporting, true)
+</code></pre>
+<h2 id="updated-addins">Updated addins</h2>
+<p><code>Cake.Git</code> has been updated to version 1.1.0 which comes with an updated version of LibGit2Sharp which adds support for Ubuntu 20.</p>
+<p>See <a href="https://github.com/cake-contrib/Cake_Git/releases/tag/v1.1.0">Cake.Git 1.1.0 release notes</a> for details.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake Issues recipes 1.1.0 are compatible with version 1.x without any breaking changes.
+To update to the new version bump the version in your build.</p>
+
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-recipe-v1.0.0-released">Cake Issues Recipe v1.0.0 Released, bringing support for Cake Frosting</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -131,50 +170,7 @@
                 <p>Hard on the heels of the <a href="/news/cake-issues-v1.0.0-released">announcement for release 1.0 of Cake.Issues addins</a>,
 we're happy to announce release 1.0 of the recipe script for Cake.Issues.</p>
 <p>This is a major release bringing support for Cake Frosting and other new features.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-</ul>
-<h2 id="support-for-cake-1.0">Support for Cake 1.0</h2>
-<p>Cake Issues recipe has been updated to use latest 1.x versions of the Cake.Issues addins which support Cake 1.x.</p>
-<p>See <a href="/news/cake-issues-v1.0.0-released">announcement for release 1.0 of Cake.Issues addins</a> for features added in the individual addins.</p>
-<h2 id="support-for-cake-frosting">Support for Cake Frosting</h2>
-<p>Additionally to the existing <a href="https://www.nuget.org/packages/Cake.Issues.Recipe/">Cake.Issues.Recipe</a> package, which works fine for Cake script runners, there's a new
-<a href="https://www.nuget.org/packages/Cake.Frosting.Issues.Recipe/">Cake.Frosting.Issues.Recipe</a> package suitable for builds using <a href="https://cakebuild.net/docs/running-builds/runners/cake-frosting">Cake Frosting</a>.</p>
-<p>See <a href="/docs/recipe/usage/using-cake-frosting-issues-recipe">Using Cake.Frosting.Issues.Recipe</a> for an example.</p>
-<h2 id="support-for-environments-not-compatible-with-cake.git-addin">Support for environments not compatible with Cake.Git addin</h2>
-<p>In previous versions Cake.Issues recipes had used <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a> to determine state of the Git repository.
-While this works in most cases, there are some environments where <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a> currently does not work.</p>
-<p>Starting with this version it is now possible to define if <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a> or Git CLI should be used.</p>
-<p>See <a href="/docs/recipe/configuration#git-repository-information">Git repository information configuration</a> for details.</p>
-<h2 id="define-settings-for-issue-providers">Define settings for issue providers</h2>
-<p>Previous versions of Cake.Issues recipes used default settings for reading issues from the passed log files.
-This made it impossible to parse log files which for example are created by tools running in containers,
-as they have a root path different to the repository root.</p>
-<p>This version introduced methods to pass log files to the recipe scripts, which additionally to the log file path
-accept a settings object.</p>
-<p>The new implementation also supports other use-cases like reading multiple files with the same issues provider,
-but different settings (e.g. run information).</p>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake.Issues Recipes 1.0.0 is a breaking release, which means that it probably requires changes to your build script.
-This section documents the most common changes which might be required:</p>
-<ul>
-<li><p>Properties for passing input files to the recipe scripts have been replaced by methods.
-As an example, in previous versions MsBuild XML log files could be passed by setting the
-<code>IssuesParameters.InputFiles.MsBuildXmlFileLoggerLogFilePath</code> property:</p>
-<pre><code class="language-csharp">IssuesParameters.InputFiles.MsBuildXmlFileLoggerLogFilePath = &#64;&quot;c:\build\msbuild.log&quot;;
-</code></pre>
-<p>With 1.0 the <code>IssuesParameters.InputFiles.AddMsBuildXmlFileLoggerLogFile()</code> method needs to be called instead:</p>
-<pre><code class="language-csharp">IssuesParameters.InputFiles.AddMsBuildXmlFileLoggerLogFile(&#64;&quot;c:\build\msbuild.log&quot;);
-</code></pre>
-</li>
-</ul>
-<p>For details see <a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/1.0.0">full release notes</a>.</p>
-
+                <a href="/news/cake-issues-recipe-v1.0.0-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-eslint-v1.0.1-released">Cake Issues ESLint v1.0.1 Released</a></h2>
@@ -217,19 +213,6 @@ This is a major release bringing a lot of new features across all addins.</p>
             <div>
                 <p>A new <a href="../docs/issue-providers/terraform/">Cake.Issues.Terraform addin</a> has been released which adds support for reading issues from Terraform <code>validate</code> command..</p>
                 <a href="/news/terraform-addin">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-recipe-v0.4.4-released">Cake Issues Recipe v0.4.4 released, bringing support for ESLint</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Tuesday, December 1, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 0.4.4 of Cake Issues Recipe has been released bringing support for ESLint.</p>
-                <a href="/news/cake-issues-recipe-v0.4.4-released">Read more...</a>
             </div>
         <hr />
     <nav>

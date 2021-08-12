@@ -5,8 +5,43 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Wed, 11 Aug 2021 23:03:03 GMT</pubDate>
-		<lastBuildDate>Wed, 11 Aug 2021 23:03:03 GMT</lastBuildDate>
+		<pubDate>Thu, 12 Aug 2021 06:18:53 GMT</pubDate>
+		<lastBuildDate>Thu, 12 Aug 2021 06:18:53 GMT</lastBuildDate>
+		<item>
+			<title>Cake Issues Recipes v1.1.0 released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.1.0-released</link>
+			<description>&lt;p&gt;Version 1.1.0 of Cake Issues recipes have been released adding support to customize report generation.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.1.0-released</guid>
+			<pubDate>Wed, 11 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 1.1.0 of Cake Issues recipes have been released adding support to customize report generation.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="report-customization"&gt;Report customization&lt;/h2&gt;
+&lt;p&gt;This version of Cake Issues recipes adds a new &lt;code&gt;FullIssuesReportSettings&lt;/code&gt; configuration parameter which allows
+to customize the generated issue report.
+See &lt;a href="https://cakeissues.net/docs/recipe/configuration#report-creation"&gt;Report creation parameters&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;The following example enables exporting of the report when using Cake.Issues.Recipe:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;IssuesParameters.Reporting.FullIssuesReportSettings
+    .WithOption(HtmlDxDataGridOption.EnableExporting, true)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following example enables exporting of the report when using Cake.Frosting.Issues.Recipe:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;context.Parameters.Reporting.FullIssuesReportSettings
+    .WithOption(HtmlDxDataGridOption.EnableExporting, true)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="updated-addins"&gt;Updated addins&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Cake.Git&lt;/code&gt; has been updated to version 1.1.0 which comes with an updated version of LibGit2Sharp which adds support for Ubuntu 20.&lt;/p&gt;
+&lt;p&gt;See &lt;a href="https://github.com/cake-contrib/Cake_Git/releases/tag/v1.1.0"&gt;Cake.Git 1.1.0 release notes&lt;/a&gt; for details.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake Issues recipes 1.1.0 are compatible with version 1.x without any breaking changes.
+To update to the new version bump the version in your build.&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues Recipe v1.0.0 Released, bringing support for Cake Frosting</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.0.0-released</link>
