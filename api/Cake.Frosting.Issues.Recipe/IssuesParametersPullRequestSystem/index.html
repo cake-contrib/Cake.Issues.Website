@@ -270,6 +270,60 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/96C124E4">MaxIssuesToPost</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets or sets the global number of issues which should be posted at maximum over all
+            <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code>.
+            Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
+            are prioritized.
+            Default is <code class="cs">null</code> which won't set a global limit.
+            Use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/28FCC5BF">MaxIssuesToPostAcrossRuns</a></code> to set a limit across multiple runs.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/28FCC5BF">Max<wbr>Issues<wbr>To<wbr>Post<wbr>Across<wbr>Runs</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets or sets the global number of issues which should be posted at maximum over all
+            <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code> and across multiple runs.
+            Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
+            are prioritized.
+            Default is <code class="cs">null</code> which won't set a limit across multiple runs.
+            Use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/96C124E4">MaxIssuesToPost</a></code> to set a limit for a single run.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/5ED0CF6D">Max<wbr>Issues<wbr>To<wbr>Post<wbr>For<wbr>Each<wbr>Issue<wbr>Provider</a></td>
+								<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+								<td>
+									<div>
+            Gets or sets the number of issues which should be posted at maximum for each
+            <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code>.
+            Issues are filtered by <code class="cs"><a href="/api/Cake.Issues/IIssue/BFEFFBB1">Priority</a></code> and issues with an <code class="cs"><a href="/api/Cake.Issues/IIssue/BF0CD6F1">AffectedFileRelativePath</a></code>
+            are prioritized.
+            <code class="cs">null</code> won't limit issues per issue provider.
+            Default is to filter to 100 issues for each issue provider.
+            Use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/4E4D7A62">ProviderIssueLimits</a></code> to set limits for individual issue providers.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/4E4D7A62">ProviderIssueLimits</a></td>
+								<td>Dictionary<wbr>&lt;string, <wbr><a href="/api/Cake.Issues.PullRequests/IProviderIssueLimits">IProviderIssueLimits</a>&gt;<wbr></td>
+								<td>
+									<div>
+            Gets the issue limits for individual <code class="cs"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></code>.
+            The key must be the <code class="cs"><a href="/api/Cake.Issues/IIssue/D5A24C72">ProviderType</a></code> of a specific provider to which the limits should be applied to.
+            Use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/5ED0CF6D">MaxIssuesToPostForEachIssueProvider</a></code> to set the same limit to all issue providers.
+            </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem/4118CC3F">Should<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request</a></td>
 								<td>bool</td>
 								<td>

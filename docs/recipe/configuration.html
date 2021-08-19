@@ -664,6 +664,30 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 <td>Indicates whether issues should be reported to the pull request system.</td>
 </tr>
 <tr>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPost</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPost</code></td>
+<td><code>null</code></td>
+<td>Global number of issues which should be posted at maximum over all issue provider. Issues are filtered by priority and issues with a file path are prioritized. <code>null</code> won't set a global limit.</td>
+</tr>
+<tr>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPostAcrossRuns</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPostAcrossRuns</code></td>
+<td><code>null</code></td>
+<td>Global number of issues which should be posted at maximum over all issue providers and across multiple runs. Issues are filtered by priority and issues with a file path are prioritized. <code>null</code> won't set a limit across multiple runs.</td>
+</tr>
+<tr>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPostForEachIssueProvider</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>MaxIssuesToPostForEachIssueProvider</code></td>
+<td><code>100</code></td>
+<td>Number of issues which should be posted at maximum for each issue provider. Issues are filtered by priority and issues with a file path are prioritized. <code>null</code> won't limit issues per issue provider.</td>
+</tr>
+<tr>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ProviderIssueLimits</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ProviderIssueLimits</code></td>
+<td>Empty</td>
+<td>Issue limits for individual issue provider. The key must be the <code><a href="/api/Cake.Issues/IIssue/D5A24C72">IIssue.ProviderType</a></code> of a specific provider to which the limits should be applied to.</td>
+</tr>
+<tr>
 <td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
 <td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
 <td><code>true</code></td>
