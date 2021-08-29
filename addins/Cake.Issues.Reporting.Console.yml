@@ -1,0 +1,14 @@
+Name: Cake.Issues.Reporting.Console
+NuGet: Cake.Issues.Reporting.Console
+Prerelease: true
+RepositoryOwner: cake-contrib
+RepositoryName: Cake.Issues.Reporting.Console
+RepositoryDocumentationPath: ./docs
+DocumentationLink: /docs/report-formats/console
+ReleaseNotesFilePath: "input/docs/report-formats/console/release-notes.md"
+Assemblies:
+- "/**/Cake.Issues.Reporting.Console.dll"
+Author: Pascal Berger
+Description: "Support for printing issues to the console"
+Categories:
+- Reporting Format
