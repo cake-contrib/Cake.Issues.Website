@@ -524,7 +524,7 @@ Task("Create-IssueReport").Does(() =&gt;
         );
     MSBuild(repoRootFolder.CombineWithFilePath("MySolution.sln"), settings);
 
-    // Create SARIF report.
+    // Write issues to console.
     CreateIssueReport(
         new List&lt;<a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a>&gt;
         {
@@ -532,7 +532,13 @@ Task("Create-IssueReport").Does(() =&gt;
                 msBuildLogFile,
                 MsBuildXmlFileLoggerFormat)
         },
-        ConsoleIssueReportFormat(),
+        ConsoleIssueReportFormat(
+            new <a href="/api/Cake.Issues.Reporting.Console/ConsoleIssueReportFormatSettings">ConsoleIssueReportFormatSettings</a>
+            {
+                GroupByRule = true,
+                ShowProviderSummary = true,
+                ShowPrioritySummary = true
+            }),
         repoRootFolder,
         string.Empty);
 });
