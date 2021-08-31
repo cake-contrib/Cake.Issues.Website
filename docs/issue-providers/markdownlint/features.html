@@ -505,13 +505,15 @@
 <ul>
 <li>Reads warnings from <a href="https://github.com/DavidAnson/markdownlint">Markdownlint</a> logfiles.</li>
 <li>Provides URLs for all issues.</li>
-<li>Support for custom URL resolving using the <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/2EE35F55">MarkdownlintAddRuleUrlResolver</a> alias.</li>
+<li>Support for custom URL resolving using the <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/2EE35F55">MarkdownlintAddRuleUrlResolver</a> alias (except for <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/36DE6F5F">MarkdownlintCliJsonLogFileFormat</a>).</li>
 </ul>
 <h1 id="supported-log-file-formats">Supported log file formats</h1>
 <ul>
 <li><p><a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/EBFF674A">MarkdownlintLogFileFormat</a> alias for reading issues from <a href="https://github.com/DavidAnson/markdownlint">Markdownlint</a> output generated with <code>options.resultVersion</code> set to 1.</p>
 </li>
 <li><p><a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/B518F49E">MarkdownlintCliLogFileFormat</a> alias for reading issues from <a href="https://github.com/igorshubovych/markdownlint-cli">markdownlint-cli</a> log files.</p>
+</li>
+<li><p><a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/36DE6F5F">MarkdownlintCliJsonLogFileFormat</a> alias for reading issues from <a href="https://github.com/igorshubovych/markdownlint-cli">markdownlint-cli</a> log files created with the <code>--json</code> parameter.</p>
 <div class="alert alert-info"><p><a href="https://github.com/igorshubovych/markdownlint-cli">markdownlint-cli</a> can be run with the <a href="https://www.nuget.org/packages/Cake.Markdownlint/">Cake.Markdownlint</a> addin.</p>
 </div>
 </li>
@@ -572,9 +574,9 @@
 <td></td>
 </tr>
 <tr>
-<td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
+<td><span class="glyphicon glyphicon-ok" style="color:orange"></span></td>
 <td><code><a href="/api/Cake.Issues/IIssue/240A8804">IIssue.Column</a></code></td>
-<td></td>
+<td>Only for <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/B518F49E">MarkdownlintCliLogFileFormat</a></td>
 </tr>
 <tr>
 <td><span class="glyphicon glyphicon-remove" style="color:red"></span></td>
@@ -619,7 +621,7 @@
 <tr>
 <td><span class="glyphicon glyphicon-ok" style="color:green"></span></td>
 <td><code><a href="/api/Cake.Issues/IIssue/48A6F355">IIssue.RuleUrl</a></code></td>
-<td>Support for custom rules can be added through a custom <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/2EE35F55">MarkdownlintAddRuleUrlResolver</a></td>
+<td>Support for custom rules can be added through a custom <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/2EE35F55">MarkdownlintAddRuleUrlResolver</a> except for <a href="../../../api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/36DE6F5F">MarkdownlintCliJsonLogFileFormat</a></td>
 </tr>
 </tbody>
 </table>
