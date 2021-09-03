@@ -4,7 +4,38 @@
 	<title>Cake Issues</title>
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Issues.Website/" />
 	<rights>2021</rights>
-	<updated>2021-09-02T23:02:48Z</updated>
+	<updated>2021-09-03T19:48:49Z</updated>
+	<entry>
+		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.2.0-released</id>
+		<title>Cake Issues Recipes v1.2.0 released</title>
+		<link href="http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.2.0-released" />
+		<updated>2021-08-19T00:00:00Z</updated>
+		<content>&lt;p&gt;Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For details see &lt;a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/1.2.0"&gt;full release notes&lt;/a&gt;.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="report-customization"&gt;Report customization&lt;/h2&gt;
+&lt;p&gt;This version of Cake Issues recipes adds several new configuration parameter which allows
+to customize how issues are reported to pull requests.
+See &lt;a href="/docs/recipe/configuration#pull-request-integration"&gt;Pull request integration parameters&lt;/a&gt; for details.&lt;/p&gt;
+&lt;p&gt;The following example limits the number of issues posted to pull requests to &lt;code&gt;20&lt;/code&gt; when using Cake.Issues.Recipe:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;IssuesParameters.PullRequestSystem.MaxIssuesToPost = 20;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The following example limits the number of issues posted to pull requests to &lt;code&gt;20&lt;/code&gt; when using Cake.Frosting.Issues.Recipe:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-csharp"&gt;context.Parameters.PullRequestSystem.MaxIssuesToPost = 20;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake Issues recipes 1.2.0 are compatible with version 1.x without any breaking changes.
+To update to the new version bump the version in your build.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.1.0-released</id>
 		<title>Cake Issues Recipes v1.1.0 released</title>

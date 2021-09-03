@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - News (Page 2)</title>
+        <title>Cake Issues - Cake Issues Recipes v1.2.0 released</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -80,6 +80,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2021-08-19-cake-issues-recipe-v1.2.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -114,89 +115,55 @@
 
 
 		<section class="content-header">
-			<h1>News (Page 2)</h1>
+			<h1>Cake Issues Recipes v1.2.0 released</h1>
 		</section>
 	<section class="content">
 		
 
-        <h2><a href="/news/terraform-addin">New addin for Terraform support</a></h2>
+
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
     <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Tuesday, July 27, 2021</dd>
+    <dd>Thursday, August 19, 2021</dd>
         <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
         <dd><a href="/news/Release-Notes">Release Notes</a></dd>
     </dl>
-            <div>
-                <p>A new <a href="../docs/issue-providers/terraform/">Cake.Issues.Terraform addin</a> has been released which adds support for reading issues from Terraform <code>validate</code> command..</p>
-                <a href="/news/terraform-addin">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-recipe-v0.4.4-released">Cake Issues Recipe v0.4.4 released, bringing support for ESLint</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Tuesday, December 1, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 0.4.4 of Cake Issues Recipe has been released bringing support for ESLint.</p>
-                <a href="/news/cake-issues-recipe-v0.4.4-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-msbuild-v0.9.1-released">Cake Issues MsBuild v0.9.1 Released</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Tuesday, October 20, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 0.9.1 of MsBuild support for Cake.Issues has been released.
-This is a minor release containing improvements.</p>
-                <a href="/news/cake-issues-msbuild-v0.9.1-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-pullrequests-v0.9.1-released">Cake Issues PullRequests v0.9.1 Released</a></h2>
+<p>Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For details see <a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/1.2.0">full release notes</a>.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="report-customization">Report customization</h2>
+<p>This version of Cake Issues recipes adds several new configuration parameter which allows
+to customize how issues are reported to pull requests.
+See <a href="/docs/recipe/configuration#pull-request-integration">Pull request integration parameters</a> for details.</p>
+<p>The following example limits the number of issues posted to pull requests to <code>20</code> when using Cake.Issues.Recipe:</p>
+<pre><code class="language-csharp">IssuesParameters.PullRequestSystem.MaxIssuesToPost = 20;
+</code></pre>
+<p>The following example limits the number of issues posted to pull requests to <code>20</code> when using Cake.Frosting.Issues.Recipe:</p>
+<pre><code class="language-csharp">context.Parameters.PullRequestSystem.MaxIssuesToPost = 20;
+</code></pre>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake Issues recipes 1.2.0 are compatible with version 1.x without any breaking changes.
+To update to the new version bump the version in your build.</p>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Friday, October 9, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 0.9.1 of Cake.Issues.PullRequests has been released.
-This is a minor releases containing bug fixes.</p>
-                <a href="/news/cake-issues-pullrequests-v0.9.1-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/github-actions-addin">New GitHub Actions addin</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Sunday, September 27, 2020</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>A new <a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> has been released which brings integration with GitHub Actions and GitHub pull requests.</p>
-                <a href="/news/github-actions-addin">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-                    <a href="/news"><span aria-hidden="true">&larr;</span> Newer</a>
-            </li>
-            <li class="next">
-                    <a href="/news/page3">Older <span aria-hidden="true">&rarr;</span></a>
-            </li>
-        </ul>
-    </nav>
+<hr />
 
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released&t=Cake%20Issues%20Recipes%20v1.2.0%20released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released&text=Cake%20Issues%20Recipes%20v1.2.0%20released:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released&via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released&title=Cake%20Issues%20Recipes%20v1.2.0%20released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released&title=Cake%20Issues%20Recipes%20v1.2.0%20released&summary=&source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
+  <li><a href="mailto:?subject=Cake%20Issues%20Recipes%20v1.2.0%20released&body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-recipe-v1.2.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
+</ul>
 
 	</section>
                 
