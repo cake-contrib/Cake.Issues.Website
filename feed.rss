@@ -5,8 +5,60 @@
 		<link>http://cake-contrib.github.io/Cake.Issues.Website/</link>
 		<description />
 		<copyright>2021</copyright>
-		<pubDate>Fri, 03 Sep 2021 23:03:21 GMT</pubDate>
-		<lastBuildDate>Fri, 03 Sep 2021 23:03:21 GMT</lastBuildDate>
+		<pubDate>Sat, 04 Sep 2021 12:37:34 GMT</pubDate>
+		<lastBuildDate>Sat, 04 Sep 2021 12:37:34 GMT</lastBuildDate>
+		<item>
+			<title>Cake Issues Markdownlint v1.1.0 Released</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-markdownlint-v1.1.0</link>
+			<description>&lt;p&gt;Version 1.1.0 of Markdownlint support for Cake.Issues has been released.
+This is a minor release adding features and improvements.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-markdownlint-v1.1.0</guid>
+			<pubDate>Tue, 31 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;Version 1.1.0 of Markdownlint support for Cake.Issues has been released.
+This is a minor release adding features and improvements.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-markdownlint-cli-json-format"&gt;Support for markdownlint-cli JSON format&lt;/h2&gt;
+&lt;p&gt;Since version 0.28.0 markdownlint-cli supports a &lt;code&gt;--json&lt;/code&gt; option to output result in JSON format.
+This version adds support for this format through the &lt;a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/36DE6F5F"&gt;MarkdownlintCliJsonLogFileFormat&lt;/a&gt; alias.&lt;/p&gt;
+&lt;h2 id="provide-column-information"&gt;Provide column information&lt;/h2&gt;
+&lt;p&gt;This release of Cake.Issues.Markdownlint enhances the &lt;a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/B518F49E"&gt;MarkdownlintCliLogFileFormat&lt;/a&gt; to provide column information
+if reported by markdownlint.&lt;/p&gt;
+&lt;h2 id="recipe-packages"&gt;Recipe packages&lt;/h2&gt;
+&lt;p&gt;&lt;a href="/docs/recipe/overview"&gt;Cake Issues recipes&lt;/a&gt; have been released in version 1.3.0 shipping with Cake.Issues.Markdownlint 1.1.0 and
+adding support for markdownlint-cli JSON files.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;Cake.Issues.Markdownlint 1.1.0 is compatible with version 1.0.0 without any breaking changes.
+To update to the new version bump the version of the addin.&lt;/p&gt;
+</content:encoded>
+		</item>
+		<item>
+			<title>New addin for printing issues to console</title>
+			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/console-addin</link>
+			<description>&lt;p&gt;A new &lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console addin&lt;/a&gt; has been released which allows to output issues to the console.&lt;/p&gt;</description>
+			<guid>http://cake-contrib.github.io/Cake.Issues.Website/news/console-addin</guid>
+			<pubDate>Sun, 29 Aug 2021 00:00:00 GMT</pubDate>
+			<content:encoded>&lt;p&gt;A new &lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console addin&lt;/a&gt; has been released which allows to output issues to the console.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;&lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console addin&lt;/a&gt; can be used to print issues to the console and is built on top
+of the excellent &lt;a href="https://github.com/spectreconsole/errata"&gt;Errata library&lt;/a&gt; by Patrik Svensson.&lt;/p&gt;
+&lt;p&gt;Its main focus is to annotate source code with issues:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2021-08-29-diagnostics.png" class="img-fluid" alt="Source annotation" title="Source annotation" /&gt;&lt;/p&gt;
+&lt;p&gt;It currently only supports issues containing line and column information.
+Output can be grouped by rule, like in the image above, or individual entries for every issue.&lt;/p&gt;
+&lt;p&gt;Beside printing issues it can also show summary tables.&lt;/p&gt;
+&lt;p&gt;There's one summary which shows the number of issues for everyprovider and run:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2021-08-29-summary-by-provider.png" class="img-fluid" alt="Summary by provider &amp; rule" title="Summary by provider &amp;amp; rule" /&gt;&lt;/p&gt;
+&lt;p&gt;Another summary shows the number of issues by priority for every provider and run:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2021-08-29-summary-of-priorities.png" class="img-fluid" alt="Summary of priorities" title="Summary of priorities" /&gt;&lt;/p&gt;
+</content:encoded>
+		</item>
 		<item>
 			<title>Cake Issues Recipes v1.2.0 released</title>
 			<link>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-recipe-v1.2.0-released</link>
@@ -23,7 +75,7 @@ For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="report-customization"&gt;Report customization&lt;/h2&gt;
+&lt;h2 id="customization-of-pull-request-integration"&gt;Customization of pull request integration&lt;/h2&gt;
 &lt;p&gt;This version of Cake Issues recipes adds several new configuration parameter which allows
 to customize how issues are reported to pull requests.
 See &lt;a href="/docs/recipe/configuration#pull-request-integration"&gt;Pull request integration parameters&lt;/a&gt; for details.&lt;/p&gt;

@@ -119,6 +119,53 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-markdownlint-v1.1.0">Cake Issues Markdownlint v1.1.0 Released</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Tuesday, August 31, 2021</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Version 1.1.0 of Markdownlint support for Cake.Issues has been released.
+This is a minor release adding features and improvements.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="support-for-markdownlint-cli-json-format">Support for markdownlint-cli JSON format</h2>
+<p>Since version 0.28.0 markdownlint-cli supports a <code>--json</code> option to output result in JSON format.
+This version adds support for this format through the <a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/36DE6F5F">MarkdownlintCliJsonLogFileFormat</a> alias.</p>
+<h2 id="provide-column-information">Provide column information</h2>
+<p>This release of Cake.Issues.Markdownlint enhances the <a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesAliases/B518F49E">MarkdownlintCliLogFileFormat</a> to provide column information
+if reported by markdownlint.</p>
+<h2 id="recipe-packages">Recipe packages</h2>
+<p><a href="/docs/recipe/overview">Cake Issues recipes</a> have been released in version 1.3.0 shipping with Cake.Issues.Markdownlint 1.1.0 and
+adding support for markdownlint-cli JSON files.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues.Markdownlint 1.1.0 is compatible with version 1.0.0 without any breaking changes.
+To update to the new version bump the version of the addin.</p>
+
+            </div>
+        <hr />
+        <h2><a href="/news/console-addin">New addin for printing issues to console</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Sunday, August 29, 2021</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>A new <a href="/docs/report-formats/console/">Cake.Issues.Reporting.Console addin</a> has been released which allows to output issues to the console.</p>
+                <a href="/news/console-addin">Read more...</a>
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-recipe-v1.2.0-released">Cake Issues Recipes v1.2.0 released</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -129,29 +176,7 @@
     </dl>
             <div>
                 <p>Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For details see <a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/1.2.0">full release notes</a>.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-</ul>
-<h2 id="report-customization">Report customization</h2>
-<p>This version of Cake Issues recipes adds several new configuration parameter which allows
-to customize how issues are reported to pull requests.
-See <a href="/docs/recipe/configuration#pull-request-integration">Pull request integration parameters</a> for details.</p>
-<p>The following example limits the number of issues posted to pull requests to <code>20</code> when using Cake.Issues.Recipe:</p>
-<pre><code class="language-csharp">IssuesParameters.PullRequestSystem.MaxIssuesToPost = 20;
-</code></pre>
-<p>The following example limits the number of issues posted to pull requests to <code>20</code> when using Cake.Frosting.Issues.Recipe:</p>
-<pre><code class="language-csharp">context.Parameters.PullRequestSystem.MaxIssuesToPost = 20;
-</code></pre>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake Issues recipes 1.2.0 are compatible with version 1.x without any breaking changes.
-To update to the new version bump the version in your build.</p>
-
+                <a href="/news/cake-issues-recipe-v1.2.0-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-recipe-v1.1.0-released">Cake Issues Recipes v1.1.0 released</a></h2>
@@ -180,35 +205,6 @@ To update to the new version bump the version in your build.</p>
 we're happy to announce release 1.0 of the recipe script for Cake.Issues.</p>
 <p>This is a major release bringing support for Cake Frosting and other new features.</p>
                 <a href="/news/cake-issues-recipe-v1.0.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-eslint-v1.0.1-released">Cake Issues ESLint v1.0.1 Released</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Friday, July 30, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 1.0.1 of ESLint support for Cake.Issues has been released.
-This is a minor release containing bug fixes.</p>
-                <a href="/news/cake-issues-eslint-v1.0.1-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-v1.0.0-released">Cake Issues v1.0.0 Released</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Wednesday, July 28, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>More than 4 years after the <a href="https://github.com/cake-contrib/Cake.Prca/commit/438b3a1a609e5b9cc9e6f8f489a73988f9ed1f4d">first commit for Cake.Prca</a>,
-the predecessor of Cake Issues, we're happy to announce that Cake Issues version 1.0.0 has been released.
-This is a major release bringing a lot of new features across all addins.</p>
-                <a href="/news/cake-issues-v1.0.0-released">Read more...</a>
             </div>
         <hr />
     <nav>
