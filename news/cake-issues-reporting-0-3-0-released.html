@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - New GitHub Actions addin</title>
+        <title>Cake Issues - Cake Issues Reporting Console v0.3.0 released, adding support for all Cake runners</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -80,7 +80,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2020-09-27-github-actions-addin.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2021-09-05-cake-issues-reporting-0-3-0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -116,7 +116,7 @@
 
 
 		<section class="content-header">
-			<h1>New GitHub Actions addin</h1>
+			<h1>Cake Issues Reporting Console v0.3.0 released, adding support for all Cake runners</h1>
 		</section>
 	<section class="content">
 		
@@ -125,31 +125,44 @@
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
     <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Sunday, September 27, 2020</dd>
+    <dd>Sunday, September 5, 2021</dd>
         <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
         <dd><a href="/news/Release-Notes">Release Notes</a></dd>
     </dl>
 
 
-<p>A new <a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> has been released which brings integration with GitHub Actions and GitHub pull requests.</p>
+<p>Version 0.3.0 of <a href="/docs/report-formats/console/">Cake.Issues.Reporting.Console</a> has been released.
+This is a minor release adding features and improvements.</p>
 <!--excerpt-->
-<p><a href="../docs/pull-request-systems/github-actions/">Cake.Issues.PullRequest.GitHubActions addin</a> creates annotations from issues when running on GitHub Actions:</p>
-<p><img src="../docs/pull-request-systems/github-actions/githubactions-annotations.png" class="img-fluid" alt="Annotations" title="Annotations" /></p>
-<p>These annotations will also be shown in pull requests on the related file / position,
-bringing first class integration for GitHub pull requests to Cake.Issues:</p>
-<p><img src="../docs/pull-request-systems/github-actions/githubactions-pullrequest-integration.png" class="img-fluid" alt="Pull request integration" title="Pull request integration" /></p>
-<p>This integration was <a href="cake-issues-recipe-v0.4.2-released">first released in Cake.Issues.Recipe 0.4.2</a> and has now been moved to its own addin, which can also be used outside of
-Cake.Issues.Recipe.</p>
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+<li><a href="https://github.com/patriksvensson">patriksvensson</a></li>
+</ul>
+<h2 id="support-for-all-cake-runners">Support for all Cake runners</h2>
+<p>Starting with this release <a href="/docs/report-formats/console/">Cake.Issues.Reporting.Console</a> will target .NET Standard 2.0 instead of .NET 5.0 and
+therefore will support all Cake runners.</p>
+<h2 id="improved-reporting">Improved reporting</h2>
+<p>Provider report is now rendered in different colors for the individual bars, making it easier to read:</p>
+<p><img src="2021-09-05-summary-by-provider.png" class="img-fluid" alt="Summary by provider & rule" title="Summary by provider &amp; rule" /></p>
+<h2 id="errata-0.6.0">Errata 0.6.0</h2>
+<p>Underlying <a href="https://github.com/spectreconsole/errata">Errata</a> library has been updated to 0.6.0, containing additional bug fixes and rendering improvements.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p><a href="/docs/report-formats/console/">Cake.Issues.Reporting.Console</a> 0.3.0 is compatible with previous versions without any breaking changes.
+To update to the new version bump the version of the addin.</p>
 
 
 <hr />
 
 <ul class="share-buttons">
-  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin&t=New%20GitHub%20Actions%20addin" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
-  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin&text=New%20GitHub%20Actions%20addin:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin&via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
-  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin&title=New%20GitHub%20Actions%20addin" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
-  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin&title=New%20GitHub%20Actions%20addin&summary=&source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
-  <li><a href="mailto:?subject=New%20GitHub%20Actions%20addin&body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fgithub-actions-addin" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released&t=Cake%20Issues%20Reporting%20Console%20v0.3.0%20released%2C%20adding%20support%20for%20all%20Cake%20runners" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released&text=Cake%20Issues%20Reporting%20Console%20v0.3.0%20released%2C%20adding%20support%20for%20all%20Cake%20runners:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released&via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released&title=Cake%20Issues%20Reporting%20Console%20v0.3.0%20released%2C%20adding%20support%20for%20all%20Cake%20runners" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released&title=Cake%20Issues%20Reporting%20Console%20v0.3.0%20released%2C%20adding%20support%20for%20all%20Cake%20runners&summary=&source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
+  <li><a href="mailto:?subject=Cake%20Issues%20Reporting%20Console%20v0.3.0%20released%2C%20adding%20support%20for%20all%20Cake%20runners&body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-reporting-0-3-0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
 </ul>
 
 	</section>

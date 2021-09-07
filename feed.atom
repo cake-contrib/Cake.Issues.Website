@@ -4,7 +4,38 @@
 	<title>Cake Issues</title>
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Issues.Website/" />
 	<rights>2021</rights>
-	<updated>2021-09-06T23:03:02Z</updated>
+	<updated>2021-09-07T20:45:48Z</updated>
+	<entry>
+		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-reporting-0-3-0-released</id>
+		<title>Cake Issues Reporting Console v0.3.0 released, adding support for all Cake runners</title>
+		<link href="http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-reporting-0-3-0-released" />
+		<updated>2021-09-05T00:00:00Z</updated>
+		<content>&lt;p&gt;Version 0.3.0 of &lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console&lt;/a&gt; has been released.
+This is a minor release adding features and improvements.&lt;/p&gt;
+&lt;!--excerpt--&gt;
+&lt;p&gt;This post shows the highlights included in this release.
+For update instructions skip to &lt;a href="#updating-from-previous-versions"&gt;Updating from previous versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤&lt;/p&gt;
+&lt;p&gt;People working on this release:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/pascalberger"&gt;pascalberger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/patriksvensson"&gt;patriksvensson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="support-for-all-cake-runners"&gt;Support for all Cake runners&lt;/h2&gt;
+&lt;p&gt;Starting with this release &lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console&lt;/a&gt; will target .NET Standard 2.0 instead of .NET 5.0 and
+therefore will support all Cake runners.&lt;/p&gt;
+&lt;h2 id="improved-reporting"&gt;Improved reporting&lt;/h2&gt;
+&lt;p&gt;Provider report is now rendered in different colors for the individual bars, making it easier to read:&lt;/p&gt;
+&lt;p&gt;&lt;img src="2021-09-05-summary-by-provider.png" class="img-fluid" alt="Summary by provider &amp; rule" title="Summary by provider &amp;amp; rule" /&gt;&lt;/p&gt;
+&lt;h2 id="errata-0.6.0"&gt;Errata 0.6.0&lt;/h2&gt;
+&lt;p&gt;Underlying &lt;a href="https://github.com/spectreconsole/errata"&gt;Errata&lt;/a&gt; library has been updated to 0.6.0, containing additional bug fixes and rendering improvements.&lt;/p&gt;
+&lt;h2 id="updating-from-previous-versions"&gt;Updating from previous versions&lt;/h2&gt;
+&lt;p&gt;&lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console&lt;/a&gt; 0.3.0 is compatible with previous versions without any breaking changes.
+To update to the new version bump the version of the addin.&lt;/p&gt;
+</content>
+		<summary>&lt;p&gt;Version 0.3.0 of &lt;a href="/docs/report-formats/console/"&gt;Cake.Issues.Reporting.Console&lt;/a&gt; has been released.
+This is a minor release adding features and improvements.&lt;/p&gt;</summary>
+	</entry>
 	<entry>
 		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-markdownlint-v1.1.0</id>
 		<title>Cake Issues Markdownlint v1.1.0 Released</title>
