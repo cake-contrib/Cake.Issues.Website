@@ -46,3 +46,8 @@ Pipelines.Add("RenderAddins",
         .WithLayout("/_AddinsLayout.cshtml"),
     WriteFiles()
 );
+
+Pipelines.InsertBefore(Docs.Pages, "Issues",
+    ReadFiles("./issues/*.yml"),
+    Yaml()
+);
