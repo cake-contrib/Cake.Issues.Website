@@ -1,7 +1,7 @@
 ---
-Order: 40
-Title: Current issues
-Description: All current issues in the Cake-Contrib-Organisation with the label "help wanted"
+Order: 20
+Title: Open issues
+Description: Open issues where we are looking for help
 ---
 @foreach(var group in Documents["Issues"].GroupBy(d => d.String("Repository")).OrderBy(g => g.Key)){
     <h2> @Html.Raw(group.Key)</h2>
