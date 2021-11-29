@@ -1,6 +1,9 @@
+#addin nuget:?package=Octokit&version=0.50.0
 #load nuget:?package=Cake.Wyam.Recipe&version=0.8.0
 
 #load build\build.cake
+
+using Octokit;
 
 //////////////////////////////////////////////////////////////////////
 // PARAMETERS
@@ -136,10 +139,53 @@ Task("GetReleaseNotes")
         }
     }));
 
+Task("GetIssues")
+    .Does(() => {
+        CleanDirectory("./input/issues/");
+        var appName = "cake-issues-websit";
+        var organization = "cake-contrib";
+        var label = "help wanted";
+        var topic = "topic:cake-issues";
+
+        var client = new GitHubClient(new Octokit.ProductHeaderValue(appName));
+        if (!string.IsNullOrEmpty (BuildParameters.Wyam.AccessToken))
+        {
+            var tokenAuth = new Octokit.Credentials(BuildParameters.Wyam.AccessToken);
+            client.Credentials = tokenAuth;
+        }
+
+        var repositoryRequest = new SearchRepositoriesRequest(topic)
+        {
+            User = organization
+        };
+
+        var repositoryResult = client.Search.SearchRepo(repositoryRequest).GetAwaiter().GetResult();
+
+        var issuesRequest = new SearchIssuesRequest();
+        issuesRequest.Labels = new []{ label };
+        issuesRequest.State = ItemState.Open;
+
+        foreach (var repoEntry in repositoryResult.Items)
+        {
+            issuesRequest.Repos.Add(repoEntry.FullName);
+        }
+
+        var issuesResult = client.Search.SearchIssues(issuesRequest).GetAwaiter().GetResult();
+        foreach (var issuesEntry in issuesResult.Items)
+        {
+            FileWriteText($"./input/issues/{issuesEntry.Id}.yml",
+$@"Number: {issuesEntry.Number}
+HtmlUrl: {issuesEntry.HtmlUrl}
+Title: ""{issuesEntry.Title}""
+Repository: {issuesEntry.HtmlUrl.Split('/')[4]}");
+        }
+    });
+
 Task("GetArtifacts")
     .IsDependentOn("GetAddinDocumentation")
     .IsDependentOn("GetAddinPackages")
-    .IsDependentOn("GetReleaseNotes");
+    .IsDependentOn("GetReleaseNotes")
+    .IsDependentOn("GetIssues");
 
 BuildParameters.Tasks.BuildDocumentationTask
     .IsDependentOn("GetArtifacts");
