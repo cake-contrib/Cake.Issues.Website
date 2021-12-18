@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - HtmlDxDataGridOption.EnableGrouping Field</title>
+        <title>Cake Issues - API - HtmlDxDataGridOption.RuleNameSortOrder Field</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -154,7 +154,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/56E09C3C">DevExtremeVersion</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1441E285">EnableExporting</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/C85CBA32">EnableFiltering</a></li>
-				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/860DF43E">EnableGrouping</a></li>
+				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/860DF43E">EnableGrouping</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/3F8E2884">EnableSearching</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/FAA96E80">EndColumnSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/7714ACF8">EndColumnVisible</a></li>
@@ -200,7 +200,7 @@
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/952D2D48">ProviderTypeVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/BA7AB7F5">RuleIdSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8FF80AEE">RuleIdVisible</a></li>
-				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D2058E09">RuleNameSortOrder</a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D2058E09">RuleNameSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1A68797C">RuleNameVisible</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/882AB59B">RuleUrlSortOrder</a></li>
 				<li><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/1C911DBE">RuleUrlVisible</a></li>
@@ -226,17 +226,16 @@
 
 <section class="content-header">
 			<h3><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption">HtmlDxDataGridOption</a>.</h3>
-	<h1>EnableGrouping <small>Field</small></h1>
+	<h1>RuleNameSortOrder <small>Field</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Flag if the group panel which allows end-user grouping should be visible or not.
-            Either <code class="cs">true</code> or <code class="cs">false</code>.
-            If <code class="cs">false</code> grouping defined by <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/0907599C">GroupedColumns</a></code> is still applied.
-            Default value is <code class="cs">true</code>.
+            Sort order of the <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ReportColumn/515302BA">RuleName</a></code> column if it is part of <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/D578E453">SortedColumns</a></code>.
+            See <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/HtmlDxDataGridOption/8A59D491">ColumnSortOrder</a></code> for possible values.
+            Default value is <code class="cs"><a href="/api/Cake.Issues.Reporting.Generic/ColumnSortOrder/4B191999">Ascending</a></code>.
             </div>
 
 		<div class="panel panel-default">
@@ -255,7 +254,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public const HtmlDxDataGridOption EnableGrouping</code></pre>
+	<pre><code>public const HtmlDxDataGridOption RuleNameSortOrder</code></pre>
 
 
 
@@ -272,7 +271,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>4</td>
+					<td>39</td>
 					<td>Int32</td>
 				</tr>
 			</tbody></table>

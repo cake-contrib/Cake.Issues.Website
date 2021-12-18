@@ -637,8 +637,8 @@
     GenericIssueReportFormatFromEmbeddedTemplate(
         GenericIssueReportTemplate.HtmlDxDataGrid,
         settings =&gt; settings
-            .WithOption(HtmlDxDataGridOption.SortedColumns, new List&lt;<a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a>&gt; { ReportColumn.Rule })
-            .WithOption(HtmlDxDataGridOption.RuleSortOder, ColumnSortOderDescending )),
+            .WithOption(HtmlDxDataGridOption.SortedColumns, new List&lt;<a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a>&gt; { ReportColumn.RuleId })
+            .WithOption(HtmlDxDataGridOption.RuleIdSortOder, ColumnSortOderDescending )),
     @"c:\repo",
     @"c:\report.html");
 </code></pre>
@@ -652,7 +652,7 @@
     issues,
     GenericIssueReportFormatFromEmbeddedTemplate(
         GenericIssueReportTemplate.HtmlDxDataGrid,
-        settings =&gt; settings.WithOption(HtmlDxDataGridOption.GroupedColumns, new List&lt;<a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a>&gt; { ReportColumn.Rule })),
+        settings =&gt; settings.WithOption(HtmlDxDataGridOption.GroupedColumns, new List&lt;<a href="/api/Cake.Issues.Reporting.Generic/ReportColumn">ReportColumn</a>&gt; { ReportColumn.RuleId })),
     @"c:\repo",
     @"c:\report.html");
 </code></pre>
