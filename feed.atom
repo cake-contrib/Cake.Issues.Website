@@ -3,8 +3,8 @@
 	<id>http://cake-contrib.github.io/Cake.Issues.Website/</id>
 	<title>Cake Issues</title>
 	<link rel="self" href="http://cake-contrib.github.io/Cake.Issues.Website/" />
-	<rights>2021</rights>
-	<updated>2021-12-31T23:02:56Z</updated>
+	<rights>2022</rights>
+	<updated>2022-01-01T23:03:08Z</updated>
 	<entry>
 		<id>http://cake-contrib.github.io/Cake.Issues.Website/news/cake-issues-reporting-0-3-0-released</id>
 		<title>Cake Issues Reporting Console v0.3.0 released, adding support for all Cake runners</title>
