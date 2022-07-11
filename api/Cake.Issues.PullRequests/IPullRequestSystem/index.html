@@ -221,9 +221,9 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsPullRequestSystem">Git<wbr>Hub<wbr>Actions<wbr>Pull<wbr>Request<wbr>System</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem">App<wbr>Veyor<wbr>Pull<wbr>Request<wbr>System</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -234,12 +234,12 @@
 	Type-.-&gt;Interface0["IBaseIssueComponent&lt;IReportIssuesToPullRequestSettings&gt;"]
 	Type["IPullRequestSystem"]
 class Type type-node
-	Implementing0["BasePullRequestSystem"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.PullRequests/BasePullRequestSystem"
+	Implementing0["GitHubActionsPullRequestSystem"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsPullRequestSystem"
 	Implementing1["AppVeyorPullRequestSystem"]-.-&gt;Type
 	click Implementing1 "/api/Cake.Issues.PullRequests.AppVeyor/AppVeyorPullRequestSystem"
-	Implementing2["GitHubActionsPullRequestSystem"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.PullRequests.GitHubActions/GitHubActionsPullRequestSystem"
+	Implementing2["BasePullRequestSystem"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.PullRequests/BasePullRequestSystem"
 
 						</div>
 					</div>
