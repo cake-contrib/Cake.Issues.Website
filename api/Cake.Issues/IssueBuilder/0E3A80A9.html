@@ -162,7 +162,9 @@
 				<li><a href="/api/Cake.Issues/IssueBuilder/01946D50">NewIssue<wbr>(string, <wbr>string, <wbr>string)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder/A2786B05">NewIssue<wbr>(string, <wbr>string, <wbr>string, <wbr>string)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder/C1F0AA09">OfRule<wbr>(string)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IssueBuilder/4702242E">OfRule<wbr>(string, <wbr>string)<wbr></a></li>
 				<li class="selected"><a href="/api/Cake.Issues/IssueBuilder/0E3A80A9">OfRule<wbr>(string, <wbr>Uri)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/IssueBuilder/E429497F">OfRule<wbr>(string, <wbr>string, <wbr>Uri)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder/9A69FC0D">With<wbr>Additional<wbr>Information<wbr>(string, <wbr>string)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder/576BC85B">With<wbr>Additional<wbr>Information<wbr>(IDictionary<wbr>&lt;string, <wbr>string&gt;<wbr>)<wbr></a></li>
 				<li><a href="/api/Cake.Issues/IssueBuilder/B968E318">WithFileLink<wbr>(Uri)<wbr></a></li>
@@ -213,7 +215,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public IssueBuilder OfRule(string name, Uri uri)</code></pre>
+	<pre><code>public IssueBuilder OfRule(string id, Uri uri)</code></pre>
 
 
 
@@ -231,9 +233,9 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>name</td>
+						<td>id</td>
 						<td>string</td>
-						<td>The rule of the issue.
+						<td>The ID of the rule of the issue.
             <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if issue has no specific rule ID.</td>
 					</tr>
 					<tr>

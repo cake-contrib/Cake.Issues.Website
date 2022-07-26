@@ -81,7 +81,7 @@
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Properties">Properties</a></p>
+<p><a href="#Methods">Methods</a></p>
 <p><a href="#ExtensionMethods">Extension Methods</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -148,15 +148,22 @@
 		<li role="separator" class="divider"></li>
 			<li class="header">Interface Types</li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesBuildServer">IIssuesBuildServer</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesContext">IIssuesContext</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParameters">IIssuesParameters</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersBuildServer">I<wbr>Issues<wbr>Parameters<wbr>Build<wbr>Server</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersInputFiles">I<wbr>Issues<wbr>Parameters<wbr>Input<wbr>Files</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersPullRequestSystem">I<wbr>Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersReporting">I<wbr>Issues<wbr>Parameters<wbr>Reporting</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesPullRequestSystem">I<wbr>Issues<wbr>Pull<wbr>Request<wbr>System</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState">IIssuesState</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IRepositoryInfoProvider">I<wbr>Repository<wbr>Info<wbr>Provider</a></li>
 			<li class="header">Class Types</li>
-				<li><a href="/api/Cake.Frosting.Issues.Recipe/CakeGitRepositoryInfoProvider">Cake<wbr>Git<wbr>Repository<wbr>Info<wbr>Provider</a></li>
-				<li><a href="/api/Cake.Frosting.Issues.Recipe/CliRepositoryInfoProvider">Cli<wbr>Repository<wbr>Info<wbr>Provider</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/CreateFullIssuesReportTask">Create<wbr>Full<wbr>Issues<wbr>Report<wbr>Task</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/CreateSummaryIssuesReportTask">Create<wbr>Summary<wbr>Issues<wbr>Report<wbr>Task</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext">IssuesContext</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext_2">IssuesContext<wbr>&lt;TParameters, <wbr>TState&gt;<wbr></a></li>
 				<li class="selected"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters">IssuesParameters</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4">IssuesParameters<wbr>&lt;TInputFiles, <wbr>TReporting, <wbr>TBuildServer, <wbr>T<wbr>Pull<wbr>Request<wbr>System&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersBuildServer">Issues<wbr>Parameters<wbr>Build<wbr>Server</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersInputFiles">Issues<wbr>Parameters<wbr>Input<wbr>Files</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem">Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></li>
@@ -190,7 +197,7 @@
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Class for configuring the script.
+            Parameters of the build.
             </div>
 
 		<div class="panel panel-default">
@@ -204,11 +211,18 @@
 								<dt>Namespace</dt>
 								<dd><a href="/api/Cake.Frosting.Issues.Recipe">Cake<wbr>.Frosting<wbr>.Issues<wbr>.Recipe</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParameters">IIssuesParameters</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Object</li>								
+											<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4">IssuesParameters</a><wbr>&lt;<a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersInputFiles">Issues<wbr>Parameters<wbr>Input<wbr>Files</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersReporting">Issues<wbr>Parameters<wbr>Reporting</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersBuildServer">Issues<wbr>Parameters<wbr>Build<wbr>Server</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem">Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a>&gt;<wbr></li>								
 									</ul>
 								</dd>				
 							
@@ -218,7 +232,10 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type--&gt;Base0["Object"]
+	Type--&gt;Base0["IssuesParameters&lt;IssuesParametersInputFiles, IssuesParametersReporting, IssuesParametersBuildServer, IssuesParametersPullRequestSystem&gt;"]
+	Base0--&gt;Base1["Object"]
+	Type-.-&gt;Interface0["IIssuesParameters"]
+	click Interface0 "/api/Cake.Frosting.Issues.Recipe/IIssuesParameters"
 	Type["IssuesParameters"]
 class Type type-node
 
@@ -229,7 +246,10 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class IssuesParameters</code></pre>
+	<pre><code>public class IssuesParameters : 
+    
+    IssuesParameters&lt;IssuesParametersInputFiles, IssuesParametersReporting, IssuesParametersBuildServer, IssuesParametersPullRequestSystem&gt;, 
+    IIssuesParameters</code></pre>
 
 
 
@@ -258,7 +278,8 @@ class Type type-node
 
 
 
-			<h1 id="Properties">Properties</h1>
+
+			<h1 id="Methods">Methods</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
 					<table class="table table-striped table-hover three-cols">
@@ -270,61 +291,38 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/39005E8B">BuildIdentifier</a></td>
-								<td>string</td>
-								<td>
-									<div>
-            Gets or sets a identifier for the build run.
-            If set this identifier will be used to identify to artifacts provided by the
-            build if building on multiple configurations.
-            Default value is <code class="cs">string.Empty</code>.
-            </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/AA0E1A9E">BuildServer</a></td>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/0F2EC7E3">Create<wbr>Build<wbr>Server<wbr>Parameters<wbr>()<wbr></a></td>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersBuildServer">Issues<wbr>Parameters<wbr>Build<wbr>Server</a></td>
 								<td>
 									<div>
-            Gets the parameters for build server integration.
+            Factory method to instantiate <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4/E17676DD">BuildServer</a></code>.
             </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/7D72B554">InputFiles</a></td>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/AF6B4B5E">Create<wbr>Input<wbr>Files<wbr>Parameters<wbr>()<wbr></a></td>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersInputFiles">Issues<wbr>Parameters<wbr>Input<wbr>Files</a></td>
 								<td>
 									<div>
-            Gets the parameters for the input files.
+            Factory method to instantiate <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4/15532451">InputFiles</a></code>.
             </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/1E10CAE4">OutputDirectory</a></td>
-								<td>DirectoryPath</td>
-								<td>
-									<div>
-            Gets or sets the path to the output directory.
-            A relative path will be relative to the current working directory.
-            Default value is <code class="cs">BuildArtifacts</code>.
-            </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/6073A71D">PullRequestSystem</a></td>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/1D474FCB">Create<wbr>Pull<wbr>Request<wbr>System<wbr>Parameters<wbr>()<wbr></a></td>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem">Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></td>
 								<td>
 									<div>
-            Gets the parameters for pull request system integration.
+            Factory method to instantiate <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4/E359B6B2">PullRequestSystem</a></code>.
             </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/8003A7BC">Reporting</a></td>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters/BCEF4EE9">Create<wbr>Reporting<wbr>Parameters<wbr>()<wbr></a></td>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersReporting">Issues<wbr>Parameters<wbr>Reporting</a></td>
 								<td>
 									<div>
-            Gets the parameters for reporting.
+            Factory method to instantiate <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4/4778D12D">Reporting</a></code>.
             </div>
 								</td>
 							</tr>
@@ -332,7 +330,6 @@ class Type type-node
 				</div>
 			</div>
 		
-
 
 
 			<h1 id="ExtensionMethods">Extension Methods</h1>

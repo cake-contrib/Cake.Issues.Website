@@ -190,18 +190,6 @@
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/CakeGitRepositoryInfoProvider">Cake<wbr>Git<wbr>Repository<wbr>Info<wbr>Provider</a></td>
-									<td>
-            Provider to retrieve repository information using <a href="https://cakebuild.net/extensions/cake-git/">Cake.Git addin</a>.
-            </td>
-							</tr>
-							<tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/CliRepositoryInfoProvider">Cli<wbr>Repository<wbr>Info<wbr>Provider</a></td>
-									<td>
-            Provider to retrieve repository information using Git CLI.
-            </td>
-							</tr>
-							<tr>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/CreateFullIssuesReportTask">Create<wbr>Full<wbr>Issues<wbr>Report<wbr>Task</a></td>
 									<td>
             Creates issue report.
@@ -220,9 +208,21 @@
             </td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext_2">IssuesContext</a><wbr>&lt;<a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext_2#typeparam-TParameters">TParameters</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext_2#typeparam-TState">TState</a>&gt;<wbr></td>
+									<td>
+            Base class for parameters and state of the build run.
+            </td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters">IssuesParameters</a></td>
 									<td>
-            Class for configuring the script.
+            Parameters of the build.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4">IssuesParameters</a><wbr>&lt;<a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4#typeparam-TInputFiles">TInputFiles</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4#typeparam-TReporting">TReporting</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4#typeparam-TBuildServer">TBuildServer</a>, <wbr><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4#typeparam-TPullRequestSystem">TPullRequestSystem</a>&gt;<wbr></td>
+									<td>
+            Parameters of the build.
             </td>
 							</tr>
 							<tr>
@@ -319,9 +319,51 @@
             </td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesContext">IIssuesContext</a></td>
+									<td>
+            Description of parameters and state for the build run.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParameters">IIssuesParameters</a></td>
+									<td>
+            Description of parameters of the build.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersBuildServer">I<wbr>Issues<wbr>Parameters<wbr>Build<wbr>Server</a></td>
+									<td>
+            Parameters for build server integration.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersInputFiles">I<wbr>Issues<wbr>Parameters<wbr>Input<wbr>Files</a></td>
+									<td>
+            Parameters for passing input files.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersPullRequestSystem">I<wbr>Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></td>
+									<td>
+            Parameters for pull request integration.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersReporting">I<wbr>Issues<wbr>Parameters<wbr>Reporting</a></td>
+									<td>
+            Parameters for reporting.
+            </td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesPullRequestSystem">I<wbr>Issues<wbr>Pull<wbr>Request<wbr>System</a></td>
 									<td>
             Description of a pull request system implementation.
+            </td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState">IIssuesState</a></td>
+									<td>
+            Description of the mutable state of the build run.
             </td>
 							</tr>
 							<tr>

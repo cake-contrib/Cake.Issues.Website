@@ -153,7 +153,7 @@
 				<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitIdExtensions">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id<wbr>Extensions</a></li>
-				<li><a href="/api/Cake.Issues.PullRequests/ProviderIssueIssueLimits">Provider<wbr>Issue<wbr>Issue<wbr>Limits</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ProviderIssueLimits">ProviderIssueLimits</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionComment">Pull<wbr>Request<wbr>Discussion<wbr>Comment</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionResolution">Pull<wbr>Request<wbr>Discussion<wbr>Resolution</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionStatus">Pull<wbr>Request<wbr>Discussion<wbr>Status</a></li>
@@ -221,9 +221,9 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -235,12 +235,12 @@
 	click Interface0 "/api/Cake.Issues/IRepositorySettings"
 	Type["IReportIssuesToPullRequestSettings"]
 class Type type-node
-	Implementing0["IReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings"
-	Implementing1["ReportIssuesToPullRequestSettings"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
-	Implementing2["ReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings"
+	Implementing0["ReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings"
+	Implementing1["IReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings"
+	Implementing2["ReportIssuesToPullRequestSettings"]-.-&gt;Type
+	click Implementing2 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
 
 						</div>
 					</div>

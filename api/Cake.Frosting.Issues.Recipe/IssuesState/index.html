@@ -149,15 +149,22 @@
 		<li role="separator" class="divider"></li>
 			<li class="header">Interface Types</li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesBuildServer">IIssuesBuildServer</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesContext">IIssuesContext</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParameters">IIssuesParameters</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersBuildServer">I<wbr>Issues<wbr>Parameters<wbr>Build<wbr>Server</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersInputFiles">I<wbr>Issues<wbr>Parameters<wbr>Input<wbr>Files</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersPullRequestSystem">I<wbr>Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesParametersReporting">I<wbr>Issues<wbr>Parameters<wbr>Reporting</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesPullRequestSystem">I<wbr>Issues<wbr>Pull<wbr>Request<wbr>System</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState">IIssuesState</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IRepositoryInfoProvider">I<wbr>Repository<wbr>Info<wbr>Provider</a></li>
 			<li class="header">Class Types</li>
-				<li><a href="/api/Cake.Frosting.Issues.Recipe/CakeGitRepositoryInfoProvider">Cake<wbr>Git<wbr>Repository<wbr>Info<wbr>Provider</a></li>
-				<li><a href="/api/Cake.Frosting.Issues.Recipe/CliRepositoryInfoProvider">Cli<wbr>Repository<wbr>Info<wbr>Provider</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/CreateFullIssuesReportTask">Create<wbr>Full<wbr>Issues<wbr>Report<wbr>Task</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/CreateSummaryIssuesReportTask">Create<wbr>Summary<wbr>Issues<wbr>Report<wbr>Task</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext">IssuesContext</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesContext_2">IssuesContext<wbr>&lt;TParameters, <wbr>TState&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters">IssuesParameters</a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParameters_4">IssuesParameters<wbr>&lt;TInputFiles, <wbr>TReporting, <wbr>TBuildServer, <wbr>T<wbr>Pull<wbr>Request<wbr>System&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersBuildServer">Issues<wbr>Parameters<wbr>Build<wbr>Server</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersInputFiles">Issues<wbr>Parameters<wbr>Input<wbr>Files</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IssuesParametersPullRequestSystem">Issues<wbr>Parameters<wbr>Pull<wbr>Request<wbr>System</a></li>
@@ -205,6 +212,12 @@
 								<dt>Namespace</dt>
 								<dd><a href="/api/Cake.Frosting.Issues.Recipe">Cake<wbr>.Frosting<wbr>.Issues<wbr>.Recipe</a></dd>
 											
+								<dt>Interfaces</dt>
+								<dd>
+									<ul class="list-unstyled">
+											<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState">IIssuesState</a></li>								
+									</ul>
+								</dd>
 							
 								<dt>Base Types</dt>
 								<dd>
@@ -220,6 +233,8 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["Object"]
+	Type-.-&gt;Interface0["IIssuesState"]
+	click Interface0 "/api/Cake.Frosting.Issues.Recipe/IIssuesState"
 	Type["IssuesState"]
 class Type type-node
 
@@ -230,7 +245,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class IssuesState</code></pre>
+	<pre><code>public class IssuesState : IIssuesState</code></pre>
 
 
 
@@ -249,7 +264,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/704D71C9">IssuesState<wbr>(IssuesContext, <wbr>Repository<wbr>Info<wbr>Provider<wbr>Type)<wbr></a></td>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/BA06FAAE">IssuesState<wbr>(IIssuesContext, <wbr>Repository<wbr>Info<wbr>Provider<wbr>Type)<wbr></a></td>
 									<td>
             Creates a new instance of the <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState">IssuesState</a></code> class.
             </td>
@@ -323,8 +338,8 @@ class Type type-node
 								<td>DirectoryPath</td>
 								<td>
 									<div>
-            Gets the root directory of the project.
-            Default value is the parent directory of the <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/3DD8CF8D">BuildRootDirectory</a></code>.
+            Gets or sets the root directory of the project.
+            Default value is the parent directory of the <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/20FB6134">BuildRootDirectory</a></code>.
             </div>
 								</td>
 							</tr>

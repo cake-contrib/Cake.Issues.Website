@@ -265,7 +265,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Issues/Issue/75DEC5CE">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>IReadOnlyDictionary<wbr>&lt;string, <wbr>string&gt;<wbr>)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/Issue/402FD37F">Issue<wbr>(string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>IReadOnlyDictionary<wbr>&lt;string, <wbr>string&gt;<wbr>)<wbr></a></td>
 									<td>
             Initializes a new instance of the <code class="cs"><a href="/api/Cake.Issues/Issue">Issue</a></code> class.
             </td>
@@ -455,11 +455,21 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/api/Cake.Issues/Issue/999A29E6">Rule</a></td>
+								<td><a href="/api/Cake.Issues/Issue/D2EEE49A">RuleId</a></td>
 								<td>string</td>
 								<td>
 									<div>
-            Gets the rule of the issue.
+            Gets the id of the rule of the issue.
+            Can be <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if the issue provider provides no rule.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/Issue/969AF2C3">RuleName</a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Gets the name of the rule of the issue.
             Can be <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if the issue provider provides no rule.
             </div>
 								</td>

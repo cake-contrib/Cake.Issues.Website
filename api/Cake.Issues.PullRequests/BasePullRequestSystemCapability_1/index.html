@@ -155,7 +155,7 @@
 				<li><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystem">Base<wbr>Pull<wbr>Request<wbr>System</a></li>
 				<li class="selected"><a href="/api/Cake.Issues.PullRequests/BasePullRequestSystemCapability_1">Base<wbr>Pull<wbr>Request<wbr>System<wbr>Capability<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/ISupportCheckingCommitIdExtensions">I<wbr>Support<wbr>Checking<wbr>Commit<wbr>Id<wbr>Extensions</a></li>
-				<li><a href="/api/Cake.Issues.PullRequests/ProviderIssueIssueLimits">Provider<wbr>Issue<wbr>Issue<wbr>Limits</a></li>
+				<li><a href="/api/Cake.Issues.PullRequests/ProviderIssueLimits">ProviderIssueLimits</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionComment">Pull<wbr>Request<wbr>Discussion<wbr>Comment</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionResolution">Pull<wbr>Request<wbr>Discussion<wbr>Resolution</a></li>
 				<li><a href="/api/Cake.Issues.PullRequests/PullRequestDiscussionStatus">Pull<wbr>Request<wbr>Discussion<wbr>Status</a></li>
@@ -228,9 +228,9 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1">Base<wbr>Checking<wbr>Commit<wbr>Id<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1">Base<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1">Base<wbr>Discussion<wbr>Threads<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1">Base<wbr>Filtering<wbr>By<wbr>Modified<wbr>Files<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1">Base<wbr>Checking<wbr>Commit<wbr>Id<wbr>Capability</a><wbr>&lt;<a href="/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1#typeparam-T">T</a>&gt;<wbr></li>								
 									</ul>
 								</dd>			
 							
@@ -244,12 +244,12 @@
 	click Interface0 "/api/Cake.Issues.PullRequests/IPullRequestSystemCapability"
 	Type["BasePullRequestSystemCapability&lt;T&gt;"]
 class Type type-node
-	Derived0["BaseCheckingCommitIdCapability&lt;T&gt;"]--&gt;Type
-	click Derived0 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
+	Derived0["BaseDiscussionThreadsCapability&lt;T&gt;"]--&gt;Type
+	click Derived0 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
 	Derived1["BaseFilteringByModifiedFilesCapability&lt;T&gt;"]--&gt;Type
 	click Derived1 "/api/Cake.Issues.PullRequests/BaseFilteringByModifiedFilesCapability_1"
-	Derived2["BaseDiscussionThreadsCapability&lt;T&gt;"]--&gt;Type
-	click Derived2 "/api/Cake.Issues.PullRequests/BaseDiscussionThreadsCapability_1"
+	Derived2["BaseCheckingCommitIdCapability&lt;T&gt;"]--&gt;Type
+	click Derived2 "/api/Cake.Issues.PullRequests/BaseCheckingCommitIdCapability_1"
 
 						</div>
 					</div>
