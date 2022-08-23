@@ -270,6 +270,16 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues/StringPathExtensions/B2A6224E">IsInRepository<wbr>(string, <wbr>IRepositorySettings)<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+            Checks if a file is part of the repository.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues/StringPathExtensions/968D065C">IsSubpathOf<wbr>(string, <wbr>string)<wbr></a></td>
 								<td>bool</td>
 								<td>
@@ -278,6 +288,16 @@ class Type type-node
             The comparison is case-insensitive, handles <code class="cs">/</code> and <code class="cs">\</code> slashes as folder separators and
             only matches if the base dir folder name is matched exactly
             (<code class="cs">c:\foobar\file.txt</code> is not a sub path of <code class="cs">c:\foo</code>).
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/StringPathExtensions/CFCBB809">Is<wbr>Valide<wbr>Repository<wbr>File<wbr>Path<wbr>(string, <wbr>IRepositorySettings)<wbr></a></td>
+								<td>ValueTuple<wbr>&lt;bool, <wbr>string&gt;<wbr></td>
+								<td>
+									<div>
+            Validates if a file path is a valid path below <code class="cs"><a href="/api/Cake.Issues/IRepositorySettings/77489289">RepositoryRoot</a></code>.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -293,12 +313,32 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Issues/StringPathExtensions/0F8E54F8">Make<wbr>File<wbr>Path<wbr>Relative<wbr>To<wbr>Repository<wbr>Root<wbr>(string, <wbr>IRepositorySettings)<wbr></a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Make path relative to repository root.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Issues/StringPathExtensions/E8FD7BAF">NormalizePath<wbr>(string)<wbr></a></td>
 								<td>string</td>
 								<td>
 									<div>
             Normalize path string.
             All <code class="cs">/</code> are changed to <code class="cs">\</code>.
+            </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Issues/StringPathExtensions/BFB02847">Remove<wbr>Leading<wbr>Directory<wbr>Separator<wbr>(string)<wbr></a></td>
+								<td>string</td>
+								<td>
+									<div>
+            Remove the leading directory separator from a file path.
             </div>
 											<div><small><em>static</em></small></div>
 								</td>
