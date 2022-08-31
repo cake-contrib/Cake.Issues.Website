@@ -325,6 +325,15 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/C33778DE">Issue<wbr>Providers<wbr>And<wbr>Runs</a></td>
+								<td>IList<wbr>&lt;ValueTuple<wbr>&lt;<a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a>, <wbr>string&gt;<wbr>&gt;<wbr></td>
+								<td>
+									<div>
+            Gets the list of issue providers and runs for which issues are read.
+            </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/D9F3C7CE">Issues</a></td>
 								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
 								<td>
@@ -410,7 +419,8 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-            Adds an issue to the data class.
+            Adds an issue to <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/AB0EB4CC">Issues</a></code>.
+            To read issues from an issue provider use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/249C1EE6">AddIssues(IIssueProvider, IReadIssuesSettings)</a></code>.
             </div>
 								</td>
 							</tr>
@@ -419,7 +429,17 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-            Adds a list of issues to the data class.
+            Adds a list of issues to <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/AB0EB4CC">Issues</a></code>.
+            To read issues from an issue provider use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/249C1EE6">AddIssues(IIssueProvider, IReadIssuesSettings)</a></code>.
+            </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/api/Cake.Frosting.Issues.Recipe/IssuesState/7A34D7F6">AddIssues<wbr>(IIssueProvider, <wbr>IReadIssuesSettings)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+            Reads issues from an issue provider and adds the issues to <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/AB0EB4CC">Issues</a></code>.
             </div>
 								</td>
 							</tr>

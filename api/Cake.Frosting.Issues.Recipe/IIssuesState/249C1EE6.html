@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - IIssuesState.AddIssues(IEnumerable&lt;IIssue&gt;) Method</title>
+        <title>Cake Issues - API - IIssuesState.AddIssues(IIssueProvider, IReadIssuesSettings) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -149,8 +149,8 @@
 		<li role="separator" class="divider"></li>
 			<li class="header">Method Members</li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/5D5A79A5">AddIssue<wbr>(IIssue)<wbr></a></li>
-				<li class="selected"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/858C5A07">AddIssues<wbr>(IEnumerable<wbr>&lt;IIssue&gt;<wbr>)<wbr></a></li>
-				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/249C1EE6">AddIssues<wbr>(IIssueProvider, <wbr>IReadIssuesSettings)<wbr></a></li>
+				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/858C5A07">AddIssues<wbr>(IEnumerable<wbr>&lt;IIssue&gt;<wbr>)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/249C1EE6">AddIssues<wbr>(IIssueProvider, <wbr>IReadIssuesSettings)<wbr></a></li>
 			<li class="header">Property Members</li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/20FB6134">BuildRootDirectory</a></li>
 				<li><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/73F0F537">BuildServer</a></li>
@@ -179,15 +179,14 @@
 
 <section class="content-header">
 			<h3><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState">IIssuesState</a>.</h3>
-	<h1>AddIssues<wbr>(IEnumerable<wbr>&lt;IIssue&gt;<wbr>)<wbr> <small>Method</small></h1>
+	<h1>AddIssues<wbr>(IIssueProvider, <wbr>IReadIssuesSettings)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Adds a list of issues to <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/AB0EB4CC">Issues</a></code>.
-            To read issues from an issue provider use <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/249C1EE6">AddIssues(IIssueProvider, IReadIssuesSettings)</a></code>.
+            Reads issues from an issue provider and adds the issues to <code class="cs"><a href="/api/Cake.Frosting.Issues.Recipe/IIssuesState/AB0EB4CC">Issues</a></code>.
             </div>
 
 		<div class="panel panel-default">
@@ -207,7 +206,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>void AddIssues(IEnumerable&lt;IIssue&gt; issues)</code></pre>
+	<pre><code>void AddIssues(IIssueProvider issueProvider, IReadIssuesSettings settings)</code></pre>
 
 
 
@@ -225,9 +224,14 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>issues</td>
-						<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
-						<td>Issues which should be added.</td>
+						<td>issueProvider</td>
+						<td><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></td>
+						<td>Issue provider used to read the issues.</td>
+					</tr>
+					<tr>
+						<td>settings</td>
+						<td><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></td>
+						<td>Settings for reading the issues. <code class="cs">Null</code> for default values.</td>
 					</tr>
 			</tbody></table>
 		</div>
