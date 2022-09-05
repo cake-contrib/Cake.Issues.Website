@@ -206,7 +206,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>void AddIssues(IIssueProvider issueProvider, IReadIssuesSettings settings)</code></pre>
+	<pre><code>IEnumerable&lt;IIssue&gt; AddIssues(IIssueProvider issueProvider, IReadIssuesSettings settings)</code></pre>
 
 
 
@@ -248,8 +248,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>void</td>
-					<td></td>
+					<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
+					<td>List of issues read from issue provider.</td>
 				</tr>
 			</tbody></table>
 		</div>
