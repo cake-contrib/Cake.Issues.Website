@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - IIssueProvider Interface</title>
+        <title>Cake Issues - API - IssueChecker.Check(IIssue, string, string, string, string, string, string, string, Nullable&lt;int&gt;, Nullable&lt;int&gt;, Nullable&lt;int&gt;, Nullable&lt;int&gt;, Uri, string, string, string, Nullable&lt;int&gt;, string, string, string, Uri, IReadOnlyDictionary&lt;string, string&gt;) Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -80,9 +80,8 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Properties">Properties</a></p>
-<p><a href="#Methods">Methods</a></p>
-<p><a href="#ExtensionMethods">Extension Methods</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -142,42 +141,16 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></li>
+		<li><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
+		<li><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></li>
+		<li class="header">Type</li>
+		<li><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Class Types</li>
-				<li><a href="/api/Cake.Issues/Aliases">Aliases</a></li>
-				<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseIssueComponent_1">BaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>
-				<li><a href="/api/Cake.Issues/BaseLogFileFormat_2">BaseLogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>&lt;TSettings, <wbr>TIssueProvider&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProviderSettings_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Settings<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
-				<li><a href="/api/Cake.Issues/BaseRuleUrlResolver_1">BaseRuleUrlResolver<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/ByteArrayExtensions">ByteArrayExtensions</a></li>
-				<li><a href="/api/Cake.Issues/FileLinkSettings">FileLinkSettings</a></li>
-				<li><a href="/api/Cake.Issues/IIssueComparer">IIssueComparer</a></li>
-				<li><a href="/api/Cake.Issues/IIssueExtensions">IIssueExtensions</a></li>
-				<li><a href="/api/Cake.Issues/Issue">Issue</a></li>
-				<li><a href="/api/Cake.Issues/IssueBuilder">IssueBuilder</a></li>
-				<li><a href="/api/Cake.Issues/IssueCommentFormat">IssueCommentFormat</a></li>
-				<li><a href="/api/Cake.Issues/IssuePriority">IssuePriority</a></li>
-				<li><a href="/api/Cake.Issues/IssueProviderSettings">Issue<wbr>Provider<wbr>Settings</a></li>
-				<li><a href="/api/Cake.Issues/IssuesAliasConstants">IssuesAliasConstants</a></li>
-				<li><a href="/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></li>
-				<li><a href="/api/Cake.Issues/IssuesReader">IssuesReader</a></li>
-				<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>
-				<li><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions">StringPathExtensions</a></li>
-			<li class="header">Interface Types</li>
-				<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent<wbr>&lt;T&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/IIssue">IIssue</a></li>
-				<li class="selected"><a href="/api/Cake.Issues/IIssueProvider">IIssueProvider</a></li>
-				<li><a href="/api/Cake.Issues/ILogFileFormat_2">ILogFileFormat<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
-				<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>
-				<li><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></li>
+			<li class="header">Method Members</li>
+				<li><a href="/api/Cake.Issues.Testing/IssueChecker/DF7BF5D7">Check<wbr>(IIssue, <wbr>IssueBuilder)<wbr></a></li>
+				<li><a href="/api/Cake.Issues.Testing/IssueChecker/34BF9060">Check<wbr>(IIssue, <wbr>IIssue)<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Testing/IssueChecker/A831BAFB">Check<wbr>(IIssue, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Uri, <wbr>IReadOnlyDictionary<wbr>&lt;string, <wbr>string&gt;<wbr>)<wbr></a></li>
 
 
                     </ul>
@@ -192,180 +165,196 @@
 
 
 <section class="content-header">
-	<h1>IIssueProvider <small>Interface</small></h1>
+			<h3><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a>.</h3>
+	<h1>Check<wbr>(IIssue, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>Uri, <wbr>string, <wbr>string, <wbr>string, <wbr>Nullable<wbr>&lt;int&gt;<wbr>, <wbr>string, <wbr>string, <wbr>string, <wbr>Uri, <wbr>IReadOnlyDictionary<wbr>&lt;string, <wbr>string&gt;<wbr>)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Interface describing a provider for issues.
+            Checks values of an issue.
             </div>
 
 		<div class="panel panel-default">
-  			<div class="panel-body">
-				<div class="row">
-					<div class="col-md-6">
-						<dl class="dl-horizontal">		
-								<dt>Assembly</dt>
-								<dd><a href="/api/Cake.Issues.dll">Cake<wbr>.Issues<wbr>.dll</a></dd>
-
-								<dt>Namespace</dt>
-								<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
-											
-								<dt>Interfaces</dt>
-								<dd>
-									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues/IBaseIssueComponent_1">IBaseIssueComponent</a><wbr>&lt;<a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a>&gt;<wbr></li>								
-									</ul>
-								</dd>
-							
-							
-							
-								<dt>Implementing Types</dt>
-								<dd>
-									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1">Base<wbr>Configurable<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseConfigurableIssueProvider_1#typeparam-T">T</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues.MsBuild/MsBuildIssuesProvider">Ms<wbr>Build<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a><wbr>&lt;<a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TSettings">TSettings</a>, <wbr><a href="/api/Cake.Issues/BaseMultiFormatIssueProvider_2#typeparam-TIssueProvider">TIssueProvider</a>&gt;<wbr></li>								
-											<li><a href="/api/Cake.Issues/BaseIssueProvider">BaseIssueProvider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeConfigurableIssueProvider">Fake<wbr>Configurable<wbr>Issue<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider">Markdownlint<wbr>Issues<wbr>Provider</a></li>								
-											<li><a href="/api/Cake.Issues.EsLint/EsLintIssuesProvider">EsLintIssuesProvider</a></li>								
-											<li><a href="/api/Cake.Issues.Testing/FakeIssueProvider">FakeIssueProvider</a></li>								
-									</ul>
-								</dd>				
-						</dl>
-					</div>		
-					<div class="col-md-6">
-						<div class="mermaid">
-							graph BT
-	Type-.-&gt;Interface0["IBaseIssueComponent&lt;IReadIssuesSettings&gt;"]
-	Type["IIssueProvider"]
-class Type type-node
-	Implementing0["BaseConfigurableIssueProvider&lt;T&gt;"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues/BaseConfigurableIssueProvider_1"
-	Implementing1["MsBuildIssuesProvider"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.MsBuild/MsBuildIssuesProvider"
-	Implementing2["BaseMultiFormatIssueProvider&lt;TSettings, TIssueProvider&gt;"]-.-&gt;Type
-	click Implementing2 "/api/Cake.Issues/BaseMultiFormatIssueProvider_2"
-	Implementing3["BaseIssueProvider"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues/BaseIssueProvider"
-	Implementing4["FakeMultiFormatIssueProvider"]-.-&gt;Type
-	click Implementing4 "/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider"
-	Implementing5["FakeConfigurableIssueProvider"]-.-&gt;Type
-	click Implementing5 "/api/Cake.Issues.Testing/FakeConfigurableIssueProvider"
-	Implementing6["MarkdownlintIssuesProvider"]-.-&gt;Type
-	click Implementing6 "/api/Cake.Issues.Markdownlint/MarkdownlintIssuesProvider"
-	Implementing7["EsLintIssuesProvider"]-.-&gt;Type
-	click Implementing7 "/api/Cake.Issues.EsLint/EsLintIssuesProvider"
-	Implementing8["FakeIssueProvider"]-.-&gt;Type
-	click Implementing8 "/api/Cake.Issues.Testing/FakeIssueProvider"
-
-						</div>
-					</div>
-				</div>
+  			<div class="panel-body">	
+				<dl class="dl-horizontal">	
+						<dt>Assembly</dt>
+						<dd><a href="/api/Cake.Issues.Testing.dll">Cake<wbr>.Issues<wbr>.Testing<wbr>.dll</a></dd>
+						
+						<dt>Namespace</dt>
+						<dd><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></dd>		
+					
+				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public interface IIssueProvider : IBaseIssueComponent&lt;IReadIssuesSettings&gt;</code></pre>
+	<pre><code>public static void Check(IIssue issue, string providerType, string providerName, string run, string identifier, string projectFileRelativePath, string projectName, string affectedFileRelativePath, Nullable&lt;int&gt; line, Nullable&lt;int&gt; endLine, Nullable&lt;int&gt; column, Nullable&lt;int&gt; endColumn, Uri fileLink, string messageText, string messageHtml, string messageMarkdown, Nullable&lt;int&gt; priority, string priorityName, string ruleId, string ruleName, Uri ruleUrl, IReadOnlyDictionary&lt;string, string&gt; additionalInformation)</code></pre>
 
 
 
 
 
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>issue</td>
+						<td><a href="/api/Cake.Issues/IIssue">IIssue</a></td>
+						<td>Issue which should be checked.</td>
+					</tr>
+					<tr>
+						<td>providerType</td>
+						<td>string</td>
+						<td>Expected type of the issue provider.</td>
+					</tr>
+					<tr>
+						<td>providerName</td>
+						<td>string</td>
+						<td>Expected human friendly name of the issue provider.</td>
+					</tr>
+					<tr>
+						<td>run</td>
+						<td>string</td>
+						<td>Expected name of the run which reported the issue.</td>
+					</tr>
+					<tr>
+						<td>identifier</td>
+						<td>string</td>
+						<td>Expected identifier of the issue.</td>
+					</tr>
+					<tr>
+						<td>projectFileRelativePath</td>
+						<td>string</td>
+						<td>Expected relative path of the project file.
+            <code class="cs">null</code> if the issue is not expected to be related to a project.</td>
+					</tr>
+					<tr>
+						<td>projectName</td>
+						<td>string</td>
+						<td>Expected project name.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if the issue is not expected to be related to a project.</td>
+					</tr>
+					<tr>
+						<td>affectedFileRelativePath</td>
+						<td>string</td>
+						<td>Expected relative path of the affected file.
+            <code class="cs">null</code> if the issue is not expected to be related to a change in a file.</td>
+					</tr>
+					<tr>
+						<td>line</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected line number.
+            <code class="cs">null</code> if the issue is not expected to be related to a file or specific line.</td>
+					</tr>
+					<tr>
+						<td>endLine</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected end of line range.
+            <code class="cs">null</code> if the issue is not expected to be related to a file, specific line or range of lines.</td>
+					</tr>
+					<tr>
+						<td>column</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected column.
+            <code class="cs">null</code> if the issue is not expected to be related to a file or specific column.</td>
+					</tr>
+					<tr>
+						<td>endColumn</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected end of column range.
+            <code class="cs">null</code> if the issue is not expected to be related to a file, specific column or range of columns.</td>
+					</tr>
+					<tr>
+						<td>fileLink</td>
+						<td>Uri</td>
+						<td>Expected file link.
+            <code class="cs">null</code> if the issue is not expected to have a file link.</td>
+					</tr>
+					<tr>
+						<td>messageText</td>
+						<td>string</td>
+						<td>Expected message in plain text format.</td>
+					</tr>
+					<tr>
+						<td>messageHtml</td>
+						<td>string</td>
+						<td>Expected message in HTML format.</td>
+					</tr>
+					<tr>
+						<td>messageMarkdown</td>
+						<td>string</td>
+						<td>Expected message in Markdown format.</td>
+					</tr>
+					<tr>
+						<td>priority</td>
+						<td>Nullable<wbr>&lt;int&gt;<wbr></td>
+						<td>Expected priority.
+            <code class="cs">null</code> if no priority is expected.</td>
+					</tr>
+					<tr>
+						<td>priorityName</td>
+						<td>string</td>
+						<td>Expected priority name.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no priority is expected.</td>
+					</tr>
+					<tr>
+						<td>ruleId</td>
+						<td>string</td>
+						<td>Expected rule identifier.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no rule identifier is expected.</td>
+					</tr>
+					<tr>
+						<td>ruleName</td>
+						<td>string</td>
+						<td>Expected name of the rule.
+            <code class="cs">null</code> or <code class="cs">System.String.Empty</code> if no rule is expected.</td>
+					</tr>
+					<tr>
+						<td>ruleUrl</td>
+						<td>Uri</td>
+						<td>Expected URL containing information about the failing rule.
+            <code class="cs">null</code> if no rule Url is expected.</td>
+					</tr>
+					<tr>
+						<td>additionalInformation</td>
+						<td>IReadOnlyDictionary<wbr>&lt;string, <wbr>string&gt;<wbr></td>
+						<td>Custom information regarding the issue.</td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
+	<h1 id="ReturnValue">Return Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>void</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
-
-
-
-			<h1 id="Properties">Properties</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/IIssueProvider/0D605BFF">ProviderName</a></td>
-								<td>string</td>
-								<td>
-									<div>
-            Gets the human friendly name of the issue provider.
-            </div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Cake.Issues/IIssueProvider/2249A62D">ProviderType</a></td>
-								<td>string</td>
-								<td>
-									<div>
-            Gets the type of the issue provider.
-            </div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
-
-			<h1 id="Methods">Methods</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/IIssueProvider/36907F3D">ReadIssues<wbr>()<wbr></a></td>
-								<td>IEnumerable<wbr>&lt;<a href="/api/Cake.Issues/IIssue">IIssue</a>&gt;<wbr></td>
-								<td>
-									<div>
-            Gets all issues.
-            </div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
-
-
-			<h1 id="ExtensionMethods">Extension Methods</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>I<wbr>Issue<wbr>Provider&gt;<wbr><wbr>(string)<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>
-            Throws an exception if the specified parameter's value is null.
-            </div>
-										<div><small><em>From <a href="/api/Cake.Issues/IssuesArgumentChecks">IssuesArgumentChecks</a></em></small></div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
 	
 </section>
