@@ -708,7 +708,13 @@ To define the Git provider in <code>Cake.Frosting.Issues.Recipe</code> pass the 
 <td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
 <td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetPullRequestStatus</code></td>
 <td><code>true</code></td>
-<td>Indicates whether a status on the pull request should be set.</td>
+<td>Indicates whether a status on the pull request should be set if there are any issues found.</td>
+</tr>
+<tr>
+<td><code>IssuesParameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetSeparatePullRequestStatusForEachIssueProviderAndRun</code></td>
+<td><code>IssuesContext.Parameters.PullRequestSystem.</code><br>&nbsp;&nbsp;&nbsp;&nbsp;<code>ShouldSetSeparatePullRequestStatusForEachIssueProviderAndRun</code></td>
+<td><code>true</code></td>
+<td>Indicates whether a separate status should be set for issues of every issue provider and run.</td>
 </tr>
 </tbody>
 </table>
