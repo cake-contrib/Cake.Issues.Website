@@ -218,17 +218,17 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings">Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportSettings">Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings">Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>								
+											<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>								
+											<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
+											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings">Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>Settings</a></li>								
 											<li><a href="/api/Cake.Issues/RepositorySettings">RepositorySettings</a></li>								
 											<li><a href="/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings">I<wbr>Report<wbr>Issues<wbr>To<wbr>Pull<wbr>Request<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>Settings</a></li>								
-											<li><a href="/api/Cake.Issues/ReadIssuesSettings">ReadIssuesSettings</a></li>								
-											<li><a href="/api/Cake.Issues/IReadIssuesSettings">IReadIssuesSettings</a></li>								
-											<li><a href="/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings">I<wbr>Create<wbr>Issue<wbr>Report<wbr>From<wbr>Issue<wbr>Provider<wbr>Settings</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -238,28 +238,28 @@
 							graph BT
 	Type["IRepositorySettings"]
 class Type type-node
-	Implementing0["IReportIssuesToPullRequestSettings"]-.-&gt;Type
-	click Implementing0 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings"
-	Implementing1["ReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
-	click Implementing1 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings"
+	Implementing0["ICreateIssueReportFromIssueProviderSettings"]-.-&gt;Type
+	click Implementing0 "/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings"
+	Implementing1["CreateIssueReportSettings"]-.-&gt;Type
+	click Implementing1 "/api/Cake.Issues.Reporting/CreateIssueReportSettings"
 	Implementing2["CreateIssueReportFromIssueProviderSettings"]-.-&gt;Type
 	click Implementing2 "/api/Cake.Issues.Reporting/CreateIssueReportFromIssueProviderSettings"
-	Implementing3["CreateIssueReportSettings"]-.-&gt;Type
-	click Implementing3 "/api/Cake.Issues.Reporting/CreateIssueReportSettings"
-	Implementing4["ReportIssuesToPullRequestSettings"]-.-&gt;Type
-	click Implementing4 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
-	Implementing5["RepositorySettings"]-.-&gt;Type
-	click Implementing5 "/api/Cake.Issues/RepositorySettings"
-	Implementing6["IReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
-	click Implementing6 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings"
-	Implementing7["ICreateIssueReportSettings"]-.-&gt;Type
-	click Implementing7 "/api/Cake.Issues.Reporting/ICreateIssueReportSettings"
-	Implementing8["ReadIssuesSettings"]-.-&gt;Type
-	click Implementing8 "/api/Cake.Issues/ReadIssuesSettings"
-	Implementing9["IReadIssuesSettings"]-.-&gt;Type
-	click Implementing9 "/api/Cake.Issues/IReadIssuesSettings"
-	Implementing10["ICreateIssueReportFromIssueProviderSettings"]-.-&gt;Type
-	click Implementing10 "/api/Cake.Issues.Reporting/ICreateIssueReportFromIssueProviderSettings"
+	Implementing3["IReportIssuesToPullRequestSettings"]-.-&gt;Type
+	click Implementing3 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestSettings"
+	Implementing4["IReadIssuesSettings"]-.-&gt;Type
+	click Implementing4 "/api/Cake.Issues/IReadIssuesSettings"
+	Implementing5["ReadIssuesSettings"]-.-&gt;Type
+	click Implementing5 "/api/Cake.Issues/ReadIssuesSettings"
+	Implementing6["ICreateIssueReportSettings"]-.-&gt;Type
+	click Implementing6 "/api/Cake.Issues.Reporting/ICreateIssueReportSettings"
+	Implementing7["ReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
+	click Implementing7 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestFromIssueProviderSettings"
+	Implementing8["ReportIssuesToPullRequestSettings"]-.-&gt;Type
+	click Implementing8 "/api/Cake.Issues.PullRequests/ReportIssuesToPullRequestSettings"
+	Implementing9["RepositorySettings"]-.-&gt;Type
+	click Implementing9 "/api/Cake.Issues/RepositorySettings"
+	Implementing10["IReportIssuesToPullRequestFromIssueProviderSettings"]-.-&gt;Type
+	click Implementing10 "/api/Cake.Issues.PullRequests/IReportIssuesToPullRequestFromIssueProviderSettings"
 
 						</div>
 					</div>
