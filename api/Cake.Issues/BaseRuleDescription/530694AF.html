@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - StringPathExtensions.IsValideRepositoryFilePath(string, IRepositorySettings) Method</title>
+        <title>Cake Issues - API - BaseRuleDescription.set_Rule() Method</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -78,8 +78,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
-<p><a href="#Syntax">Syntax</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Attributes">Attributes</a></p>
 <p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
@@ -145,18 +145,13 @@
 		<li class="header">Namespace</li>
 		<li><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></li>
 		<li class="header">Type</li>
-		<li><a href="/api/Cake.Issues/StringPathExtensions">StringPathExtensions</a></li>
+		<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>
 		<li role="separator" class="divider"></li>
+			<li class="header">Constructors</li>
+				<li><a href="/api/Cake.Issues/BaseRuleDescription/524723BF">BaseRuleDescription<wbr>()<wbr></a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/FC8AB051">IsFullPath<wbr>(string)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/B2A6224E">IsInRepository<wbr>(string, <wbr>IRepositorySettings)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/968D065C">IsSubpathOf<wbr>(string, <wbr>string)<wbr></a></li>
-				<li class="selected"><a href="/api/Cake.Issues/StringPathExtensions/CFCBB809">Is<wbr>Valide<wbr>Repository<wbr>File<wbr>Path<wbr>(string, <wbr>IRepositorySettings)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/66D347F5">IsValidPath<wbr>(string)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/0F8E54F8">Make<wbr>File<wbr>Path<wbr>Relative<wbr>To<wbr>Repository<wbr>Root<wbr>(string, <wbr>IRepositorySettings)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/E8FD7BAF">NormalizePath<wbr>(string)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/BFB02847">Remove<wbr>Leading<wbr>Directory<wbr>Separator<wbr>(string)<wbr></a></li>
-				<li><a href="/api/Cake.Issues/StringPathExtensions/51F07F11">WithEnding<wbr>(string, <wbr>string)<wbr></a></li>
+				<li><a href="/api/Cake.Issues/BaseRuleDescription/917E98E4">get_Rule<wbr>()<wbr></a></li>
+				<li class="selected"><a href="/api/Cake.Issues/BaseRuleDescription/530694AF">set_Rule<wbr>()<wbr></a></li>
 
 
                     </ul>
@@ -171,17 +166,13 @@
 
 
 <section class="content-header">
-			<h3><a href="/api/Cake.Issues/StringPathExtensions">StringPathExtensions</a>.</h3>
-	<h1>Is<wbr>Valide<wbr>Repository<wbr>File<wbr>Path<wbr>(string, <wbr>IRepositorySettings)<wbr> <small>Method</small></h1>
+			<h3><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a>.</h3>
+	<h1>set_Rule<wbr>()<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
-		<h1 id="Summary">Summary</h1>
-	<div class="lead">
-            Validates if a file path is a valid path below <code class="cs"><a href="/api/Cake.Issues/IRepositorySettings/77489289">RepositoryRoot</a></code>.
-            </div>
-
+	
 		<div class="panel panel-default">
   			<div class="panel-body">	
 				<dl class="dl-horizontal">	
@@ -192,17 +183,34 @@
 						<dd><a href="/api/Cake.Issues">Cake<wbr>.Issues</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/api/Cake.Issues/StringPathExtensions">StringPathExtensions</a></dd>		
+						<dd><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static ValueTuple&lt;bool, string&gt; IsValideRepositoryFilePath(this string filePath, IRepositorySettings repositorySettings)</code></pre>
+	<pre><code>public  set_Rule( value)</code></pre>
 
 
 
+	<h1 id="Attributes">Attributes</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>Compiler<wbr>Generated<wbr>Attribute</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
 
 	<h1 id="Parameters">Parameters</h1>
@@ -217,14 +225,9 @@
 					</tr>
 				</thead>
 					<tbody><tr>
-						<td>filePath</td>
-						<td>string</td>
-						<td>Full file path.</td>
-					</tr>
-					<tr>
-						<td>repositorySettings</td>
-						<td><a href="/api/Cake.Issues/IRepositorySettings">IRepositorySettings</a></td>
-						<td>Repository settings.</td>
+						<td>value</td>
+						<td></td>
+						<td></td>
 					</tr>
 			</tbody></table>
 		</div>
@@ -241,9 +244,8 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>ValueTuple<wbr>&lt;bool, <wbr>string&gt;<wbr></td>
-					<td>Tuple containing a value if validation was successful,
-            and file path relative to <code class="cs"><a href="/api/Cake.Issues/IRepositorySettings/77489289">RepositoryRoot</a></code>.</td>
+					<td></td>
+					<td></td>
 				</tr>
 			</tbody></table>
 		</div>
