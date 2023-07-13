@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - API - FakeRuleDescription Class</title>
+        <title>Cake Issues - API - AssertionMethodAttribute Class</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -81,7 +81,6 @@
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Constructors">Constructors</a></p>
-<p><a href="#Methods">Methods</a></p>
 <p><a href="#ExtensionMethods">Extension Methods</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -147,7 +146,7 @@
 		<li><a href="/api/Cake.Issues.Testing">Cake<wbr>.Issues<wbr>.Testing</a></li>
 		<li role="separator" class="divider"></li>
 			<li class="header">Class Types</li>
-				<li><a href="/api/Cake.Issues.Testing/AssertionMethodAttribute">Assertion<wbr>Method<wbr>Attribute</a></li>
+				<li class="selected"><a href="/api/Cake.Issues.Testing/AssertionMethodAttribute">Assertion<wbr>Method<wbr>Attribute</a></li>
 				<li><a href="/api/Cake.Issues.Testing/BaseConfigurableIssueProviderFixture_2">Base<wbr>Configurable<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues.Testing/BaseIssueProviderFixture_1">Base<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/api/Cake.Issues.Testing/BaseMultiFormatIssueProviderFixture_3">Base<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Fixture<wbr>&lt;TIssueProvider, <wbr>TSettings, <wbr>TLogFileFormat&gt;<wbr></a></li>
@@ -158,7 +157,7 @@
 				<li><a href="/api/Cake.Issues.Testing/FakeLogFileFormat">FakeLogFileFormat</a></li>
 				<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProvider">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider</a></li>
 				<li><a href="/api/Cake.Issues.Testing/FakeMultiFormatIssueProviderSettings">Fake<wbr>Multi<wbr>Format<wbr>Issue<wbr>Provider<wbr>Settings</a></li>
-				<li class="selected"><a href="/api/Cake.Issues.Testing/FakeRuleDescription">FakeRuleDescription</a></li>
+				<li><a href="/api/Cake.Issues.Testing/FakeRuleDescription">FakeRuleDescription</a></li>
 				<li><a href="/api/Cake.Issues.Testing/FakeRuleUrlResolver">FakeRuleUrlResolver</a></li>
 				<li><a href="/api/Cake.Issues.Testing/IssueChecker">IssueChecker</a></li>
 				<li><a href="/api/Cake.Issues.Testing/ResourceTempFile">ResourceTempFile</a></li>
@@ -176,14 +175,14 @@
 
 
 <section class="content-header">
-	<h1>FakeRuleDescription <small>Class</small></h1>
+	<h1>Assertion<wbr>Method<wbr>Attribute <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">
-            Implementation of a <code class="cs"><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></code> for use in test cases.
+            Attribute for marking custom assertion methods.
             </div>
 
 		<div class="panel panel-default">
@@ -201,8 +200,7 @@
 								<dt>Base Types</dt>
 								<dd>
 									<ul class="list-unstyled">										
-											<li>Object</li>								
-											<li><a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></li>								
+											<li>Attribute</li>								
 									</ul>
 								</dd>				
 							
@@ -212,10 +210,8 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type--&gt;Base0["BaseRuleDescription"]
-	click Base0 "/api/Cake.Issues/BaseRuleDescription"
-	Base0--&gt;Base1["Object"]
-	Type["FakeRuleDescription"]
+	Type--&gt;Base0["Attribute"]
+	Type["AssertionMethodAttribute"]
 class Type type-node
 
 						</div>
@@ -225,7 +221,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public class FakeRuleDescription : BaseRuleDescription</code></pre>
+	<pre><code>public class AssertionMethodAttribute : Attribute</code></pre>
 
 
 
@@ -244,7 +240,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Issues.Testing/FakeRuleDescription/B6FD9045">FakeRuleDescription<wbr>()<wbr></a></td>
+								<td><a href="/api/Cake.Issues.Testing/AssertionMethodAttribute/9324E5F2">Assertion<wbr>Method<wbr>Attribute<wbr>()<wbr></a></td>
 									<td></td>
 							</tr>
 					</tbody></table>
@@ -255,37 +251,6 @@ class Type type-node
 
 
 
-			<h1 id="Methods">Methods</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover three-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-								<th>Value</th>
-								<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/api/Cake.Issues/BaseRuleDescription/917E98E4">get_Rule<wbr>()<wbr></a></td>
-								<td>string</td>
-								<td>
-									<div></div>
-											<div><small><em>Inherited from <a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/api/Cake.Issues/BaseRuleDescription/530694AF">set_Rule<wbr>()<wbr></a></td>
-								<td></td>
-								<td>
-									<div></div>
-											<div><small><em>Inherited from <a href="/api/Cake.Issues/BaseRuleDescription">BaseRuleDescription</a></em></small></div>
-								</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
 
 			<h1 id="ExtensionMethods">Extension Methods</h1>
@@ -300,7 +265,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>Fake<wbr>Rule<wbr>Description&gt;<wbr><wbr>(string)<wbr></a></td>
+								<td><a href="/api/Cake.Issues/IssuesArgumentChecks/5D006BAA">NotNull<wbr>&lt;<wbr>Assertion<wbr>Method<wbr>Attribute&gt;<wbr><wbr>(string)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
