@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
-        <title>Cake Issues - News (Page 2)</title>
+        <title>Cake Issues - Cake Issues v3.0.0 Released</title>
         <link href="/assets/css/highlight.css" rel="stylesheet">
         <link href="/assets/css/bootstrap/bootstrap.css" rel="stylesheet" />
         <link href="/assets/css/adminlte/AdminLTE.css" rel="stylesheet" />
@@ -80,6 +80,7 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
+        <div><p><a href="https://github.com/cake-contrib/Cake.Issues.Website/blob/develop/input/news/2023-07-22-cake-issues-v3.0.0-released.md"><i class="fa fa-pencil-square" aria-hidden="true"></i> Edit Content</a></p></div>
     <div id="infobar-headings"></div>
 
                 </section>
@@ -117,92 +118,89 @@
 
 
 		<section class="content-header">
-			<h1>News (Page 2)</h1>
+			<h1>Cake Issues v3.0.0 Released</h1>
 		</section>
 	<section class="content">
 		
 
-        <h2><a href="/news/cake-issues-recipe-v1.2.0-released">Cake Issues Recipes v1.2.0 released</a></h2>
+
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
     <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, August 19, 2021</dd>
+    <dd>Saturday, July 22, 2023</dd>
         <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
         <dd><a href="/news/Release-Notes">Release Notes</a></dd>
     </dl>
-            <div>
-                <p>Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.</p>
-                <a href="/news/cake-issues-recipe-v1.2.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-recipe-v1.1.0-released">Cake Issues Recipes v1.1.0 released</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Wednesday, August 11, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 1.1.0 of Cake Issues recipes have been released adding support to customize report generation.</p>
-                <a href="/news/cake-issues-recipe-v1.1.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-recipe-v1.0.0-released">Cake Issues Recipe v1.0.0 Released, bringing support for Cake Frosting</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Wednesday, August 4, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Hard on the heels of the <a href="/news/cake-issues-v1.0.0-released">announcement for release 1.0 of Cake.Issues addins</a>,
-we're happy to announce release 1.0 of the recipe script for Cake.Issues.</p>
-<p>This is a major release bringing support for Cake Frosting and other new features.</p>
-                <a href="/news/cake-issues-recipe-v1.0.0-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-eslint-v1.0.1-released">Cake Issues ESLint v1.0.1 Released</a></h2>
+<p>Cake Issues version 3.0.0 has been released.
+This is a major release, containing breaking changes beside bringing new features and bug fixes across all addins.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/DiDoHH">DiDoHH</a></li>
+<li><a href="https://github.com/eoehen">eoehen</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="support-for-cake-3.0">Support for Cake 3.0</h2>
+<p>All addins have been updated to support Cake 3.x.</p>
+<p>Target framework have been updated to .NET 6 and .NET 7 to be in line with Cake.</p>
+<h2 id="support-for-msbuild-binary-logs-version-16">Support for MsBuild binary logs version 16</h2>
+<p>Support for binary logs in version 16 has been added to <code>Cake.Issues.MsBuild</code>.</p>
+<h2 id="out-of-the-box-support-for-more-rule-links">Out of the box support for more rule links</h2>
+<p><code>Cake.Issues.MsBuild</code> now will automatically provide links for <a href="https://josefpihrt.github.io/docs/roslynator/">Roslynator</a> and <a href="https://www.sonarsource.com/products/sonarlint/">SonarLint</a> rules.
+Links for <code>CA</code> rules have updated to link to <code>learn.microsoft.com</code>.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues 3.0.0 is a breaking release, which means that it probably requires changes to your build script.
+This section documents the most common changes which might be required:</p>
+<ul>
+<li>Cake.Issues
+<ul>
+<li><code>StringPathExtensions.IsValideRepositoryFilePath</code> has been renamed to <code>StringPathExtensions.IsValidRepositoryFilePath</code></li>
+<li><code>BaseRuleDescription.Rule</code> has been made immutable after initialization</li>
+</ul>
+</li>
+<li>Cake.Issues.Recipe
+<ul>
+<li>Since <a href="https://blog.jetbrains.com/dotnet/2021/08/12/sunsetting-dupfinder-command-line-tool/">Dupfinder has been sunsetted</a> end of 2021, out of the box support for it has been removed from Cake Issues Recipe
+and <code>DupFinderLogFilePaths</code> is no longer available.
+To keep using DupFinder you need to manually add <code>Cake.Issues.DupFinder</code> and add issues using the <code>AddIssues</code> method.</li>
+</ul>
+</li>
+</ul>
+<p>For details see release notes of the individual addins:</p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/3.0.0">Cake.Issues.Recipe 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/3.0.0">Cake.Issues 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/3.0.0">Cake.Issues.DocFx 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/3.0.0">Cake.Issues.DupFinder 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/3.0.0">Cake.Issues.EsLint 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/3.0.0">Cake.Issues.GitRepository 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/3.0.0">Cake.Issues.InspectCode 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/3.0.0">Cake.Issues.Markdownlint 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/3.0.0">Cake.Issues.MsBuild 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Terraform/releases/tag/3.0.0">Cake.Issues.Terraform 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Console/releases/tag/3.0.0">Cake.Issues.Reporting.Console 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/3.0.0">Cake.Issues.Reporting.Generic 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/3.0.0">Cake.Issues.Reporting.Sarif 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/3.0.0">Cake.Issues.PullRequests.AppVeyor 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/3.0.0">Cake.Issues.PullRequests.AzureDevOps 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions/releases/tag/3.0.0">Cake.Issues.PullRequests.GitHubActions 3.0.0</a></li>
+</ul>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Friday, July 30, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 1.0.1 of ESLint support for Cake.Issues has been released.
-This is a minor release containing bug fixes.</p>
-                <a href="/news/cake-issues-eslint-v1.0.1-released">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-v1.0.0-released">Cake Issues v1.0.0 Released</a></h2>
 
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Wednesday, July 28, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>More than 4 years after the <a href="https://github.com/cake-contrib/Cake.Prca/commit/438b3a1a609e5b9cc9e6f8f489a73988f9ed1f4d">first commit for Cake.Prca</a>,
-the predecessor of Cake Issues, we're happy to announce that Cake Issues version 1.0.0 has been released.
-This is a major release bringing a lot of new features across all addins.</p>
-                <a href="/news/cake-issues-v1.0.0-released">Read more...</a>
-            </div>
-        <hr />
-    <nav>
-        <ul class="pager">
-            <li class="previous">                
-                    <a href="/news"><span aria-hidden="true">&larr;</span> Newer</a>
-            </li>
-            <li class="next">
-                    <a href="/news/page3">Older <span aria-hidden="true">&rarr;</span></a>
-            </li>
-        </ul>
-    </nav>
+<hr />
 
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released&t=Cake%20Issues%20v3.0.0%20Released" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="/assets/images/facebook.svg"></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released&text=Cake%20Issues%20v3.0.0%20Released:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released&via=cakeissuesnet" target="_blank" title="Tweet"><img alt="Tweet" src="/assets/images/twitter.svg"></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released&title=Cake%20Issues%20v3.0.0%20Released" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="/assets/images/reddit.svg"></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released&title=Cake%20Issues%20v3.0.0%20Released&summary=&source=https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="/assets/images/linkedin.svg"></a></li>
+  <li><a href="mailto:?subject=Cake%20Issues%20v3.0.0%20Released&body=:%20https%3A%2F%2Fcakeissues.net%2Fnews%2Fcake-issues-v3.0.0-released" target="_blank" title="Send email"><img alt="Send email" src="/assets/images/envelope.svg"></a></li>
+</ul>
 
 	</section>
                 

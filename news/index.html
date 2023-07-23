@@ -94,6 +94,7 @@
             <li><a href="/news/Release-Notes">Release Notes</a></li>
     
     <li class="header"><i class="fa fa-calendar"></i> Archive</li>    
+        <li><a href="/news/archive/2023/07">July, 2023</a></li>
         <li><a href="/news/archive/2022/12">December, 2022</a></li>
         <li><a href="/news/archive/2021/09">September, 2021</a></li>
         <li><a href="/news/archive/2021/08">August, 2021</a></li>
@@ -121,6 +122,75 @@
 	<section class="content">
 		
 
+        <h2><a href="/news/cake-issues-v3.0.0-released">Cake Issues v3.0.0 Released</a></h2>
+
+<dl class="dl-horizontal" style="margin-bottom: 12px;">
+    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
+    <dd>Saturday, July 22, 2023</dd>
+        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
+        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
+    </dl>
+            <div>
+                <p>Cake Issues version 3.0.0 has been released.
+This is a major release, containing breaking changes beside bringing new features and bug fixes across all addins.</p>
+<!--excerpt-->
+<p>This post shows the highlights included in this release.
+For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
+<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
+<p>People working on this release:</p>
+<ul>
+<li><a href="https://github.com/DiDoHH">DiDoHH</a></li>
+<li><a href="https://github.com/eoehen">eoehen</a></li>
+<li><a href="https://github.com/pascalberger">pascalberger</a></li>
+</ul>
+<h2 id="support-for-cake-3.0">Support for Cake 3.0</h2>
+<p>All addins have been updated to support Cake 3.x.</p>
+<p>Target framework have been updated to .NET 6 and .NET 7 to be in line with Cake.</p>
+<h2 id="support-for-msbuild-binary-logs-version-16">Support for MsBuild binary logs version 16</h2>
+<p>Support for binary logs in version 16 has been added to <code>Cake.Issues.MsBuild</code>.</p>
+<h2 id="out-of-the-box-support-for-more-rule-links">Out of the box support for more rule links</h2>
+<p><code>Cake.Issues.MsBuild</code> now will automatically provide links for <a href="https://josefpihrt.github.io/docs/roslynator/">Roslynator</a> and <a href="https://www.sonarsource.com/products/sonarlint/">SonarLint</a> rules.
+Links for <code>CA</code> rules have updated to link to <code>learn.microsoft.com</code>.</p>
+<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
+<p>Cake.Issues 3.0.0 is a breaking release, which means that it probably requires changes to your build script.
+This section documents the most common changes which might be required:</p>
+<ul>
+<li>Cake.Issues
+<ul>
+<li><code>StringPathExtensions.IsValideRepositoryFilePath</code> has been renamed to <code>StringPathExtensions.IsValidRepositoryFilePath</code></li>
+<li><code>BaseRuleDescription.Rule</code> has been made immutable after initialization</li>
+</ul>
+</li>
+<li>Cake.Issues.Recipe
+<ul>
+<li>Since <a href="https://blog.jetbrains.com/dotnet/2021/08/12/sunsetting-dupfinder-command-line-tool/">Dupfinder has been sunsetted</a> end of 2021, out of the box support for it has been removed from Cake Issues Recipe
+and <code>DupFinderLogFilePaths</code> is no longer available.
+To keep using DupFinder you need to manually add <code>Cake.Issues.DupFinder</code> and add issues using the <code>AddIssues</code> method.</li>
+</ul>
+</li>
+</ul>
+<p>For details see release notes of the individual addins:</p>
+<ul>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Recipe/releases/tag/3.0.0">Cake.Issues.Recipe 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/3.0.0">Cake.Issues 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/3.0.0">Cake.Issues.DocFx 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/3.0.0">Cake.Issues.DupFinder 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/3.0.0">Cake.Issues.EsLint 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/3.0.0">Cake.Issues.GitRepository 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/3.0.0">Cake.Issues.InspectCode 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/3.0.0">Cake.Issues.Markdownlint 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/3.0.0">Cake.Issues.MsBuild 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Terraform/releases/tag/3.0.0">Cake.Issues.Terraform 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Console/releases/tag/3.0.0">Cake.Issues.Reporting.Console 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/3.0.0">Cake.Issues.Reporting.Generic 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/3.0.0">Cake.Issues.Reporting.Sarif 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/3.0.0">Cake.Issues.PullRequests.AppVeyor 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/3.0.0">Cake.Issues.PullRequests.AzureDevOps 3.0.0</a></li>
+<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions/releases/tag/3.0.0">Cake.Issues.PullRequests.GitHubActions 3.0.0</a></li>
+</ul>
+
+            </div>
+        <hr />
         <h2><a href="/news/cake-issues-v2.0.0-released">Cake Issues v2.0.0 Released</a></h2>
 
 <dl class="dl-horizontal" style="margin-bottom: 12px;">
@@ -132,62 +202,7 @@
             <div>
                 <p>After several months with beta releases Cake Issues version 2.0.0 has been released.
 This is a major release, containing breaking changes beside bringing new features and bug fixes across all addins.</p>
-<!--excerpt-->
-<p>This post shows the highlights included in this release.
-For update instructions skip to <a href="#updating-from-previous-versions">Updating from previous versions</a>.</p>
-<p>❤ Huge thanks to our community! This release would not have been possible without your support and contributions! ❤</p>
-<p>People working on this release:</p>
-<ul>
-<li><a href="https://github.com/eoehen">eoehen</a></li>
-<li><a href="https://github.com/KirillOsenkov">KirillOsenkov</a></li>
-<li><a href="https://github.com/pascalberger">pascalberger</a></li>
-<li><a href="https://github.com/twenzel">twenzel</a></li>
-<li><a href="https://github.com/yansklyarenko">yansklyarenko</a></li>
-</ul>
-<h2 id="support-for-cake-2.0">Support for Cake 2.0</h2>
-<p>All addins have been updated to support Cake 2.x.</p>
-<p>Target framework have been updated to .NET Core 3.1, .NET 5 and .NET 6 to be in line with Cake.
-See <a href="https://cakebuild.net/blog/2021/10/sunsetting-runners">Sunsetting of .NET Framework and .NET Core runners in Cake 2.0</a> for details.</p>
-<h2 id="support-for-msbuild-binary-logs-version-9">Support for MsBuild binary logs version 9</h2>
-<p>Support for binary logs in version 9 has been added to <code>Cake.Issues.MsBuild</code>.</p>
-<h2 id="updating-from-previous-versions">Updating from previous versions</h2>
-<p>Cake.Issues 2.0.0 is a breaking release, which means that it probably requires changes to your build script.
-This section documents the most common changes which might be required:</p>
-<ul>
-<li>Cake.Issues
-<ul>
-<li>Serialization format has been updated to version <code>5</code>.
-Older version are still supported for deserialization.</li>
-<li><code>ProviderIssueIssueLimits</code> has been renamed to <code>ProviderIssueLimits</code></li>
-<li><code>IIssue.Rule</code> has been renamed to <code>IIssue.RuleId</code></li>
-<li><code>IIssue</code> was extended with an additional <code>RuleName</code> property.</li>
-</ul>
-</li>
-<li>Cake.Issues.MsBuild
-<ul>
-<li>MsBuild 15 or newer required for binary logs</li>
-</ul>
-</li>
-</ul>
-<p>For details see release notes of the individual addins:</p>
-<ul>
-<li><a href="https://github.com/cake-contrib/Cake.Issues/releases/tag/2.0.0">Cake.Issues 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.DocFx/releases/tag/2.0.0">Cake.Issues.DocFx 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.DupFinder/releases/tag/2.0.0">Cake.Issues.DupFinder 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.EsLint/releases/tag/2.0.0">Cake.Issues.EsLint 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.GitRepository/releases/tag/2.0.0">Cake.Issues.GitRepository 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.InspectCode/releases/tag/2.0.0">Cake.Issues.InspectCode 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.Markdownlint/releases/tag/2.0.0">Cake.Issues.Markdownlint 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.MsBuild/releases/tag/2.0.0">Cake.Issues.MsBuild 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.Terraform/releases/tag/2.0.0">Cake.Issues.Terraform 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Console/releases/tag/2.0.0">Cake.Issues.Reporting.Console 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Generic/releases/tag/2.0.0">Cake.Issues.Reporting.Generic 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.Reporting.Sarif/releases/tag/2.0.0">Cake.Issues.Reporting.Sarif 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AppVeyor/releases/tag/2.0.0">Cake.Issues.PullRequests.AppVeyor 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.AzureDevOps/releases/tag/2.0.0">Cake.Issues.PullRequests.AzureDevOps 2.0.0</a></li>
-<li><a href="https://github.com/cake-contrib/Cake.Issues.PullRequests.GitHubActions/releases/tag/2.0.0">Cake.Issues.PullRequests.GitHubActions 2.0.0</a></li>
-</ul>
-
+                <a href="/news/cake-issues-v2.0.0-released">Read more...</a>
             </div>
         <hr />
         <h2><a href="/news/cake-issues-reporting-0-3-0-released">Cake Issues Reporting Console v0.3.0 released, adding support for all Cake runners</a></h2>
@@ -229,19 +244,6 @@ This is a minor release adding features and improvements.</p>
             <div>
                 <p>A new <a href="/docs/report-formats/console/">Cake.Issues.Reporting.Console addin</a> has been released which allows to output issues to the console.</p>
                 <a href="/news/console-addin">Read more...</a>
-            </div>
-        <hr />
-        <h2><a href="/news/cake-issues-recipe-v1.2.0-released">Cake Issues Recipes v1.2.0 released</a></h2>
-
-<dl class="dl-horizontal" style="margin-bottom: 12px;">
-    <dt style="text-align: left;"><i class="fa fa-calendar"></i> Published</dt>
-    <dd>Thursday, August 19, 2021</dd>
-        <dt style="text-align: left;"><i class="fa fa-bookmark"></i> Category</dt>
-        <dd><a href="/news/Release-Notes">Release Notes</a></dd>
-    </dl>
-            <div>
-                <p>Version 1.2.0 of Cake Issues recipes have been released adding support to customize issue reporting to pull requests.</p>
-                <a href="/news/cake-issues-recipe-v1.2.0-released">Read more...</a>
             </div>
         <hr />
     <nav>
