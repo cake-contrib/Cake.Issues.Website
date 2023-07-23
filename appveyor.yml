@@ -1,20 +1,38 @@
-# Build script
+#---------------------------------#
+#  Build Image                    #
+#---------------------------------#
+image: Visual Studio 2022
+
+#---------------------------------#
+#  Install prerequisites          #
+#---------------------------------#
 init:
   - git config --global core.autocrlf true
 
-# Build script
+install:
+  - ps: $env:DOTNET_INSTALL_DIR = "$pwd\.dotnetsdk"
+  - ps: mkdir $env:DOTNET_INSTALL_DIR -Force | Out-Null
+  - ps: Invoke-WebRequest -Uri "https://dotnet.microsoft.com/download/dotnet/scripts/v1/dotnet-install.ps1" -OutFile "$($env:DOTNET_INSTALL_DIR)/dotnet-install.ps1"
+  - ps: '& "$($env:DOTNET_INSTALL_DIR)/dotnet-install.ps1" -Version 2.1.818 -InstallDir $env:DOTNET_INSTALL_DIR'
+  - ps: $env:Path = "$env:DOTNET_INSTALL_DIR;$env:Path"
+  - ps: dotnet --info
+
+#---------------------------------#
+#  Build Script                   #
+#---------------------------------#
 build_script:
-  - ps: .\build.ps1 -Target "AppVeyor"
+  - ps: .\build.ps1 -target=AppVeyor
 
 # Tests
 test: off
 
 # Artifacts
 artifacts:
-# Static website
   - path: output
 
-# Branches to build
+#---------------------------------#
+#        Branches to build        #
+#---------------------------------#
 branches:
   # Whitelist
   only:
