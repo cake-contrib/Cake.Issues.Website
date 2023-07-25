@@ -1,5 +1,5 @@
 #addin nuget:?package=Octokit&version=0.52.0
-#load nuget:?package=Cake.Wyam.Recipe&version=0.9.0
+#load nuget:?package=Cake.Wyam.Recipe&version=2.0.0
 
 #load build\build.cake
 
@@ -115,7 +115,11 @@ Task("GetReleaseNotes")
         foreach(var addinSpec in addinSpecs.Where(x => !string.IsNullOrEmpty(x.RepositoryOwner) && !string.IsNullOrEmpty(x.RepositoryName) && !string.IsNullOrEmpty(x.ReleaseNotesFilePath)))
         {
             Information("Retrieving release notes for " + addinSpec.Name);
-            GitReleaseManagerExport("pat", BuildParameters.Wyam.AccessToken, addinSpec.RepositoryOwner, addinSpec.RepositoryName, addinSpec.ReleaseNotesFilePath);
+            GitReleaseManagerExport(
+                BuildParameters.Wyam.AccessToken,
+                addinSpec.RepositoryOwner,
+                addinSpec.RepositoryName,
+                addinSpec.ReleaseNotesFilePath);
 
             Information("Adding metadata for " + addinSpec.Name);
             string fileContent = FileReadText(addinSpec.ReleaseNotesFilePath);
