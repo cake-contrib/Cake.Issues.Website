@@ -1,5 +1,5 @@
 #addin nuget:?package=Octokit&version=0.52.0
-#load nuget:?package=Cake.Wyam.Recipe&version=1.0.0
+#load nuget:?package=Cake.Wyam.Recipe&version=2.0.0
 
 #load build\build.cake
 
