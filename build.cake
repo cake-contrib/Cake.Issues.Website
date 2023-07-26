@@ -29,6 +29,9 @@ BuildParameters.SetParameters(
     wyamTheme: "Samson",
     shouldPublishDocumentation: StringComparer.OrdinalIgnoreCase.Equals("master", AppVeyor.Environment.Repository.Branch));
 
+ToolSettings.SetToolPreprocessorDirectives(
+    kuduSyncGlobalTool: "#tool dotnet:https://pkgs.dev.azure.com/cake-contrib/Home/_packaging/addins/nuget/v3/index.json?package=KuduSync.Tool&version=1.5.4-g13cb5857b6");
+
 BuildParameters.PrintParameters(Context);
 
 //////////////////////////////////////////////////////////////////////
