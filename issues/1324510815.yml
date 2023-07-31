@@ -1,0 +1,4 @@
+Number: 287
+HtmlUrl: https://github.com/cake-contrib/Cake.Issues/issues/287
+Title: "IsSubpathOf returns wrong result if base dir contains .."
+Repository: Cake.Issues

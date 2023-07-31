@@ -1,0 +1,4 @@
+Number: 250
+HtmlUrl: https://github.com/cake-contrib/Cake.Issues.MsBuild/issues/250
+Title: "Provide logger for MsBuild which writes Cake.Issues serialization format"
+Repository: Cake.Issues.MsBuild
