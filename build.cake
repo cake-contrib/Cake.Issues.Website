@@ -1,5 +1,5 @@
-#addin nuget:?package=Octokit&version=0.52.0
-#load nuget:?package=Cake.Wyam.Recipe&version=2.0.0
+#addin nuget:?package=Octokit&version=7.1.0
+#load nuget:?package=Cake.Wyam.Recipe&version=2.0.1
 
 #load build\build.cake
 
@@ -28,9 +28,6 @@ BuildParameters.SetParameters(
     wyamRecipe: "Docs",
     wyamTheme: "Samson",
     shouldPublishDocumentation: StringComparer.OrdinalIgnoreCase.Equals("master", AppVeyor.Environment.Repository.Branch));
-
-ToolSettings.SetToolPreprocessorDirectives(
-    kuduSyncGlobalTool: "#tool dotnet:https://pkgs.dev.azure.com/cake-contrib/Home/_packaging/addins/nuget/v3/index.json?package=KuduSync.Tool&version=1.5.4-g13cb5857b6");
 
 BuildParameters.PrintParameters(Context);
 
